@@ -1,0 +1,7 @@
+[
+  { "key": "siji", "name": "四季风光", "motto": "跟着诗走过春夏秋冬", "color": "#6FA8DC" },
+  { "key": "shanshui", "name": "山水田园", "motto": "诗里的山和水、田和园", "color": "#7CA982" },
+  { "key": "huaren", "name": "思念与送别", "motto": "想家的人，送别的人", "color": "#A67AB5" },
+  { "key": "yongwu", "name": "咏物明理", "motto": "小事里藏着大道理", "color": "#F09A4A" },
+  { "key": "jiaguo", "name": "家国与童年", "motto": "大英雄的大心事，小孩子的旧时光", "color": "#E8604C" }
+]

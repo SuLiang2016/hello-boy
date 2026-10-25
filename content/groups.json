@@ -1,0 +1,8 @@
+[
+  { "key": "dongwu", "name": "动物伙伴", "motto": "小动物们演的故事", "color": "#F09A4A" },
+  { "key": "shuzi", "name": "神奇的数字", "motto": "从一到万都有故事", "color": "#6FA8DC" },
+  { "key": "ziran", "name": "大自然", "motto": "风雨水火都是老师", "color": "#7CA982" },
+  { "key": "renwu", "name": "了不起的人", "motto": "古人的本事和教训", "color": "#E8604C" },
+  { "key": "jizhi", "name": "聪明办法", "motto": "傻办法，笑一笑", "color": "#A67AB5" },
+  { "key": "shenhua", "name": "神话传说", "motto": "老祖宗的大想象", "color": "#F5B841" }
+]

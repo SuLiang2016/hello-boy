@@ -1,0 +1,152 @@
+[
+  {
+    "id": "wo-xin-chang-dan",
+    "word": "卧薪尝胆",
+    "pinyin": "wò xīn cháng dǎn",
+    "group": "renwu",
+    "origin": "《史记》",
+    "story": "两千多年前，越国被吴国打败了，越王勾践只好去吴国当奴仆，喂马、扫院子，什么苦活都干。三年后，他回到越国，心里憋着一股劲：一定要让越国重新强大！他撤掉软软的被褥，睡在柴草堆上；屋里还挂了一枚苦胆，每天吃饭前都要舔一口，苦得直皱眉。他问自己：「在吴国吃的苦，你忘了吗？」就这样苦熬了二十年，越国越来越强，勾践终于打败了吴国。",
+    "summary": "卧薪尝胆，就是不忘失败的苦，下狠心努力争回这口气。比赛输了不哭鼻子，天天加练，第二年拿了冠军——这就是卧薪尝胆。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"336\" cy=\"52\" r=\"22\" fill=\"#F5B841\"/><circle cx=\"58\" cy=\"48\" r=\"4\" fill=\"#BDD9F2\"/><circle cx=\"104\" cy=\"74\" r=\"3\" fill=\"#BDD9F2\"/><rect x=\"40\" y=\"44\" width=\"320\" height=\"10\" rx=\"5\" fill=\"#8B5A3C\"/><rect x=\"196\" y=\"54\" width=\"4\" height=\"50\" fill=\"#8B5A3C\"/><ellipse cx=\"198\" cy=\"114\" rx=\"10\" ry=\"14\" fill=\"#7CA982\" stroke=\"#3D3A36\" stroke-width=\"3\"/><ellipse cx=\"200\" cy=\"272\" rx=\"190\" ry=\"32\" fill=\"#C8E6A0\"/><rect x=\"96\" y=\"216\" width=\"208\" height=\"18\" rx=\"9\" fill=\"#A9744F\" stroke=\"#3D3A36\" stroke-width=\"3\"/><ellipse cx=\"110\" cy=\"225\" rx=\"9\" ry=\"8\" fill=\"#8B5A3C\"/><ellipse cx=\"290\" cy=\"225\" rx=\"9\" ry=\"8\" fill=\"#8B5A3C\"/><rect x=\"122\" y=\"196\" width=\"156\" height=\"18\" rx=\"9\" fill=\"#A9744F\" stroke=\"#3D3A36\" stroke-width=\"3\"/><ellipse cx=\"136\" cy=\"205\" rx=\"8\" ry=\"7\" fill=\"#8B5A3C\"/><ellipse cx=\"264\" cy=\"205\" rx=\"8\" ry=\"7\" fill=\"#8B5A3C\"/><rect x=\"132\" y=\"172\" width=\"118\" height=\"26\" rx=\"13\" fill=\"#4A7FB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"118\" cy=\"180\" r=\"13\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M106 178 Q109 166 124 168 L124 174 Z\" fill=\"#3D3A36\"/><path d=\"M186 172 Q192 156 200 146\" stroke=\"#F8D8B8\" stroke-width=\"9\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"202\" cy=\"142\" r=\"7\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["胆子特别大，什么都不怕", "尝一口苦胆，人就会变勇敢", "记着失败的苦，咬牙苦练争口气", "喜欢睡在柴草堆上取暖"], "answer": 2, "explain": "勾践睡柴草、尝苦胆，是逼自己不忘失败的苦。" },
+      { "type": "fill", "question": "卧（　）尝胆", "options": ["薪", "新", "辛", "心"], "answer": 0, "explain": "「薪」就是柴草，勾践天天睡在柴草堆上。" },
+      { "type": "usage", "question": "小刚输了一盘棋，回去天天研究棋谱，半年后终于赢回来，大家都说他卧薪尝胆。", "options": ["用对了", "用错了"], "answer": 0, "explain": "输了不泄气，下苦功练回来，正是卧薪尝胆。" }
+    ]
+  },
+  {
+    "id": "wen-ji-qi-wu",
+    "word": "闻鸡起舞",
+    "pinyin": "wén jī qǐ wǔ",
+    "group": "renwu",
+    "origin": "《晋书》",
+    "story": "古时候有两个好朋友，一个叫祖逖，一个叫刘琨，他们同吃同住，都想练好本领保卫国家。一天半夜，「喔喔喔——」的鸡叫声把祖逖吵醒了。他一脚踢醒身边的刘琨：「快起来！鸡都在催咱们练功了！」两人抓起宝剑，冲到院子里，月光下你一剑、我一剑，练得满头大汗。从此鸡一叫他们就起床练剑，再冷的天也不偷懒。后来，两人都成了本领高强的大将军。",
+    "summary": "闻鸡起舞，就是听到鸡叫就起床练功，一天也不偷懒。闹钟一响就爬起来读书，你也做得到闻鸡起舞。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"320\" cy=\"54\" r=\"24\" fill=\"#F5B841\"/><circle cx=\"52\" cy=\"46\" r=\"4\" fill=\"#BDD9F2\"/><circle cx=\"96\" cy=\"78\" r=\"3\" fill=\"#BDD9F2\"/><circle cx=\"236\" cy=\"42\" r=\"3\" fill=\"#BDD9F2\"/><ellipse cx=\"200\" cy=\"274\" rx=\"190\" ry=\"30\" fill=\"#7CA982\"/><rect x=\"64\" y=\"198\" width=\"112\" height=\"8\" fill=\"#8B5A3C\"/><rect x=\"72\" y=\"192\" width=\"8\" height=\"36\" fill=\"#8B5A3C\"/><rect x=\"160\" y=\"192\" width=\"8\" height=\"36\" fill=\"#8B5A3C\"/><ellipse cx=\"116\" cy=\"180\" rx=\"22\" ry=\"15\" fill=\"#F09A4A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M136 174 Q158 152 154 138 Q144 158 130 166 Z\" fill=\"#4A7FB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"96\" cy=\"162\" r=\"11\" fill=\"#F09A4A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"92\" cy=\"152\" r=\"4\" fill=\"#E8604C\"/><circle cx=\"100\" cy=\"150\" r=\"4\" fill=\"#E8604C\"/><path d=\"M85 160 L74 164 L85 168 Z\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"93\" cy=\"160\" r=\"2\" fill=\"#3D3A36\"/><rect x=\"114\" y=\"193\" width=\"4\" height=\"8\" fill=\"#8B5A3C\"/><circle cx=\"228\" cy=\"152\" r=\"12\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"228\" cy=\"137\" r=\"5\" fill=\"#3D3A36\"/><path d=\"M216 240 L242 240 L238 168 L222 168 Z\" fill=\"#4A7FB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M236 176 Q248 168 254 156\" stroke=\"#F8D8B8\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M256 152 L272 120\" stroke=\"#9E9C9A\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"308\" cy=\"152\" r=\"12\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"308\" cy=\"137\" r=\"5\" fill=\"#3D3A36\"/><path d=\"M296 240 L322 240 L318 168 L302 168 Z\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M300 176 Q288 168 282 156\" stroke=\"#F8D8B8\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M280 152 L264 120\" stroke=\"#9E9C9A\" stroke-width=\"5\" stroke-linecap=\"round\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["学公鸡打鸣，叫大家起床", "听到鸡叫就起床练本领，一点不偷懒", "夜里睡不着，起来看月亮", "舞跳得好，大家鼓掌叫好"], "answer": 1, "explain": "祖逖和刘琨一听鸡叫就起来练剑，一点不偷懒。" },
+      { "type": "fill", "question": "闻（　）起舞", "options": ["鸡", "机", "积", "击"], "answer": 0, "explain": "「鸡」就是公鸡，鸡一叫他们就起床练功。" },
+      { "type": "usage", "question": "闹钟响了，小明伸手一按，翻个身又睡着了，还说自己是闻鸡起舞。", "options": ["用对了", "用错了"], "answer": 1, "explain": "他又睡了回去，没起来练本领，用错了。" }
+    ]
+  },
+  {
+    "id": "zao-bi-tou-guang",
+    "word": "凿壁偷光",
+    "pinyin": "záo bì tōu guāng",
+    "group": "renwu",
+    "origin": "《西京杂记》",
+    "story": "汉朝有个孩子叫匡衡，家里穷得点不起油灯，可他偏偏爱读书爱得不得了。天一黑，书上的字全看不清了，他急得直挠头。一天夜里，匡衡忽然看见墙缝里透进来一丝亮光——是邻居家的灯光！他找来一把小凿子，顺着墙缝轻轻地凿，凿啊凿，终于凿出一个小洞，隔壁的光一下子照了过来。匡衡赶紧捧起书，凑到洞口，借着那一小团光，一直读到深夜。后来，他成了了不起的大学问家。",
+    "summary": "凿壁偷光，就是家里再穷，也要想办法读书学习。停电了就打着手电筒把书看完，这股劲头就是凿壁偷光。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><ellipse cx=\"200\" cy=\"268\" rx=\"190\" ry=\"30\" fill=\"#C8E6A0\"/><rect x=\"128\" y=\"36\" width=\"56\" height=\"232\" fill=\"#A9744F\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M128 100 h56 M128 240 h56\" stroke=\"#8B5A3C\" stroke-width=\"3\"/><circle cx=\"156\" cy=\"170\" r=\"10\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M166 164 L330 150 L330 234 L166 176 Z\" fill=\"#F5B841\"/><rect x=\"36\" y=\"196\" width=\"46\" height=\"8\" rx=\"3\" fill=\"#8B5A3C\"/><rect x=\"40\" y=\"204\" width=\"8\" height=\"40\" fill=\"#8B5A3C\"/><rect x=\"70\" y=\"204\" width=\"8\" height=\"40\" fill=\"#8B5A3C\"/><rect x=\"54\" y=\"176\" width=\"10\" height=\"20\" fill=\"#FFFFFF\" stroke=\"#3D3A36\" stroke-width=\"3\"/><ellipse cx=\"59\" cy=\"170\" rx=\"4\" ry=\"7\" fill=\"#F09A4A\"/><path d=\"M236 240 L296 240 L288 182 L246 182 Z\" fill=\"#5E8C61\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"232\" y=\"238\" width=\"68\" height=\"12\" rx=\"6\" fill=\"#8B5A3C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"266\" cy=\"170\" r=\"13\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M254 168 Q258 156 276 158 L276 164 Z\" fill=\"#3D3A36\"/><path d=\"M288 194 Q298 196 304 202\" stroke=\"#F8D8B8\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><rect x=\"296\" y=\"196\" width=\"34\" height=\"26\" rx=\"3\" fill=\"#FFFFFF\" stroke=\"#3D3A36\" stroke-width=\"3\" transform=\"rotate(-6 313 209)\"/><path d=\"M302 204 h22 M302 212 h16\" stroke=\"#9E9C9A\" stroke-width=\"2\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["条件再差，也想尽办法读书学习", "把别人家的墙凿洞搞破坏", "偷偷拿走邻居家的灯", "晚上太黑，早点睡觉养眼睛"], "answer": 0, "explain": "匡衡借洞口透过来的光读书，办法都是自己想出来的。" },
+      { "type": "fill", "question": "凿（　）偷光", "options": ["壁", "碧", "避", "璧"], "answer": 0, "explain": "「壁」就是墙壁，他在墙上凿了个小洞。" },
+      { "type": "usage", "question": "停电了，小红搬着小板凳坐到路灯下接着看书，爸爸夸她有凿壁偷光的劲头。", "options": ["用对了", "用错了"], "answer": 0, "explain": "想办法借一点光也要读书，正是这股劲头。" }
+    ]
+  },
+  {
+    "id": "tie-chu-mo-zhen",
+    "word": "铁杵磨针",
+    "pinyin": "tiě chǔ mó zhēn",
+    "group": "renwu",
+    "origin": "《方舆胜览》",
+    "story": "唐朝大诗人李白小时候贪玩，有一天干脆逃学，跑到小河边玩水。河边坐着一位老奶奶，手里拿着一根粗粗的铁棒，在大石头上「哧哧」地磨。李白蹲下来问：「奶奶，您磨铁棒干什么呀？」老奶奶头也不抬：「把它磨成绣花针。」「这么粗，得磨到哪年哪月呀？」「我天天磨，总有一天能磨成针。」李白听了，脸一下子红了，转身跑回学堂读书去了。从此他再也不逃学，后来成了了不起的大诗人。",
+    "summary": "铁杵磨针，就是肯下笨功夫、天天坚持，再难的事也能做成。一道题不会做，每天啃一点，总能弄懂它。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"56\" cy=\"52\" r=\"22\" fill=\"#F5B841\"/><ellipse cx=\"200\" cy=\"270\" rx=\"195\" ry=\"34\" fill=\"#C8E6A0\"/><path d=\"M0 292 Q100 254 200 268 Q300 282 400 252 L400 300 L0 300 Z\" fill=\"#6FA8DC\"/><path d=\"M40 282 q10 -6 20 0 M330 268 q10 -6 20 0\" stroke=\"#BDD9F2\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><rect x=\"330\" y=\"140\" width=\"14\" height=\"70\" fill=\"#8B5A3C\"/><circle cx=\"337\" cy=\"118\" r=\"36\" fill=\"#7CA982\"/><ellipse cx=\"180\" cy=\"234\" rx=\"36\" ry=\"16\" fill=\"#9E9C9A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"150\" y=\"200\" width=\"58\" height=\"10\" rx=\"5\" fill=\"#9E9C9A\" stroke=\"#3D3A36\" stroke-width=\"3\" transform=\"rotate(-14 179 205)\"/><path d=\"M94 238 Q94 192 128 188 L146 238 Z\" fill=\"#A67AB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"134\" cy=\"176\" r=\"12\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"126\" cy=\"164\" r=\"6\" fill=\"#9E9C9A\"/><path d=\"M138 198 Q152 198 164 206\" stroke=\"#A67AB5\" stroke-width=\"9\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"254\" cy=\"178\" r=\"12\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M243 176 Q246 164 264 166 L264 173 Z\" fill=\"#3D3A36\"/><path d=\"M240 242 L268 242 L264 192 L244 192 Z\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M246 200 Q232 204 222 210\" stroke=\"#E8604C\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M196 190 l8 -8 M208 196 l10 -4\" stroke=\"#F5B841\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["铁棒磨出来的针最结实", "天天坚持下苦功，再难也能做成", "老奶奶最喜欢做针线活", "做事要挑最省力的路走"], "answer": 1, "explain": "老奶奶天天磨铁棒，李白明白了坚持的厉害。" },
+      { "type": "fill", "question": "铁（　）磨针", "options": ["杵", "楚", "储", "础"], "answer": 0, "explain": "「杵」就是那根粗粗的铁棒。" },
+      { "type": "usage", "question": "小强买了支新毛笔，写字很顺手，他夸这支笔真是铁杵磨针。", "options": ["用对了", "用错了"], "answer": 1, "explain": "铁杵磨针讲的是天天坚持的功夫，不是说笔好用，用错了。" }
+    ]
+  },
+  {
+    "id": "wan-bi-gui-zhao",
+    "word": "完璧归赵",
+    "pinyin": "wán bì guī zhào",
+    "group": "renwu",
+    "origin": "《史记》",
+    "story": "战国时，赵国得到一块宝玉，叫和氏璧。秦王说愿意拿十五座城来换。赵王犯了难：送去怕被骗，不送又怕秦国发火。大臣蔺相如说：「让我去。城不来，我就把璧完完整整带回来。」到了秦国，秦王捧着和氏璧看个没完，割城的事一句不提。蔺相如上前说：「大王，这璧有点小毛病，我指给您看。」璧一到手，他立刻退到柱子边：「您要硬抢，我就连人带璧撞碎在柱子上！」秦王怕摔了宝贝，只好放人。蔺相如终于把和氏璧完好地带回了赵国。",
+    "summary": "完璧归赵，就是把东西完完整整地还给主人。借来的书看完了，一页不折、一本不少地还回去，就是完璧归赵。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><path d=\"M60 60 Q80 48 100 60 Q120 48 140 60\" stroke=\"#F5B841\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M270 46 Q290 34 310 46 Q330 34 350 46\" stroke=\"#F5B841\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><ellipse cx=\"200\" cy=\"272\" rx=\"190\" ry=\"30\" fill=\"#F09A4A\"/><rect x=\"34\" y=\"118\" width=\"72\" height=\"112\" rx=\"10\" fill=\"#A9744F\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"28\" y=\"198\" width=\"84\" height=\"16\" rx=\"6\" fill=\"#8B5A3C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M52 198 L96 198 L88 150 L62 150 Z\" fill=\"#4A7FB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"72\" cy=\"132\" r=\"14\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M58 122 L65 108 L72 118 L79 108 L86 122 Z\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M94 162 Q110 158 120 152\" stroke=\"#4A7FB5\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><rect x=\"314\" y=\"40\" width=\"26\" height=\"198\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"306\" y=\"238\" width=\"42\" height=\"14\" fill=\"#8B5A3C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M244 240 L288 240 L282 170 L252 170 Z\" fill=\"#5E8C61\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"266\" cy=\"154\" r=\"14\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M252 150 Q256 138 280 140 L280 148 Z\" fill=\"#3D3A36\"/><path d=\"M258 180 Q272 170 286 158\" stroke=\"#5E8C61\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M268 178 Q282 168 292 156\" stroke=\"#5E8C61\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"292\" cy=\"148\" r=\"16\" fill=\"#7CA982\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"292\" cy=\"148\" r=\"6\" fill=\"#FFF7E6\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["把东西完好无损地还给主人", "把宝贝藏起来不给别人看", "一块玉摔碎了大家分", "丢了的东西再也找不回来"], "answer": 0, "explain": "蔺相如把和氏璧一点没伤地送回了赵国。" },
+      { "type": "fill", "question": "完（　）归赵", "options": ["璧", "壁", "碧", "避"], "answer": 0, "explain": "「璧」就是那块圆圆的宝玉，中间有个孔。" },
+      { "type": "usage", "question": "小芳把借来的跳绳洗干净、卷整齐还给同学，妈妈说这叫完璧归赵。", "options": ["用对了", "用错了"], "answer": 0, "explain": "东西干干净净、完完整整还回去，正是完璧归赵。" }
+    ]
+  },
+  {
+    "id": "fu-jing-qing-zui",
+    "word": "负荆请罪",
+    "pinyin": "fù jīng qǐng zuì",
+    "group": "renwu",
+    "origin": "《史记》",
+    "story": "蔺相如立了大功，职位升得比大将军廉颇还高。廉颇不服气，逢人就嚷：「他就靠一张嘴，凭什么爬到我头上？」蔺相如听了，远远瞧见廉颇就绕道躲开。手下人不明白，他说：「秦王我都不怕，会怕廉将军吗？我是怕我们俩闹翻了，秦国趁机来打呀！」这话传到廉颇耳朵里，他羞愧得脸通红。第二天，他光着上身，背上绑着荆条，跪在蔺相如家门口：「我是个粗人，您用荆条抽我吧！」蔺相如连忙扶起他。从此，两人成了同心护国的好朋友。",
+    "summary": "负荆请罪，就是知道自己错了，背着荆条上门认错。弄坏了别人的东西，马上真心道歉想法补救，就是负荆请罪。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><ellipse cx=\"200\" cy=\"272\" rx=\"190\" ry=\"30\" fill=\"#C8E6A0\"/><rect x=\"58\" y=\"122\" width=\"150\" height=\"118\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M42 126 L134 74 L226 126 Z\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"110\" y=\"168\" width=\"46\" height=\"72\" rx=\"4\" fill=\"#8B5A3C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M96 240 L128 240 L124 172 L100 172 Z\" fill=\"#5E8C61\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"112\" cy=\"158\" r=\"13\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M98 152 L126 152 L122 140 L102 140 Z\" fill=\"#4A7FB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M126 190 Q142 196 156 202\" stroke=\"#5E8C61\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M196 240 Q192 200 214 190 L238 238 Z\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M192 240 h56 q6 12 -8 12 h-40 q-12 0 -8 -12 Z\" fill=\"#4A7FB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"196\" cy=\"182\" r=\"12\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"202\" cy=\"170\" r=\"5\" fill=\"#3D3A36\"/><path d=\"M190 192 q8 8 16 4 l-3 -7 Z\" fill=\"#9E9C9A\"/><rect x=\"216\" y=\"192\" width=\"8\" height=\"46\" rx=\"4\" fill=\"#8B5A3C\" transform=\"rotate(26 220 215)\"/><rect x=\"228\" y=\"194\" width=\"8\" height=\"46\" rx=\"4\" fill=\"#8B5A3C\" transform=\"rotate(14 232 217)\"/><rect x=\"240\" y=\"196\" width=\"8\" height=\"46\" rx=\"4\" fill=\"#8B5A3C\" transform=\"rotate(2 244 219)\"/><path d=\"M48 176 q-4 -14 6 -22 M352 180 q6 -14 -2 -24\" stroke=\"#7CA982\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["背着荆条上山砍柴去", "犯了错就要狠狠挨一顿打", "知道自己错了，诚心诚意去认错", "让别人给自己赔礼道歉"], "answer": 2, "explain": "廉颇背着荆条跪在门口，是真心认错来了。" },
+      { "type": "fill", "question": "负（　）请罪", "options": ["荆", "京", "惊", "经"], "answer": 0, "explain": "「荆」就是带刺的荆条，背着它是让蔺相如责罚自己。" },
+      { "type": "usage", "question": "小雨弄丢了同学的橡皮，躲在座位上不敢吭声，还说这就叫负荆请罪。", "options": ["用对了", "用错了"], "answer": 1, "explain": "她不敢认错也没道歉，负荆请罪是主动认错，用错了。" }
+    ]
+  },
+  {
+    "id": "zhi-shang-tan-bing",
+    "word": "纸上谈兵",
+    "pinyin": "zhǐ shàng tán bīng",
+    "group": "renwu",
+    "origin": "《史记》",
+    "story": "战国时，赵国大将赵奢的儿子叫赵括，从小读遍了兵书，讲起打仗的道理，连爸爸都说不过他。可他一次仗也没打过。这一年秦军来攻，赵王让赵括换下老将，带兵上阵。赵括把兵书上的话生搬硬套，有人提醒他前面可能有埋伏，他把手一挥：「吵什么，兵书上就是这样写的！」秦军假装败退，把赵军引进包围圈，又断了粮草。赵军被困了四十多天，士兵们饿得站都站不稳，最后吃了大败仗。从此大家说，赵括只会纸上谈兵。",
+    "summary": "纸上谈兵，就是道理讲得头头是道，一到真做就不行了。光背口诀不下水，永远学不会游泳。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><ellipse cx=\"200\" cy=\"272\" rx=\"190\" ry=\"30\" fill=\"#C8E6A0\"/><rect x=\"54\" y=\"76\" width=\"6\" height=\"164\" fill=\"#8B5A3C\"/><path d=\"M60 80 L132 92 L60 106 Z\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"150\" y=\"198\" width=\"140\" height=\"12\" rx=\"4\" fill=\"#A9744F\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"162\" y=\"210\" width=\"10\" height=\"44\" fill=\"#8B5A3C\"/><rect x=\"268\" y=\"210\" width=\"10\" height=\"44\" fill=\"#8B5A3C\"/><rect x=\"170\" y=\"158\" width=\"100\" height=\"42\" rx=\"4\" fill=\"#FFFFFF\" stroke=\"#3D3A36\" stroke-width=\"3\" transform=\"rotate(-6 220 179)\"/><rect x=\"160\" y=\"156\" width=\"12\" height=\"46\" rx=\"6\" fill=\"#8B5A3C\" stroke=\"#3D3A36\" stroke-width=\"3\" transform=\"rotate(-6 166 179)\"/><rect x=\"268\" y=\"156\" width=\"12\" height=\"46\" rx=\"6\" fill=\"#8B5A3C\" stroke=\"#3D3A36\" stroke-width=\"3\" transform=\"rotate(-6 274 179)\"/><path d=\"M188 172 h58 M188 182 h44\" stroke=\"#9E9C9A\" stroke-width=\"3\"/><circle cx=\"198\" cy=\"192\" r=\"4\" fill=\"#E8604C\"/><circle cx=\"214\" cy=\"194\" r=\"4\" fill=\"#E8604C\"/><circle cx=\"242\" cy=\"190\" r=\"4\" fill=\"#4A7FB5\"/><circle cx=\"310\" cy=\"134\" r=\"13\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M296 132 Q300 116 324 118 L324 130 Z\" fill=\"#9E9C9A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M294 240 L328 240 L322 172 L300 172 Z\" fill=\"#4A7FB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M302 184 Q288 188 274 194\" stroke=\"#4A7FB5\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M318 186 Q326 200 324 214\" stroke=\"#4A7FB5\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["在纸上画小士兵排队玩", "字写得又快又漂亮", "最爱听打仗故事的人", "只会嘴上空讲道理，真做就不行"], "answer": 3, "explain": "赵括书背得熟，真上场打仗就输了。" },
+      { "type": "fill", "question": "纸上（　）兵", "options": ["谈", "坛", "弹", "谭"], "answer": 0, "explain": "「谈」就是空口讲，光讲不练。" },
+      { "type": "usage", "question": "小力把骑车的要领背得可熟了，可一次车都没骑过，爸爸说他这是纸上谈兵。", "options": ["用对了", "用错了"], "answer": 0, "explain": "道理背得再熟，不上车练还是不会骑，正是纸上谈兵。" }
+    ]
+  },
+  {
+    "id": "zhi-lu-wei-ma",
+    "word": "指鹿为马",
+    "pinyin": "zhǐ lù wéi mǎ",
+    "group": "renwu",
+    "origin": "《史记》",
+    "story": "秦朝有个丞相叫赵高，权力大得吓人，他想试试大臣们到底听谁的。一天上朝，他牵来一头鹿，对皇帝说：「陛下，臣献上一匹好马。」皇帝愣住了：「丞相，这头上长角、身上有斑点的，明明是鹿呀！」赵高转过身问大臣们：「你们说，这是马还是鹿？」大臣们吓坏了：说鹿，怕得罪赵高；说马，又明明是睁眼说瞎话。好些人低着头小声说：「是……是马。」说真话的人，后来都被赵高找借口治了罪。指着鹿硬说是马，说的就是这种颠倒黑白的事。",
+    "summary": "指鹿为马，就是明知道不对，还故意把黑说成白。明明没写作业，偏说写完了——这就是指鹿为马。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><rect x=\"30\" y=\"66\" width=\"340\" height=\"84\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"46\" y=\"66\" width=\"20\" height=\"146\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"334\" y=\"66\" width=\"20\" height=\"146\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><ellipse cx=\"200\" cy=\"268\" rx=\"190\" ry=\"34\" fill=\"#C8E6A0\"/><ellipse cx=\"222\" cy=\"198\" rx=\"44\" ry=\"24\" fill=\"#F09A4A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"196\" y=\"218\" width=\"8\" height=\"30\" rx=\"3\" fill=\"#8B5A3C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"214\" y=\"220\" width=\"8\" height=\"28\" rx=\"3\" fill=\"#8B5A3C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"234\" y=\"220\" width=\"8\" height=\"28\" rx=\"3\" fill=\"#8B5A3C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"250\" y=\"218\" width=\"8\" height=\"30\" rx=\"3\" fill=\"#8B5A3C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M184 188 Q176 164 170 150 L188 146 Q192 168 202 184 Z\" fill=\"#F09A4A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><ellipse cx=\"172\" cy=\"146\" rx=\"15\" ry=\"11\" fill=\"#F09A4A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M176 134 l4 -14 l8 8 Z\" fill=\"#F09A4A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M164 138 Q158 118 146 112 M164 138 Q156 124 162 108\" stroke=\"#8B5A3C\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"166\" cy=\"146\" r=\"2.5\" fill=\"#3D3A36\"/><circle cx=\"212\" cy=\"192\" r=\"4\" fill=\"#F5B8B8\"/><circle cx=\"234\" cy=\"200\" r=\"4\" fill=\"#F5B8B8\"/><circle cx=\"248\" cy=\"190\" r=\"4\" fill=\"#F5B8B8\"/><path d=\"M264 190 q12 -6 8 -16 q-8 4 -10 10 Z\" fill=\"#F5B8B8\"/><path d=\"M158 156 Q132 194 150 238\" stroke=\"#8B5A3C\" stroke-width=\"3\" fill=\"none\"/><path d=\"M84 240 L124 240 L118 176 L92 176 Z\" fill=\"#A67AB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"104\" cy=\"160\" r=\"13\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"88\" y=\"144\" width=\"32\" height=\"10\" rx=\"3\" fill=\"#3D3A36\"/><path d=\"M120 188 Q136 190 150 192\" stroke=\"#A67AB5\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M300 240 L338 240 L332 208 L306 208 Z\" fill=\"#6FA8DC\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"319\" cy=\"196\" r=\"10\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"308\" y=\"184\" width=\"22\" height=\"8\" rx=\"2\" fill=\"#3D3A36\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["眼神不好，鹿和马分不清", "故意把错的硬说成对的，颠倒黑白", "喜欢牵着动物去散步", "先送一头鹿再送一匹马"], "answer": 1, "explain": "赵高心里清楚那是鹿，偏要大家说成马。" },
+      { "type": "fill", "question": "指（　）为马", "options": ["鹿", "路", "录", "露"], "answer": 0, "explain": "「鹿」就是头长枝角的小鹿，他硬说是马。" },
+      { "type": "usage", "question": "妹妹年龄小，指着图画上的斑马喊小马，大家都笑她指鹿为马。", "options": ["用对了", "用错了"], "answer": 1, "explain": "妹妹是真的认错了，不是故意颠倒黑白，用错了。" }
+    ]
+  },
+  {
+    "id": "cao-chuan-jie-jian",
+    "word": "草船借箭",
+    "pinyin": "cǎo chuán jiè jiàn",
+    "group": "renwu",
+    "origin": "《三国演义》",
+    "story": "三国的时候，周瑜想为难诸葛亮，要他十天造出十万支箭。诸葛亮摇摇羽毛扇，笑着说：「只要三天。」头两天，他一点儿动静也没有。第三天半夜，江上起了好大的雾。诸葛亮带着二十条小船出发了，船上立满了扎好的草人。船队悄悄靠近曹军大营，他叫士兵们使劲敲鼓呐喊。曹操怕雾里有埋伏，就下令一个劲儿放箭。箭像雨点一样飞过来，密密麻麻全扎在草人身上。天快亮时，诸葛亮带着十万支箭回营，周瑜叹气说：「我真是比不上他！」",
+    "summary": "草船借箭，就是用巧妙的办法，借对方的力量办成自己的事。做手工缺彩纸，把旧挂历纸剪一剪，也能做出漂亮的花边。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"326\" cy=\"48\" r=\"20\" fill=\"#F5B841\"/><ellipse cx=\"70\" cy=\"66\" rx=\"36\" ry=\"12\" fill=\"#FFFFFF\"/><ellipse cx=\"160\" cy=\"44\" rx=\"26\" ry=\"10\" fill=\"#FFFFFF\"/><rect x=\"0\" y=\"150\" width=\"400\" height=\"150\" fill=\"#6FA8DC\"/><path d=\"M30 214 q12 -8 24 0 q12 8 24 0 M300 224 q12 -8 24 0 q12 8 24 0\" stroke=\"#BDD9F2\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><ellipse cx=\"350\" cy=\"176\" rx=\"44\" ry=\"14\" fill=\"#FFFFFF\"/><ellipse cx=\"56\" cy=\"186\" rx=\"38\" ry=\"12\" fill=\"#FFFFFF\"/><path d=\"M352 96 L312 108 M374 128 L334 138 M362 70 L326 84\" stroke=\"#3D3A36\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M76 208 L304 208 Q318 234 292 240 L92 240 Q62 234 76 208 Z\" fill=\"#8B5A3C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"72\" y=\"202\" width=\"236\" height=\"10\" rx=\"5\" fill=\"#A9744F\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"116\" y=\"150\" width=\"26\" height=\"54\" rx=\"13\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"129\" cy=\"140\" r=\"10\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M117 136 L141 136 L129 124 Z\" fill=\"#A9744F\"/><path d=\"M114 158 L92 146 M132 150 L118 130 M148 154 L156 134\" stroke=\"#3D3A36\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"188\" y=\"150\" width=\"26\" height=\"54\" rx=\"13\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"201\" cy=\"140\" r=\"10\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M189 136 L213 136 L201 124 Z\" fill=\"#A9744F\"/><path d=\"M186 156 L164 146 M204 148 L198 128 M218 152 L228 132\" stroke=\"#3D3A36\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"260\" y=\"150\" width=\"26\" height=\"54\" rx=\"13\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"273\" cy=\"140\" r=\"10\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M261 136 L285 136 L273 124 Z\" fill=\"#A9744F\"/><path d=\"M258 154 L238 144 M276 148 L284 128\" stroke=\"#3D3A36\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["草编的小船最轻跑得快", "向朋友借东西要按时归还", "用巧办法借对方的力量，办成自己的事", "坐船去河边割草喂牛"], "answer": 2, "explain": "诸葛亮借曹军射来的箭，凑齐了自己要造的箭。" },
+      { "type": "fill", "question": "草（　）借箭", "options": ["船", "穿", "川", "传"], "answer": 0, "explain": "「船」就是小船，船上立满了草人。" },
+      { "type": "usage", "question": "运动会班里缺队旗，小林把旧床单绑在竹竿上做成一面大旗，老师夸他这招像草船借箭。", "options": ["用对了", "用错了"], "answer": 0, "explain": "动脑筋借现成的东西办成事，正像草船借箭。" }
+    ]
+  },
+  {
+    "id": "bei-shui-yi-zhan",
+    "word": "背水一战",
+    "pinyin": "bèi shuǐ yī zhàn",
+    "group": "renwu",
+    "origin": "《史记》",
+    "story": "汉朝大将军韩信带兵去打赵国。赵军人多，韩信的人少，他却把队伍背靠着一条大河摆开阵势。士兵们嘀咕：「背后是河，连退路都没有，这仗怎么打？」韩信笑道：「没有退路，才人人往前冲呢！」战鼓一响，汉军士兵心里都明白：身后就是河水，后退就得掉进河里，只能往前冲！大家一个顶十个，越战越猛。赵军从没见过这么拼命往前冲的队伍，吓得节节后退，最后四散逃跑了。韩信靠着背水一战，用少数的兵打赢了多的兵。",
+    "summary": "背水一战，就是到了没有退路的时候，拿出全部力气拼一把。跑步最后一圈，咬紧牙用尽力气冲刺，就像背水一战。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"342\" cy=\"36\" r=\"18\" fill=\"#F5B841\"/><rect x=\"0\" y=\"58\" width=\"400\" height=\"84\" fill=\"#6FA8DC\"/><path d=\"M60 92 q12 -8 24 0 q12 8 24 0 M260 116 q12 -8 24 0 q12 8 24 0\" stroke=\"#BDD9F2\" stroke-width=\"4\" fill=\"none\" stroke-linecap=\"round\"/><rect x=\"0\" y=\"140\" width=\"400\" height=\"12\" fill=\"#7CA982\"/><ellipse cx=\"200\" cy=\"256\" rx=\"200\" ry=\"54\" fill=\"#C8E6A0\"/><rect x=\"352\" y=\"112\" width=\"6\" height=\"132\" fill=\"#8B5A3C\"/><path d=\"M358 116 Q392 124 384 146 L358 142 Z\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"118\" cy=\"164\" r=\"11\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M107 162 Q110 148 130 150 L130 160 Z\" fill=\"#9E9C9A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M104 236 Q108 196 118 180 L138 186 Q130 206 130 236 Z\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M112 234 Q100 242 92 252 M130 234 Q136 246 130 254\" stroke=\"#8B5A3C\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M116 190 Q110 182 102 178\" stroke=\"#E8604C\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M128 196 L62 168\" stroke=\"#3D3A36\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M62 168 L78 160 L76 176 Z\" fill=\"#9E9C9A\"/><circle cx=\"204\" cy=\"176\" r=\"11\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M193 174 Q196 160 216 162 L216 172 Z\" fill=\"#9E9C9A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M190 240 Q194 204 204 190 L224 196 Q216 214 216 240 Z\" fill=\"#4A7FB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M198 238 Q186 246 178 254 M216 238 Q222 248 216 254\" stroke=\"#8B5A3C\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M202 198 Q196 190 188 186\" stroke=\"#4A7FB5\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M214 204 L150 180\" stroke=\"#3D3A36\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M150 180 L166 172 L164 188 Z\" fill=\"#9E9C9A\"/><circle cx=\"288\" cy=\"166\" r=\"11\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M277 164 Q280 150 300 152 L300 162 Z\" fill=\"#9E9C9A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M274 236 Q278 198 288 182 L308 188 Q300 208 300 236 Z\" fill=\"#5E8C61\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M282 234 Q270 242 262 252 M300 234 Q306 246 300 254\" stroke=\"#8B5A3C\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M286 192 Q280 184 272 180\" stroke=\"#5E8C61\" stroke-width=\"8\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M298 198 L232 172\" stroke=\"#3D3A36\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M232 172 L248 164 L246 180 Z\" fill=\"#9E9C9A\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["没有退路了，就拿出全部力气拼", "背着水壶走路最省力", "打仗前先找好逃跑的路", "心情不好去河边散步"], "answer": 0, "explain": "背后是河退不了，士兵们只能拼命往前冲。" },
+      { "type": "fill", "question": "背（　）一战", "options": ["水", "永", "冰", "泳"], "answer": 0, "explain": "「水」就是背后的那条大河。" },
+      { "type": "usage", "question": "弟弟背着小水壶去春游，一路蹦蹦跳跳，他说自己这是背水一战。", "options": ["用对了", "用错了"], "answer": 1, "explain": "背水一战是说没有退路就拼命，跟背水壶没关系，用错了。" }
+    ]
+  }
+]

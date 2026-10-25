@@ -1,0 +1,42 @@
+// 星星流水账 + 装扮目录（服务端唯一事实源，前端 store 有一份同步目录）
+const db = require('./db');
+
+// 槽位：hat / glasses / scarf / head（蝴蝶结）/ scene（场景件，三期）
+const OUTFITS = [
+  { id: 'straw-hat', slot: 'hat', name: '草帽', price: 5 },
+  { id: 'round-glasses', slot: 'glasses', name: '圆眼镜', price: 5 },
+  { id: 'red-scarf', slot: 'scarf', name: '红围巾', price: 5 },
+  { id: 'bow', slot: 'head', name: '蝴蝶结', price: 6 },
+  { id: 'tiger-hat', slot: 'hat', name: '虎头帽', price: 8 },
+  { id: 'sunglasses', slot: 'glasses', name: '墨镜', price: 8 },
+  { id: 'rainbow-scarf', slot: 'scarf', name: '彩虹围巾', price: 8 },
+  { id: 'magic-hat', slot: 'hat', name: '魔法帽', price: 10 },
+  { id: 'dr-hat', slot: 'hat', name: '博士帽', price: 12 },
+  { id: 'crown', slot: 'hat', name: '金皇冠', price: 15 },
+  // 三期场景件：换首页「学习乐园」的背景画面，一次生效一件
+  { id: 'scene-starry', slot: 'scene', name: '星空', price: 12 },
+  { id: 'scene-meadow', slot: 'scene', name: '草地', price: 12 },
+  { id: 'scene-undersea', slot: 'scene', name: '海底', price: 15 },
+  { id: 'scene-forest', slot: 'scene', name: '森林', price: 15 },
+];
+
+function wallet(kidId) {
+  const r = db.prepare('SELECT COALESCE(SUM(delta), 0) AS w FROM star_events WHERE kid_id = ?').get(kidId);
+  return r.w;
+}
+
+function addEvent(kidId, kind, delta, ref) {
+  db.prepare('INSERT INTO star_events (kid_id, kind, delta, ref, created_at) VALUES (?, ?, ?, ?, ?)')
+    .run(kidId, kind, delta, ref, new Date().toISOString());
+}
+
+function ownedOutfits(kidId) {
+  return db.prepare('SELECT item_id FROM outfits WHERE kid_id = ?').all(kidId).map((r) => r.item_id);
+}
+
+function equippedOf(kidId) {
+  const kid = db.prepare('SELECT equipped FROM kids WHERE id = ?').get(kidId);
+  try { return JSON.parse(kid?.equipped || '{}'); } catch { return {}; }
+}
+
+module.exports = { OUTFITS, wallet, addEvent, ownedOutfits, equippedOf };

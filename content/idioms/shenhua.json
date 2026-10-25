@@ -1,0 +1,152 @@
+[
+  {
+    "id": "yu-gong-yi-shan",
+    "word": "愚公移山",
+    "pinyin": "yú gōng yí shān",
+    "group": "shenhua",
+    "origin": "《列子·汤问》",
+    "story": "太行、王屋两座大山堵在愚公家门口，出门买袋盐都要绕好远的路。九十岁的愚公把子孙们叫到一起，说：「咱们把这两座山挖平，好不好？」第二天，全家人抡起锄头挖土，一筐一筐挑到渤海边倒掉。河边有个老头笑话他：「都九十岁啦，哪天才能搬得完？」愚公擦擦汗：「我死了有儿子，儿子还有孙子，山又不会再长高，怕什么？」天帝听了很感动，派两位大力神连夜把山背走了。",
+    "summary": "愚公移山，就是认准了的事一直干下去，再大的困难也不怕。学骑车摔了好几跤，爬起来接着练——这就是愚公移山的劲头。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"342\" cy=\"50\" r=\"24\" fill=\"#F5B841\"/><path d=\"M0 250 L110 84 L225 250 Z\" fill=\"#5E8C61\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M110 84 L132 126 L112 116 L96 130 Z\" fill=\"#FFFFFF\"/><path d=\"M170 250 L285 118 L400 250 Z\" fill=\"#7CA982\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M285 118 L306 154 L288 146 L274 158 Z\" fill=\"#FFFFFF\"/><ellipse cx=\"200\" cy=\"272\" rx=\"195\" ry=\"32\" fill=\"#C8E6A0\"/><circle cx=\"212\" cy=\"152\" r=\"15\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M197 152 A15 15 0 0 1 227 152 Z\" fill=\"#FFFFFF\"/><circle cx=\"207\" cy=\"151\" r=\"2.2\" fill=\"#3D3A36\"/><path d=\"M196 168 L228 168 L236 226 L188 226 Z\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"196\" y=\"226\" width=\"12\" height=\"20\" fill=\"#8B5A3C\"/><rect x=\"216\" y=\"226\" width=\"12\" height=\"20\" fill=\"#8B5A3C\"/><path d=\"M226 180 L246 172\" stroke=\"#F8D8B8\" stroke-width=\"9\" stroke-linecap=\"round\"/><path d=\"M244 170 L262 236\" stroke=\"#A9744F\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M250 230 L278 226 L282 246 L254 250 Z\" fill=\"#9E9C9A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M96 226 L134 226 L128 252 L102 252 Z\" fill=\"#A9744F\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M100 226 Q115 212 130 226 Z\" fill=\"#9E9C9A\"/><circle cx=\"150\" cy=\"204\" r=\"4\" fill=\"#9E9C9A\"/><circle cx=\"163\" cy=\"191\" r=\"3\" fill=\"#A9744F\"/><circle cx=\"322\" cy=\"206\" r=\"10\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M312 218 L332 218 L336 252 L308 252 Z\" fill=\"#6FA8DC\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"312\" y=\"252\" width=\"9\" height=\"14\" fill=\"#8B5A3C\"/><rect x=\"321\" y=\"252\" width=\"9\" height=\"14\" fill=\"#8B5A3C\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["认准了的事就一直干下去，再难也不怕", "把家搬到离山很远的地方", "一个力气特别大的巨人", "在山顶上种庄稼"], "answer": 0, "explain": "愚公带着全家天天挖山，连天帝都被感动啦。" },
+      { "type": "fill", "question": "愚（　）移山", "options": ["工", "功", "公", "攻"], "answer": 2, "explain": "「公」是对老爷爷的称呼，愚公就是那位挖山的老爷爷。" },
+      { "type": "usage", "question": "哥哥学游泳呛了好几口水，还是天天去练，教练夸他有股愚公移山的劲儿。", "options": ["用对了", "用错了"], "answer": 0, "explain": "呛了水还天天练，认准了不放弃，正是愚公移山。" }
+    ]
+  },
+  {
+    "id": "jing-wei-tian-hai",
+    "word": "精卫填海",
+    "pinyin": "jīng wèi tián hǎi",
+    "group": "shenhua",
+    "origin": "《山海经》",
+    "story": "炎帝有个小女儿，名叫女娃。一天她到东海边玩，海上忽然刮起大风，一个大浪把她卷进海里，她再也没能回家。女娃变成一只小花鸟，花脑袋、白嘴壳，人们叫她精卫。精卫不甘心，天天从西山衔来小石子和小树枝，「扑通、扑通」丢进大海。大海哈哈笑：「小鸟儿，你扔一百万年也填不平我！」精卫回答：「我扔一千年、一万年，总有一天把你填平！」到今天，她还在大海上飞来飞去呢。",
+    "summary": "精卫填海，就是个子小志气大，认定的事一直干到底。弹琴老弹错那一段，就一遍一遍弹到会，这就是精卫填海。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"60\" cy=\"48\" r=\"20\" fill=\"#F5B841\"/><path d=\"M-8 196 Q40 148 92 196 Z\" fill=\"#7CA982\"/><path d=\"M0 192 Q100 178 200 192 T400 192 L400 300 L0 300 Z\" fill=\"#6FA8DC\"/><path d=\"M0 236 Q100 224 200 236 T400 236 L400 300 L0 300 Z\" fill=\"#4A7FB5\"/><path d=\"M70 214 h34 M130 222 h30 M230 216 h34 M300 228 h30\" stroke=\"#BDD9F2\" stroke-width=\"5\" stroke-linecap=\"round\"/><ellipse cx=\"205\" cy=\"122\" rx=\"27\" ry=\"17\" fill=\"#FFFFFF\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"176\" cy=\"112\" r=\"13\" fill=\"#FFFFFF\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M163 110 L150 114 L163 119 Z\" fill=\"#FFFFFF\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M166 104 Q172 96 180 100 Q176 106 168 108 Z\" fill=\"#E8604C\"/><circle cx=\"172\" cy=\"110\" r=\"2.4\" fill=\"#3D3A36\"/><path d=\"M198 108 Q210 78 236 82 Q226 102 210 112 Z\" fill=\"#FFFFFF\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M228 128 L248 122 M228 134 L248 132\" stroke=\"#3D3A36\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"252\" cy=\"168\" r=\"5\" fill=\"#9E9C9A\"/><circle cx=\"268\" cy=\"188\" r=\"4\" fill=\"#A9744F\"/><circle cx=\"240\" cy=\"196\" r=\"4\" fill=\"#9E9C9A\"/><path d=\"M262 172 L276 192\" stroke=\"#A9744F\" stroke-width=\"4\" stroke-linecap=\"round\"/><ellipse cx=\"262\" cy=\"240\" rx=\"30\" ry=\"8\" fill=\"none\" stroke=\"#BDD9F2\" stroke-width=\"4\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["把海里的小鱼全部捞上岸", "小鸟个头小志气大，一直干不停", "海边的风浪特别大", "一种会潜水的小鸟"], "answer": 1, "explain": "小鸟精卫天天衔石子丢进大海，一点儿也不肯停。" },
+      { "type": "fill", "question": "精卫填（　）", "options": ["悔", "梅", "侮", "海"], "answer": 3, "explain": "「海」就是大海的海，精卫要把大海填平。" },
+      { "type": "usage", "question": "运动会上小胖跑了个最后一名，同学们安慰他说这是精卫填海。", "options": ["用对了", "用错了"], "answer": 1, "explain": "精卫填海是说坚持干到底，不是跑得慢，用错了。" }
+    ]
+  },
+  {
+    "id": "kua-fu-zhui-ri",
+    "word": "夸父追日",
+    "pinyin": "kuā fù zhuī rì",
+    "group": "shenhua",
+    "origin": "《山海经》",
+    "story": "很久很久以前，有个巨人叫夸父。他看见太阳每天从东边升起、西边落下，心想：「太阳落到哪儿去了？我要追上它看看！」夸父迈开大步追呀追，渴了就俯下身子，把黄河的水喝掉一大半，又把渭河喝干。眼看就要追上太阳了，夸父又渴又累，一步也跑不动了。倒下之前，他使出最后的力气，把手杖用力扔了出去。手杖落地的地方，长成一大片桃林，结满又甜又多汁的桃子，正好给后来赶路的人解渴。",
+    "summary": "夸父追日，就是立下大大的目标，拼尽全力去追。想读完一整套百科全书，就从每天十页追起。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"322\" cy=\"72\" r=\"36\" fill=\"#F5B841\"/><path d=\"M322 18 L322 32 M268 72 L282 72 M362 72 L376 72 M284 34 L294 44 M360 34 L350 44\" stroke=\"#F5B841\" stroke-width=\"6\" stroke-linecap=\"round\"/><path d=\"M20 250 L60 210 L100 250 Z\" fill=\"#7CA982\"/><path d=\"M330 250 L360 222 L390 250 Z\" fill=\"#7CA982\"/><ellipse cx=\"200\" cy=\"276\" rx=\"200\" ry=\"30\" fill=\"#C8E6A0\"/><circle cx=\"150\" cy=\"86\" r=\"24\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M126 82 A24 24 0 0 1 174 82 Z\" fill=\"#3D3A36\"/><circle cx=\"158\" cy=\"88\" r=\"2.6\" fill=\"#3D3A36\"/><path d=\"M144 97 Q150 101 156 97\" stroke=\"#3D3A36\" stroke-width=\"3\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M118 112 L182 112 L196 208 L104 208 Z\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M128 206 L112 248\" stroke=\"#E8604C\" stroke-width=\"16\" stroke-linecap=\"round\"/><path d=\"M172 206 L188 246\" stroke=\"#E8604C\" stroke-width=\"16\" stroke-linecap=\"round\"/><circle cx=\"106\" cy=\"252\" r=\"8\" fill=\"#F8D8B8\"/><circle cx=\"192\" cy=\"250\" r=\"8\" fill=\"#F8D8B8\"/><path d=\"M184 128 L238 158\" stroke=\"#F8D8B8\" stroke-width=\"12\" stroke-linecap=\"round\"/><circle cx=\"242\" cy=\"160\" r=\"9\" fill=\"#F8D8B8\"/><path d=\"M242 160 L214 74\" stroke=\"#A9744F\" stroke-width=\"9\" stroke-linecap=\"round\"/><path d=\"M118 128 L78 152\" stroke=\"#F8D8B8\" stroke-width=\"12\" stroke-linecap=\"round\"/><path d=\"M40 120 h34 M30 150 h30 M46 182 h30\" stroke=\"#BDD9F2\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"182\" cy=\"72\" r=\"4\" fill=\"#BDD9F2\"/><circle cx=\"190\" cy=\"80\" r=\"3\" fill=\"#BDD9F2\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["和太阳捉迷藏", "害怕太阳躲进屋里", "立下大目标，拼尽全力去追赶", "追着爸爸要买玩具"], "answer": 2, "explain": "巨人夸父迈开大步，一直追到太阳落下的地方。" },
+      { "type": "fill", "question": "（　）父追日", "options": ["夸", "垮", "跨", "挎"], "answer": 0, "explain": "「夸」是夸奖的夸，巨人的名字叫夸父。" },
+      { "type": "usage", "question": "小军梦想当飞行员，从现在起用心读书、锻炼身体，爸爸说他真有夸父追日的劲头。", "options": ["用对了", "用错了"], "answer": 0, "explain": "朝着大目标尽全力追赶，正是夸父追日。" }
+    ]
+  },
+  {
+    "id": "kai-tian-pi-di",
+    "word": "开天辟地",
+    "pinyin": "kāi tiān pì dì",
+    "group": "shenhua",
+    "origin": "《三五历纪》",
+    "story": "很久以前，天和地挤在一个大「鸡蛋」里，乱成一团。巨神盘古就在鸡蛋里睡觉，一睡睡了一万八千年。他醒来什么也看不见，就抡起一把大斧，用力一劈——「咔嚓！」轻的、亮的东西飘上去，成了天；重的、暗的东西沉下去，成了地。盘古怕天地再合上，就头顶天、脚踩地，站了很久很久。后来天地稳稳当当，盘古累了，躺下来歇一歇。他的呼吸变成风和云，左眼变成太阳，右眼变成月亮，身体变成大山，血液变成江河。",
+    "summary": "开天辟地，就是干出从没有人干过的大事，开出一番新天地。学校办起第一个机器人社团，同学们都说这是开天辟地。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><path d=\"M0 0 H400 V138 L340 154 L276 138 L200 158 L124 142 L60 156 L0 142 Z\" fill=\"#BDD9F2\"/><circle cx=\"70\" cy=\"56\" r=\"24\" fill=\"#F5B841\"/><circle cx=\"336\" cy=\"52\" r=\"20\" fill=\"#FFFFFF\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"150\" cy=\"70\" r=\"4\" fill=\"#FFFFFF\"/><circle cx=\"256\" cy=\"88\" r=\"3\" fill=\"#FFFFFF\"/><ellipse cx=\"200\" cy=\"266\" rx=\"205\" ry=\"38\" fill=\"#7CA982\"/><path d=\"M60 262 L96 224 L132 262 Z\" fill=\"#5E8C61\"/><path d=\"M268 262 L300 230 L332 262 Z\" fill=\"#5E8C61\"/><circle cx=\"200\" cy=\"118\" r=\"18\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M182 116 A18 18 0 0 1 218 116 Z\" fill=\"#3D3A36\"/><circle cx=\"206\" cy=\"120\" r=\"2.4\" fill=\"#3D3A36\"/><path d=\"M178 138 L222 138 L234 224 L166 224 Z\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M182 222 L176 252\" stroke=\"#E8604C\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"M218 222 L224 252\" stroke=\"#E8604C\" stroke-width=\"14\" stroke-linecap=\"round\"/><path d=\"M180 148 L152 106\" stroke=\"#F8D8B8\" stroke-width=\"11\" stroke-linecap=\"round\"/><path d=\"M220 148 L248 106\" stroke=\"#F8D8B8\" stroke-width=\"11\" stroke-linecap=\"round\"/><circle cx=\"150\" cy=\"100\" r=\"8\" fill=\"#F8D8B8\"/><circle cx=\"250\" cy=\"100\" r=\"8\" fill=\"#F8D8B8\"/><path d=\"M196 66 L192 54 M208 66 L212 54 M200 62 L200 48\" stroke=\"#F5B841\" stroke-width=\"5\" stroke-linecap=\"round\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["把鸡蛋敲开做早饭", "把院子劈成两半", "躲进黑黑的山洞里", "干出从来没有人干过的大事"], "answer": 3, "explain": "盘古第一个把天和地分开，这是从没有过的大事。" },
+      { "type": "fill", "question": "开天（　）地", "options": ["劈", "避", "辟", "僻"], "answer": 2, "explain": "「辟」是打开、开创的意思，跟躲避的「避」不一样。" },
+      { "type": "usage", "question": "弟弟把玩具箱翻得乱七八糟，妈妈生气地说：「你这是开天辟地呀！」", "options": ["用对了", "用错了"], "answer": 1, "explain": "开天辟地是开创全新的大事，不是把东西翻乱，用错了。" }
+    ]
+  },
+  {
+    "id": "nv-wa-bu-tian",
+    "word": "女娲补天",
+    "pinyin": "nǚ wā bǔ tiān",
+    "group": "shenhua",
+    "origin": "《淮南子》",
+    "story": "一天，天上「轰隆」一声巨响，天边塌下来一大块，露出一个黑黑的大窟窿。大雨从窟窿里哗哗往下倒，大火在森林里烧，大家都吓坏了。女娲娘娘心疼极了，说：「别怕，我来把天补上！」她捡来许多五颜六色的石头，架起大火炼了九天九夜，炼成彩色石浆，一点一点把窟窿补得严严实实。雨停了，火灭了，天边留下一片五彩的云霞。人们抬头就说：「看，那是女娲补过天的地方！」",
+    "summary": "女娲补天，就是出了大麻烦不逃走，动手把事情修好。图书角被翻乱了，主动把它整理好，就是小小的女娲补天。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><rect x=\"0\" y=\"0\" width=\"400\" height=\"130\" fill=\"#BDD9F2\"/><ellipse cx=\"210\" cy=\"62\" rx=\"46\" ry=\"26\" fill=\"#3D3A36\"/><path d=\"M180 92 L176 118 M210 96 L210 124 M240 92 L244 118\" stroke=\"#6FA8DC\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M164 62 A46 26 0 0 1 256 62\" stroke=\"#E8604C\" stroke-width=\"10\" fill=\"none\"/><path d=\"M174 64 A36 20 0 0 1 246 64\" stroke=\"#F5B841\" stroke-width=\"10\" fill=\"none\"/><path d=\"M184 66 A26 14 0 0 1 236 66\" stroke=\"#7CA982\" stroke-width=\"9\" fill=\"none\"/><ellipse cx=\"200\" cy=\"272\" rx=\"195\" ry=\"32\" fill=\"#C8E6A0\"/><path d=\"M184 152 Q178 176 184 188 L216 188 Q222 176 216 152 Z\" fill=\"#3D3A36\"/><circle cx=\"200\" cy=\"158\" r=\"16\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"194\" cy=\"156\" r=\"2.2\" fill=\"#3D3A36\"/><circle cx=\"206\" cy=\"156\" r=\"2.2\" fill=\"#3D3A36\"/><path d=\"M186 174 L214 174 L230 244 L170 244 Z\" fill=\"#F09A4A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"182\" y=\"244\" width=\"10\" height=\"14\" fill=\"#8B5A3C\"/><rect x=\"208\" y=\"244\" width=\"10\" height=\"14\" fill=\"#8B5A3C\"/><path d=\"M188 182 L192 150\" stroke=\"#F8D8B8\" stroke-width=\"9\" stroke-linecap=\"round\"/><path d=\"M212 182 L208 150\" stroke=\"#F8D8B8\" stroke-width=\"9\" stroke-linecap=\"round\"/><circle cx=\"200\" cy=\"132\" r=\"15\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"188\" cy=\"124\" r=\"6\" fill=\"#F5B841\"/><circle cx=\"212\" cy=\"124\" r=\"6\" fill=\"#7CA982\"/><circle cx=\"200\" cy=\"116\" r=\"6\" fill=\"#A67AB5\"/><circle cx=\"200\" cy=\"140\" r=\"5\" fill=\"#6FA8DC\"/><path d=\"M226 118 L230 108 M236 122 L246 118\" stroke=\"#F5B841\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["出了大问题不逃跑，动手把它修好", "把天上的白云摘下来做棉被", "用彩笔在墙上画满彩虹", "下雨天躲在家里不出门"], "answer": 0, "explain": "天破了大窟窿，女娲炼出彩石，把天补得严严实实。" },
+      { "type": "fill", "question": "女娲补（　）", "options": ["夫", "天", "大", "失"], "answer": 1, "explain": "「天」就是天空的天，女娲补的是天上的大窟窿。" },
+      { "type": "usage", "question": "教室的窗户被大风吹破了，老师和同学们一起想办法装好玻璃，真有点女娲补天的样子。", "options": ["用对了", "用错了"], "answer": 0, "explain": "东西坏了不慌，动手把它修好，正是女娲补天。" }
+    ]
+  },
+  {
+    "id": "hou-yi-she-ri",
+    "word": "后羿射日",
+    "pinyin": "hòu yì shè rì",
+    "group": "shenhua",
+    "origin": "《淮南子》",
+    "story": "很久以前，天上一下子跳出了十个太阳！晒得河水干了，庄稼枯了，土地裂开大口子，大家热得直喘气。神箭手后羿看了心里着急：「再晒下去可不得了！」他背起大弓，爬上高山，搭箭拉弦，「嗖」地一声射向太阳。一箭、两箭……九个太阳一个接一个掉了下来，天上只剩一个。后羿对最后一个太阳说：「你好好待在天上，按时升起、按时落下，给大家送光和热。」从此大地又凉快了，庄稼绿油油的。",
+    "summary": "后羿射日，就是本领高强，帮大家解决大麻烦。大雪堵住校门，铲雪车一来开出一条路，真有点后羿射日的气概。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"64\" cy=\"56\" r=\"30\" fill=\"#F5B841\"/><path d=\"M64 12 L64 24 M20 56 L32 56 M96 56 L108 56 M30 22 L40 32 M98 22 L88 32\" stroke=\"#F5B841\" stroke-width=\"6\" stroke-linecap=\"round\"/><circle cx=\"300\" cy=\"72\" r=\"22\" fill=\"#F09A4A\"/><circle cx=\"348\" cy=\"52\" r=\"16\" fill=\"#F09A4A\"/><circle cx=\"272\" cy=\"26\" r=\"12\" fill=\"#F5B841\"/><path d=\"M290 100 L282 118 M352 74 L346 90 M268 44 L260 60\" stroke=\"#9E9C9A\" stroke-width=\"4\" stroke-linecap=\"round\"/><ellipse cx=\"200\" cy=\"274\" rx=\"198\" ry=\"30\" fill=\"#C8E6A0\"/><path d=\"M250 268 L310 214 L370 268 Z\" fill=\"#5E8C61\"/><circle cx=\"150\" cy=\"112\" r=\"15\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M137 108 A15 15 0 0 1 163 108 Z\" fill=\"#3D3A36\"/><circle cx=\"150\" cy=\"94\" r=\"5\" fill=\"#3D3A36\"/><circle cx=\"157\" cy=\"112\" r=\"2.4\" fill=\"#3D3A36\"/><path d=\"M138 128 L162 128 L170 196 L130 196 Z\" fill=\"#4A7FB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M142 194 L138 240\" stroke=\"#4A7FB5\" stroke-width=\"13\" stroke-linecap=\"round\"/><path d=\"M158 194 L164 240\" stroke=\"#4A7FB5\" stroke-width=\"13\" stroke-linecap=\"round\"/><rect x=\"130\" y=\"238\" width=\"16\" height=\"9\" fill=\"#8B5A3C\"/><rect x=\"158\" y=\"238\" width=\"16\" height=\"9\" fill=\"#8B5A3C\"/><path d=\"M160 134 L196 138\" stroke=\"#F8D8B8\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M140 140 L166 150\" stroke=\"#F8D8B8\" stroke-width=\"10\" stroke-linecap=\"round\"/><path d=\"M198 104 Q232 140 198 176\" stroke=\"#3D3A36\" stroke-width=\"6\" fill=\"none\"/><path d=\"M198 104 L198 176\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M170 142 L248 128\" stroke=\"#8B5A3C\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M256 126 L244 122 L248 134 Z\" fill=\"#3D3A36\"/><path d=\"M262 124 Q300 88 330 72\" stroke=\"#9E9C9A\" stroke-width=\"4\" stroke-dasharray=\"8 8\" fill=\"none\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["把太阳搬回家取暖", "本领高强，帮大家解决大麻烦", "一天写完十张练习卷", "太阳落山就上床睡觉"], "answer": 1, "explain": "十个太阳晒坏了大地，后羿一箭一个，射下了九个。" },
+      { "type": "fill", "question": "后羿射（　）", "options": ["目", "白", "日", "田"], "answer": 2, "explain": "「日」就是太阳，后羿射的是天上的太阳。" },
+      { "type": "usage", "question": "小胖一顿饭吃了五大碗，妈妈说：「你真是后羿射日！」", "options": ["用对了", "用错了"], "answer": 1, "explain": "后羿射日是射太阳救大家，跟吃得多没关系，用错了。" }
+    ]
+  },
+  {
+    "id": "ba-xian-guo-hai",
+    "word": "八仙过海",
+    "pinyin": "bā xiān guò hǎi",
+    "group": "shenhua",
+    "origin": "《东游记》",
+    "story": "八位神仙要去东海对岸赴宴。到了海边，吕洞宾说：「今天不坐船，各自亮亮本事，漂过去怎么样？」大家齐声叫好。铁拐李把宝葫芦往海里一放，稳稳坐了上去；汉钟离踩着大蒲扇漂；张果老倒骑小毛驴，「嗒嗒嗒」踏着水面就走；何仙姑脚下开出一朵大荷花，花瓣稳稳托住她；蓝采和的花篮、韩湘子的笛子、曹国舅的玉板，也都变成过海的宝贝。八位神仙说说笑笑，一眨眼就到了对岸——这就是八仙过海，各显神通。",
+    "summary": "八仙过海，就是每个人都亮出自己的拿手本领。大扫除时，有人擦窗、有人扫地、有人搬桌子，个个都有自己的高招。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"344\" cy=\"46\" r=\"20\" fill=\"#F5B841\"/><path d=\"M0 188 Q100 174 200 188 T400 188 L400 300 L0 300 Z\" fill=\"#6FA8DC\"/><path d=\"M0 240 Q100 228 200 240 T400 240 L400 300 L0 300 Z\" fill=\"#4A7FB5\"/><path d=\"M60 214 h34 M150 238 h30 M250 220 h34 M322 234 h32\" stroke=\"#BDD9F2\" stroke-width=\"5\" stroke-linecap=\"round\"/><ellipse cx=\"104\" cy=\"196\" rx=\"30\" ry=\"14\" fill=\"#F09A4A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M84 196 Q104 204 124 196\" stroke=\"#3D3A36\" stroke-width=\"3\" fill=\"none\"/><circle cx=\"96\" cy=\"158\" r=\"11\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"93\" cy=\"157\" r=\"1.8\" fill=\"#3D3A36\"/><path d=\"M88 170 L104 170 L108 194 L84 194 Z\" fill=\"#E8604C\" stroke=\"#3D3A36\" stroke-width=\"3\"/><ellipse cx=\"228\" cy=\"204\" rx=\"12\" ry=\"20\" fill=\"#F5B8B8\" transform=\"rotate(20 228 204)\"/><ellipse cx=\"252\" cy=\"204\" rx=\"12\" ry=\"20\" fill=\"#F5B8B8\" transform=\"rotate(-20 252 204)\"/><ellipse cx=\"240\" cy=\"200\" rx=\"11\" ry=\"22\" fill=\"#F5B8B8\"/><circle cx=\"240\" cy=\"196\" r=\"8\" fill=\"#F5B841\"/><circle cx=\"240\" cy=\"152\" r=\"11\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"237\" cy=\"151\" r=\"1.8\" fill=\"#3D3A36\"/><path d=\"M232 164 L248 164 L252 188 L228 188 Z\" fill=\"#A67AB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><ellipse cx=\"334\" cy=\"206\" rx=\"30\" ry=\"12\" fill=\"#BDD9F2\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M312 204 L334 194 L356 204\" stroke=\"#3D3A36\" stroke-width=\"2\" fill=\"none\"/><circle cx=\"334\" cy=\"164\" r=\"11\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"331\" cy=\"163\" r=\"1.8\" fill=\"#3D3A36\"/><path d=\"M326 176 L342 176 L346 198 L322 198 Z\" fill=\"#7CA982\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M120 140 L124 130 M116 132 L128 132\" stroke=\"#F5B841\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M262 128 L266 118 M258 120 L270 120\" stroke=\"#F5B841\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M352 138 L356 128 M348 130 L360 130\" stroke=\"#F5B841\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["八个人挤一条小船过河", "在海边搭一座大桥", "每个人都亮出自己的拿手本领", "神仙们坐在岸边看海"], "answer": 2, "explain": "八位神仙不用船，各用各的宝贝漂过了大海。" },
+      { "type": "fill", "question": "（　）仙过海", "options": ["人", "入", "八", "九"], "answer": 2, "explain": "「八」是个数字，过海的神仙一共八位。" },
+      { "type": "usage", "question": "六一联欢会上，同学们有的跳舞、有的变魔术、有的说相声，真是八仙过海，各有各的精彩。", "options": ["用对了", "用错了"], "answer": 0, "explain": "每个人都亮出拿手本领，正是八仙过海。" }
+    ]
+  },
+  {
+    "id": "tian-yi-wu-feng",
+    "word": "天衣无缝",
+    "pinyin": "tiān yī wú fèng",
+    "group": "shenhua",
+    "origin": "《灵怪录》",
+    "story": "夏天的晚上，郭翰躺在院子里乘凉。忽然一阵香风吹来，天上缓缓落下一位仙女，她的衣裳轻得像云彩，亮得像月光。郭翰看呆了，凑近一瞧，奇怪：这衣服上找不到一针一线的缝儿！他问：「您的衣服是谁缝的？怎么没有缝呢？」仙女抿嘴一笑：「我是天上的织女，天衣本来就不是针线缝的，哪来的缝呀。」说完，她轻轻一转身，乘着云飞回天上去了。后来，人们就用「天衣无缝」来说完美得挑不出毛病的东西。",
+    "summary": "天衣无缝，就是做得非常完美，挑不出一点儿毛病。一篇作文改了三遍，一个错字都没有，写得天衣无缝。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"306\" cy=\"64\" r=\"34\" fill=\"#F5B841\"/><circle cx=\"296\" cy=\"56\" r=\"6\" fill=\"#F09A4A\"/><circle cx=\"100\" cy=\"50\" r=\"4\" fill=\"#BDD9F2\"/><circle cx=\"150\" cy=\"84\" r=\"3\" fill=\"#BDD9F2\"/><circle cx=\"60\" cy=\"100\" r=\"3\" fill=\"#BDD9F2\"/><ellipse cx=\"80\" cy=\"236\" rx=\"46\" ry=\"16\" fill=\"#BDD9F2\"/><ellipse cx=\"330\" cy=\"252\" rx=\"52\" ry=\"18\" fill=\"#BDD9F2\"/><path d=\"M186 96 Q176 130 186 150 L214 150 Q226 126 216 96 Z\" fill=\"#3D3A36\"/><circle cx=\"200\" cy=\"106\" r=\"14\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"200\" cy=\"90\" r=\"6\" fill=\"#3D3A36\"/><circle cx=\"195\" cy=\"106\" r=\"1.8\" fill=\"#3D3A36\"/><circle cx=\"205\" cy=\"106\" r=\"1.8\" fill=\"#3D3A36\"/><path d=\"M196 113 Q200 116 204 113\" stroke=\"#3D3A36\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M188 122 L212 122 Q238 160 234 196 Q220 186 210 198 Q196 186 184 200 Q172 184 166 158 Q176 138 188 122 Z\" fill=\"#F5B8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M186 140 Q150 150 132 176 Q150 172 162 180 Q168 162 190 152 Z\" fill=\"#BDD9F2\"/><path d=\"M212 130 Q230 128 240 118\" stroke=\"#F8D8B8\" stroke-width=\"8\" stroke-linecap=\"round\"/><circle cx=\"104\" cy=\"196\" r=\"13\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"108\" cy=\"191\" r=\"1.8\" fill=\"#3D3A36\"/><path d=\"M92 210 L116 210 L122 252 L86 252 Z\" fill=\"#6FA8DC\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"94\" y=\"252\" width=\"10\" height=\"16\" fill=\"#8B5A3C\"/><rect x=\"108\" y=\"252\" width=\"10\" height=\"16\" fill=\"#8B5A3C\"/><path d=\"M226 210 L230 200 M222 202 L234 202\" stroke=\"#F5B841\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["完美得找不出一点儿毛病", "衣服做得又大又宽", "下雪天一点儿声音都没有", "买衣服不用排队付钱"], "answer": 0, "explain": "仙女的衣服不是针线缝的，怎么找也找不到缝儿。" },
+      { "type": "fill", "question": "天衣无（　）", "options": ["逢", "蓬", "缝", "篷"], "answer": 2, "explain": "「缝」是衣服上针线的缝儿，没有缝就是做得完美。" },
+      { "type": "usage", "question": "弟弟的裤子破了个大洞，他还拍着胸脯说：「我的裤子天衣无缝！」", "options": ["用对了", "用错了"], "answer": 1, "explain": "破了大洞就是有缝儿了，用错了。" }
+    ]
+  },
+  {
+    "id": "dian-shi-cheng-jin",
+    "word": "点石成金",
+    "pinyin": "diǎn shí chéng jīn",
+    "group": "shenhua",
+    "origin": "《列仙传》",
+    "story": "传说仙人吕洞宾有个神奇的本领：手指一点，石头立刻变成金子。一天，他看见一个穷人在地里辛苦干活，想帮帮他，就捡起一块石头，用手指一点——「变！」石头亮闪闪的，真成金子了。「这块金子送给你。」穷人摇摇头。吕洞宾又点了一块大石头，变成更大的金子，穷人还是摇头。吕洞宾问：「那你想要什么？」穷人不好意思地说：「金子总有花完的一天，我想要您那根会点金的手指头。」吕洞宾哈哈大笑，夸他是个明白人。",
+    "summary": "点石成金，就是有把普通东西变成宝贝的大本领。用旧纸盒做出漂亮笔筒的同学，就有点石成金的本事。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><ellipse cx=\"200\" cy=\"274\" rx=\"200\" ry=\"30\" fill=\"#C8E6A0\"/><path d=\"M150 202 A34 24 0 0 0 150 250 Z\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M150 202 A34 24 0 0 1 150 250 Z\" fill=\"#9E9C9A\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M118 196 L122 186 M114 188 L126 188\" stroke=\"#F5B841\" stroke-width=\"4\" stroke-linecap=\"round\"/><path d=\"M162 190 L166 180 M158 182 L170 182\" stroke=\"#F5B841\" stroke-width=\"4\" stroke-linecap=\"round\"/><circle cx=\"100\" cy=\"216\" r=\"5\" fill=\"#F5B841\"/><circle cx=\"196\" cy=\"214\" r=\"4\" fill=\"#F5B841\"/><circle cx=\"266\" cy=\"118\" r=\"15\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M251 116 A15 15 0 0 1 281 116 Z\" fill=\"#3D3A36\"/><circle cx=\"266\" cy=\"100\" r=\"6\" fill=\"#3D3A36\"/><circle cx=\"260\" cy=\"118\" r=\"2\" fill=\"#3D3A36\"/><ellipse cx=\"266\" cy=\"137\" rx=\"7\" ry=\"9\" fill=\"#FFFFFF\" stroke=\"#3D3A36\" stroke-width=\"2\"/><path d=\"M252 134 L280 134 L292 236 L240 236 Z\" fill=\"#A67AB5\" stroke=\"#3D3A36\" stroke-width=\"3\"/><rect x=\"248\" y=\"236\" width=\"12\" height=\"12\" fill=\"#8B5A3C\"/><rect x=\"272\" y=\"236\" width=\"12\" height=\"12\" fill=\"#8B5A3C\"/><path d=\"M252 148 L204 170\" stroke=\"#F8D8B8\" stroke-width=\"10\" stroke-linecap=\"round\"/><circle cx=\"200\" cy=\"172\" r=\"6\" fill=\"#F8D8B8\"/><path d=\"M194 176 Q172 192 158 210\" stroke=\"#F5B841\" stroke-width=\"4\" stroke-dasharray=\"6 8\" fill=\"none\"/><circle cx=\"62\" cy=\"196\" r=\"11\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M54 208 L70 208 L74 240 L50 240 Z\" fill=\"#7CA982\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M86 206 L96 240\" stroke=\"#A9744F\" stroke-width=\"6\" stroke-linecap=\"round\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["用石头搭一座金色的房子", "把金子埋进石头里藏好", "专门收集漂亮的石头", "手指一点，把普通东西变成宝贝"], "answer": 3, "explain": "仙人手指一点，普通的石头立刻变成金光闪闪的金子。" },
+      { "type": "fill", "question": "点石成（　）", "options": ["全", "玉", "王", "金"], "answer": 3, "explain": "「金」就是金子，点石成金是把石头变成金子。" },
+      { "type": "usage", "question": "王老师从不直接说出答案，而是教我们查字典的方法，同学们都说她是会点石成金的好老师。", "options": ["用对了", "用错了"], "answer": 0, "explain": "教会方法比直接给答案更宝贵，正是点石成金。" }
+    ]
+  },
+  {
+    "id": "chang-e-ben-yue",
+    "word": "嫦娥奔月",
+    "pinyin": "cháng é bēn yuè",
+    "group": "shenhua",
+    "origin": "《淮南子》",
+    "story": "后羿射日以后，西王母送他一颗仙药，说吃下就能飞上天。后羿舍不得妻子嫦娥，就把仙药交给她保管。坏人逢蒙知道了，趁后羿出门打猎，闯进家里逼嫦娥交出仙药。嫦娥不肯让坏人抢走它，一仰头把仙药吞了下去。咦，她的身子忽然轻飘飘的，像羽毛一样飞出窗口，越飞越高，一直飞进月亮上的宫殿。月宫里还有一只捣药的玉兔陪着她。每到月圆的晚上，大家抬头望着月亮，就会说：「看，那就是嫦娥住的月宫呀。」",
+    "summary": "嫦娥奔月，就是嫦娥吞下仙药、飞进月宫的传说。中秋吃月饼的时候，抬头看看圆月，就能想起这个故事。",
+    "illustration": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"400\" height=\"300\" fill=\"#FFF7E6\"/><circle cx=\"112\" cy=\"84\" r=\"46\" fill=\"#F5B841\" stroke=\"#3D3A36\" stroke-width=\"3\"/><ellipse cx=\"106\" cy=\"92\" rx=\"12\" ry=\"9\" fill=\"#FFFFFF\"/><ellipse cx=\"100\" cy=\"76\" rx=\"4\" ry=\"10\" fill=\"#FFFFFF\" transform=\"rotate(-12 100 76)\"/><ellipse cx=\"108\" cy=\"75\" rx=\"4\" ry=\"10\" fill=\"#FFFFFF\" transform=\"rotate(8 108 75)\"/><circle cx=\"102\" cy=\"90\" r=\"1.8\" fill=\"#3D3A36\"/><ellipse cx=\"118\" cy=\"98\" rx=\"6\" ry=\"4\" fill=\"#FFFFFF\"/><circle cx=\"220\" cy=\"44\" r=\"4\" fill=\"#BDD9F2\"/><circle cx=\"320\" cy=\"90\" r=\"3\" fill=\"#BDD9F2\"/><circle cx=\"180\" cy=\"140\" r=\"3\" fill=\"#BDD9F2\"/><ellipse cx=\"70\" cy=\"220\" rx=\"44\" ry=\"14\" fill=\"#BDD9F2\"/><ellipse cx=\"330\" cy=\"238\" rx=\"50\" ry=\"16\" fill=\"#BDD9F2\"/><circle cx=\"228\" cy=\"128\" r=\"15\" fill=\"#F8D8B8\" stroke=\"#3D3A36\" stroke-width=\"3\"/><circle cx=\"228\" cy=\"112\" r=\"7\" fill=\"#3D3A36\"/><path d=\"M240 122 Q258 130 254 158 L244 152 Q250 136 238 128 Z\" fill=\"#3D3A36\"/><circle cx=\"222\" cy=\"128\" r=\"2\" fill=\"#3D3A36\"/><path d=\"M216 144 L240 144 Q268 176 262 220 Q246 208 236 220 Q224 206 210 218 Q196 200 194 172 Q202 154 216 144 Z\" fill=\"#6FA8DC\" stroke=\"#3D3A36\" stroke-width=\"3\"/><path d=\"M244 160 Q282 168 300 198 Q282 190 268 200 Q262 178 240 170 Z\" fill=\"#F5B8B8\"/><path d=\"M214 152 Q196 148 184 138\" stroke=\"#F8D8B8\" stroke-width=\"8\" stroke-linecap=\"round\"/><path d=\"M240 154 Q252 162 256 174\" stroke=\"#F8D8B8\" stroke-width=\"8\" stroke-linecap=\"round\"/></svg>",
+    "quiz": [
+      { "type": "meaning", "options": ["月亮被天狗吃掉了一块", "嫦娥吞下仙药，飞到月亮上的传说", "中秋节吃月饼的比赛", "嫦娥搬家搬到海边的房子"], "answer": 1, "explain": "嫦娥吞下仙药，身子变得轻轻的，一直飞进了月宫。" },
+      { "type": "fill", "question": "嫦娥奔（　）", "options": ["目", "月", "日", "用"], "answer": 1, "explain": "「月」就是月亮的月，嫦娥飞向了月亮上的宫殿。" },
+      { "type": "usage", "question": "小美跑步得了第一名，同学们拍着手喊：「你真是嫦娥奔月呀！」", "options": ["用对了", "用错了"], "answer": 1, "explain": "嫦娥奔月是飞上月宫的故事，跟跑步快没关系，用错了。" }
+    ]
+  }
+]
