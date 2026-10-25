@@ -92,6 +92,73 @@ const j = (r) => r.json();
     db2.close();
   }
 
+  // 接龙：每日链、记录、徽章、不污染学习口径
+  const pBefore = await fetch(base + '/progress', { headers: H }).then(j);
+  const dailyChain = await fetch(base + '/chain/daily', { headers: H }).then(j);
+  log('每日链接龙可读', dailyChain.unlocked === true && dailyChain.chain?.words?.length === 6 && dailyChain.targetLength === 6);
+  const dailyAgain = await fetch(base + '/chain/daily', { headers: H }).then(j);
+  log('每日链同一天所有孩子共用一条', dailyAgain.chain?.id === dailyChain.chain?.id);
+
+  const badChain = await fetch(base + '/chain/complete', {
+    method: 'POST', headers: H, body: JSON.stringify({ mode: 'free', chainId: 'chain-不存在', stepsCompleted: 5 }),
+  });
+  log('不存在的接龙链被拒', badChain.status === 400);
+
+  const earlyFinish = await fetch(base + '/chain/complete', {
+    method: 'POST', headers: H,
+    body: JSON.stringify({ mode: 'daily', chainId: dailyChain.chain.id, stepsCompleted: 0 }),
+  });
+  log('没走完步数不记录接龙局', earlyFinish.status === 400);
+
+  let c = await fetch(base + '/chain/complete', {
+    method: 'POST', headers: H,
+    body: JSON.stringify({ mode: 'daily', chainId: dailyChain.chain.id, stepsCompleted: dailyChain.targetLength - 1 }),
+  }).then(j);
+  log('每日接龙记录成功', c.ok === true && c.length === 6 && c.totalPlays >= 1);
+
+  const cAgain = await fetch(base + '/chain/complete', {
+    method: 'POST', headers: H,
+    body: JSON.stringify({ mode: 'daily', chainId: dailyChain.chain.id, stepsCompleted: dailyChain.targetLength - 1 }),
+  }).then(j);
+  log('每日链同一天只记一次', cAgain.already === true);
+
+  const pAfter = await fetch(base + '/progress', { headers: H }).then(j);
+  log('接龙不计星星/打卡/连续天数', pAfter.totalStars === pBefore.totalStars && pAfter.todayDone === pBefore.todayDone && pAfter.streak === pBefore.streak);
+  log('首页可见今日接龙完成', pAfter.chainDailyDone === true);
+
+  for (let i = 0; i < 9; i++) {
+    const f = await fetch(base + '/chain/free', { headers: H }).then(j);
+    log('自由练习链长 6-8', f.chain?.words?.length >= 6 && f.chain?.words?.length <= 8);
+    c = await fetch(base + '/chain/complete', {
+      method: 'POST', headers: H,
+      body: JSON.stringify({ mode: 'free', chainId: f.chain.id, stepsCompleted: f.targetLength - 1 }),
+    }).then(j);
+    log('自由练习记录成功', c.ok === true && c.length >= 6 && c.length <= 8);
+  }
+
+  const pChain = await fetch(base + '/progress', { headers: H }).then(j);
+  log('完成 10 局发接龙高手', pChain.badges.includes('chain-10'));
+  log('自由练习计入接龙局数', pChain.chainPlayCount >= 10);
+  log('自由练习也不给星星', pChain.totalStars === pBefore.totalStars);
+
+  if (process.env.CYLY_DATA_DIR) {
+    const { DatabaseSync } = require('node:sqlite');
+    const path = require('path');
+    const dbc = new DatabaseSync(path.join(process.env.CYLY_DATA_DIR, 'app.db'));
+    const rows = dbc.prepare('SELECT mode, length FROM chain_plays WHERE kid_id = ?').all(me.id);
+    log('chain_plays 写入每日链与自由练习',
+      rows.some((r) => r.mode === 'daily' && r.length === 6) &&
+      rows.some((r) => r.mode === 'free' && r.length >= 6 && r.length <= 8));
+    const d = new Date();
+    const pad = (n) => String(n).padStart(2, '0');
+    const today = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+    const chainDaily = dbc.prepare(
+      "SELECT COUNT(*) AS n FROM chain_plays WHERE kid_id = ? AND mode = 'daily' AND date = ?"
+    ).get(me.id, today).n;
+    log('每日链同一天只落一条记录', chainDaily === 1);
+    dbc.close();
+  }
+
   r = await fetch(base + '/login/parent', {
     method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pin: '123456' }),
   }).then(j);
@@ -100,6 +167,10 @@ const j = (r) => r.json();
   log('家长总览可读', Array.isArray(ov) && ov.length > 0);
   const kidOv = ov.find((k) => k.id === me.id) || ov[0];
   log('周报分列古诗', kidOv.poemCount >= 1 && kidOv.week.newPoem >= 1 && kidOv.week.poemReviews >= 1);
+  log('家长周报含接龙局数与最长链', kidOv.week.chainPlays >= 1 && kidOv.week.chainMaxLength >= 6);
+
+  const exp = await fetch(base + '/parent/export', { headers: PH }).then(j);
+  log('备份版本 4 含接龙记录', exp.version === 4 && Array.isArray(exp.data.chain_plays) && exp.data.chain_plays.length >= 1);
 
   const res2 = await fetch(base + '/parent/overview', { headers: H });
   log('孩子 token 进家长接口被拒', res2.status === 401);

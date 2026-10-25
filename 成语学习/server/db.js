@@ -94,6 +94,18 @@ CREATE TABLE IF NOT EXISTS outfits (
   purchased_at TEXT NOT NULL,
   PRIMARY KEY (kid_id, item_id)
 );
+
+CREATE TABLE IF NOT EXISTS chain_plays (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kid_id INTEGER NOT NULL,
+  date TEXT NOT NULL,            -- 本地日期 YYYY-MM-DD
+  mode TEXT NOT NULL CHECK (mode IN ('daily', 'free')),
+  length INTEGER NOT NULL,       -- 本局接龙链长（每日链固定 6，自由练习取整条）
+  completed_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_chain_plays_kid_date ON chain_plays (kid_id, date);
+-- 每日链每个孩子每天只记一局；自由练习可反复记录
+CREATE UNIQUE INDEX IF NOT EXISTS idx_chain_plays_daily_once ON chain_plays (kid_id, date) WHERE mode = 'daily';
 `);
 
 // 一期数据库的平滑迁移：补列、按存量补记星星流水（仅一次）

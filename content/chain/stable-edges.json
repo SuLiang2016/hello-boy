@@ -1,0 +1,702 @@
+[
+  {
+    "word": "亡羊补牢",
+    "first": "亡",
+    "last": "牢",
+    "firstKey": "wang",
+    "lastKey": "lao"
+  },
+  {
+    "word": "百发百中",
+    "first": "百",
+    "last": "中",
+    "firstKey": "bai",
+    "lastKey": "zhong"
+  },
+  {
+    "word": "风声鹤唳",
+    "first": "风",
+    "last": "唳",
+    "firstKey": "feng",
+    "lastKey": "li"
+  },
+  {
+    "word": "拔苗助长",
+    "first": "拔",
+    "last": "长",
+    "firstKey": "ba",
+    "lastKey": "zhang"
+  },
+  {
+    "word": "背水一战",
+    "first": "背",
+    "last": "战",
+    "firstKey": "bei",
+    "lastKey": "zhan"
+  },
+  {
+    "word": "滥竽充数",
+    "first": "滥",
+    "last": "数",
+    "firstKey": "lan",
+    "lastKey": "shu"
+  },
+  {
+    "word": "塞翁失马",
+    "first": "塞",
+    "last": "马",
+    "firstKey": "sai",
+    "lastKey": "ma"
+  },
+  {
+    "word": "叶公好龙",
+    "first": "叶",
+    "last": "龙",
+    "firstKey": "ye",
+    "lastKey": "long"
+  },
+  {
+    "word": "南辕北辙",
+    "first": "南",
+    "last": "辙",
+    "firstKey": "nan",
+    "lastKey": "zhe"
+  },
+  {
+    "word": "夸父追日",
+    "first": "夸",
+    "last": "日",
+    "firstKey": "kua",
+    "lastKey": "ri"
+  },
+  {
+    "word": "开天辟地",
+    "first": "开",
+    "last": "地",
+    "firstKey": "kai",
+    "lastKey": "di"
+  },
+  {
+    "word": "女娲补天",
+    "first": "女",
+    "last": "天",
+    "firstKey": "nv",
+    "lastKey": "tian"
+  },
+  {
+    "word": "天衣无缝",
+    "first": "天",
+    "last": "缝",
+    "firstKey": "tian",
+    "lastKey": "feng"
+  },
+  {
+    "word": "一举两得",
+    "first": "一",
+    "last": "得",
+    "firstKey": "yi",
+    "lastKey": "de"
+  },
+  {
+    "word": "得心应手",
+    "first": "得",
+    "last": "手",
+    "firstKey": "de",
+    "lastKey": "shou"
+  },
+  {
+    "word": "有备无患",
+    "first": "有",
+    "last": "患",
+    "firstKey": "you",
+    "lastKey": "huan"
+  },
+  {
+    "word": "战无不胜",
+    "first": "战",
+    "last": "胜",
+    "firstKey": "zhan",
+    "lastKey": "sheng"
+  },
+  {
+    "word": "挖空心思",
+    "first": "挖",
+    "last": "思",
+    "firstKey": "wa",
+    "lastKey": "si"
+  },
+  {
+    "word": "四海为家",
+    "first": "四",
+    "last": "家",
+    "firstKey": "si",
+    "lastKey": "jia"
+  },
+  {
+    "word": "家喻户晓",
+    "first": "家",
+    "last": "晓",
+    "firstKey": "jia",
+    "lastKey": "xiao"
+  },
+  {
+    "word": "一意孤行",
+    "first": "一",
+    "last": "行",
+    "firstKey": "yi",
+    "lastKey": "xing"
+  },
+  {
+    "word": "不劳而获",
+    "first": "不",
+    "last": "获",
+    "firstKey": "bu",
+    "lastKey": "huo"
+  },
+  {
+    "word": "神通广大",
+    "first": "神",
+    "last": "大",
+    "firstKey": "shen",
+    "lastKey": "da"
+  },
+  {
+    "word": "大显身手",
+    "first": "大",
+    "last": "手",
+    "firstKey": "da",
+    "lastKey": "shou"
+  },
+  {
+    "word": "相得益彰",
+    "first": "相",
+    "last": "彰",
+    "firstKey": "xiang",
+    "lastKey": "zhang"
+  },
+  {
+    "word": "才高八斗",
+    "first": "才",
+    "last": "斗",
+    "firstKey": "cai",
+    "lastKey": "dou"
+  },
+  {
+    "word": "斗转星移",
+    "first": "斗",
+    "last": "移",
+    "firstKey": "dou",
+    "lastKey": "yi"
+  },
+  {
+    "word": "惊天动地",
+    "first": "惊",
+    "last": "地",
+    "firstKey": "jing",
+    "lastKey": "di"
+  },
+  {
+    "word": "地大物博",
+    "first": "地",
+    "last": "博",
+    "firstKey": "di",
+    "lastKey": "bo"
+  },
+  {
+    "word": "迎刃而解",
+    "first": "迎",
+    "last": "解",
+    "firstKey": "ying",
+    "lastKey": "jie"
+  },
+  {
+    "word": "虎头蛇尾",
+    "first": "虎",
+    "last": "尾",
+    "firstKey": "hu",
+    "lastKey": "wei"
+  },
+  {
+    "word": "朝气蓬勃",
+    "first": "朝",
+    "last": "勃",
+    "firstKey": "zhao",
+    "lastKey": "bo"
+  },
+  {
+    "word": "齐心协力",
+    "first": "齐",
+    "last": "力",
+    "firstKey": "qi",
+    "lastKey": "li"
+  },
+  {
+    "word": "心平气和",
+    "first": "心",
+    "last": "和",
+    "firstKey": "xin",
+    "lastKey": "he"
+  },
+  {
+    "word": "和风细雨",
+    "first": "和",
+    "last": "雨",
+    "firstKey": "he",
+    "lastKey": "yu"
+  },
+  {
+    "word": "与众不同",
+    "first": "与",
+    "last": "同",
+    "firstKey": "yu",
+    "lastKey": "tong"
+  },
+  {
+    "word": "见多识广",
+    "first": "见",
+    "last": "广",
+    "firstKey": "jian",
+    "lastKey": "guang"
+  },
+  {
+    "word": "见义勇为",
+    "first": "见",
+    "last": "为",
+    "firstKey": "jian",
+    "lastKey": "wei"
+  },
+  {
+    "word": "道听途说",
+    "first": "道",
+    "last": "说",
+    "firstKey": "dao",
+    "lastKey": "shuo"
+  },
+  {
+    "word": "硕果累累",
+    "first": "硕",
+    "last": "累",
+    "firstKey": "shuo",
+    "lastKey": "lei"
+  },
+  {
+    "word": "罪有应得",
+    "first": "罪",
+    "last": "得",
+    "firstKey": "zui",
+    "lastKey": "de"
+  },
+  {
+    "word": "得意洋洋",
+    "first": "得",
+    "last": "洋",
+    "firstKey": "de",
+    "lastKey": "yang"
+  },
+  {
+    "word": "中流砥柱",
+    "first": "中",
+    "last": "柱",
+    "firstKey": "zhong",
+    "lastKey": "zhu"
+  },
+  {
+    "word": "触类旁通",
+    "first": "触",
+    "last": "通",
+    "firstKey": "chu",
+    "lastKey": "tong"
+  },
+  {
+    "word": "同心协力",
+    "first": "同",
+    "last": "力",
+    "firstKey": "tong",
+    "lastKey": "li"
+  },
+  {
+    "word": "花红柳绿",
+    "first": "花",
+    "last": "绿",
+    "firstKey": "hua",
+    "lastKey": "lv"
+  },
+  {
+    "word": "情不自禁",
+    "first": "情",
+    "last": "禁",
+    "firstKey": "qing",
+    "lastKey": "jin"
+  },
+  {
+    "word": "调虎离山",
+    "first": "调",
+    "last": "山",
+    "firstKey": "diao",
+    "lastKey": "shan"
+  },
+  {
+    "word": "秀外慧中",
+    "first": "秀",
+    "last": "中",
+    "firstKey": "xiu",
+    "lastKey": "zhong"
+  },
+  {
+    "word": "无忧无虑",
+    "first": "无",
+    "last": "虑",
+    "firstKey": "wu",
+    "lastKey": "lv"
+  },
+  {
+    "word": "屡见不鲜",
+    "first": "屡",
+    "last": "鲜",
+    "firstKey": "lv",
+    "lastKey": "xian"
+  },
+  {
+    "word": "山穷水尽",
+    "first": "山",
+    "last": "尽",
+    "firstKey": "shan",
+    "lastKey": "jin"
+  },
+  {
+    "word": "喜闻乐见",
+    "first": "喜",
+    "last": "见",
+    "firstKey": "xi",
+    "lastKey": "jian"
+  },
+  {
+    "word": "海阔天空",
+    "first": "海",
+    "last": "空",
+    "firstKey": "hai",
+    "lastKey": "kong"
+  },
+  {
+    "word": "空前绝后",
+    "first": "空",
+    "last": "后",
+    "firstKey": "kong",
+    "lastKey": "hou"
+  },
+  {
+    "word": "后来居上",
+    "first": "后",
+    "last": "上",
+    "firstKey": "hou",
+    "lastKey": "shang"
+  },
+  {
+    "word": "上善若水",
+    "first": "上",
+    "last": "水",
+    "firstKey": "shang",
+    "lastKey": "shui"
+  },
+  {
+    "word": "决胜千里",
+    "first": "决",
+    "last": "里",
+    "firstKey": "jue",
+    "lastKey": "li"
+  },
+  {
+    "word": "顺手牵羊",
+    "first": "顺",
+    "last": "羊",
+    "firstKey": "shun",
+    "lastKey": "yang"
+  },
+  {
+    "word": "单刀直入",
+    "first": "单",
+    "last": "入",
+    "firstKey": "dan",
+    "lastKey": "ru"
+  },
+  {
+    "word": "语重心长",
+    "first": "语",
+    "last": "长",
+    "firstKey": "yu",
+    "lastKey": "chang"
+  },
+  {
+    "word": "长年累月",
+    "first": "长",
+    "last": "月",
+    "firstKey": "chang",
+    "lastKey": "yue"
+  },
+  {
+    "word": "提心吊胆",
+    "first": "提",
+    "last": "胆",
+    "firstKey": "ti",
+    "lastKey": "dan"
+  },
+  {
+    "word": "云消雾散",
+    "first": "云",
+    "last": "散",
+    "firstKey": "yun",
+    "lastKey": "san"
+  },
+  {
+    "word": "胜券在握",
+    "first": "胜",
+    "last": "握",
+    "firstKey": "sheng",
+    "lastKey": "wo"
+  },
+  {
+    "word": "顿足捶胸",
+    "first": "顿",
+    "last": "胸",
+    "firstKey": "dun",
+    "lastKey": "xiong"
+  },
+  {
+    "word": "光明正大",
+    "first": "光",
+    "last": "大",
+    "firstKey": "guang",
+    "lastKey": "da"
+  },
+  {
+    "word": "大快人心",
+    "first": "大",
+    "last": "心",
+    "firstKey": "da",
+    "lastKey": "xin"
+  },
+  {
+    "word": "熟能生巧",
+    "first": "熟",
+    "last": "巧",
+    "firstKey": "shu",
+    "lastKey": "qiao"
+  },
+  {
+    "word": "源远流长",
+    "first": "源",
+    "last": "长",
+    "firstKey": "yuan",
+    "lastKey": "chang"
+  },
+  {
+    "word": "日久天长",
+    "first": "日",
+    "last": "长",
+    "firstKey": "ri",
+    "lastKey": "chang"
+  },
+  {
+    "word": "数不胜数",
+    "first": "数",
+    "last": "数",
+    "firstKey": "shu",
+    "lastKey": "shu"
+  },
+  {
+    "word": "悲欢离合",
+    "first": "悲",
+    "last": "合",
+    "firstKey": "bei",
+    "lastKey": "he"
+  },
+  {
+    "word": "合情合理",
+    "first": "合",
+    "last": "理",
+    "firstKey": "he",
+    "lastKey": "li"
+  },
+  {
+    "word": "一日千里",
+    "first": "一",
+    "last": "里",
+    "firstKey": "yi",
+    "lastKey": "li"
+  },
+  {
+    "word": "石破天惊",
+    "first": "石",
+    "last": "惊",
+    "firstKey": "shi",
+    "lastKey": "jing"
+  },
+  {
+    "word": "日积月累",
+    "first": "日",
+    "last": "累",
+    "firstKey": "ri",
+    "lastKey": "lei"
+  },
+  {
+    "word": "雷厉风行",
+    "first": "雷",
+    "last": "行",
+    "firstKey": "lei",
+    "lastKey": "xing"
+  },
+  {
+    "word": "不耻下问",
+    "first": "不",
+    "last": "问",
+    "firstKey": "bu",
+    "lastKey": "wen"
+  },
+  {
+    "word": "风平浪静",
+    "first": "风",
+    "last": "静",
+    "firstKey": "feng",
+    "lastKey": "jing"
+  },
+  {
+    "word": "大器晚成",
+    "first": "大",
+    "last": "成",
+    "firstKey": "da",
+    "lastKey": "cheng"
+  },
+  {
+    "word": "成千上万",
+    "first": "成",
+    "last": "万",
+    "firstKey": "cheng",
+    "lastKey": "wan"
+  },
+  {
+    "word": "万象更新",
+    "first": "万",
+    "last": "新",
+    "firstKey": "wan",
+    "lastKey": "xin"
+  },
+  {
+    "word": "扶摇直上",
+    "first": "扶",
+    "last": "上",
+    "firstKey": "fu",
+    "lastKey": "shang"
+  },
+  {
+    "word": "可歌可泣",
+    "first": "可",
+    "last": "泣",
+    "firstKey": "ke",
+    "lastKey": "qi"
+  },
+  {
+    "word": "蒸蒸日上",
+    "first": "蒸",
+    "last": "上",
+    "firstKey": "zheng",
+    "lastKey": "shang"
+  },
+  {
+    "word": "应接不暇",
+    "first": "应",
+    "last": "暇",
+    "firstKey": "ying",
+    "lastKey": "xia"
+  },
+  {
+    "word": "说一不二",
+    "first": "说",
+    "last": "二",
+    "firstKey": "shuo",
+    "lastKey": "er"
+  },
+  {
+    "word": "各显神通",
+    "first": "各",
+    "last": "通",
+    "firstKey": "ge",
+    "lastKey": "tong"
+  },
+  {
+    "word": "有始有终",
+    "first": "有",
+    "last": "终",
+    "firstKey": "you",
+    "lastKey": "zhong"
+  },
+  {
+    "word": "大公无私",
+    "first": "大",
+    "last": "私",
+    "firstKey": "da",
+    "lastKey": "si"
+  },
+  {
+    "word": "不约而同",
+    "first": "不",
+    "last": "同",
+    "firstKey": "bu",
+    "lastKey": "tong"
+  },
+  {
+    "word": "打草惊蛇",
+    "first": "打",
+    "last": "蛇",
+    "firstKey": "da",
+    "lastKey": "she"
+  },
+  {
+    "word": "风和日丽",
+    "first": "风",
+    "last": "丽",
+    "firstKey": "feng",
+    "lastKey": "li"
+  },
+  {
+    "word": "风雨同舟",
+    "first": "风",
+    "last": "舟",
+    "firstKey": "feng",
+    "lastKey": "zhou"
+  },
+  {
+    "word": "欢天喜地",
+    "first": "欢",
+    "last": "地",
+    "firstKey": "huan",
+    "lastKey": "di"
+  },
+  {
+    "word": "活蹦乱跳",
+    "first": "活",
+    "last": "跳",
+    "firstKey": "huo",
+    "lastKey": "tiao"
+  },
+  {
+    "word": "脚踏实地",
+    "first": "脚",
+    "last": "地",
+    "firstKey": "jiao",
+    "lastKey": "di"
+  },
+  {
+    "word": "井井有条",
+    "first": "井",
+    "last": "条",
+    "firstKey": "jing",
+    "lastKey": "tiao"
+  },
+  {
+    "word": "千言万语",
+    "first": "千",
+    "last": "语",
+    "firstKey": "qian",
+    "lastKey": "yu"
+  }
+]

@@ -4,6 +4,7 @@ import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { api } from '../api.js'
 import { useSession, useContent } from '../store.js'
+import { chime } from '../sound.js'
 import Icon from '../components/Icon.vue'
 
 const router = useRouter()
@@ -61,27 +62,6 @@ async function next() {
 
 const totalRight = computed(() => done.value.filter((d) => d.correct).length)
 const anyRemembered = computed(() => done.value.some((d) => d.remembered))
-
-// 小音效
-let actx = null
-function tone(freq, start, dur, gain = 0.12) {
-  const t = actx.currentTime + start
-  const o = actx.createOscillator()
-  const g = actx.createGain()
-  o.frequency.value = freq
-  g.gain.setValueAtTime(gain, t)
-  g.gain.exponentialRampToValueAtTime(0.001, t + dur)
-  o.connect(g).connect(actx.destination)
-  o.start(t)
-  o.stop(t + dur)
-}
-function chime(ok) {
-  try {
-    actx = actx || new (window.AudioContext || window.webkitAudioContext)()
-    if (ok) { tone(660, 0, 0.18); tone(880, 0.09, 0.22) }
-    else tone(200, 0, 0.3, 0.08)
-  } catch {}
-}
 </script>
 
 <template>

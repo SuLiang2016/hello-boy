@@ -26,6 +26,7 @@
 - 学 = 读完内容，3 题测验对 2 题；全对得 2 星，通过得 1 星，可无限重试。
 - 学会后第 1/3/7/14/30 天复习，到期内容在首页混排提醒；五轮全过「牢记」。
 - 当天学会 1 个新内容即打卡；连续 3/7/14/30 天、学会成语 10/30/60 个、古诗 10/30/75 首、学完篇章都有徽章。
+- 成语接龙：学会第一个成语后解锁，每天一条每日链 + 随机自由练习；不计星星、打卡和学习进度，完成 10 局得「接龙高手」徽章。
 - 星星进钱包，可在装扮间买帽子、眼镜、围巾、头饰和首页场景。
 
 ## 开发
@@ -52,7 +53,7 @@ npm run smoke              # API 冒烟测试（需要一个运行中的服务�
 └── 启动.bat       家长日常双击用
 ```
 
-内容源文件：`content/groups.json` + `content/idioms/<篇章>.json`；`content/poem-groups.json` + `content/poems/<篇章>.json`。
+内容源文件：`content/groups.json` + `content/idioms/<篇章>.json`；`content/poem-groups.json` + `content/poems/<篇章>.json`；`content/chain/words.json` + `content/chain/chains.json`（首尾多音字审核记录在同目录 `stable-edges.json`）。
 
 ## 内容与版权
 

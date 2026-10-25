@@ -7,6 +7,7 @@ const OUTFITS = [
   { id: 'round-glasses', slot: 'glasses', name: '圆眼镜', price: 5 },
   { id: 'red-scarf', slot: 'scarf', name: '红围巾', price: 5 },
   { id: 'bow', slot: 'head', name: '蝴蝶结', price: 6 },
+  { id: 'star-headband', slot: 'head', name: '星星发箍', price: 30 },
   { id: 'tiger-hat', slot: 'hat', name: '虎头帽', price: 8 },
   { id: 'sunglasses', slot: 'glasses', name: '墨镜', price: 8 },
   { id: 'rainbow-scarf', slot: 'scarf', name: '彩虹围巾', price: 8 },
@@ -18,6 +19,7 @@ const OUTFITS = [
   { id: 'scene-meadow', slot: 'scene', name: '草地', price: 12 },
   { id: 'scene-undersea', slot: 'scene', name: '海底', price: 15 },
   { id: 'scene-forest', slot: 'scene', name: '森林', price: 15 },
+  { id: 'scene-castle', slot: 'scene', name: '彩虹城堡', price: 50 },
 ];
 
 function wallet(kidId) {

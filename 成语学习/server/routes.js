@@ -5,6 +5,7 @@ const { newSalt, hashPin, verifyPin, createSession, requireKid, requireParent } 
 const { calcStreak, grantNewBadges, localDate } = require('./badges');
 const { boardOfGroups, boardGroupKeys, boardOfItem, groupIndex, unlockThreshold } = require('./content');
 const { OUTFITS, wallet, addEvent, ownedOutfits, equippedOf } = require('./stars');
+const { DAILY_LENGTH, getDailyChain, getFreeChain, getChainById } = require('./chain');
 
 const router = express.Router();
 const AVATARS = ['panda', 'rabbit', 'fox', 'tiger', 'owl', 'chick', 'frog', 'lion'];
@@ -197,6 +198,83 @@ router.post('/review-result', requireKid, (req, res) => {
   });
 });
 
+// ---------- 接龙 ----------
+
+router.get('/chain/daily', requireKid, (req, res) => {
+  const today = localDate();
+  const unlocked = idiomLearnedCount(req.kidId) > 0;
+  const playStats = chainPlayStats(req.kidId, today);
+  if (!unlocked) return res.json({ unlocked: false, completed: false, totalPlays: playStats.total });
+  const chain = getDailyChain(today);
+  if (!chain) return res.status(500).json({ error: '接龙链库还没准备好' });
+  res.json({
+    unlocked: true, completed: playStats.dailyDone > 0, chain,
+    targetLength: DAILY_LENGTH,
+    totalPlays: playStats.total,
+  });
+});
+
+router.get('/chain/free', requireKid, (req, res) => {
+  if (idiomLearnedCount(req.kidId) === 0) {
+    return res.status(403).json({ error: '先学会一个成语，再来玩接龙' });
+  }
+  const chain = getFreeChain();
+  if (!chain) return res.status(500).json({ error: '接龙链库还没准备好' });
+  res.json({
+    chain,
+    targetLength: chain.words.length,
+    totalPlays: chainPlayStats(req.kidId, localDate()).total,
+  });
+});
+
+// 只记录「接龙局」：不写 learned / daily / star_events，不算学习、复习、打卡
+router.post('/chain/complete', requireKid, (req, res) => {
+  const body = req.body || {};
+  const mode = body.mode;
+  if (mode !== 'daily' && mode !== 'free') return res.status(400).json({ error: '接龙模式不对' });
+  if (idiomLearnedCount(req.kidId) === 0) {
+    return res.status(403).json({ error: '先学会一个成语，再来玩接龙' });
+  }
+  const chain = getChainById(String(body.chainId || ''));
+  if (!chain) return res.status(400).json({ error: '没有这条接龙链' });
+  const today = localDate();
+  if (mode === 'daily') {
+    const daily = getDailyChain(today);
+    if (!daily || daily.id !== chain.id) return res.status(400).json({ error: '今天不是这条每日链' });
+  }
+  const length = mode === 'daily' ? DAILY_LENGTH : chain.words.length;
+  if (length > chain.words.length) return res.status(500).json({ error: '接龙链长度不对' });
+  const stepsCompleted = Number(body.stepsCompleted);
+  if (!Number.isInteger(stepsCompleted) || stepsCompleted !== length - 1) {
+    return res.status(400).json({ error: '接龙步数不对，这一局还没走完' });
+  }
+
+  // 每日链由唯一索引兜底，同一天重复提交只算一局；自由练习可反复玩
+  let already = false;
+  if (mode === 'daily') {
+    const r = db.prepare(`
+      INSERT OR IGNORE INTO chain_plays (kid_id, date, mode, length, completed_at) VALUES (?, ?, ?, ?, ?)
+    `).run(req.kidId, today, mode, length, now());
+    already = r.changes === 0;
+  } else {
+    db.prepare(`
+      INSERT INTO chain_plays (kid_id, date, mode, length, completed_at) VALUES (?, ?, ?, ?, ?)
+    `).run(req.kidId, today, mode, length, now());
+  }
+
+  const progress = buildProgress(req.kidId);
+  const newBadges = already ? [] : grantNewBadges(req.kidId, progress.stats).map((b) => b.id);
+  res.json({
+    ok: true,
+    already,
+    mode,
+    length,
+    totalPlays: progress.chainPlayCount,
+    chainDailyDone: progress.chainDailyDone,
+    newBadges,
+  });
+});
+
 // ---------- 装扮 ----------
 
 router.get('/outfits', requireKid, (req, res) => {
@@ -264,13 +342,20 @@ router.get('/parent/overview', requireParent, (req, res) => {
       SELECT COALESCE(SUM(new_learned), 0) AS newPoem, COALESCE(SUM(reviews), 0) AS poemReviews
       FROM daily_board WHERE kid_id = ? AND board = 'poem' AND date >= ?
     `).get(k.id, monday);
+    const weekChain = db.prepare(`
+      SELECT COUNT(*) AS plays, COALESCE(MAX(length), 0) AS maxLength
+      FROM chain_plays WHERE kid_id = ? AND date >= ?
+    `).get(k.id, monday);
     return {
       id: k.id, name: k.name, avatar: k.avatar, equipped: equippedOf(k.id),
       learnedCount: p.boardCounts.idiom, poemCount: p.boardCounts.poem,
       totalStars: p.totalStars,
       streak: p.streak, groupCounts: p.stats.groupCounts,
       rememberedCount: p.rememberedCount,
-      week: { ...week, newPoem: weekPoem.newPoem, poemReviews: weekPoem.poemReviews },
+      week: {
+        ...week, newPoem: weekPoem.newPoem, poemReviews: weekPoem.poemReviews,
+        chainPlays: weekChain.plays, chainMaxLength: weekChain.maxLength,
+      },
       recent: recent.map((r) => ({ idiomId: r.idiom_id, learnedAt: r.learned_at })),
     };
   });
@@ -323,11 +408,11 @@ router.put('/parent/pin', requireParent, (req, res) => {
 // 备份：全量 JSON 导出（不含会话）
 router.get('/parent/export', requireParent, (req, res) => {
   const dump = {};
-  for (const t of ['parents', 'kids', 'learned', 'daily', 'daily_board', 'badges', 'star_events', 'outfits']) {
+  for (const t of ['parents', 'kids', 'learned', 'daily', 'daily_board', 'badges', 'star_events', 'outfits', 'chain_plays']) {
     dump[t] = db.prepare(`SELECT * FROM ${t}`).all();
   }
   res.setHeader('Content-Disposition', `attachment; filename="chengyu-backup-${localDate()}.json"`);
-  res.json({ app: '成语学习乐园', version: 3, exportedAt: now(), data: dump });
+  res.json({ app: '成语学习乐园', version: 4, exportedAt: now(), data: dump });
 });
 
 // 恢复：上传同一格式的 JSON，清空后原样写回（保留当前家长会话）
@@ -351,7 +436,7 @@ router.post('/parent/restore', requireParent, async (req, res) => {
 
   db.exec('BEGIN');
   try {
-    for (const t of ['learned', 'daily', 'daily_board', 'badges', 'star_events', 'outfits', 'kids', 'parents', 'sessions']) {
+    for (const t of ['learned', 'daily', 'daily_board', 'badges', 'star_events', 'outfits', 'chain_plays', 'kids', 'parents', 'sessions']) {
       db.exec(`DELETE FROM ${t}`);
     }
     const put = (table, rows, cols) => {
@@ -368,6 +453,8 @@ router.post('/parent/restore', requireParent, async (req, res) => {
     put('badges', dump.badges, ['kid_id', 'badge_id', 'earned_at']);
     put('star_events', dump.star_events, ['id', 'kid_id', 'kind', 'delta', 'ref', 'created_at']);
     put('outfits', dump.outfits, ['kid_id', 'item_id', 'purchased_at']);
+    // 四期前的旧备份没有 chain_plays，按空表恢复
+    put('chain_plays', dump.chain_plays, ['id', 'kid_id', 'date', 'mode', 'length', 'completed_at']);
     if (current) {
       db.prepare('INSERT INTO sessions (token, kind, kid_id, created_at) VALUES (?, ?, ?, ?)')
         .run(current.token, current.kind, current.kid_id, current.created_at);
@@ -401,6 +488,20 @@ function insertKid(kid) {
     "INSERT INTO kids (name, avatar, pin_hash, salt, pinyin_all, equipped, created_at) VALUES (?, ?, ?, ?, 0, '{}', ?)"
   ).run(String(kid.name).trim(), kid.avatar, hashPin(kid.pin, s), s, now());
   return Number(r.lastInsertRowid);
+}
+
+function idiomLearnedCount(kidId) {
+  return db.prepare(
+    "SELECT COUNT(*) AS n FROM learned WHERE kid_id = ? AND board = 'idiom' AND stars > 0"
+  ).get(kidId).n;
+}
+
+function chainPlayStats(kidId, date) {
+  return db.prepare(`
+    SELECT COUNT(*) AS total,
+           COALESCE(SUM(CASE WHEN mode = 'daily' AND date = ? THEN 1 ELSE 0 END), 0) AS dailyDone
+    FROM chain_plays WHERE kid_id = ?
+  `).get(date, kidId);
 }
 
 function kidRow(id) {
@@ -440,6 +541,9 @@ function buildProgress(kidId) {
   const dayRow = db.prepare('SELECT new_learned, reviews FROM daily WHERE kid_id = ? AND date = ?').get(kidId, today);
   const badgeRows = db.prepare('SELECT badge_id FROM badges WHERE kid_id = ?').all(kidId);
   const totalStars = wallet(kidId);
+  const chainStats = chainPlayStats(kidId, today);
+  const chainPlayCount = chainStats.total;
+  const chainDailyDone = chainStats.dailyDone > 0;
 
   // 最近 14 天打卡日历
   const recent14 = [];
@@ -472,7 +576,10 @@ function buildProgress(kidId) {
     learnedCount: rows.length,
     boardCounts,
     recent14,
-    stats: { learnedCount: boardCounts.idiom, boardCounts, streak, groupCounts, groupTotals },
+    chainPlayCount,
+    chainDailyDone,
+    chainUnlocked: boardCounts.idiom > 0,
+    stats: { learnedCount: boardCounts.idiom, boardCounts, streak, groupCounts, groupTotals, chainPlayCount },
   };
 }
 

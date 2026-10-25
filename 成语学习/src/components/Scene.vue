@@ -88,6 +88,47 @@ defineProps({
       <circle cx="500" cy="1120" r="8" fill="#F5B841"/>
     </template>
 
+    <template v-else-if="scene === 'scene-castle'">
+      <rect width="800" height="1200" fill="#BDD9F2"/>
+      <circle cx="670" cy="170" r="72" fill="#F5B841"/>
+      <ellipse cx="170" cy="210" rx="102" ry="38" fill="#FFFFFF"/>
+      <ellipse cx="282" cy="190" rx="72" ry="30" fill="#FFFFFF"/>
+      <ellipse cx="610" cy="350" rx="82" ry="30" fill="#FFFFFF"/>
+      <path d="M80 640 Q400 230 720 640" fill="none" stroke="#E8604C" stroke-width="26"/>
+      <path d="M122 640 Q400 300 678 640" fill="none" stroke="#F5B841" stroke-width="26"/>
+      <path d="M164 640 Q400 366 636 640" fill="none" stroke="#C8E6A0" stroke-width="26"/>
+      <path d="M206 640 Q400 430 594 640" fill="none" stroke="#6FA8DC" stroke-width="26"/>
+      <path d="M248 640 Q400 492 552 640" fill="none" stroke="#A67AB5" stroke-width="26"/>
+      <path d="M0 760 Q200 700 400 750 T800 740 V1200 H0 Z" fill="#C8E6A0"/>
+      <path d="M0 940 Q220 870 440 930 T800 920 V1200 H0 Z" fill="#7CA982"/>
+      <rect x="336" y="660" width="128" height="260" fill="#FFF7E6" stroke="#3D3A36" stroke-width="4"/>
+      <path d="M336 660 L400 574 L464 660 Z" fill="#E8604C" stroke="#3D3A36" stroke-width="4"/>
+      <rect x="382" y="740" width="36" height="66" rx="18" fill="#6FA8DC" stroke="#3D3A36" stroke-width="4"/>
+      <rect x="352" y="700" width="30" height="42" rx="6" fill="#BDD9F2" stroke="#3D3A36" stroke-width="3"/>
+      <rect x="418" y="700" width="30" height="42" rx="6" fill="#BDD9F2" stroke="#3D3A36" stroke-width="3"/>
+      <rect x="250" y="730" width="80" height="190" fill="#FFF7E6" stroke="#3D3A36" stroke-width="4"/>
+      <path d="M250 730 L290 664 L330 730 Z" fill="#F09A4A" stroke="#3D3A36" stroke-width="4"/>
+      <rect x="470" y="730" width="80" height="190" fill="#FFF7E6" stroke="#3D3A36" stroke-width="4"/>
+      <path d="M470 730 L510 664 L550 730 Z" fill="#F09A4A" stroke="#3D3A36" stroke-width="4"/>
+      <rect x="278" y="780" width="24" height="38" rx="10" fill="#BDD9F2" stroke="#3D3A36" stroke-width="3"/>
+      <rect x="498" y="780" width="24" height="38" rx="10" fill="#BDD9F2" stroke="#3D3A36" stroke-width="3"/>
+      <path d="M400 574 L400 526" stroke="#3D3A36" stroke-width="4"/>
+      <path d="M400 526 L446 538 L400 552 Z" fill="#E8604C"/>
+      <path d="M290 664 L290 620" stroke="#3D3A36" stroke-width="4"/>
+      <path d="M290 620 L330 630 L290 642 Z" fill="#6FA8DC"/>
+      <path d="M510 664 L510 620" stroke="#3D3A36" stroke-width="4"/>
+      <path d="M510 620 L550 630 L510 642 Z" fill="#6FA8DC"/>
+      <path d="M368 920 Q400 860 432 920 L432 1000 L368 1000 Z" fill="#A9744F"/>
+      <circle cx="200" cy="860" r="46" fill="#5E8C61"/>
+      <circle cx="150" cy="890" r="30" fill="#7CA982"/>
+      <circle cx="590" cy="850" r="40" fill="#5E8C61"/>
+      <circle cx="640" cy="880" r="28" fill="#7CA982"/>
+      <circle cx="120" cy="1030" r="11" fill="#F5B8B8"/>
+      <circle cx="170" cy="1070" r="9" fill="#F5B841"/>
+      <circle cx="660" cy="1040" r="10" fill="#E8604C"/>
+      <circle cx="710" cy="1080" r="8" fill="#FFFFFF"/>
+    </template>
+
     <rect width="800" height="1200" fill="#FFF7E6" opacity="0.45"/>
   </svg>
 </template>

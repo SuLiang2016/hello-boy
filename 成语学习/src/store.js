@@ -8,6 +8,7 @@ export function useContent() {
   const poemGroups = content.poemGroups || []
   const idioms = content.idioms
   const poems = content.poems || []
+  const chainWords = content.chain?.words || []
   const byId = Object.fromEntries([...idioms, ...poems].map((i) => [i.id, i]))
 
   const groupsOf = (board) => (board === 'poem' ? poemGroups : groups)
@@ -30,6 +31,7 @@ export function useContent() {
 
   return {
     groups, poemGroups, idioms, poems, byId,
+    chainWords,
     groupsOf, boardOfGroup, boardOfItem, ofGroup, groupOf,
     titleOf, metaOf, meaningPrompt, routeName,
   }
@@ -57,6 +59,7 @@ export const BADGES = [
   { id: 'group-huaren', name: '情谊大师', hint: '学完「思念与送别」', color: '#A67AB5' },
   { id: 'group-yongwu', name: '明理大师', hint: '学完「咏物明理」', color: '#F09A4A' },
   { id: 'group-jiaguo', name: '家国大师', hint: '学完「家国与童年」', color: '#E8604C' },
+  { id: 'chain-10', name: '接龙高手', hint: '完成 10 局接龙', color: '#A67AB5' },
 ]
 
 // 装扮目录（与服务端 stars.js 保持一致）
@@ -65,6 +68,7 @@ export const OUTFITS = [
   { id: 'round-glasses', slot: 'glasses', name: '圆眼镜', price: 5 },
   { id: 'red-scarf', slot: 'scarf', name: '红围巾', price: 5 },
   { id: 'bow', slot: 'head', name: '蝴蝶结', price: 6 },
+  { id: 'star-headband', slot: 'head', name: '星星发箍', price: 30 },
   { id: 'tiger-hat', slot: 'hat', name: '虎头帽', price: 8 },
   { id: 'sunglasses', slot: 'glasses', name: '墨镜', price: 8 },
   { id: 'rainbow-scarf', slot: 'scarf', name: '彩虹围巾', price: 8 },
@@ -75,6 +79,7 @@ export const OUTFITS = [
   { id: 'scene-meadow', slot: 'scene', name: '草地', price: 12 },
   { id: 'scene-undersea', slot: 'scene', name: '海底', price: 15 },
   { id: 'scene-forest', slot: 'scene', name: '森林', price: 15 },
+  { id: 'scene-castle', slot: 'scene', name: '彩虹城堡', price: 50 },
 ]
 
 export const AVATARS = ['panda', 'rabbit', 'fox', 'tiger', 'owl', 'chick', 'frog', 'lion']
@@ -95,7 +100,8 @@ export const useSession = defineStore('session', {
     starsOf: (s) => (id) => s.progress?.learned?.[id]?.stars || 0,
     stageOf: (s) => (id) => s.progress?.learned?.[id]?.stage || 0,
     isRemembered: (s) => (id) => (s.progress?.learned?.[id]?.stage || 0) >= 5,
-    groupUnlocked: (s) => (g) => s.progress?.unlocked?.includes(g) || false
+    groupUnlocked: (s) => (g) => s.progress?.unlocked?.includes(g) || false,
+    chainUnlocked: (s) => s.progress?.chainUnlocked ?? ((s.progress?.boardCounts?.idiom || 0) > 0)
   },
   actions: {
     async boot() {

@@ -16,6 +16,7 @@ export const router = createRouter({
     { path: '/shici/i/:id', name: 'poem-learn', component: () => import('./views/LearnView.vue'), meta: { board: 'poem' } },
     { path: '/chengyu/i/:id/quiz', name: 'quiz', component: () => import('./views/QuizView.vue'), meta: { board: 'idiom' } },
     { path: '/shici/i/:id/quiz', name: 'poem-quiz', component: () => import('./views/QuizView.vue'), meta: { board: 'poem' } },
+    { path: '/chain', name: 'chain', component: () => import('./views/ChainView.vue') },
     { path: '/stars', name: 'stars', component: () => import('./views/ProgressView.vue') },
     { path: '/review', name: 'review', component: () => import('./views/ReviewView.vue') },
     { path: '/dressup', name: 'dressup', component: () => import('./views/DressupView.vue') },

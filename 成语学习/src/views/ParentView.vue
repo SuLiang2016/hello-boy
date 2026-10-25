@@ -153,6 +153,9 @@ async function onRestoreFile(ev) {
               <span class="chip" style="color: #5E8C61; font-size: 16px">本周新学 {{ k.week?.newLearned ?? 0 }}</span>
               <span class="chip" style="color: #6FA8DC; font-size: 16px">古诗 {{ k.week?.newPoem ?? 0 }} 首 · 复习 {{ k.week?.poemReviews ?? 0 }} 次</span>
               <span class="chip" style="color: #4A7FB5; font-size: 16px">复习 {{ k.week?.reviews ?? 0 }} 次</span>
+              <span class="chip" style="color: #A67AB5; font-size: 16px">
+                <Icon name="link" :size="16" />接龙 {{ k.week?.chainPlays ?? 0 }} 局 · 最长 {{ k.week?.chainMaxLength ?? 0 }}
+              </span>
               <span class="chip" style="color: #C79213; font-size: 16px"><Icon name="crown" :size="16" />牢记 {{ k.rememberedCount ?? 0 }}</span>
             </div>
           </div>
@@ -251,7 +254,7 @@ async function onRestoreFile(ev) {
         <div class="card" style="margin-top: 16px">
           <h2 style="font-size: 20px">备份与恢复</h2>
           <p style="color: var(--muted); font-size: 16px">
-            备份会下载一个文件，包含所有孩子账号、学习进度、星星和装扮。恢复会把现在的数据整个换成备份文件里的。
+            备份会下载一个文件，包含所有孩子账号、学习进度、接龙记录、星星和装扮。恢复会把现在的数据整个换成备份文件里的。
             另外服务每次启动都会自动备一份（保留最近 7 份，在 data/backup 文件夹里）。
           </p>
           <p class="error-tip">{{ backupMsg }}</p>

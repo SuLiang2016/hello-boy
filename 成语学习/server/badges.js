@@ -24,6 +24,8 @@ const BADGES = [
   { id: 'group-huaren', name: '情谊大师', hint: '学完「思念与送别」篇章', kind: 'group', group: 'huaren' },
   { id: 'group-yongwu', name: '明理大师', hint: '学完「咏物明理」篇章', kind: 'group', group: 'yongwu' },
   { id: 'group-jiaguo', name: '家国大师', hint: '学完「家国与童年」篇章', kind: 'group', group: 'jiaguo' },
+  // 四期：接龙
+  { id: 'chain-10', name: '接龙高手', hint: '完成 10 局接龙', kind: 'chain', threshold: 10 },
 ];
 
 // 计算连续打卡天数：从今天（或昨天）往前数连续有学习动作（新学或复习）的天数
@@ -64,6 +66,7 @@ function grantNewBadges(kidId, stats) {
     const ok =
       (b.kind === 'learn' && (stats.boardCounts?.[b.board] || 0) >= b.threshold) ||
       (b.kind === 'streak' && stats.streak >= b.threshold) ||
+      (b.kind === 'chain' && (stats.chainPlayCount || 0) >= b.threshold) ||
       // 篇章徽章：篇章必须有内容（总数>0）且全部学会，防止空篇章 0>=0 误发
       (b.kind === 'group' && (stats.groupTotals[b.group] || 0) > 0 &&
         (stats.groupCounts[b.group] || 0) >= stats.groupTotals[b.group]);

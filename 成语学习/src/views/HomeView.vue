@@ -56,6 +56,11 @@ function nextOne() {
 }
 
 const percent = (n, total) => (total ? Math.round((n / total) * 100) : 0)
+
+function openChain() {
+  if (session.chainUnlocked) router.push({ name: 'chain' })
+  else router.push({ name: 'groups' })
+}
 </script>
 
 <template>
@@ -77,6 +82,9 @@ const percent = (n, total) => (total ? Math.round((n / total) * 100) : 0)
         <span class="chip" style="color: #C79213"><Icon name="star" :size="22" />{{ session.progress?.totalStars ?? 0 }} 颗星星</span>
         <span class="chip" style="color: #E8604C"><Icon name="flame" :size="22" />连续 {{ session.progress?.streak ?? 0 }} 天</span>
         <span class="chip" style="color: #5E8C61"><Icon name="check" :size="22" />学会 {{ learnedTotal }} / {{ totalAll }}</span>
+        <span v-if="session.progress?.chainDailyDone" class="chip" style="color: #A67AB5">
+          <Icon name="link" :size="22" />今日接龙完成
+        </span>
       </div>
 
       <div class="card" :style="{ background: session.progress?.todayDone ? 'var(--green-light)' : '#fff' }" style="margin-bottom: 16px; display: flex; align-items: center; gap: 16px">
@@ -105,6 +113,13 @@ const percent = (n, total) => (total ? Math.round((n / total) * 100) : 0)
           <p style="color: var(--muted); margin: 0 0 10px">{{ b.desc }}</p>
           <div class="bar"><div :style="{ width: percent(b.learned, b.total) + '%', background: b.color }"></div></div>
           <b style="font-size: 17px">{{ b.learned }} / {{ b.total }} {{ b.unit }}</b>
+          <div v-if="b.key === 'idiom'" class="chain-mini" @click.stop="openChain">
+            <Icon name="link" :size="17" />
+            <span v-if="!session.chainUnlocked">学会 1 个成语解锁接龙</span>
+            <span v-else-if="session.progress?.chainDailyDone">今日接龙完成</span>
+            <span v-else>去玩成语接龙</span>
+            <Icon v-if="!session.chainUnlocked" name="lock" :size="14" />
+          </div>
         </div>
 
         <div class="card board-card small-card" style="border-color: #E8604C" @click="router.push({ name: 'dressup' })">
@@ -159,6 +174,19 @@ const percent = (n, total) => (total ? Math.round((n / total) * 100) : 0)
   margin-bottom: 8px;
 }
 .bar > div { height: 100%; transition: width 0.4s; }
+.chain-mini {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border-radius: 12px;
+  background: #F3EDF8;
+  color: #A67AB5;
+  font-size: 14px;
+  font-weight: 700;
+}
 @media (max-width: 520px) {
   .board-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
   .board-card { padding: 16px 14px; }

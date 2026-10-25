@@ -9,7 +9,8 @@
     "build": "npm run build:content && vite build",
     "start": "node server/index.js",
     "dev": "vite",
-    "smoke": "node scripts/smoke-test.js"
+    "smoke": "node scripts/smoke-test.js",
+    "test": "npm run build:content && node --test tests/chain.test.mjs"
   },
   "dependencies": {
     "express": "^4.21.2",

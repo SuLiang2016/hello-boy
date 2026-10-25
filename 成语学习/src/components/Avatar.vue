@@ -31,6 +31,7 @@ const OUTFIT_SVGS = {
   'red-scarf': `<path d="M22 80 q28 12 56 0 l0 -8 q-28 10 -56 0 z" fill="#E8604C" ${S}/><path d="M62 84 l10 14 l-8 2 l-8 -13" fill="#E8604C" ${S} stroke-linejoin="round"/>`,
   'rainbow-scarf': `<path d="M22 80 q28 12 56 0 l0 -8 q-28 10 -56 0 z" fill="#E8604C" ${S}/><path d="M24 76 q26 9 52 0" stroke="#F5B841" stroke-width="3" fill="none"/><path d="M26 80 q24 8 48 0" stroke="#6FA8DC" stroke-width="3" fill="none"/><path d="M62 84 l10 14 l-8 2 l-8 -13" fill="#E8604C" ${S} stroke-linejoin="round"/>`,
   bow: `<path d="M22 26 L36 20 L36 34 Z" fill="#F5B8B8" ${S} stroke-linejoin="round"/><path d="M50 27 L36 20 L36 34 Z" fill="#F5B8B8" ${S} stroke-linejoin="round"/><path d="M50 27 L64 21 L64 35 Z" fill="#F5B8B8" ${S} stroke-linejoin="round"/><path d="M78 26 L64 21 L64 35 Z" fill="#F5B8B8" ${S} stroke-linejoin="round"/><circle cx="50" cy="27" r="5" fill="#E8604C" ${S}/>`,
+  'star-headband': `<path d="M22 30 Q50 18 78 30" fill="none" stroke="#F5B841" stroke-width="6" stroke-linecap="round"/><path d="M50 17 l2.6 5.2 5.8 .8 -4.2 4.1 1 5.7 -5.2 -2.7 -5.2 2.7 1 -5.7 -4.2 -4.1 5.8 -.8 z" fill="#F5B841" ${S} stroke-linejoin="round"/><circle cx="28" cy="27" r="3" fill="#E8604C"/><circle cx="72" cy="27" r="3" fill="#E8604C"/>`,
 }
 
 // 叠戴顺序：围巾在最下、头饰其次、眼镜、帽子最上
