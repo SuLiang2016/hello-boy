@@ -97,6 +97,7 @@ router.post('/quiz-result', requireKid, (req, res) => {
   const c = Math.max(0, Math.min(3, Number(body.correct) | 0));
   const passed = c >= 2;
   const stars = c === 3 ? 2 : 1;
+  const today = localDate();
 
   const prev = db.prepare('SELECT * FROM learned WHERE kid_id = ? AND idiom_id = ?').get(req.kidId, itemId);
   const prevStars = prev ? prev.stars : 0;
@@ -108,7 +109,8 @@ router.post('/quiz-result', requireKid, (req, res) => {
       stars = MAX(stars, excluded.stars),
       best_correct = MAX(best_correct, excluded.best_correct),
       attempts = attempts + 1,
-      updated_at = excluded.updated_at
+      updated_at = excluded.updated_at,
+      next_review_date = COALESCE(learned.next_review_date, excluded.next_review_date)
   `).run(req.kidId, itemId, board, passed ? stars : 0, c, now(), now(),
          passed && prevStars === 0 ? localDate(REVIEW_GAPS[0]) : null);
 
@@ -123,7 +125,11 @@ router.post('/quiz-result', requireKid, (req, res) => {
       db.prepare(`
         INSERT INTO daily (kid_id, date, new_learned) VALUES (?, ?, 1)
         ON CONFLICT(kid_id, date) DO UPDATE SET new_learned = new_learned + 1
-      `).run(req.kidId, localDate());
+      `).run(req.kidId, today);
+      db.prepare(`
+        INSERT INTO daily_board (kid_id, date, board, new_learned) VALUES (?, ?, ?, 1)
+        ON CONFLICT(kid_id, date, board) DO UPDATE SET new_learned = new_learned + 1
+      `).run(req.kidId, today, board);
     }
   }
 
@@ -161,6 +167,10 @@ router.post('/review-result', requireKid, (req, res) => {
     INSERT INTO daily (kid_id, date, reviews) VALUES (?, ?, 1)
     ON CONFLICT(kid_id, date) DO UPDATE SET reviews = reviews + 1
   `).run(req.kidId, today);
+  db.prepare(`
+    INSERT INTO daily_board (kid_id, date, board, reviews) VALUES (?, ?, ?, 1)
+    ON CONFLICT(kid_id, date, board) DO UPDATE SET reviews = reviews + 1
+  `).run(req.kidId, today, row.board === 'poem' ? 'poem' : 'idiom');
 
   // 当天全部到期复习完成 -> 补 1 颗复习星（每天最多一次）
   let bonusStar = false;
@@ -251,16 +261,16 @@ router.get('/parent/overview', requireParent, (req, res) => {
     `).get(k.id, monday);
     // 本周新学按板块拆分（三期起周报分列成语/古诗）
     const weekPoem = db.prepare(`
-      SELECT COUNT(*) AS n FROM learned
-      WHERE kid_id = ? AND board = 'poem' AND stars > 0 AND learned_at >= ?
-    `).get(k.id, monday).n;
+      SELECT COALESCE(SUM(new_learned), 0) AS newPoem, COALESCE(SUM(reviews), 0) AS poemReviews
+      FROM daily_board WHERE kid_id = ? AND board = 'poem' AND date >= ?
+    `).get(k.id, monday);
     return {
       id: k.id, name: k.name, avatar: k.avatar, equipped: equippedOf(k.id),
       learnedCount: p.boardCounts.idiom, poemCount: p.boardCounts.poem,
       totalStars: p.totalStars,
       streak: p.streak, groupCounts: p.stats.groupCounts,
       rememberedCount: p.rememberedCount,
-      week: { ...week, newPoem: weekPoem },
+      week: { ...week, newPoem: weekPoem.newPoem, poemReviews: weekPoem.poemReviews },
       recent: recent.map((r) => ({ idiomId: r.idiom_id, learnedAt: r.learned_at })),
     };
   });
@@ -313,11 +323,11 @@ router.put('/parent/pin', requireParent, (req, res) => {
 // 备份：全量 JSON 导出（不含会话）
 router.get('/parent/export', requireParent, (req, res) => {
   const dump = {};
-  for (const t of ['parents', 'kids', 'learned', 'daily', 'badges', 'star_events', 'outfits']) {
+  for (const t of ['parents', 'kids', 'learned', 'daily', 'daily_board', 'badges', 'star_events', 'outfits']) {
     dump[t] = db.prepare(`SELECT * FROM ${t}`).all();
   }
   res.setHeader('Content-Disposition', `attachment; filename="chengyu-backup-${localDate()}.json"`);
-  res.json({ app: '成语学习乐园', version: 2, exportedAt: now(), data: dump });
+  res.json({ app: '成语学习乐园', version: 3, exportedAt: now(), data: dump });
 });
 
 // 恢复：上传同一格式的 JSON，清空后原样写回（保留当前家长会话）
@@ -335,10 +345,13 @@ router.post('/parent/restore', requireParent, async (req, res) => {
 
   // 旧版备份没有 board 列，按成语回填
   const learnedRows = dump.learned.map((r) => ({ board: 'idiom', ...r }));
+  const dailyBoardRows = Array.isArray(dump.daily_board)
+    ? dump.daily_board
+    : (dump.daily || []).map((r) => ({ ...r, board: 'idiom' }));
 
   db.exec('BEGIN');
   try {
-    for (const t of ['learned', 'daily', 'badges', 'star_events', 'outfits', 'kids', 'parents', 'sessions']) {
+    for (const t of ['learned', 'daily', 'daily_board', 'badges', 'star_events', 'outfits', 'kids', 'parents', 'sessions']) {
       db.exec(`DELETE FROM ${t}`);
     }
     const put = (table, rows, cols) => {
@@ -351,6 +364,7 @@ router.post('/parent/restore', requireParent, async (req, res) => {
     put('kids', dump.kids, ['id', 'name', 'avatar', 'pin_hash', 'salt', 'pinyin_all', 'equipped', 'created_at']);
     put('learned', learnedRows, ['kid_id', 'idiom_id', 'board', 'stars', 'best_correct', 'attempts', 'learned_at', 'updated_at', 'review_stage', 'next_review_date']);
     put('daily', dump.daily, ['kid_id', 'date', 'new_learned', 'reviews', 'review_star']);
+    put('daily_board', dailyBoardRows, ['kid_id', 'date', 'board', 'new_learned', 'reviews']);
     put('badges', dump.badges, ['kid_id', 'badge_id', 'earned_at']);
     put('star_events', dump.star_events, ['id', 'kid_id', 'kind', 'delta', 'ref', 'created_at']);
     put('outfits', dump.outfits, ['kid_id', 'item_id', 'purchased_at']);

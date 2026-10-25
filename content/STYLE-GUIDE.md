@@ -1,4 +1,4 @@
-# 成语内容风格指南（强制执行）
+# 学习内容风格指南（成语 + 古诗，强制执行）
 
 本指南写给内容撰写者。每条内容必须让孩子「念出声听不别扭」，让家长觉得「这是认真写给孩子看的」。
 
@@ -120,3 +120,33 @@
 - 输出为 JSON 数组，包含指定 10 条，顺序与清单一致，UTF-8 编码。
 - 写完必须用 `node -e "JSON.parse(require('fs').readFileSync('文件路径','utf8')); console.log('ok')"` 自检。
 - 自己默读一遍每条故事：拗口的地方改到顺。
+
+## 七、古诗（三期）
+
+每篇 15 首，存为 `content/poems/<篇章>.json`。
+
+```json
+{
+  "id": "jing-ye-si",
+  "title": "静夜思",
+  "dynasty": "唐",
+  "author": "李白",
+  "group": "huaren",
+  "lines": ["床前明月光，", "疑是地上霜。", "举头望明月，", "低头思故乡。"],
+  "fixes": { "为": "wéi" },
+  "explanation": "……40-220 字，白话讲画面和意思……",
+  "poetStory": "……40-240 字，诗人是谁、在什么情况下写的……",
+  "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'>……</svg>",
+  "quiz": [
+    { "type": "meaning", "question": "《静夜思》写的是什么情景？", "options": ["…", "…", "…", "…"], "answer": 0, "explain": "…" },
+    { "type": "fill", "question": "举头望明（　），", "options": ["月", "日", "云", "星"], "answer": 0, "explain": "…" },
+    { "type": "next", "question": "举头望明月，", "options": ["低头思故乡。", "疑是地上霜。", "床前明月光，", "…"], "answer": 0, "explain": "…" }
+  ]
+}
+```
+
+- `lines` 3-12 行，每行 2-24 字；保留标点，教材异文按通行版。
+- `explanation` 说画面和意思，`poetStory` 讲诗人与写作缘起；都像讲故事，不用词典腔。
+- `fixes` 放需要按教材人工确认的多音字（pinyin-pro 可能读错，或不同版本读音有差异），例如 斜 xiá、衰 cuī、见 xiàn、景 yǐng、为 wéi、朝 zhāo、还 huán、缝 féng、华 huā、劲 jìng、笼 lǒng。
+- 测验固定 3 题：meaning（选诗意）→ fill（补诗句，正确项是单字，题目严格等于原句把该字换成「（　）」）→ next（给上句选下句，正确项是原诗的下一句）。
+- 插图沿用成语的 SVG 规范与调色板：viewBox 400×300，无文字、渐变、滤镜、外链，画这首诗最有辨识度的场景。

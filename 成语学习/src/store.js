@@ -5,11 +5,34 @@ import content from './assets/content.json'
 // 内容查找工具（内容是静态打包的）
 export function useContent() {
   const groups = content.groups
+  const poemGroups = content.poemGroups || []
   const idioms = content.idioms
-  const byId = Object.fromEntries(idioms.map((i) => [i.id, i]))
-  const ofGroup = (g) => idioms.filter((i) => i.group === g)
-  const groupOf = (g) => groups.find((x) => x.key === g)
-  return { groups, idioms, byId, ofGroup, groupOf }
+  const poems = content.poems || []
+  const byId = Object.fromEntries([...idioms, ...poems].map((i) => [i.id, i]))
+
+  const groupsOf = (board) => (board === 'poem' ? poemGroups : groups)
+  const boardOfGroup = (key) => (poemGroups.some((g) => g.key === key) ? 'poem' : 'idiom')
+  const boardOfItem = (item) => (item ? boardOfGroup(item.group) : null)
+  const ofGroup = (key) => {
+    const list = boardOfGroup(key) === 'poem' ? poems : idioms
+    return list.filter((i) => i.group === key)
+  }
+  const groupOf = (key) => [...groups, ...poemGroups].find((g) => g.key === key)
+  const titleOf = (item) => item?.word || item?.title || ''
+  const metaOf = (item) => (item?.word ? item.pinyin : `${item?.dynasty || ''} · ${item?.author || ''}`)
+  const meaningPrompt = (item) => (item?.lines ? `《${item.title}》这首诗讲了什么？` : `「${item?.word}」是什么意思？`)
+
+  const routeNames = {
+    idiom: { groups: 'groups', group: 'group', learn: 'learn', quiz: 'quiz' },
+    poem: { groups: 'poem-groups', group: 'poem-group', learn: 'poem-learn', quiz: 'poem-quiz' },
+  }
+  const routeName = (kind, board) => routeNames[board === 'poem' ? 'poem' : 'idiom'][kind]
+
+  return {
+    groups, poemGroups, idioms, poems, byId,
+    groupsOf, boardOfGroup, boardOfItem, ofGroup, groupOf,
+    titleOf, metaOf, meaningPrompt, routeName,
+  }
 }
 
 export const BADGES = [
@@ -26,6 +49,14 @@ export const BADGES = [
   { id: 'group-renwu', name: '人物大师', hint: '学完「了不起的人」', color: '#E8604C' },
   { id: 'group-jizhi', name: '智慧大师', hint: '学完「聪明办法」', color: '#A67AB5' },
   { id: 'group-shenhua', name: '神话大师', hint: '学完「神话传说」', color: '#F5B841' },
+  { id: 'poem-10', name: '古诗小书生', hint: '学会 10 首古诗', color: '#6FA8DC' },
+  { id: 'poem-30', name: '古诗小达人', hint: '学会 30 首古诗', color: '#6FA8DC' },
+  { id: 'poem-75', name: '古诗大王', hint: '学会全部 75 首古诗', color: '#6FA8DC' },
+  { id: 'group-siji', name: '四季大师', hint: '学完「四季风光」', color: '#6FA8DC' },
+  { id: 'group-shanshui', name: '山水大师', hint: '学完「山水田园」', color: '#7CA982' },
+  { id: 'group-huaren', name: '情谊大师', hint: '学完「思念与送别」', color: '#A67AB5' },
+  { id: 'group-yongwu', name: '明理大师', hint: '学完「咏物明理」', color: '#F09A4A' },
+  { id: 'group-jiaguo', name: '家国大师', hint: '学完「家国与童年」', color: '#E8604C' },
 ]
 
 // 装扮目录（与服务端 stars.js 保持一致）
@@ -40,9 +71,16 @@ export const OUTFITS = [
   { id: 'magic-hat', slot: 'hat', name: '魔法帽', price: 10 },
   { id: 'dr-hat', slot: 'hat', name: '博士帽', price: 12 },
   { id: 'crown', slot: 'hat', name: '金皇冠', price: 15 },
+  { id: 'scene-starry', slot: 'scene', name: '星空', price: 12 },
+  { id: 'scene-meadow', slot: 'scene', name: '草地', price: 12 },
+  { id: 'scene-undersea', slot: 'scene', name: '海底', price: 15 },
+  { id: 'scene-forest', slot: 'scene', name: '森林', price: 15 },
 ]
 
 export const AVATARS = ['panda', 'rabbit', 'fox', 'tiger', 'owl', 'chick', 'frog', 'lion']
+
+// 并发调用 boot() 时复用同一个请求；否则路由守卫可能拿到还没加载完的进度
+let bootPromise = null
 
 export const useSession = defineStore('session', {
   state: () => ({
@@ -62,18 +100,22 @@ export const useSession = defineStore('session', {
   actions: {
     async boot() {
       if (this.booted) return
-      this.booted = true
-      const b = await api('/bootstrap')
-      this.needsSetup = b.needsSetup
-      if (!b.needsSetup && kidToken()) {
-        try {
-          this.kid = await api('/me')
-          this.progress = await api('/progress')
-        } catch {
-          setKidToken('')
-          this.kid = null
+      if (bootPromise) return bootPromise
+      bootPromise = (async () => {
+        const b = await api('/bootstrap')
+        this.needsSetup = b.needsSetup
+        if (!b.needsSetup && kidToken()) {
+          try {
+            this.kid = await api('/me')
+            this.progress = await api('/progress')
+          } catch {
+            setKidToken('')
+            this.kid = null
+          }
         }
-      }
+        this.booted = true
+      })()
+      try { await bootPromise } finally { bootPromise = null }
     },
     async refreshProgress() {
       if (this.kid) {

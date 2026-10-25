@@ -1,0 +1,248 @@
+[
+  {
+    "id": "chang-ge-xing",
+    "title": "长歌行",
+    "dynasty": "汉",
+    "author": "乐府",
+    "group": "yongwu",
+    "lines": ["青青园中葵，", "朝露待日晞。", "阳春布德泽，", "万物生光辉。", "常恐秋节至，", "焜黄华叶衰。", "百川东到海，", "何时复西归？", "少壮不努力，", "老大徒伤悲。"],
+    "fixes": { "朝": "zhāo", "华": "huā" },
+    "explanation": "园子里的葵菜青青的，叶子上的露水等着太阳晒干。春天把阳光和雨露洒给万物，万物都亮堂堂的。可一到秋天，花叶就会枯黄。江河向东流进大海，什么时候能再往西流呢？年轻时不努力，老了只能白白伤心。",
+    "poetStory": "这是汉代乐府收集的一首歌。古人看见园里的葵菜从春天长到秋天，又看见河水一直向东流，就想到人的年轻时光也会过去。歌里劝人趁年轻努力，别等老了后悔。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='54' r='24' fill='#F5B841'/><path d='M0 210 H400 V300 H0 Z' fill='#C8E6A0'/><rect x='60' y='140' width='220' height='70' fill='#7CA982'/><path d='M80 140 v-50 M120 140 v-60 M160 140 v-50 M200 140 v-60 M240 140 v-50' stroke='#5E8C61' stroke-width='4'/><circle cx='80' cy='84' r='16' fill='#F5B841'/><circle cx='120' cy='74' r='14' fill='#F5B841'/><circle cx='160' cy='84' r='16' fill='#F5B841'/><circle cx='200' cy='74' r='14' fill='#F5B841'/><circle cx='240' cy='84' r='16' fill='#F5B841'/><path d='M74 100 q6 10 12 0 M114 90 q6 10 12 0' stroke='#FFFFFF' stroke-width='3' fill='none'/><path d='M0 240 Q100 224 200 240 T400 232 V300 H0 Z' fill='#6FA8DC'/><path d='M20 260 q20 -10 40 0 M80 270 q20 -10 40 0' stroke='#FFFFFF' stroke-width='3' fill='none'/><circle cx='320' cy='200' r='12' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M306 214 L334 214 L342 260 L298 260 Z' fill='#A67AB5'/><path d='M320 200 q10 -14 20 -4' stroke='#FFFFFF' stroke-width='3' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《长歌行》最后劝人做什么？", "options": ["趁年轻努力，别等老了后悔", "多晒太阳", "去海边看河", "种很多葵菜"], "answer": 0, "explain": "少壮不努力，老大徒伤悲，是劝人珍惜年轻时光。" },
+      { "type": "fill", "question": "少壮不（　）力，", "options": ["努", "奴", "怒", "弩"], "answer": 0, "explain": "努力就是尽力去做。" },
+      { "type": "next", "question": "百川东到海，", "options": ["何时复西归？", "万物生光辉。", "少壮不努力，", "老大徒伤悲。"], "answer": 0, "explain": "河水向东流入海，什么时候再向西流呢？" }
+    ]
+  },
+  {
+    "id": "feng",
+    "title": "风",
+    "dynasty": "唐",
+    "author": "李峤",
+    "group": "yongwu",
+    "lines": ["解落三秋叶，", "能开二月花。", "过江千尺浪，", "入竹万竿斜。"],
+    "explanation": "风能吹落秋天树上的叶子，也能吹开二月的花。它吹过江面，掀起千尺高的浪；它钻进竹林，让千万根竹子都斜向一边。全诗没有一个「风」字，却句句都在写风。",
+    "poetStory": "李峤是唐朝的诗人，他看见风吹叶子、吹花、吹浪、吹竹子，觉得风很神奇，就写了这首诗。诗里不直接说风，只写风做过的事，让人一读就能猜出来。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='54' r='24' fill='#F5B841'/><path d='M0 210 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M30 100 q30 -20 60 0 q30 -20 60 0' stroke='#BDD9F2' stroke-width='6' fill='none'/><path d='M60 130 q20 -14 40 0' stroke='#7CA982' stroke-width='4' fill='none'/><path d='M80 80 q10 -10 20 0 q-10 10 -20 0 z' fill='#E8604C'/><path d='M120 64 q10 -10 20 0 q-10 10 -20 0 z' fill='#F5B841'/><path d='M160 90 q10 -10 20 0 q-10 10 -20 0 z' fill='#A67AB5'/><path d='M0 250 Q100 230 200 250 T400 244 V300 H0 Z' fill='#6FA8DC'/><path d='M40 260 q20 -20 40 0 q20 -20 40 0' stroke='#FFFFFF' stroke-width='4' fill='none'/><path d='M270 220 q0 -80 0 -160' stroke='#5E8C61' stroke-width='8'/><path d='M310 220 q0 -80 0 -160' stroke='#7CA982' stroke-width='8'/><path d='M350 220 q0 -80 0 -160' stroke='#5E8C61' stroke-width='8'/><path d='M270 180 q40 -10 60 -20 M310 150 q40 -10 60 -20 M350 200 q30 -10 40 -18' stroke='#7CA982' stroke-width='5' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《风》这首诗写的是什么？", "options": ["风的本事", "秋天的树叶", "江里的浪", "竹林"], "answer": 0, "explain": "四句分别写风吹叶、吹花、吹浪、吹竹，全是在写风。" },
+      { "type": "fill", "question": "过江千尺（　），", "options": ["浪", "狼", "朗", "郎"], "answer": 0, "explain": "风过江面，掀起千尺浪。" },
+      { "type": "next", "question": "解落三秋叶，", "options": ["能开二月花。", "过江千尺浪，", "入竹万竿斜。", "春风吹又生。"], "answer": 0, "explain": "风能吹落秋叶，也能吹开春花。" }
+    ]
+  },
+  {
+    "id": "deng-guan-que-lou",
+    "title": "登鹳雀楼",
+    "dynasty": "唐",
+    "author": "王之涣",
+    "group": "yongwu",
+    "lines": ["白日依山尽，", "黄河入海流。", "欲穷千里目，", "更上一层楼。"],
+    "explanation": "太阳靠着山慢慢落下，黄河向着大海流去。诗人想看得更远，看到千里之外的风景，就又往上登了一层楼。站得越高，看得越远。",
+    "poetStory": "王之涣登上鹳雀楼，看见太阳落山、黄河东流。他想看得更远，就继续往上走。他写下这首诗，最后两句常被人们记住：想看得远，就要站得更高。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='310' cy='80' r='26' fill='#E8604C'/><path d='M0 170 L120 60 L240 170 Z' fill='#7CA982'/><path d='M180 170 L300 80 L400 170 Z' fill='#5E8C61'/><path d='M0 200 H400 V300 H0 Z' fill='#F5B841'/><path d='M0 220 Q100 204 200 220 T400 212 V300 H0 Z' fill='#BDD9F2'/><rect x='80' y='140' width='70' height='100' fill='#A9744F'/><path d='M70 140 L115 100 L160 140 Z' fill='#8B5A3C'/><path d='M80 170 h70 M80 200 h70' stroke='#8B5A3C' stroke-width='4'/><circle cx='115' cy='230' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M103 244 L127 244 L133 278 L97 278 Z' fill='#6FA8DC'/><path d='M127 250 l18 -10' stroke='#F8D8B8' stroke-width='5' stroke-linecap='round'/><path d='M250 250 q30 -10 60 0' stroke='#FFFFFF' stroke-width='4' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《登鹳雀楼》最后两句说的是什么？", "options": ["站得越高，看得越远", "楼越高越危险", "黄河水流得很快", "太阳下山了"], "answer": 0, "explain": "欲穷千里目，更上一层楼，想看得远就要再上一层。" },
+      { "type": "fill", "question": "更上一（　）楼。", "options": ["层", "曾", "增", "赠"], "answer": 0, "explain": "一层楼就是楼的一层。" },
+      { "type": "next", "question": "欲穷千里目，", "options": ["更上一层楼。", "黄河入海流。", "白日依山尽，", "春风不度玉门关。"], "answer": 0, "explain": "想看得更远，就再登上一层楼。" }
+    ]
+  },
+  {
+    "id": "fu-de-gu-yuan-cao",
+    "title": "赋得古原草送别",
+    "dynasty": "唐",
+    "author": "白居易",
+    "group": "yongwu",
+    "lines": ["离离原上草，", "一岁一枯荣。", "野火烧不尽，", "春风吹又生。", "远芳侵古道，", "晴翠接荒城。", "又送王孙去，", "萋萋满别情。"],
+    "explanation": "原野上的草长得茂盛，一年枯一次，又荣一次。野火烧不尽它，春风一吹，它又长出来。远处的草香漫上古老的道路，阳光下的绿色连着荒废的城。诗人又送朋友远行，满眼青草都像离别的情绪。",
+    "poetStory": "白居易十六岁到长安，带着这首诗去拜访名人。对方看到「野火烧不尽，春风吹又生」，非常赞赏。这首诗原本是送别朋友时写的，草的生命力却成了最有名的一句。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 210 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M20 230 q10 -30 20 0 M50 240 q10 -28 20 0 M80 230 q10 -30 20 0 M110 240 q10 -28 20 0 M140 230 q10 -30 20 0' stroke='#5E8C61' stroke-width='4' fill='none'/><path d='M160 230 q10 -30 20 0 M190 240 q10 -28 20 0 M220 230 q10 -30 20 0' stroke='#7CA982' stroke-width='4' fill='none'/><path d='M280 200 q10 -30 20 0 q10 -30 20 0' stroke='#E8604C' stroke-width='5' fill='none'/><path d='M270 240 q30 -20 60 0 q-30 16 -60 0 z' fill='#F5B841'/><path d='M0 280 H400' stroke='#A9744F' stroke-width='6'/><rect x='330' y='140' width='40' height='60' fill='#9E9C9A'/><path d='M326 140 L350 120 L374 140 Z' fill='#8B5A3C'/><circle cx='120' cy='190' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M108 204 L132 204 L138 236 L102 236 Z' fill='#6FA8DC'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《赋得古原草送别》里，最有名的一句说草怎样？", "options": ["野火烧不尽，春风吹又生", "草一年只长一次", "草怕风", "草会走路"], "answer": 0, "explain": "野火烧不尽，春风吹又生，写草的生命力很强。" },
+      { "type": "fill", "question": "野火烧不（　），", "options": ["尽", "近", "进", "劲"], "answer": 0, "explain": "尽就是完，野火烧不完小草。" },
+      { "type": "next", "question": "野火烧不尽，", "options": ["春风吹又生。", "一岁一枯荣。", "离离原上草，", "萋萋满别情。"], "answer": 0, "explain": "野火烧不完，春风一吹又长出来。" }
+    ]
+  },
+  {
+    "id": "min-nong-er",
+    "title": "悯农",
+    "dynasty": "唐",
+    "author": "李绅",
+    "group": "yongwu",
+    "lines": ["锄禾日当午，", "汗滴禾下土。", "谁知盘中餐，", "粒粒皆辛苦。"],
+    "explanation": "农民在中午最热的时候锄地，汗水一滴滴落进禾苗下的泥土里。谁知道碗里的饭，每一粒都来得这么辛苦呢？诗人看见农民干活，就想让吃饭的人别忘了种粮的人。",
+    "poetStory": "李绅年轻时在乡下，看见农民顶着太阳锄地，汗一直往下滴。他想到大家每天吃的饭都来自这样的辛苦，就写下这首诗。诗很短，却让人一读就记住要爱惜粮食。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='90' cy='60' r='30' fill='#E8604C'/><path d='M0 220 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M40 240 q30 -40 60 0 M120 246 q30 -38 60 0 M200 240 q30 -40 60 0' stroke='#7CA982' stroke-width='4' fill='none'/><circle cx='260' cy='170' r='14' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M244 186 L276 186 L284 236 L236 236 Z' fill='#A9744F'/><path d='M276 196 l30 -22' stroke='#F8D8B8' stroke-width='7' stroke-linecap='round'/><path d='M306 174 l14 -20' stroke='#8B5A3C' stroke-width='4'/><path d='M318 154 l22 8' stroke='#9E9C9A' stroke-width='5' stroke-linecap='round'/><circle cx='250' cy='150' r='2.5' fill='#6FA8DC'/><circle cx='266' cy='140' r='2.5' fill='#6FA8DC'/><circle cx='280' cy='154' r='2.5' fill='#6FA8DC'/><ellipse cx='350' cy='250' rx='28' ry='12' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><circle cx='340' cy='246' r='4' fill='#F5B841'/><circle cx='356' cy='250' r='4' fill='#F5B841'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《悯农》（锄禾日当午）想让人明白什么？", "options": ["粮食来得辛苦，要爱惜", "中午不能出门", "锄地很好玩", "米饭不好吃"], "answer": 0, "explain": "粒粒皆辛苦，是说每一粒米都来得不容易。" },
+      { "type": "fill", "question": "谁知盘中（　），", "options": ["餐", "参", "惨", "灿"], "answer": 0, "explain": "盘中餐就是碗里的饭。" },
+      { "type": "next", "question": "锄禾日当午，", "options": ["汗滴禾下土。", "谁知盘中餐，", "粒粒皆辛苦。", "春风吹又生。"], "answer": 0, "explain": "中午锄地，汗水滴进禾苗下的土里。" }
+    ]
+  },
+  {
+    "id": "min-nong-yi",
+    "title": "悯农",
+    "dynasty": "唐",
+    "author": "李绅",
+    "group": "yongwu",
+    "lines": ["春种一粒粟，", "秋收万颗子。", "四海无闲田，", "农夫犹饿死。"],
+    "fixes": { "种": "zhòng" },
+    "explanation": "春天种下一粒谷子，秋天能收上万颗粮食。天下没有一块闲着的田，可种田的农民还是会饿死。诗人把丰收和农民的苦放在一起，让人心里一沉。",
+    "poetStory": "李绅生活的年代，农民辛苦种地，粮食却被收走。他看见春天播种、秋天丰收，可种田人还是吃不饱，就写下这首诗，替农民说出心里的苦。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='320' cy='54' r='24' fill='#F5B841'/><path d='M0 220 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M0 250 Q100 230 200 250 T400 244 V300 H0 Z' fill='#7CA982'/><path d='M40 250 v-40 M80 250 v-40 M120 250 v-40 M160 250 v-40 M200 250 v-40 M240 250 v-40 M280 250 v-40 M320 250 v-40' stroke='#5E8C61' stroke-width='4'/><circle cx='40' cy='200' r='8' fill='#F5B841'/><circle cx='80' cy='196' r='8' fill='#F5B841'/><circle cx='120' cy='200' r='8' fill='#F5B841'/><circle cx='160' cy='196' r='8' fill='#F5B841'/><circle cx='200' cy='200' r='8' fill='#F5B841'/><circle cx='240' cy='196' r='8' fill='#F5B841'/><circle cx='280' cy='200' r='8' fill='#F5B841'/><circle cx='320' cy='196' r='8' fill='#F5B841'/><circle cx='360' cy='180' r='12' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M346 194 L374 194 L382 236 L338 236 Z' fill='#A67AB5'/><path d='M346 210 q14 8 28 0' stroke='#3D3A36' stroke-width='2' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《悯农》（春种一粒粟）里，为什么农民还会饿死？", "options": ["粮食虽然丰收，却被别人收走了", "农民不会种地", "田里没有水", "天气太冷"], "answer": 0, "explain": "四海无闲田，农夫犹饿死，丰收和农民的苦形成了对比。" },
+      { "type": "fill", "question": "春种一粒（　），", "options": ["粟", "栗", "塑", "素"], "answer": 0, "explain": "粟就是谷子。" },
+      { "type": "next", "question": "春种一粒粟，", "options": ["秋收万颗子。", "四海无闲田，", "农夫犹饿死。", "粒粒皆辛苦。"], "answer": 0, "explain": "春天种一粒，秋天收很多。" }
+    ]
+  },
+  {
+    "id": "feng-mi",
+    "title": "蜂",
+    "dynasty": "唐",
+    "author": "罗隐",
+    "group": "yongwu",
+    "lines": ["不论平地与山尖，", "无限风光尽被占。", "采得百花成蜜后，", "为谁辛苦为谁甜？"],
+    "explanation": "不管是平地还是山顶，凡是花开的地方，都有蜜蜂在忙。它们采遍百花，酿成蜂蜜，可最后是为谁辛苦、为谁甜呢？诗人替蜜蜂问了一句，也替辛苦的人问了一句。",
+    "poetStory": "罗隐看见蜜蜂到处采蜜，酿出甜甜的蜂蜜，可蜂蜜最后被人取走。他想到世上很多辛苦干活的人，就写下这首诗。最后一句像在问蜜蜂，也像在问世人。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='54' r='24' fill='#F5B841'/><path d='M0 220 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M60 200 q10 -50 30 0 M100 210 q10 -46 30 0 M140 200 q10 -50 30 0 M260 205 q10 -48 30 0 M300 196 q10 -52 30 0' stroke='#5E8C61' stroke-width='4' fill='none'/><circle cx='80' cy='150' r='10' fill='#E8604C'/><circle cx='120' cy='160' r='9' fill='#F5B8B8'/><circle cx='160' cy='148' r='10' fill='#E8604C'/><circle cx='280' cy='150' r='9' fill='#F5B8B8'/><circle cx='320' cy='140' r='10' fill='#E8604C'/><ellipse cx='200' cy='120' rx='14' ry='10' fill='#F5B841' stroke='#3D3A36' stroke-width='2'/><path d='M186 120 h28 M200 110 v20' stroke='#3D3A36' stroke-width='2'/><ellipse cx='180' cy='96' rx='9' ry='6' fill='#FFFFFF'/><ellipse cx='220' cy='96' rx='9' ry='6' fill='#FFFFFF'/><path d='M240 200 h60 l-6 40 h-48 z' fill='#A9744F'/><path d='M250 200 q20 -20 40 0' fill='#F5B841' stroke='#3D3A36' stroke-width='2'/><circle cx='260' cy='250' r='6' fill='#F5B841'/><circle cx='280' cy='256' r='5' fill='#F5B841'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《蜂》最后一句在问什么？", "options": ["蜜蜂辛苦采蜜，最后甜了谁", "蜜蜂住在哪里", "山上有没有花", "蜂蜜好不好吃"], "answer": 0, "explain": "为谁辛苦为谁甜，是替蜜蜂和辛苦的人发问。" },
+      { "type": "fill", "question": "为谁辛苦为谁（　）？", "options": ["甜", "田", "填", "添"], "answer": 0, "explain": "甜就是蜂蜜的甜。" },
+      { "type": "next", "question": "采得百花成蜜后，", "options": ["为谁辛苦为谁甜？", "无限风光尽被占。", "不论平地与山尖，", "春风吹又生。"], "answer": 0, "explain": "采花酿成蜜，却不知道最后甜了谁。" }
+    ]
+  },
+  {
+    "id": "jiang-shang-yu-zhe",
+    "title": "江上渔者",
+    "dynasty": "宋",
+    "author": "范仲淹",
+    "group": "yongwu",
+    "lines": ["江上往来人，", "但爱鲈鱼美。", "君看一叶舟，", "出没风波里。"],
+    "explanation": "江上来来往往的人，只喜欢鲈鱼味道鲜美。可你看见那只像一片叶子的小船吗？它一会儿出现在浪尖，一会儿又沉进风浪里。吃鱼的人多，捕鱼的人却要冒风险。",
+    "poetStory": "范仲淹在江边看见很多人买鲈鱼，又看见渔民驾着小船在风浪里出没。他觉得大家只记得鱼好吃，却忘了捕鱼人的辛苦，就写下这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 200 H400 V300 H0 Z' fill='#6FA8DC'/><path d='M0 220 Q100 204 200 220 T400 212 V300 H0 Z' fill='#4A7FB5'/><path d='M0 250 q30 -20 60 0 q30 -20 60 0 q30 -20 60 0 q30 -20 60 0 q30 -20 60 0 q30 -20 60 0' stroke='#BDD9F2' stroke-width='4' fill='none'/><path d='M160 210 h80 l-12 18 h-56 z' fill='#A9744F'/><circle cx='200' cy='196' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M190 206 L210 206 L214 228 L186 228 Z' fill='#5E8C61'/><path d='M210 214 l24 -8' stroke='#8B5A3C' stroke-width='3'/><circle cx='60' cy='170' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M48 184 L72 184 L78 214 L42 214 Z' fill='#A67AB5'/><circle cx='330' cy='176' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M318 190 L342 190 L348 220 L312 220 Z' fill='#F5B841'/><ellipse cx='100' cy='262' rx='20' ry='10' fill='#F09A4A'/><path d='M120 262 l10 -6 l0 12 z' fill='#F09A4A'/><circle cx='92' cy='258' r='2' fill='#3D3A36'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《江上渔者》提醒人们什么？", "options": ["吃鱼时别忘了捕鱼人的辛苦", "鲈鱼不好吃", "江上很危险别出门", "小船很好看"], "answer": 0, "explain": "君看一叶舟，出没风波里，捕鱼人要冒风浪。" },
+      { "type": "fill", "question": "但爱鲈鱼（　）。", "options": ["美", "每", "妹", "梅"], "answer": 0, "explain": "美就是味道好。" },
+      { "type": "next", "question": "君看一叶舟，", "options": ["出没风波里。", "但爱鲈鱼美。", "江上往来人，", "粒粒皆辛苦。"], "answer": 0, "explain": "那只像叶子的小船，在风浪里出没。" }
+    ]
+  },
+  {
+    "id": "ti-xi-lin-bi",
+    "title": "题西林壁",
+    "dynasty": "宋",
+    "author": "苏轼",
+    "group": "yongwu",
+    "lines": ["横看成岭侧成峰，", "远近高低各不同。", "不识庐山真面目，", "只缘身在此山中。"],
+    "explanation": "从正面看庐山，是一道道山岭；从侧面看，又成了一座座山峰。远看近看、高处低处，样子都不一样。看不清庐山真正的样子，是因为自己就站在山里面。",
+    "poetStory": "苏轼游庐山，从不同角度看山，发现每换一个位置，山的样子就变了。他想到人看事情也是这样，就写下这首诗。最后两句常被用来提醒人：身在局中，容易看不清全貌。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='54' r='24' fill='#F5B841'/><path d='M0 220 L70 100 L140 220 Z' fill='#7CA982'/><path d='M70 220 L170 60 L270 220 Z' fill='#5E8C61'/><path d='M200 220 L300 90 L400 220 Z' fill='#7CA982'/><path d='M0 230 H400 V300 H0 Z' fill='#C8E6A0'/><circle cx='180' cy='210' r='12' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M166 224 L194 224 L200 264 L160 264 Z' fill='#A67AB5'/><path d='M194 230 l22 -14' stroke='#F8D8B8' stroke-width='6' stroke-linecap='round'/><path d='M40 60 q20 -10 40 0 M100 40 q20 -10 40 0' stroke='#FFFFFF' stroke-width='4' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《题西林壁》最后说，为什么看不清庐山真面目？", "options": ["因为自己就在山里面", "因为山太高", "因为下雪", "因为天黑了"], "answer": 0, "explain": "只缘身在此山中，身在局中就看不清全貌。" },
+      { "type": "fill", "question": "只（　）身在此山中。", "options": ["缘", "原", "源", "圆"], "answer": 0, "explain": "缘是因为的意思。" },
+      { "type": "next", "question": "不识庐山真面目，", "options": ["只缘身在此山中。", "远近高低各不同。", "横看成岭侧成峰，", "春风吹又生。"], "answer": 0, "explain": "看不清庐山，是因为自己就在山里。" }
+    ]
+  },
+  {
+    "id": "guan-shu-you-gan",
+    "title": "观书有感",
+    "dynasty": "宋",
+    "author": "朱熹",
+    "group": "yongwu",
+    "lines": ["半亩方塘一鉴开，", "天光云影共徘徊。", "问渠那得清如许？", "为有源头活水来。"],
+    "fixes": { "那": "nǎ", "为": "wèi" },
+    "explanation": "半亩大的方塘像一面打开的镜子，天光和云影一起在水里晃动。问它为什么这么清？因为源头有活水不断流进来。诗人借池塘讲读书：心要清亮，就得不断读新东西。",
+    "poetStory": "朱熹读书时，看见门前池塘清澈，天光云影都映在里面。他想，池塘清是因为有活水来；人读书也一样，要不断有新的知识流进来。于是写下这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='54' r='24' fill='#F5B841'/><rect x='70' y='130' width='260' height='120' rx='8' fill='#BDD9F2' stroke='#3D3A36' stroke-width='3'/><path d='M70 190 Q130 160 190 190 T310 186 T330 190' stroke='#FFFFFF' stroke-width='6' fill='none'/><ellipse cx='150' cy='160' rx='30' ry='12' fill='#FFFFFF' opacity='0.8'/><ellipse cx='240' cy='170' rx='36' ry='14' fill='#FFFFFF' opacity='0.7'/><path d='M180 250 v-30 q0 -10 10 -10 h20 q10 0 10 10 v30' stroke='#6FA8DC' stroke-width='6' fill='none'/><path d='M90 250 v-40 q0 -10 10 -10 h20 q10 0 10 10 v40' stroke='#6FA8DC' stroke-width='5' fill='none'/><circle cx='120' cy='110' r='3' fill='#F5B841'/><circle cx='160' cy='90' r='2.5' fill='#F5B841'/><circle cx='200' cy='110' r='3' fill='#F5B841'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《观书有感》用池塘比喻什么？", "options": ["读书要不断有新的知识进来", "池塘要养鱼", "天要下雨", "人要多照镜子"], "answer": 0, "explain": "为有源头活水来，诗人借池塘说读书要有活水。" },
+      { "type": "fill", "question": "为有源头（　）水来。", "options": ["活", "火", "河", "和"], "answer": 0, "explain": "源头有活水，池塘才清。" },
+      { "type": "next", "question": "问渠那得清如许？", "options": ["为有源头活水来。", "天光云影共徘徊。", "半亩方塘一鉴开，", "只缘身在此山中。"], "answer": 0, "explain": "池塘清，是因为源头不断有活水流来。" }
+    ]
+  },
+  {
+    "id": "you-yuan-bu-zhi",
+    "title": "游园不值",
+    "dynasty": "宋",
+    "author": "叶绍翁",
+    "group": "yongwu",
+    "lines": ["应怜屐齿印苍苔，", "小扣柴扉久不开。", "春色满园关不住，", "一枝红杏出墙来。"],
+    "fixes": { "应": "yīng" },
+    "explanation": "诗人轻轻敲柴门，敲了很久也没人开，大概是主人怕木屐踩坏青苔吧。可满园的春色是关不住的，一枝红杏已经伸出墙外来了。没进园子，也看见了春天。",
+    "poetStory": "叶绍翁去朋友家看花，敲门没人应。他正有点失望，忽然看见一枝红杏从墙头伸出来。他想到满园春色关不住，就写下这首诗，没进门也留下了名句。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 220 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M0 240 q20 -12 40 0 M60 246 q20 -12 40 0 M120 240 q20 -12 40 0' stroke='#7CA982' stroke-width='4' fill='none'/><rect x='40' y='100' width='220' height='140' rx='6' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M40 100 L150 40 L260 100 Z' fill='#A9744F'/><rect x='120' y='160' width='60' height='80' fill='#8B5A3C' stroke='#3D3A36' stroke-width='3'/><circle cx='165' cy='200' r='4' fill='#F5B841'/><path d='M260 170 q40 -30 80 0' stroke='#8B5A3C' stroke-width='5' fill='none'/><circle cx='300' cy='150' r='10' fill='#E8604C'/><circle cx='330' cy='170' r='8' fill='#E8604C'/><circle cx='280' cy='176' r='7' fill='#E8604C'/><circle cx='310' cy='190' r='6' fill='#F5B8B8'/><path d='M330 60 l-5 18 M360 50 l-5 18' stroke='#BDD9F2' stroke-width='3' stroke-linecap='round'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《游园不值》里，诗人没进园子却看到了什么？", "options": ["一枝红杏伸出墙外", "满园的荷花", "主人的笑脸", "一条小河"], "answer": 0, "explain": "春色满园关不住，一枝红杏出墙来。" },
+      { "type": "fill", "question": "一枝红杏出墙（　）。", "options": ["来", "开", "外", "台"], "answer": 0, "explain": "红杏从墙里伸出来。" },
+      { "type": "next", "question": "春色满园关不住，", "options": ["一枝红杏出墙来。", "小扣柴扉久不开。", "应怜屐齿印苍苔，", "霜叶红于二月花。"], "answer": 0, "explain": "满园春色关不住，一枝红杏伸到墙外。" }
+    ]
+  },
+  {
+    "id": "mo-mei",
+    "title": "墨梅",
+    "dynasty": "元",
+    "author": "王冕",
+    "group": "yongwu",
+    "lines": ["我家洗砚池头树，", "朵朵花开淡墨痕。", "不要人夸好颜色，", "只留清气满乾坤。"],
+    "explanation": "我家洗砚池边的梅树，开出的花都带着淡淡的墨痕。它不要别人夸颜色好看，只愿把清香留在天地间。诗人画梅、写梅，也在说自己想做个清白的人。",
+    "poetStory": "王冕小时候家里穷，一边放牛一边学画。他最喜欢画梅花，画出的梅花淡淡的，不艳丽。他在这首题画诗里说，梅花不图人夸，只留清香，这也是他自己的心愿。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 230 H400 V300 H0 Z' fill='#C8E6A0'/><rect x='190' y='120' width='16' height='120' fill='#3D3A36'/><path d='M198 140 q-40 -20 -70 -4 M198 160 q-36 -16 -64 0 M198 150 q40 -24 70 -6 M198 180 q36 -20 66 -4' stroke='#3D3A36' stroke-width='5' fill='none'/><circle cx='128' cy='136' r='9' fill='#FFFFFF' stroke='#9E9C9A' stroke-width='2'/><circle cx='100' cy='152' r='7' fill='#FFFFFF' stroke='#9E9C9A' stroke-width='2'/><circle cx='150' cy='160' r='8' fill='#FFFFFF' stroke='#9E9C9A' stroke-width='2'/><circle cx='260' cy='132' r='8' fill='#FFFFFF' stroke='#9E9C9A' stroke-width='2'/><circle cx='286' cy='156' r='7' fill='#FFFFFF' stroke='#9E9C9A' stroke-width='2'/><circle cx='250' cy='174' r='9' fill='#FFFFFF' stroke='#9E9C9A' stroke-width='2'/><ellipse cx='120' cy='250' rx='50' ry='20' fill='#9E9C9A'/><ellipse cx='120' cy='246' rx='30' ry='12' fill='#3D3A36'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《墨梅》里，梅花不要什么，只要什么？", "options": ["不要人夸颜色，只留清气", "不要清香，只要颜色", "不要开花，只要叶子", "不要水，只要土"], "answer": 0, "explain": "不要人夸好颜色，只留清气满乾坤。" },
+      { "type": "fill", "question": "只留清气满乾（　）。", "options": ["坤", "昆", "困", "捆"], "answer": 0, "explain": "乾坤就是天地。" },
+      { "type": "next", "question": "不要人夸好颜色，", "options": ["只留清气满乾坤。", "朵朵花开淡墨痕。", "我家洗砚池头树，", "一枝红杏出墙来。"], "answer": 0, "explain": "梅花不图人夸颜色，只把清香留在天地间。" }
+    ]
+  },
+  {
+    "id": "shi-hui-yin",
+    "title": "石灰吟",
+    "dynasty": "明",
+    "author": "于谦",
+    "group": "yongwu",
+    "lines": ["千锤万凿出深山，", "烈火焚烧若等闲。", "粉骨碎身浑不怕，", "要留清白在人间。"],
+    "explanation": "石灰石被千锤万凿从深山里采出来，又被烈火焚烧，它却像平常事一样。就算粉身碎骨也不怕，只要把清白留在人间。诗人写石灰，也在写自己要做清白的人。",
+    "poetStory": "于谦是明朝的官员，为官清正。他看见石灰从山里采出、被火烧成白粉，想到做人也要不怕磨难、守住清白，就写下这首诗。后来人们常用它来赞美正直的人。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='54' r='24' fill='#F5B841'/><path d='M0 220 L80 80 L160 220 Z' fill='#9E9C9A'/><path d='M120 220 L220 60 L320 220 Z' fill='#7A7876'/><path d='M0 230 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M250 240 q10 -40 30 0 q10 -30 30 0 q10 -40 30 0' stroke='#E8604C' stroke-width='8' fill='none'/><rect x='60' y='200' width='80' height='50' rx='6' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M70 220 q20 -14 40 0' stroke='#9E9C9A' stroke-width='4' fill='none'/><circle cx='180' cy='250' r='12' fill='#FFFFFF' stroke='#3D3A36' stroke-width='2'/><path d='M40 120 l6 12 M70 100 l6 12 M100 120 l6 12' stroke='#BDD9F2' stroke-width='3' stroke-linecap='round'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《石灰吟》借石灰表达什么？", "options": ["不怕磨难，要留清白在人间", "石灰很便宜", "山里石头很多", "火烧得很旺"], "answer": 0, "explain": "粉骨碎身浑不怕，要留清白在人间。" },
+      { "type": "fill", "question": "要留清白在人（　）。", "options": ["间", "见", "建", "件"], "answer": 0, "explain": "人间就是人世间。" },
+      { "type": "next", "question": "粉骨碎身浑不怕，", "options": ["要留清白在人间。", "烈火焚烧若等闲。", "千锤万凿出深山，", "只留清气满乾坤。"], "answer": 0, "explain": "就算粉身碎骨也不怕，只求留下清白。" }
+    ]
+  },
+  {
+    "id": "zhu-shi",
+    "title": "竹石",
+    "dynasty": "清",
+    "author": "郑燮",
+    "group": "yongwu",
+    "lines": ["咬定青山不放松，", "立根原在破岩中。", "千磨万击还坚劲，", "任尔东西南北风。"],
+    "fixes": { "劲": "jìng" },
+    "explanation": "竹子紧紧咬住青山不放松，根扎在破裂的岩石里。经历千万次磨难和打击，它还是那么坚强，不管风从东南西北哪个方向吹来。诗人借竹子写坚强不屈。",
+    "poetStory": "郑燮就是郑板桥，他喜欢画竹。他看见竹子长在石缝里，风吹雨打也不倒，就画下来并题了这首诗。他说竹子坚强，也是在说自己做人要有骨气。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 220 H400 V300 H0 Z' fill='#7CA982'/><path d='M60 260 Q100 160 180 130 Q260 100 300 60' stroke='#9E9C9A' stroke-width='30' fill='none'/><path d='M190 230 q10 -120 20 -200' stroke='#5E8C61' stroke-width='10' fill='none'/><path d='M240 230 q10 -100 20 -170' stroke='#7CA982' stroke-width='9' fill='none'/><path d='M210 160 q30 -20 60 -6 M250 130 q30 -20 56 -6 M230 100 q26 -16 50 -4 M200 200 q-34 -20 -60 -6' stroke='#5E8C61' stroke-width='6' fill='none'/><path d='M30 130 q20 -10 40 0 M60 170 q20 -10 40 0 M320 140 q20 -10 40 0' stroke='#BDD9F2' stroke-width='4' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《竹石》借竹子赞美什么？", "options": ["坚强不屈的品格", "竹子的味道", "山上的石头", "四面八方的风"], "answer": 0, "explain": "千磨万击还坚劲，任尔东西南北风，写竹子的坚强。" },
+      { "type": "fill", "question": "千磨万击还坚（　），", "options": ["劲", "近", "进", "静"], "answer": 0, "explain": "坚劲就是坚强有力。" },
+      { "type": "next", "question": "千磨万击还坚劲，", "options": ["任尔东西南北风。", "立根原在破岩中。", "咬定青山不放松，", "要留清白在人间。"], "answer": 0, "explain": "经历磨难还很坚强，任凭四面八方的风吹。" }
+    ]
+  },
+  {
+    "id": "ji-hai-za-shi",
+    "title": "己亥杂诗",
+    "dynasty": "清",
+    "author": "龚自珍",
+    "group": "yongwu",
+    "lines": ["九州生气恃风雷，", "万马齐喑究可哀。", "我劝天公重抖擞，", "不拘一格降人才。"],
+    "fixes": { "重": "chóng", "降": "jiàng" },
+    "explanation": "国家要有生气，得靠风雷一样的力量。现在万马都不叫了，实在让人难过。诗人劝老天爷重新振作，不要只按一种规矩，多降下一些人才。他希望国家有新的气象。",
+    "poetStory": "龚自珍生活在清朝末年，看到社会沉闷，人才被埋没。他辞官南归，一路上写下很多诗。这一首借风雷、万马和天公，说出他希望国家振作、人才出头的心愿。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 120 Q100 60 200 120 T400 100 V180 H0 Z' fill='#4A7FB5'/><path d='M60 120 l-10 40 M120 100 l-10 40 M180 120 l-10 40 M240 100 l-10 40 M300 120 l-10 40 M360 100 l-10 40' stroke='#BDD9F2' stroke-width='4' stroke-linecap='round'/><path d='M0 220 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M230 200 l20 -20 l-20 -20 M250 200 l20 -20 l-20 -20' stroke='#F5B841' stroke-width='6' fill='none'/><ellipse cx='90' cy='230' rx='30' ry='16' fill='#A9744F'/><circle cx='60' cy='224' r='10' fill='#8B5A3C'/><path d='M56 218 l-6 -8 M64 218 l6 -8' stroke='#3D3A36' stroke-width='3'/><ellipse cx='160' cy='246' rx='28' ry='15' fill='#8B5A3C'/><circle cx='134' cy='240' r='9' fill='#A9744F'/><path d='M130 234 l-6 -8 M138 234 l6 -8' stroke='#3D3A36' stroke-width='3'/><path d='M300 200 q30 -30 60 0' stroke='#F5B841' stroke-width='5' fill='none'/><circle cx='330' cy='170' r='4' fill='#F5B841'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《己亥杂诗》里，诗人希望老天爷做什么？", "options": ["重新振作，不拘一格降人才", "多下大雨", "让马都睡觉", "把风雷收起来"], "answer": 0, "explain": "我劝天公重抖擞，不拘一格降人才。" },
+      { "type": "fill", "question": "不拘一（　）降人才。", "options": ["格", "各", "歌", "个"], "answer": 0, "explain": "不拘一格就是不限定一种规矩。" },
+      { "type": "next", "question": "我劝天公重抖擞，", "options": ["不拘一格降人才。", "万马齐喑究可哀。", "九州生气恃风雷，", "一枝红杏出墙来。"], "answer": 0, "explain": "诗人劝天公振作，不拘一格降下人才。" }
+    ]
+  }
+]

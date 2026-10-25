@@ -1,0 +1,248 @@
+[
+  {
+    "id": "yong-e",
+    "title": "咏鹅",
+    "dynasty": "唐",
+    "author": "骆宾王",
+    "group": "jiaguo",
+    "lines": ["鹅，鹅，鹅，", "曲项向天歌。", "白毛浮绿水，", "红掌拨清波。"],
+    "fixes": { "曲": "qū" },
+    "explanation": "鹅呀鹅呀鹅，弯着脖子向天唱歌。白白的羽毛浮在绿水上，红红的脚掌拨着清清的水波。诗人写这首诗时才七岁，几句话就把一只鹅游水的样子画出来了。",
+    "poetStory": "骆宾王七岁时，家里来了客人。客人指着池塘里的鹅让他作诗，他看了看，张口就念出这首《咏鹅》。大家都夸他聪明。这首诗一直传到今天，很多孩子都会背。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='54' r='24' fill='#F5B841'/><path d='M0 200 H400 V300 H0 Z' fill='#7CA982'/><path d='M0 230 Q100 214 200 230 T400 224 V300 H0 Z' fill='#6FA8DC'/><ellipse cx='200' cy='210' rx='70' ry='34' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M140 190 q-30 -50 10 -70' stroke='#FFFFFF' stroke-width='22' fill='none'/><circle cx='150' cy='120' r='18' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M132 118 l-18 6 l18 8 z' fill='#F09A4A'/><circle cx='146' cy='114' r='3' fill='#3D3A36'/><path d='M190 240 l-10 26 M210 240 l10 26' stroke='#E8604C' stroke-width='6' stroke-linecap='round'/><path d='M230 190 q20 -20 40 -6' stroke='#FFFFFF' stroke-width='14' fill='none'/><path d='M50 240 q20 -10 40 0 M300 250 q20 -10 40 0' stroke='#FFFFFF' stroke-width='3' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《咏鹅》写的是鹅在做什么？", "options": ["在水里游、弯着脖子叫", "在天上飞", "在岸上跑", "在树上睡觉"], "answer": 0, "explain": "曲项向天歌，白毛浮绿水，红掌拨清波，都是鹅在水里。" },
+      { "type": "fill", "question": "白毛浮（　）水，", "options": ["绿", "录", "路", "露"], "answer": 0, "explain": "白毛浮在绿水上。" },
+      { "type": "next", "question": "白毛浮绿水，", "options": ["红掌拨清波。", "曲项向天歌。", "鹅，鹅，鹅，", "春江水暖鸭先知。"], "answer": 0, "explain": "白毛浮在绿水上，红掌拨着清波。" }
+    ]
+  },
+  {
+    "id": "liang-zhou-ci-wang-han",
+    "title": "凉州词",
+    "dynasty": "唐",
+    "author": "王翰",
+    "group": "jiaguo",
+    "lines": ["葡萄美酒夜光杯，", "欲饮琵琶马上催。", "醉卧沙场君莫笑，", "古来征战几人回？"],
+    "explanation": "精美的酒杯里装着葡萄美酒，正要喝，马上的琵琶声已经催人出发。就算醉倒在战场上，也请不要笑，自古以来出去打仗的人，有几个能回来呢？",
+    "poetStory": "王翰写的是边塞将士的生活。出征前，大家举起夜光杯喝葡萄美酒，琵琶声催着上马。诗人知道战场危险，就写下这首诗，既有豪气，也有一点点悲凉。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 220 Q100 200 200 220 T400 212 V300 H0 Z' fill='#F5B841'/><path d='M0 250 Q100 236 200 250 T400 244 V300 H0 Z' fill='#F09A4A'/><path d='M120 140 h60 l-6 50 h-48 z' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M126 140 v-10 h48 v10' stroke='#8B5A3C' stroke-width='4' fill='none'/><circle cx='140' cy='160' r='2.5' fill='#A67AB5'/><circle cx='154' cy='166' r='2.5' fill='#A67AB5'/><circle cx='168' cy='158' r='2.5' fill='#A67AB5'/><ellipse cx='290' cy='190' rx='34' ry='20' fill='#8B5A3C'/><circle cx='258' cy='182' r='12' fill='#8B5A3C'/><path d='M252 172 l-6 -10 M262 172 l6 -10' stroke='#3D3A36' stroke-width='3'/><path d='M254 210 v26 M266 210 v26 M302 210 v26 M314 210 v26' stroke='#3D3A36' stroke-width='5'/><circle cx='218' cy='150' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M206 164 L230 164 L236 200 L200 200 Z' fill='#E8604C'/><path d='M234 168 l20 -6' stroke='#8B5A3C' stroke-width='4'/><circle cx='256' cy='160' r='8' fill='#A9744F'/><path d='M256 152 v-16 M256 168 v16' stroke='#3D3A36' stroke-width='2'/><circle cx='80' cy='70' r='3' fill='#FFFFFF'/><circle cx='120' cy='50' r='2.5' fill='#FFFFFF'/><circle cx='340' cy='70' r='3' fill='#FFFFFF'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《凉州词》（葡萄美酒夜光杯）写的是什么场面？", "options": ["边塞将士出征前喝酒", "江南人在采莲", "孩子在放风筝", "农民在种田"], "answer": 0, "explain": "葡萄美酒、琵琶、沙场，都是边塞将士出征前的场面。" },
+      { "type": "fill", "question": "醉卧沙场君莫（　），", "options": ["笑", "校", "效", "孝"], "answer": 0, "explain": "不要笑他醉倒，因为打仗很危险。" },
+      { "type": "next", "question": "醉卧沙场君莫笑，", "options": ["古来征战几人回？", "欲饮琵琶马上催。", "葡萄美酒夜光杯，", "春风不度玉门关。"], "answer": 0, "explain": "别笑醉卧沙场的人，自古以来征战有几人能回。" }
+    ]
+  },
+  {
+    "id": "chu-sai",
+    "title": "出塞",
+    "dynasty": "唐",
+    "author": "王昌龄",
+    "group": "jiaguo",
+    "lines": ["秦时明月汉时关，", "万里长征人未还。", "但使龙城飞将在，", "不教胡马度阴山。"],
+    "fixes": { "教": "jiào" },
+    "explanation": "还是秦汉时的月亮，还是秦汉时的边关，万里出征的人却没有回来。只要有像李广那样的飞将军在，就不会让敌人的马越过阴山。诗人希望边关安宁，将士能回家。",
+    "poetStory": "王昌龄写边塞诗，常想到守边的士兵。他看见明月照着古老的关口，想到很多人出征后没回来，就写下这首诗，盼望有本领的将军守住边关，让百姓安稳。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='320' cy='60' r='26' fill='#FFFFFF'/><path d='M0 220 L80 100 L160 220 Z' fill='#7A7876'/><path d='M120 220 L220 60 L320 220 Z' fill='#9E9C9A'/><path d='M0 230 H400 V300 H0 Z' fill='#C8E6A0'/><rect x='60' y='150' width='80' height='80' fill='#A9744F'/><rect x='90' y='180' width='20' height='50' fill='#3D3A36'/><path d='M50 150 L100 120 L150 150 Z' fill='#8B5A3C'/><path d='M240 240 q30 -20 60 0' stroke='#8B5A3C' stroke-width='8' fill='none'/><circle cx='250' cy='200' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M238 214 L262 214 L268 244 L232 244 Z' fill='#E8604C'/><path d='M262 218 l18 -10' stroke='#F8D8B8' stroke-width='5' stroke-linecap='round'/><path d='M290 240 l20 -20' stroke='#9E9C9A' stroke-width='4'/><circle cx='330' cy='250' r='6' fill='#3D3A36'/><circle cx='360' cy='260' r='5' fill='#3D3A36'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《出塞》里，诗人希望有什么样的将军？", "options": ["像李广那样能守住边关的飞将军", "会写诗的将军", "会种田的将军", "年轻的将军"], "answer": 0, "explain": "但使龙城飞将在，不教胡马度阴山。" },
+      { "type": "fill", "question": "不教胡马度阴（　）。", "options": ["山", "衫", "扇", "闪"], "answer": 0, "explain": "阴山是北方的山，敌人要越过它。" },
+      { "type": "next", "question": "但使龙城飞将在，", "options": ["不教胡马度阴山。", "万里长征人未还。", "秦时明月汉时关，", "醉卧沙场君莫笑。"], "answer": 0, "explain": "只要有飞将军在，就不让敌人的马过阴山。" }
+    ]
+  },
+  {
+    "id": "gu-lang-yue-xing",
+    "title": "古朗月行",
+    "dynasty": "唐",
+    "author": "李白",
+    "group": "jiaguo",
+    "lines": ["小时不识月，", "呼作白玉盘。", "又疑瑶台镜，", "飞在青云端。"],
+    "explanation": "小时候不认识月亮，把它叫作白玉盘。又怀疑它是瑶台仙镜，飞在青云上面。诗人写的是小孩子看月亮时的新奇：月亮又白又圆，像盘子，也像镜子。",
+    "poetStory": "李白小时候在院子里看月亮，觉得又白又圆，像一只白玉盘。他又想，会不会是仙人梳妆用的镜子飞到了天上？长大以后，他把小时候的想法写成这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='300' cy='80' r='40' fill='#FFFFFF'/><circle cx='285' cy='70' r='8' fill='#BDD9F2'/><circle cx='315' cy='95' r='6' fill='#BDD9F2'/><path d='M0 220 H400 V300 H0 Z' fill='#C8E6A0'/><circle cx='120' cy='190' r='14' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M106 204 L134 204 L142 250 L98 250 Z' fill='#A67AB5'/><path d='M134 210 l24 -8' stroke='#F8D8B8' stroke-width='6' stroke-linecap='round'/><path d='M200 160 q30 -20 60 0 q-30 16 -60 0 z' fill='#BDD9F2'/><path d='M180 130 q20 -14 40 0' stroke='#FFFFFF' stroke-width='6' fill='none'/><circle cx='250' cy='120' r='4' fill='#F5B841'/><circle cx='340' cy='150' r='3' fill='#F5B841'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《古朗月行》里，小时候的诗人把月亮叫什么？", "options": ["白玉盘和瑶台镜", "大饼和灯笼", "小船和风筝", "太阳和星星"], "answer": 0, "explain": "呼作白玉盘，又疑瑶台镜，都是小时候的想象。" },
+      { "type": "fill", "question": "呼作白玉（　）。", "options": ["盘", "盆", "旁", "胖"], "answer": 0, "explain": "白玉盘就是白玉做的盘子。" },
+      { "type": "next", "question": "小时不识月，", "options": ["呼作白玉盘。", "又疑瑶台镜，", "飞在青云端。", "低头思故乡。"], "answer": 0, "explain": "小时候不认识月亮，把它叫作白玉盘。" }
+    ]
+  },
+  {
+    "id": "sai-xia-qu",
+    "title": "塞下曲",
+    "dynasty": "唐",
+    "author": "卢纶",
+    "group": "jiaguo",
+    "lines": ["月黑雁飞高，", "单于夜遁逃。", "欲将轻骑逐，", "大雪满弓刀。"],
+    "fixes": { "单": "chán", "将": "jiàng", "骑": "jì" },
+    "explanation": "夜里没有月光，大雁飞得很高，敌人的首领趁黑逃跑。将军要带轻骑兵去追，大雪落满了弓和刀。诗里没有写追的结果，只写雪夜出击的紧张。",
+    "poetStory": "卢纶写过一组边塞诗。这一首写一个雪夜：敌人首领逃跑了，将军马上带兵去追。诗人没有亲眼看见，却把月黑、雁飞、大雪和弓刀写得很紧张。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#4A7FB5'/><circle cx='320' cy='56' r='22' fill='#BDD9F2'/><path d='M0 220 L70 120 L140 220 Z' fill='#3D3A36'/><path d='M120 220 L210 100 L300 220 Z' fill='#5E8C61'/><path d='M0 230 H400 V300 H0 Z' fill='#FFFFFF'/><path d='M40 70 q12 -10 24 0 q-12 10 -24 0 z' fill='#9E9C9A'/><path d='M90 50 q12 -10 24 0 q-12 10 -24 0 z' fill='#9E9C9A'/><circle cx='150' cy='190' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='2'/><path d='M138 204 L162 204 L168 234 L132 234 Z' fill='#E8604C'/><path d='M162 208 l22 -4' stroke='#F8D8B8' stroke-width='4'/><path d='M182 204 q14 -20 28 0' stroke='#8B5A3C' stroke-width='4' fill='none'/><path d='M184 204 l28 0' stroke='#9E9C9A' stroke-width='3'/><path d='M40 250 q12 -8 24 0 M100 260 q12 -8 24 0 M180 250 q12 -8 24 0 M260 260 q12 -8 24 0 M330 250 q12 -8 24 0' stroke='#FFFFFF' stroke-width='3' fill='none'/><circle cx='60' cy='140' r='3' fill='#FFFFFF'/><circle cx='240' cy='120' r='3' fill='#FFFFFF'/><circle cx='350' cy='160' r='2.5' fill='#FFFFFF'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《塞下曲》写的是什么？", "options": ["雪夜里将军带兵追敌人", "白天放羊", "春天赏花", "江上钓鱼"], "answer": 0, "explain": "月黑雁飞高，单于夜遁逃，写的是雪夜追敌。" },
+      { "type": "fill", "question": "大雪满弓（　）。", "options": ["刀", "到", "道", "倒"], "answer": 0, "explain": "大雪落满了弓和刀。" },
+      { "type": "next", "question": "欲将轻骑逐，", "options": ["大雪满弓刀。", "单于夜遁逃。", "月黑雁飞高，", "不教胡马度阴山。"], "answer": 0, "explain": "要带轻骑兵去追，大雪落满了弓刀。" }
+    ]
+  },
+  {
+    "id": "chi-shang",
+    "title": "池上",
+    "dynasty": "唐",
+    "author": "白居易",
+    "group": "jiaguo",
+    "lines": ["小娃撑小艇，", "偷采白莲回。", "不解藏踪迹，", "浮萍一道开。"],
+    "explanation": "一个小孩撑着小船，偷偷采了白莲回来。他不懂得藏住行踪，水面的浮萍被船分开，留下一条清清楚楚的水路。诗人看见这情景，觉得孩子又淘气又可爱。",
+    "poetStory": "白居易在池塘边看见一个小孩划船偷采白莲。孩子以为自己藏得很好，可船把浮萍推开，留下一条水路。白居易觉得太好玩了，就写下这首小诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='54' r='24' fill='#F5B841'/><path d='M0 210 H400 V300 H0 Z' fill='#6FA8DC'/><ellipse cx='100' cy='230' rx='50' ry='16' fill='#7CA982'/><circle cx='80' cy='212' r='12' fill='#FFFFFF'/><circle cx='120' cy='206' r='10' fill='#F5B8B8'/><path d='M170 230 h100 l-14 20 h-72 z' fill='#A9744F'/><circle cx='210' cy='210' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M200 220 L220 220 L224 240 L196 240 Z' fill='#F5B841'/><path d='M250 250 q20 -10 40 0 M280 270 q20 -10 40 0' stroke='#5E8C61' stroke-width='4' fill='none'/><path d='M260 220 q10 -20 20 0 q10 -20 20 0' stroke='#7CA982' stroke-width='4' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《池上》里，小孩的踪迹是怎么被发现的？", "options": ["小船把浮萍分开，留下一条水路", "他唱歌很大声", "他把莲花掉了", "他摔了一跤"], "answer": 0, "explain": "不解藏踪迹，浮萍一道开，船开过留下水路。" },
+      { "type": "fill", "question": "浮萍一（　）开。", "options": ["道", "到", "倒", "刀"], "answer": 0, "explain": "浮萍被船分开，留下一道水路。" },
+      { "type": "next", "question": "小娃撑小艇，", "options": ["偷采白莲回。", "不解藏踪迹，", "浮萍一道开。", "红掌拨清波。"], "answer": 0, "explain": "小孩撑着小船，偷偷采了白莲回来。" }
+    ]
+  },
+  {
+    "id": "xiao-er-chui-diao",
+    "title": "小儿垂钓",
+    "dynasty": "唐",
+    "author": "胡令能",
+    "group": "jiaguo",
+    "lines": ["蓬头稚子学垂纶，", "侧坐莓苔草映身。", "路人借问遥招手，", "怕得鱼惊不应人。"],
+    "fixes": { "应": "yìng" },
+    "explanation": "一个头发蓬乱的小孩在学钓鱼，侧身坐在青苔上，草遮住了他的身子。过路的人问路，他远远地摆摆手，不敢答应，怕把鱼吓跑。孩子钓鱼的样子又认真又可爱。",
+    "poetStory": "胡令能看见一个小孩在河边钓鱼。孩子头发乱蓬蓬的，坐在草丛里，路人问路，他只摆手不出声。诗人觉得这孩子太认真了，就写下这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='54' r='24' fill='#F5B841'/><path d='M0 200 H400 V300 H0 Z' fill='#6FA8DC'/><path d='M0 220 Q100 204 200 220 T400 212 V300 H0 Z' fill='#4A7FB5'/><path d='M0 240 q20 -30 40 0 M40 250 q20 -30 40 0 M80 240 q20 -30 40 0' stroke='#7CA982' stroke-width='4' fill='none'/><circle cx='150' cy='190' r='12' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M136 204 L164 204 L170 240 L130 240 Z' fill='#E8604C'/><path d='M164 210 l30 -20' stroke='#8B5A3C' stroke-width='3'/><path d='M194 190 q20 -20 40 0' stroke='#9E9C9A' stroke-width='2' fill='none'/><circle cx='280' cy='180' r='12' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M266 194 L294 194 L300 230 L260 230 Z' fill='#A67AB5'/><path d='M266 200 l-16 -8' stroke='#F8D8B8' stroke-width='5' stroke-linecap='round'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《小儿垂钓》里，小孩为什么只招手不说话？", "options": ["怕说话把鱼吓跑", "他不会说话", "他在生气", "路太远了"], "answer": 0, "explain": "怕得鱼惊不应人，他怕吓跑鱼。" },
+      { "type": "fill", "question": "怕得鱼惊不（　）人。", "options": ["应", "英", "影", "映"], "answer": 0, "explain": "应就是答应，这里读 yìng。" },
+      { "type": "next", "question": "路人借问遥招手，", "options": ["怕得鱼惊不应人。", "侧坐莓苔草映身。", "蓬头稚子学垂纶，", "早有蜻蜓立上头。"], "answer": 0, "explain": "路人问路，小孩远远招手，不敢答应。" }
+    ]
+  },
+  {
+    "id": "qing-ming",
+    "title": "清明",
+    "dynasty": "唐",
+    "author": "杜牧",
+    "group": "jiaguo",
+    "lines": ["清明时节雨纷纷，", "路上行人欲断魂。", "借问酒家何处有，", "牧童遥指杏花村。"],
+    "explanation": "清明时节，细雨纷纷，路上的行人心里发愁。诗人问哪里有酒家，牧童远远地指向杏花深处的村子。雨、行人、牧童和杏花，组成一幅清明赶路的画。",
+    "poetStory": "杜牧在清明时节赶路，天上飘着细雨，路上的人心情都不太好。他想找地方歇脚喝酒，就问一个牧童。牧童抬手指向远处的杏花村，他把这一幕写成了诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 210 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M0 230 Q100 214 200 230 T400 224 V300 H0 Z' fill='#7CA982'/><path d='M40 50 l-6 20 M90 34 l-6 20 M140 54 l-6 20 M190 38 l-6 20 M240 58 l-6 20 M290 40 l-6 20 M340 60 l-6 20' stroke='#BDD9F2' stroke-width='3' stroke-linecap='round'/><circle cx='100' cy='170' r='12' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M86 184 L114 184 L120 230 L80 230 Z' fill='#A67AB5'/><path d='M120 190 l22 -8' stroke='#F8D8B8' stroke-width='5' stroke-linecap='round'/><circle cx='250' cy='190' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M238 204 L262 204 L268 234 L232 234 Z' fill='#F5B841'/><circle cx='300' cy='200' r='30' fill='#FFFFFF'/><path d='M300 230 v40' stroke='#8B5A3C' stroke-width='4'/><circle cx='290' cy='190' r='4' fill='#E8604C'/><circle cx='312' cy='196' r='4' fill='#F5B8B8'/><rect x='330' y='170' width='50' height='40' fill='#FFFFFF' stroke='#3D3A36' stroke-width='2'/><path d='M325 170 L355 150 L385 170 Z' fill='#A9744F'/><path d='M350 210 h10' stroke='#8B5A3C' stroke-width='2'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《清明》里，牧童指向哪里？", "options": ["杏花深处的村子", "一座高山", "一条大河", "一座寺庙"], "answer": 0, "explain": "牧童遥指杏花村，指的是杏花深处的村子。" },
+      { "type": "fill", "question": "牧童遥指杏花（　）。", "options": ["村", "春", "存", "寸"], "answer": 0, "explain": "杏花村是一个村子。" },
+      { "type": "next", "question": "借问酒家何处有，", "options": ["牧童遥指杏花村。", "路上行人欲断魂。", "清明时节雨纷纷，", "遍插茱萸少一人。"], "answer": 0, "explain": "诗人问酒家在哪，牧童指向杏花村。" }
+    ]
+  },
+  {
+    "id": "yuan-ri",
+    "title": "元日",
+    "dynasty": "宋",
+    "author": "王安石",
+    "group": "jiaguo",
+    "lines": ["爆竹声中一岁除，", "春风送暖入屠苏。", "千门万户曈曈日，", "总把新桃换旧符。"],
+    "explanation": "爆竹声里，旧的一年过去了。春风送来暖意，人们喝屠苏酒。初升的太阳照着千家万户，大家都把旧桃符换成新的。诗人写的是过年时热闹又喜庆的景象。",
+    "poetStory": "王安石在过年时看见家家放爆竹、喝屠苏酒、换桃符，觉得新的一年很有希望，就写下这首诗。诗里的「元日」就是农历正月初一，也就是春节。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='320' cy='56' r='24' fill='#F5B841'/><path d='M0 220 H400 V300 H0 Z' fill='#C8E6A0'/><rect x='80' y='130' width='120' height='90' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M70 130 L140 90 L210 130 Z' fill='#E8604C'/><rect x='120' y='170' width='40' height='50' fill='#A9744F'/><rect x='92' y='146' width='16' height='54' fill='#E8604C'/><rect x='172' y='146' width='16' height='54' fill='#E8604C'/><path d='M100 160 h8 M180 160 h8' stroke='#F5B841' stroke-width='4'/><path d='M260 120 l-20 -20 M280 100 l-16 -16 M300 130 l-22 -18' stroke='#F09A4A' stroke-width='5' stroke-linecap='round'/><circle cx='250' cy='90' r='4' fill='#F5B841'/><circle cx='310' cy='80' r='4' fill='#E8604C'/><circle cx='330' cy='120' r='4' fill='#F5B841'/><circle cx='280' cy='160' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M268 174 L292 174 L298 210 L262 210 Z' fill='#A67AB5'/><ellipse cx='350' cy='230' rx='24' ry='12' fill='#A9744F'/><path d='M330 230 h40' stroke='#F5B841' stroke-width='4'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《元日》写的是哪个节日？", "options": ["春节", "中秋", "端午", "重阳"], "answer": 0, "explain": "元日就是农历正月初一，春节。" },
+      { "type": "fill", "question": "总把新桃换旧（　）。", "options": ["符", "服", "福", "扶"], "answer": 0, "explain": "桃符是古人挂在门上的辟邪物，后来变成春联。" },
+      { "type": "next", "question": "千门万户曈曈日，", "options": ["总把新桃换旧符。", "春风送暖入屠苏。", "爆竹声中一岁除，", "遍插茱萸少一人。"], "answer": 0, "explain": "太阳照着千家万户，大家换上新桃符。" }
+    ]
+  },
+  {
+    "id": "xia-ri-jue-ju",
+    "title": "夏日绝句",
+    "dynasty": "宋",
+    "author": "李清照",
+    "group": "jiaguo",
+    "lines": ["生当作人杰，", "死亦为鬼雄。", "至今思项羽，", "不肯过江东。"],
+    "fixes": { "为": "wéi" },
+    "explanation": "活着就要做人中的豪杰，死了也要做鬼中的英雄。到今天人们还怀念项羽，因为他兵败后不肯逃过江东，宁愿战死。诗人借项羽说人要活得有骨气。",
+    "poetStory": "李清照生活在宋朝南渡的时候，看到很多人只顾逃命。她想到项羽兵败后不肯过江东，觉得那才是有骨气的人，就写下这首诗，表达自己的敬佩。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='320' cy='60' r='26' fill='#E8604C'/><path d='M0 220 L100 100 L200 220 Z' fill='#7A7876'/><path d='M160 220 L260 80 L360 220 Z' fill='#9E9C9A'/><path d='M0 230 H400 V300 H0 Z' fill='#6FA8DC'/><path d='M0 250 Q100 230 200 250 T400 244 V300 H0 Z' fill='#4A7FB5'/><circle cx='200' cy='170' r='14' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M184 186 L216 186 L224 240 L176 240 Z' fill='#E8604C'/><path d='M216 192 l26 -20' stroke='#F8D8B8' stroke-width='6' stroke-linecap='round'/><path d='M240 174 l10 -30' stroke='#9E9C9A' stroke-width='5'/><path d='M158 110 h84' stroke='#3D3A36' stroke-width='4'/><path d='M170 110 v-20 h60 v20' fill='#A9744F'/><path d='M280 210 h60 l-8 16 h-44 z' fill='#A9744F'/><path d='M300 210 v-16 l18 8 l-18 8' fill='#FFFFFF' stroke='#3D3A36' stroke-width='1.5'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《夏日绝句》里，诗人为什么怀念项羽？", "options": ["他兵败后不肯逃过江东，有骨气", "他很会写诗", "他很有钱", "他造了一座桥"], "answer": 0, "explain": "至今思项羽，不肯过江东，诗人敬佩他的骨气。" },
+      { "type": "fill", "question": "死亦为鬼（　）。", "options": ["雄", "熊", "胸", "兄"], "answer": 0, "explain": "鬼雄就是鬼中的英雄。" },
+      { "type": "next", "question": "生当作人杰，", "options": ["死亦为鬼雄。", "至今思项羽，", "不肯过江东。", "要留清白在人间。"], "answer": 0, "explain": "活着做人杰，死了也要做鬼雄。" }
+    ]
+  },
+  {
+    "id": "shi-er",
+    "title": "示儿",
+    "dynasty": "宋",
+    "author": "陆游",
+    "group": "jiaguo",
+    "lines": ["死去元知万事空，", "但悲不见九州同。", "王师北定中原日，", "家祭无忘告乃翁。"],
+    "explanation": "诗人知道自己死后万事皆空，只悲伤没能看到国家统一。他希望有一天朝廷的军队收复中原，家里祭祖时别忘了告诉他。直到临终，他想的还是国家。",
+    "poetStory": "陆游一生都盼着收复北方。他临终前写下这首诗给儿子，说自己死了没什么放不下，只遗憾没看到国家统一。以后军队收复中原，祭祖时一定要告诉他。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 220 H400 V300 H0 Z' fill='#C8E6A0'/><rect x='80' y='70' width='240' height='130' rx='6' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M100 180 q40 -40 100 -20 q60 20 100 -10' stroke='#6FA8DC' stroke-width='4' fill='none'/><circle cx='120' cy='120' r='12' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M106 134 L134 134 L142 190 L98 190 Z' fill='#A67AB5'/><circle cx='250' cy='140' r='12' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M236 154 L264 154 L272 200 L228 200 Z' fill='#6FA8DC'/><path d='M264 160 l24 10' stroke='#F8D8B8' stroke-width='5' stroke-linecap='round'/><path d='M300 80 h14 v30 h-14 z' fill='#F5B841'/><path d='M302 82 q10 -12 10 0 q-10 8 -10 0 z' fill='#E8604C'/><circle cx='300' cy='116' r='10' fill='#F5B841'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《示儿》里，诗人临终最放不下什么？", "options": ["没看到国家统一", "家里的钱", "自己的诗稿", "院子里的花"], "answer": 0, "explain": "但悲不见九州同，他最遗憾的是国家没统一。" },
+      { "type": "fill", "question": "家祭无忘告乃（　）。", "options": ["翁", "嗡", "瓮", "蓊"], "answer": 0, "explain": "乃翁就是你的父亲。" },
+      { "type": "next", "question": "王师北定中原日，", "options": ["家祭无忘告乃翁。", "但悲不见九州同。", "死去元知万事空，", "南望王师又一年。"], "answer": 0, "explain": "等到王师收复中原，祭祖时别忘了告诉他。" }
+    ]
+  },
+  {
+    "id": "ti-lin-an-di",
+    "title": "题临安邸",
+    "dynasty": "宋",
+    "author": "林升",
+    "group": "jiaguo",
+    "lines": ["山外青山楼外楼，", "西湖歌舞几时休？", "暖风熏得游人醉，", "直把杭州作汴州。"],
+    "explanation": "山外还有青山，楼外还有高楼，西湖边的歌舞什么时候才停？暖风把游人吹得像醉了一样，他们竟把杭州当成了故都汴州。诗人担心大家只顾玩乐，忘了失去的北方。",
+    "poetStory": "林升路过临安，看见西湖边歌舞不断，达官贵人只顾享乐。他想到北方还在敌人手里，心里着急，就把诗题在客栈墙上，提醒大家别忘了国难。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='320' cy='60' r='26' fill='#F5B841'/><path d='M0 170 Q100 130 200 170 T400 160 V300 H0 Z' fill='#7CA982'/><path d='M0 220 H400 V300 H0 Z' fill='#6FA8DC'/><path d='M0 250 Q100 230 200 250 T400 244 V300 H0 Z' fill='#4A7FB5'/><rect x='60' y='100' width='90' height='70' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M50 100 L105 70 L160 100 Z' fill='#E8604C'/><rect x='90' y='130' width='30' height='40' fill='#A9744F'/><rect x='230' y='80' width='100' height='80' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M220 80 L280 44 L340 80 Z' fill='#F5B841'/><rect x='270' y='110' width='30' height='50' fill='#A9744F'/><circle cx='190' cy='190' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M178 204 L202 204 L208 240 L172 240 Z' fill='#A67AB5'/><path d='M202 206 l18 -6' stroke='#F8D8B8' stroke-width='5' stroke-linecap='round'/><ellipse cx='240' cy='230' rx='24' ry='12' fill='#A9744F'/><path d='M220 230 h40' stroke='#F5B841' stroke-width='3'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《题临安邸》里，诗人担心什么？", "options": ["大家只顾享乐，忘了失去的北方", "西湖的水太少", "楼不够高", "游人会迷路"], "answer": 0, "explain": "直把杭州作汴州，诗人担心大家忘了故都。" },
+      { "type": "fill", "question": "直把杭州作（　）州。", "options": ["汴", "变", "便", "遍"], "answer": 0, "explain": "汴州是北宋的故都。" },
+      { "type": "next", "question": "暖风熏得游人醉，", "options": ["直把杭州作汴州。", "西湖歌舞几时休？", "山外青山楼外楼，", "家祭无忘告乃翁。"], "answer": 0, "explain": "暖风吹得游人醉，竟把杭州当成汴州。" }
+    ]
+  },
+  {
+    "id": "suo-jian",
+    "title": "所见",
+    "dynasty": "清",
+    "author": "袁枚",
+    "group": "jiaguo",
+    "lines": ["牧童骑黄牛，", "歌声振林樾。", "意欲捕鸣蝉，", "忽然闭口立。"],
+    "explanation": "牧童骑着黄牛，歌声在树林里回荡。他忽然想捉树上的鸣蝉，就闭上嘴，一动不动地站住了。诗人看见孩子从唱歌到安静的变化，觉得特别有趣。",
+    "poetStory": "袁枚在树林边看见一个牧童骑牛唱歌。孩子唱着唱着，忽然听见蝉叫，就想捉蝉，马上闭口站住。袁枚觉得这一下太生动了，就写下这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='54' r='24' fill='#F5B841'/><path d='M0 220 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M60 220 v-120' stroke='#8B5A3C' stroke-width='12'/><circle cx='60' cy='80' r='40' fill='#5E8C61'/><circle cx='38' cy='100' r='24' fill='#7CA982'/><circle cx='84' cy='100' r='24' fill='#7CA982'/><ellipse cx='200' cy='220' rx='60' ry='30' fill='#A9744F'/><circle cx='250' cy='204' r='24' fill='#8B5A3C'/><path d='M246 190 l-8 -12 M258 190 l8 -12' stroke='#3D3A36' stroke-width='3'/><circle cx='244' cy='206' r='3' fill='#3D3A36'/><circle cx='160' cy='180' r='12' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M146 194 L174 194 L182 230 L138 230 Z' fill='#E8604C'/><path d='M174 190 l20 -30' stroke='#8B5A3C' stroke-width='3'/><path d='M190 156 l20 -6' stroke='#9E9C9A' stroke-width='2'/><circle cx='216' cy='146' r='4' fill='#3D3A36'/><path d='M212 142 q4 -8 8 0 q-4 4 -8 0 z' fill='#9E9C9A'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《所见》里，牧童为什么忽然不唱了？", "options": ["他想捉树上的蝉", "他困了", "他看见老师", "牛不走了"], "answer": 0, "explain": "意欲捕鸣蝉，忽然闭口立，他想捉蝉。" },
+      { "type": "fill", "question": "意欲捕鸣（　），", "options": ["蝉", "蚕", "馋", "缠"], "answer": 0, "explain": "鸣蝉就是会叫的蝉。" },
+      { "type": "next", "question": "意欲捕鸣蝉，", "options": ["忽然闭口立。", "歌声振林樾。", "牧童骑黄牛，", "怕得鱼惊不应人。"], "answer": 0, "explain": "想捉蝉，就忽然闭上嘴站住了。" }
+    ]
+  },
+  {
+    "id": "cun-ju",
+    "title": "村居",
+    "dynasty": "清",
+    "author": "高鼎",
+    "group": "jiaguo",
+    "lines": ["草长莺飞二月天，", "拂堤杨柳醉春烟。", "儿童散学归来早，", "忙趁东风放纸鸢。"],
+    "fixes": { "长": "zhǎng" },
+    "explanation": "二月里，草在长，黄莺在飞，杨柳拂着堤岸，像醉在春天的烟雾里。孩子们放学回来得早，赶紧趁着东风去放风筝。整首诗都是春天和孩子的快活。",
+    "poetStory": "高鼎住在乡村，春天看见草长莺飞、杨柳拂堤，又看见孩子们放学后放风筝。他觉得这画面太美了，就写下这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='320' cy='56' r='26' fill='#F5B841'/><path d='M0 210 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M0 240 Q100 224 200 240 T400 232 V300 H0 Z' fill='#7CA982'/><path d='M20 230 q10 -30 20 0 M50 240 q10 -28 20 0 M80 230 q10 -30 20 0' stroke='#5E8C61' stroke-width='4' fill='none'/><path d='M280 100 q20 -20 40 0 q-20 14 -40 0 z' fill='#F5B841'/><path d='M240 130 q20 -20 40 0 q-20 14 -40 0 z' fill='#F5B841'/><path d='M300 170 h60' stroke='#8B5A3C' stroke-width='4'/><path d='M330 170 l20 -20 l20 20 l-20 20 z' fill='#E8604C'/><path d='M330 170 l-20 -20' stroke='#E8604C' stroke-width='2'/><path d='M330 190 q20 20 40 0' stroke='#E8604C' stroke-width='2' fill='none'/><circle cx='120' cy='190' r='11' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M108 204 L132 204 L138 240 L102 240 Z' fill='#6FA8DC'/><path d='M132 208 l20 -6' stroke='#F8D8B8' stroke-width='5' stroke-linecap='round'/><circle cx='190' cy='200' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M178 214 L202 214 L208 246 L172 246 Z' fill='#A67AB5'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《村居》里，孩子们放学后做什么？", "options": ["趁东风放风筝", "回家写作业", "下河摸鱼", "上山砍柴"], "answer": 0, "explain": "儿童散学归来早，忙趁东风放纸鸢，纸鸢就是风筝。" },
+      { "type": "fill", "question": "忙趁东风放纸（　）。", "options": ["鸢", "鸳", "冤", "园"], "answer": 0, "explain": "纸鸢就是风筝。" },
+      { "type": "next", "question": "儿童散学归来早，", "options": ["忙趁东风放纸鸢。", "拂堤杨柳醉春烟。", "草长莺飞二月天，", "早有蜻蜓立上头。"], "answer": 0, "explain": "孩子放学早，赶紧趁东风放风筝。" }
+    ]
+  },
+  {
+    "id": "xiang-cun-si-yue",
+    "title": "乡村四月",
+    "dynasty": "宋",
+    "author": "翁卷",
+    "group": "jiaguo",
+    "lines": ["绿遍山原白满川，", "子规声里雨如烟。", "乡村四月闲人少，", "才了蚕桑又插田。"],
+    "explanation": "绿色铺满山原，河水白亮亮地涨满。杜鹃声里，细雨像烟一样飘。四月的乡村没有闲人，刚忙完采桑养蚕，又要下田插秧。诗人写出了农忙时节的热闹。",
+    "poetStory": "翁卷在四月走进乡村，看见山上田里一片绿，河水满满的。杜鹃在叫，细雨像烟。村里人刚忙完蚕桑又去插秧，没有一个人闲着，他就写下这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 200 L100 100 L200 200 Z' fill='#7CA982'/><path d='M160 200 L260 80 L360 200 Z' fill='#5E8C61'/><path d='M0 220 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M0 250 Q100 230 200 250 T400 244 V300 H0 Z' fill='#6FA8DC'/><path d='M40 60 l-6 20 M90 40 l-6 20 M140 60 l-6 20 M190 40 l-6 20 M240 60 l-6 20 M290 40 l-6 20 M340 60 l-6 20' stroke='#9E9C9A' stroke-width='3' stroke-linecap='round'/><circle cx='240' cy='120' r='10' fill='#A9744F'/><path d='M248 128 l14 6' stroke='#A9744F' stroke-width='3'/><path d='M120 250 v-40 M140 250 v-40 M160 250 v-40 M180 250 v-40' stroke='#5E8C61' stroke-width='3'/><circle cx='120' cy='204' r='6' fill='#F5B841'/><circle cx='140' cy='200' r='6' fill='#F5B841'/><circle cx='160' cy='204' r='6' fill='#F5B841'/><circle cx='180' cy='200' r='6' fill='#F5B841'/><circle cx='300' cy='230' r='11' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M288 244 L312 244 L318 280 L282 280 Z' fill='#A67AB5'/><path d='M312 248 l18 -10' stroke='#F8D8B8' stroke-width='5' stroke-linecap='round'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《乡村四月》写的是乡村什么时候？", "options": ["四月农忙的时候", "腊月过年的时候", "八月收稻的时候", "正月看灯的时候"], "answer": 0, "explain": "乡村四月闲人少，才了蚕桑又插田，写的是农忙。" },
+      { "type": "fill", "question": "才了蚕桑又插（　）。", "options": ["田", "甜", "填", "天"], "answer": 0, "explain": "插田就是下田插秧。" },
+      { "type": "next", "question": "乡村四月闲人少，", "options": ["才了蚕桑又插田。", "子规声里雨如烟。", "绿遍山原白满川，", "也傍桑阴学种瓜。"], "answer": 0, "explain": "四月村里没闲人，忙完蚕桑又插秧。" }
+    ]
+  }
+]

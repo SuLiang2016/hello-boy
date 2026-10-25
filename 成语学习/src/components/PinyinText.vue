@@ -6,6 +6,7 @@ import { pinyin } from 'pinyin-pro'
 const props = defineProps({
   text: { type: String, required: true },
   ruby: { type: Boolean, default: false },
+  fixes: { type: Object, default: () => ({}) },
 })
 
 const isHan = (ch) => /\p{Script=Han}/u.test(ch)
@@ -19,7 +20,7 @@ const tokens = computed(() => {
     if (!run.length) return
     let pys = []
     try { pys = pinyin(run.join(''), { type: 'array' }) } catch { pys = run.map(() => '') }
-    run.forEach((ch, i) => out.push({ ch, py: pys[i] || '' }))
+    run.forEach((ch, i) => out.push({ ch, py: props.fixes[ch] || pys[i] || '' }))
     run = []
   }
   for (const ch of chars) {

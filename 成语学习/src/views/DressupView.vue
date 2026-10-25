@@ -6,6 +6,7 @@ import { api } from '../api.js'
 import { useSession, OUTFITS } from '../store.js'
 import Avatar from '../components/Avatar.vue'
 import Icon from '../components/Icon.vue'
+import Scene from '../components/Scene.vue'
 import TabBar from '../components/TabBar.vue'
 
 const router = useRouter()
@@ -17,8 +18,8 @@ const wallet = ref(session.progress?.totalStars ?? 0)
 const msg = ref('')
 const busy = ref(false)
 
-const SLOT_NAMES = { hat: '帽子', glasses: '眼镜', scarf: '围巾', head: '头饰' }
-const SLOTS = ['hat', 'glasses', 'scarf', 'head']
+const SLOT_NAMES = { hat: '帽子', glasses: '眼镜', scarf: '围巾', head: '头饰', scene: '场景' }
+const SLOTS = ['hat', 'glasses', 'scarf', 'head', 'scene']
 
 onMounted(async () => {
   const r = await api('/outfits')
@@ -102,10 +103,11 @@ function onItem(item) {
           :class="{ worn: itemState(item) === 'worn' }"
           @click="onItem(item)"
         >
-          <Avatar :kind="session.kid?.avatar" :equipped="{ [slot]: item.id }" :size="72" />
+          <Scene v-if="item.slot === 'scene'" :scene="item.id" class="scene-thumb" />
+          <Avatar v-else :kind="session.kid?.avatar" :equipped="{ [slot]: item.id }" :size="72" />
           <b style="font-size: 16px">{{ item.name }}</b>
-          <span v-if="itemState(item) === 'worn'" style="color: #5E8C61; font-weight: 700; font-size: 14px">戴着呢</span>
-          <span v-else-if="itemState(item) === 'owned'" style="color: var(--muted); font-size: 14px">已拥有 · 点我戴</span>
+          <span v-if="itemState(item) === 'worn'" style="color: #5E8C61; font-weight: 700; font-size: 14px">{{ item.slot === 'scene' ? '用着呢' : '戴着呢' }}</span>
+          <span v-else-if="itemState(item) === 'owned'" style="color: var(--muted); font-size: 14px">已拥有 · 点我{{ item.slot === 'scene' ? '用' : '戴' }}</span>
           <span v-else style="color: #C79213; font-weight: 700; font-size: 14px">
             <Icon name="star" :size="14" />{{ item.price }}
           </span>
@@ -133,4 +135,12 @@ function onItem(item) {
 }
 .dress-item.worn { border-color: #7CA982; background: #F2F8EE; }
 .dress-item:active { transform: translateY(3px); box-shadow: none; }
+.scene-thumb {
+  display: block;
+  width: 100%;
+  height: 74px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.scene-thumb :deep(svg) { display: block; width: 100%; height: 100%; }
 </style>

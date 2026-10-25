@@ -1,5 +1,5 @@
 <script setup>
-// 今日复习：每个到期成语随机一题，答错不惩罚
+// 今日复习：每个到期内容随机一题，答错不惩罚（成语、古诗混排）
 import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { api } from '../api.js'
@@ -14,27 +14,25 @@ const content = useContent()
 const queue = ref([...(session.progress?.due || [])])
 const idx = ref(0)
 const picked = ref(null)
-const lastResult = ref(null)
 const finished = ref(false)
 const done = ref([]) // {idiomId, correct, remembered, bonusStar}
 
-const idiom = computed(() => content.byId[queue.value[idx.value]])
+const item = computed(() => content.byId[queue.value[idx.value]])
 
-// 每个成语随机抽一题，选项打乱
-const question = computed(() => {
-  if (!idiom.value) return null
-  const src = idiom.value.quiz[Math.floor(Math.random() * 3)]
+// 每个内容随机抽一题，选项打乱
+const q = computed(() => {
+  if (!item.value) return null
+  const src = item.value.quiz[Math.floor(Math.random() * item.value.quiz.length)]
   const correct = src.options[src.answer]
   const options = [...src.options].sort(() => Math.random() - 0.5)
   return {
     type: src.type,
-    prompt: src.type === 'meaning' ? `「${idiom.value.word}」是什么意思？` : src.question,
+    prompt: src.question || content.meaningPrompt(item.value),
     options,
     answerIndex: options.indexOf(correct),
     explain: src.explain,
   }
 })
-const q = question
 const isRight = computed(() => picked.value === q.value?.answerIndex)
 
 function pick(i) {
@@ -44,7 +42,7 @@ function pick(i) {
 }
 
 async function next() {
-  const id = idiom.value.id
+  const id = item.value.id
   const correct = isRight.value
   try {
     const r = await api('/review-result', { method: 'POST', body: { idiomId: id } })
@@ -91,18 +89,25 @@ function chime(ok) {
     <div class="topbar">
       <div class="back" @click="router.push({ name: 'home' })"><Icon name="back" :size="26" /></div>
       <b style="font-size: 22px; flex: 1">今日复习</b>
-      <span style="color: var(--muted)">{{ Math.min(idx + (finished ? 0 : 1), queue.length) }} / {{ queue.length }}</span>
+      <span style="color: var(--muted)">{{ finished ? queue.length : Math.min(idx + 1, queue.length) }} / {{ queue.length }}</span>
     </div>
 
-    <template v-if="!finished">
+    <div v-if="!queue.length" class="card" style="text-align: center; padding: 30px">
+      <div style="font-size: 48px">🌤️</div>
+      <h2>今天没有要复习的内容</h2>
+      <p style="color: var(--muted)">到期了会在这里提醒你，先去学点新的吧</p>
+      <button class="btn" @click="router.push({ name: 'home' })">回乐园</button>
+    </div>
+
+    <template v-else-if="!finished">
       <div class="quiz-dots">
         <span v-for="(n, i) in queue.length" :key="i" :class="{ done: i < idx, now: i === idx }"></span>
       </div>
 
-      <div class="card" :key="idiom?.id">
+      <div class="card" :key="item?.id">
         <div style="text-align: center; margin-bottom: 6px">
-          <b style="font-size: 30px">{{ idiom?.word }}</b>
-          <div style="color: var(--muted)">{{ idiom?.pinyin }}</div>
+          <b style="font-size: 30px">{{ content.titleOf(item) }}</b>
+          <div style="color: var(--muted)">{{ content.metaOf(item) }}</div>
         </div>
 
         <h2 style="line-height: 1.5">{{ q.prompt }}</h2>
@@ -138,12 +143,12 @@ function chime(ok) {
       <div class="card pop-in" style="text-align: center; padding: 30px 22px">
         <div style="font-size: 52px">🌞</div>
         <h1>复习完成！</h1>
-        <p style="font-size: 19px">一口气复习了 {{ queue.length }} 个，答对 {{ totalRight }} 个</p>
+        <p style="font-size: 19px">一口气复习了 {{ queue.length }} 个内容，答对 {{ totalRight }} 个</p>
         <p v-if="done.some(d => d.bonusStar)" style="color: #C79213; font-weight: 700">
           <Icon name="star" :size="20" /> 今天的复习全部完成，奖励 1 颗星星！
         </p>
         <p v-if="anyRemembered" style="color: #C79213; font-weight: 700">
-          <Icon name="crown" :size="20" /> 有成语五轮复习全过，已经牢记啦！
+          <Icon name="crown" :size="20" /> 有内容五轮复习全过，已经牢记啦！
         </p>
         <div style="display: flex; gap: 12px; margin-top: 20px; justify-content: center; flex-wrap: wrap">
           <button class="btn" @click="router.push({ name: 'home' })">回乐园</button>

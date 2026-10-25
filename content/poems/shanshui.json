@@ -1,0 +1,249 @@
+[
+  {
+    "id": "jiang-nan",
+    "title": "江南",
+    "dynasty": "汉",
+    "author": "乐府",
+    "group": "shanshui",
+    "lines": ["江南可采莲，", "莲叶何田田。", "鱼戏莲叶间。", "鱼戏莲叶东，", "鱼戏莲叶西，", "鱼戏莲叶南，", "鱼戏莲叶北。"],
+    "explanation": "江南的水乡可以采莲，莲叶一张挨一张，长得多么茂盛。鱼儿在莲叶间游来游去，一会儿到东边，一会儿到西边，一会儿到南边，一会儿到北边。读着读着，好像看见一池荷叶和一群快活的鱼。",
+    "poetStory": "这是汉代的乐府诗。那时候，朝廷会派人到各地收集老百姓唱的歌，这首诗就是采莲人唱的劳动歌。歌里没有写采莲的人，只写莲叶和鱼，却让人听出江南水乡的快乐。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='340' cy='52' r='22' fill='#F5B841'/><ellipse cx='200' cy='250' rx='190' ry='42' fill='#BDD9F2'/><ellipse cx='100' cy='220' rx='46' ry='18' fill='#7CA982'/><ellipse cx='190' cy='236' rx='54' ry='20' fill='#5E8C61'/><ellipse cx='290' cy='224' rx='50' ry='18' fill='#7CA982'/><ellipse cx='150' cy='250' rx='40' ry='16' fill='#5E8C61'/><ellipse cx='250' cy='256' rx='44' ry='16' fill='#7CA982'/><path d='M100 220 q10 -18 26 0' stroke='#5E8C61' stroke-width='4' fill='none'/><path d='M190 236 q12 -20 30 0' stroke='#5E8C61' stroke-width='4' fill='none'/><ellipse cx='210' cy='280' rx='26' ry='12' fill='#F09A4A'/><path d='M236 280 l12 -8 l0 16 z' fill='#F09A4A'/><circle cx='202' cy='276' r='2.5' fill='#3D3A36'/><ellipse cx='120' cy='285' rx='20' ry='10' fill='#E8604C'/><path d='M100 285 l-10 -6 l0 12 z' fill='#E8604C'/><ellipse cx='310' cy='278' rx='18' ry='9' fill='#F5B841'/><path d='M328 278 l10 -6 l0 12 z' fill='#F5B841'/><circle cx='150' cy='286' r='2' fill='#3D3A36'/><circle cx='310' cy='276' r='2' fill='#3D3A36'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《江南》里，鱼儿在做什么？", "options": ["在莲叶间游来游去", "在岸上跳", "在天上飞", "躲在石头下"], "answer": 0, "explain": "鱼戏莲叶东、西、南、北，是在莲叶间游。" },
+      { "type": "fill", "question": "莲叶何（　）田。", "options": ["田", "甜", "天", "填"], "answer": 0, "explain": "「田田」是说莲叶又多又密。" },
+      { "type": "next", "question": "鱼戏莲叶东，", "options": ["鱼戏莲叶西，", "鱼戏莲叶南，", "鱼戏莲叶北。", "莲叶何田田。"], "answer": 0, "explain": "鱼儿一会儿东、一会儿西，四处游。" }
+    ]
+  },
+  {
+    "id": "chi-le-ge",
+    "title": "敕勒歌",
+    "dynasty": "北朝",
+    "author": "民歌",
+    "group": "shanshui",
+    "lines": ["敕勒川，阴山下。", "天似穹庐，笼盖四野。", "天苍苍，野茫茫，", "风吹草低见牛羊。"],
+    "fixes": { "见": "xiàn", "笼": "lǒng" },
+    "explanation": "敕勒川在阴山脚下。天空像一个巨大的帐篷，罩着四面八方的原野。天蓝蓝的，野草望不到边；风吹过，草低下头，露出一群群牛羊。",
+    "poetStory": "这是北朝时期敕勒族人唱的歌。敕勒人住在北方草原上，天天放牧。有人把他们的歌记录下来，一直传到今天。歌里写的帐篷、草原和牛羊，就是他们每天看到的生活。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='56' r='24' fill='#F5B841'/><path d='M0 180 L100 80 L200 180 Z' fill='#7CA982'/><path d='M180 180 L280 100 L380 180 Z' fill='#5E8C61'/><path d='M0 200 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M0 230 Q100 210 200 230 T400 224 V300 H0 Z' fill='#7CA982'/><path d='M150 200 q0 -60 50 -60 q50 0 50 60 z' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M170 200 v-40 M180 200 v-46 M230 200 v-46 M240 200 v-40' stroke='#9E9C9A' stroke-width='3'/><path d='M190 140 L200 122 L210 140 Z' fill='#E8604C'/><ellipse cx='80' cy='250' rx='28' ry='15' fill='#A9744F'/><circle cx='56' cy='244' r='10' fill='#8B5A3C'/><path d='M52 238 l-6 -8 M60 238 l6 -8' stroke='#3D3A36' stroke-width='3'/><circle cx='84' cy='250' r='2.5' fill='#3D3A36'/><ellipse cx='330' cy='264' rx='24' ry='13' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><circle cx='312' cy='260' r='8' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><circle cx='312' cy='260' r='2' fill='#3D3A36'/><path d='M350 264 l10 -6 l0 12 z' fill='#FFFFFF' stroke='#3D3A36' stroke-width='2'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《敕勒歌》写的是哪里的生活？", "options": ["北方草原上的放牧生活", "江南水乡的采莲生活", "海边的渔民生活", "山里的采药生活"], "answer": 0, "explain": "敕勒川、阴山、穹庐、牛羊，都是北方草原的景象。" },
+      { "type": "fill", "question": "风吹草低（　）牛羊。", "options": ["见", "现", "建", "件"], "answer": 0, "explain": "草被风吹低，牛羊露出来，这里读 xiàn。" },
+      { "type": "next", "question": "天苍苍，野茫茫，", "options": ["风吹草低见牛羊。", "天似穹庐，笼盖四野。", "敕勒川，阴山下。", "春来江水绿如蓝。"], "answer": 0, "explain": "天蓝野阔，风吹草低，就看见了牛羊。" }
+    ]
+  },
+  {
+    "id": "lu-zhai",
+    "title": "鹿柴",
+    "dynasty": "唐",
+    "author": "王维",
+    "group": "shanshui",
+    "lines": ["空山不见人，", "但闻人语响。", "返景入深林，", "复照青苔上。"],
+    "fixes": { "景": "yǐng" },
+    "explanation": "空荡荡的山里看不见人影，只听见有人说话的声音。夕阳的光返照进深深的树林，又落在青苔上。山很静，静得连一点人声都显得清楚。",
+    "poetStory": "王维喜欢在山里住，也喜欢画画。鹿柴是他住所附近的一个地方。傍晚，他在山里走，看不见人，只听见说话声，又看见夕阳照在青苔上，就把这种安静写进诗里。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='320' cy='60' r='26' fill='#F5B841'/><path d='M0 210 L90 90 L180 210 Z' fill='#7CA982'/><path d='M130 210 L230 70 L330 210 Z' fill='#5E8C61'/><path d='M0 220 H400 V300 H0 Z' fill='#C8E6A0'/><rect x='130' y='120' width='14' height='100' fill='#A9744F'/><rect x='230' y='140' width='12' height='80' fill='#8B5A3C'/><path d='M137 120 q-30 -34 -60 -10 M137 140 q-26 -20 -50 0 M236 140 q-24 -24 -44 -8' stroke='#7CA982' stroke-width='5' fill='none'/><path d='M240 60 l-40 60 M300 80 l-30 40 M280 40 l-20 30' stroke='#F5B841' stroke-width='4' stroke-linecap='round' opacity='0.7'/><ellipse cx='200' cy='260' rx='26' ry='10' fill='#5E8C61'/><ellipse cx='260' cy='270' rx='20' ry='8' fill='#7CA982'/><circle cx='90' cy='250' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M78 264 L102 264 L108 292 L72 292 Z' fill='#A67AB5'/><path d='M90 250 q6 -10 14 -4' stroke='#3D3A36' stroke-width='3' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《鹿柴》里，山里为什么显得特别静？", "options": ["看不见人，只听见说话声", "山里有很多人在唱歌", "下着大雨", "树木都枯了"], "answer": 0, "explain": "空山不见人，但闻人语响，一点声音就让山显得更静。" },
+      { "type": "fill", "question": "返景入深（　），", "options": ["林", "淋", "临", "邻"], "answer": 0, "explain": "夕阳返照进深深的树林。" },
+      { "type": "next", "question": "空山不见人，", "options": ["但闻人语响。", "返景入深林，", "复照青苔上。", "处处闻啼鸟。"], "answer": 0, "explain": "先写看不见人，再写听见说话声。" }
+    ]
+  },
+  {
+    "id": "wang-lu-shan-pu-bu",
+    "title": "望庐山瀑布",
+    "dynasty": "唐",
+    "author": "李白",
+    "group": "shanshui",
+    "lines": ["日照香炉生紫烟，", "遥看瀑布挂前川。", "飞流直下三千尺，", "疑是银河落九天。"],
+    "explanation": "太阳照着香炉峰，升起紫色的云雾。远远看去，瀑布像一块白布挂在河前。水飞快地直往下冲，好像有三千尺长，让人怀疑是银河从天上落了下来。",
+    "poetStory": "李白游庐山时，站在山下看瀑布。太阳照在山峰上，水雾像紫烟，瀑布从高处直冲下来，响声很大。他看得入迷，就写下这首诗，把瀑布想成天上的银河。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='70' cy='56' r='22' fill='#F5B841'/><path d='M40 220 L150 50 L260 220 Z' fill='#7CA982'/><path d='M220 220 L330 80 L400 220 Z' fill='#5E8C61'/><path d='M0 220 H400 V300 H0 Z' fill='#BDD9F2'/><path d='M130 60 q30 -20 60 0 q30 -20 60 0' stroke='#A67AB5' stroke-width='12' fill='none' opacity='0.6'/><path d='M170 70 Q180 130 172 210' stroke='#FFFFFF' stroke-width='14' fill='none'/><path d='M180 80 Q190 140 184 210' stroke='#6FA8DC' stroke-width='6' fill='none'/><path d='M0 250 Q100 230 200 250 T400 244 V300 H0 Z' fill='#6FA8DC'/><path d='M160 220 q14 8 28 0 M190 240 q14 8 28 0 M210 262 q14 8 28 0' stroke='#FFFFFF' stroke-width='4' fill='none'/><circle cx='90' cy='270' r='8' fill='#C8E6A0'/><circle cx='330' cy='272' r='7' fill='#C8E6A0'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《望庐山瀑布》把瀑布想成了什么？", "options": ["从天上落下的银河", "一条白色的船", "一面镜子", "一条长路"], "answer": 0, "explain": "疑是银河落九天，诗人把瀑布想成银河。" },
+      { "type": "fill", "question": "疑是银河落（　）天。", "options": ["九", "久", "酒", "旧"], "answer": 0, "explain": "「九天」指很高的天空。" },
+      { "type": "next", "question": "飞流直下三千尺，", "options": ["疑是银河落九天。", "遥看瀑布挂前川。", "日照香炉生紫烟，", "霜叶红于二月花。"], "answer": 0, "explain": "上句写水流很急很长，下句说像银河落下。" }
+    ]
+  },
+  {
+    "id": "wang-tian-men-shan",
+    "title": "望天门山",
+    "dynasty": "唐",
+    "author": "李白",
+    "group": "shanshui",
+    "lines": ["天门中断楚江开，", "碧水东流至此回。", "两岸青山相对出，", "孤帆一片日边来。"],
+    "explanation": "天门山从中间断开，楚江从缺口流出来。碧绿的江水向东流，到了这里打个弯。两岸的青山面对面地立着，一只小船从太阳那边驶来。",
+    "poetStory": "李白坐船经过天门山，看见江水从两座山中间冲出来。船往前走，两岸的山像迎面走来，远处一只帆船从日边出现。他觉得这景象很有气势，就写下这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='320' cy='56' r='26' fill='#F5B841'/><path d='M0 240 L80 80 L160 240 Z' fill='#7CA982'/><path d='M240 240 L320 80 L400 240 Z' fill='#5E8C61'/><path d='M160 240 L170 180 Q200 160 230 180 L240 240 Z' fill='#BDD9F2'/><path d='M0 250 Q100 230 200 250 T400 244 V300 H0 Z' fill='#6FA8DC'/><path d='M180 210 q30 -10 60 0' stroke='#FFFFFF' stroke-width='4' fill='none'/><path d='M250 196 h44 l-8 14 h-28 z' fill='#A9744F'/><path d='M270 196 v-20 l14 10 l-14 10' fill='#FFFFFF' stroke='#3D3A36' stroke-width='2'/><path d='M40 210 q10 -30 20 0 M90 220 q10 -26 20 0 M330 210 q10 -30 20 0 M380 220 q10 -26 20 0' stroke='#C8E6A0' stroke-width='4' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《望天门山》写诗人看到了什么？", "options": ["江水从两山中间流过，一只小船从日边来", "天门山上有一座大庙", "江里有很多鱼", "山上下着大雪"], "answer": 0, "explain": "天门中断、碧水东流、孤帆日边来，都是江上的景象。" },
+      { "type": "fill", "question": "两岸青山相对（　），", "options": ["出", "初", "除", "楚"], "answer": 0, "explain": "船往前走，两岸的山像迎面出来。" },
+      { "type": "next", "question": "天门中断楚江开，", "options": ["碧水东流至此回。", "两岸青山相对出，", "孤帆一片日边来。", "飞流直下三千尺。"], "answer": 0, "explain": "先写山断江开，再写碧水到这里转弯。" }
+    ]
+  },
+  {
+    "id": "chu-zhou-xi-jian",
+    "title": "滁州西涧",
+    "dynasty": "唐",
+    "author": "韦应物",
+    "group": "shanshui",
+    "lines": ["独怜幽草涧边生，", "上有黄鹂深树鸣。", "春潮带雨晚来急，", "野渡无人舟自横。"],
+    "explanation": "诗人特别喜爱涧边静静生长的青草，上面还有黄鹂在深树里叫。傍晚下起雨，春潮涨得急。野外的渡口没有人，一只小船横在水面上，随水漂着。",
+    "poetStory": "韦应物在滁州做官时，常到西涧散步。一个春天的傍晚，他看见涧边青草、树里黄鹂，又赶上春雨涨潮，渡口的小船没人管，就写下这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 210 Q100 180 200 210 T400 200 V300 H0 Z' fill='#BDD9F2'/><path d='M0 240 Q100 220 200 240 T400 230 V300 H0 Z' fill='#6FA8DC'/><path d='M30 190 q10 -30 20 0 M60 200 q10 -26 20 0 M90 188 q10 -30 20 0 M120 198 q10 -26 20 0' stroke='#7CA982' stroke-width='4' fill='none'/><rect x='250' y='100' width='12' height='100' fill='#A9744F'/><path d='M256 100 q-40 -30 -70 -6 M256 120 q-30 -20 -56 -2' stroke='#5E8C61' stroke-width='6' fill='none'/><path d='M220 90 q10 -10 20 0 q-10 10 -20 0 z' fill='#F5B841'/><circle cx='230' cy='90' r='2' fill='#3D3A36'/><path d='M40 70 l-6 20 M80 50 l-6 20 M120 76 l-6 20 M160 56 l-6 20 M200 80 l-6 20 M240 60 l-6 20' stroke='#9E9C9A' stroke-width='3' stroke-linecap='round'/><path d='M300 236 h70 l-10 16 h-50 z' fill='#A9744F'/><path d='M312 236 v-14 h20 v14' stroke='#8B5A3C' stroke-width='3' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《滁州西涧》最后写渡口怎样？", "options": ["没有人，小船自己横在水上", "挤满了过河的人", "桥被水冲断了", "船夫在唱歌"], "answer": 0, "explain": "野渡无人舟自横，写的是没有人的野渡。" },
+      { "type": "fill", "question": "野渡无人舟自（　）。", "options": ["横", "红", "洪", "恒"], "answer": 0, "explain": "小船横在水面上，随水漂着。" },
+      { "type": "next", "question": "春潮带雨晚来急，", "options": ["野渡无人舟自横。", "上有黄鹂深树鸣。", "独怜幽草涧边生，", "霜叶红于二月花。"], "answer": 0, "explain": "春雨涨潮，野渡没人，小船自己横着。" }
+    ]
+  },
+  {
+    "id": "yu-ge-zi",
+    "title": "渔歌子",
+    "dynasty": "唐",
+    "author": "张志和",
+    "group": "shanshui",
+    "lines": ["西塞山前白鹭飞，", "桃花流水鳜鱼肥。", "青箬笠，绿蓑衣，", "斜风细雨不须归。"],
+    "explanation": "西塞山前，白鹭飞过水面；桃花飘落，江水上涨，鳜鱼正肥。渔翁戴着青箬笠，披着绿蓑衣，在斜风细雨里钓鱼，一点也不想回家。",
+    "poetStory": "张志和喜欢钓鱼，也喜欢山水。有一年春天，他在西塞山前的江上钓鱼，桃花开了，白鹭飞了，细雨一直下。他觉得这样太舒服，就写下这首词，说自己不想回去。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 180 L100 80 L200 180 Z' fill='#7CA982'/><path d='M0 220 H400 V300 H0 Z' fill='#6FA8DC'/><path d='M0 240 Q100 220 200 240 T400 232 V300 H0 Z' fill='#4A7FB5'/><path d='M60 80 q10 -10 20 0 M100 62 q10 -10 20 0 M140 90 q10 -10 20 0' stroke='#FFFFFF' stroke-width='4' fill='none'/><circle cx='250' cy='110' r='10' fill='#F5B8B8'/><circle cx='280' cy='96' r='8' fill='#E8604C'/><circle cx='310' cy='120' r='9' fill='#F5B8B8'/><path d='M240 130 q20 -28 40 0' stroke='#A9744F' stroke-width='4' fill='none'/><path d='M40 40 l-6 20 M80 30 l-6 20 M120 44 l-6 20 M160 32 l-6 20 M200 48 l-6 20 M240 36 l-6 20' stroke='#9E9C9A' stroke-width='3' stroke-linecap='round'/><path d='M160 230 h90 l-12 20 h-66 z' fill='#A9744F'/><circle cx='205' cy='206' r='14' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M184 202 q21 -20 42 0 z' fill='#5E8C61'/><path d='M180 216 q25 18 50 0 l-6 26 h-38 z' fill='#5E8C61'/><path d='M212 232 v24' stroke='#8B5A3C' stroke-width='3'/><path d='M226 254 q14 10 28 0' stroke='#9E9C9A' stroke-width='3' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《渔歌子》里的渔翁为什么不想回家？", "options": ["斜风细雨里钓鱼太舒服了", "他迷路了", "鱼太多拿不动", "天已经黑了"], "answer": 0, "explain": "斜风细雨不须归，是渔翁舍不得这风景。" },
+      { "type": "fill", "question": "桃花流水（　）鱼肥。", "options": ["鳜", "桂", "贵", "跪"], "answer": 0, "explain": "鳜鱼是一种味道鲜美的鱼。" },
+      { "type": "next", "question": "西塞山前白鹭飞，", "options": ["桃花流水鳜鱼肥。", "青箬笠，绿蓑衣，", "斜风细雨不须归。", "春江水暖鸭先知。"], "answer": 0, "explain": "先写山前白鹭，再写桃花流水和鳜鱼。" }
+    ]
+  },
+  {
+    "id": "wang-dong-ting",
+    "title": "望洞庭",
+    "dynasty": "唐",
+    "author": "刘禹锡",
+    "group": "shanshui",
+    "lines": ["湖光秋月两相和，", "潭面无风镜未磨。", "遥望洞庭山水翠，", "白银盘里一青螺。"],
+    "explanation": "洞庭湖的水光和秋夜的月光融在一起。湖面没有风，像一面没有磨过的镜子。远远望去，洞庭湖的山水一片青翠，湖中的君山像白银盘里放着一只青螺。",
+    "poetStory": "刘禹锡秋天经过洞庭湖，夜里湖面很静。他看见月光照在水上，远处的君山小小的、青青的，就写下这首诗。他把湖比作白银盘，把山比作青螺。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='310' cy='66' r='30' fill='#FFFFFF'/><circle cx='310' cy='66' r='18' fill='#FFF7E6'/><path d='M0 210 H400 V300 H0 Z' fill='#6FA8DC'/><path d='M0 230 Q100 216 200 230 T400 224 V300 H0 Z' fill='#4A7FB5'/><ellipse cx='120' cy='250' rx='44' ry='12' fill='#7CA982'/><ellipse cx='120' cy='242' rx='26' ry='8' fill='#5E8C61'/><path d='M0 280 Q100 268 200 280 T400 274 V300 H0 Z' fill='#BDD9F2'/><path d='M40 190 q10 -16 20 0 M70 196 q10 -14 20 0 M100 188 q10 -16 20 0' stroke='#BDD9F2' stroke-width='4' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《望洞庭》把湖中的君山比作什么？", "options": ["白银盘里的一只青螺", "一条大鱼", "一座高塔", "一只小船"], "answer": 0, "explain": "白银盘里一青螺，写的是湖中的君山。" },
+      { "type": "fill", "question": "潭面无风镜未（　）。", "options": ["磨", "摩", "模", "魔"], "answer": 0, "explain": "没有风，湖面像一面还没磨过的镜子。" },
+      { "type": "next", "question": "遥望洞庭山水翠，", "options": ["白银盘里一青螺。", "潭面无风镜未磨。", "湖光秋月两相和，", "映日荷花别样红。"], "answer": 0, "explain": "远望山水青翠，君山像白银盘里的青螺。" }
+    ]
+  },
+  {
+    "id": "lang-tao-sha",
+    "title": "浪淘沙",
+    "dynasty": "唐",
+    "author": "刘禹锡",
+    "group": "shanshui",
+    "lines": ["九曲黄河万里沙，", "浪淘风簸自天涯。", "如今直上银河去，", "同到牵牛织女家。"],
+    "fixes": { "曲": "qū" },
+    "explanation": "黄河弯弯曲曲，卷着万里泥沙，波浪淘洗、大风颠簸，好像从天涯流来。诗人想象自己沿着黄河直上银河，一起到牛郎织女的家去做客。",
+    "poetStory": "刘禹锡看到黄河水又黄又急，想到它从很远很远的地方流来。他忽然有了一个大胆的想法：顺着黄河一直往上走，是不是能走到天上的银河？于是写下这首充满想象的诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 210 Q80 180 160 210 T320 200 T400 210 V300 H0 Z' fill='#A9744F'/><path d='M0 240 Q100 210 200 240 T400 230 V300 H0 Z' fill='#8B5A3C'/><path d='M40 210 q20 -20 40 0 q20 -20 40 0 q20 -20 40 0 q20 -20 40 0 q20 -20 40 0 q20 -20 40 0' stroke='#F5B841' stroke-width='5' fill='none'/><circle cx='80' cy='70' r='4' fill='#F5B841'/><circle cx='140' cy='50' r='3' fill='#FFFFFF'/><circle cx='210' cy='80' r='4' fill='#F5B841'/><circle cx='280' cy='46' r='3' fill='#FFFFFF'/><circle cx='340' cy='72' r='4' fill='#F5B841'/><circle cx='370' cy='120' r='3' fill='#FFFFFF'/><circle cx='50' cy='130' r='3' fill='#FFFFFF'/><path d='M150 160 q10 -20 20 0 q-10 8 -20 0 z' fill='#FFFFFF'/><path d='M180 160 q10 -20 20 0 q-10 8 -20 0 z' fill='#FFFFFF'/><circle cx='280' cy='150' r='10' fill='#F8D8B8'/><path d='M268 164 L292 164 L298 190 L262 190 Z' fill='#6FA8DC'/><circle cx='300' cy='150' r='10' fill='#F8D8B8'/><path d='M288 164 L312 164 L318 190 L282 190 Z' fill='#E8604C'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《浪淘沙》里，诗人想顺着黄河去哪里？", "options": ["天上的银河", "海边", "一座大城市", "黄河源头"], "answer": 0, "explain": "如今直上银河去，诗人想去银河。" },
+      { "type": "fill", "question": "九（　）黄河万里沙，", "options": ["曲", "屈", "取", "去"], "answer": 0, "explain": "黄河弯弯曲曲，这里读 qū。" },
+      { "type": "next", "question": "如今直上银河去，", "options": ["同到牵牛织女家。", "浪淘风簸自天涯。", "九曲黄河万里沙，", "飞流直下三千尺。"], "answer": 0, "explain": "顺着黄河上天，一起去牛郎织女家。" }
+    ]
+  },
+  {
+    "id": "jiang-xue",
+    "title": "江雪",
+    "dynasty": "唐",
+    "author": "柳宗元",
+    "group": "shanshui",
+    "lines": ["千山鸟飞绝，", "万径人踪灭。", "孤舟蓑笠翁，", "独钓寒江雪。"],
+    "explanation": "所有的山上都看不见鸟飞，所有的小路上都没有人的脚印。只有一只小船，船上坐着一位戴斗笠、披蓑衣的老渔翁，独自在满是风雪的寒江上钓鱼。",
+    "poetStory": "柳宗元被贬到永州后，心里很孤独。一个大雪天，他看见江上没有人，只有一位老渔翁在雪里钓鱼。他把这个画面写进诗里，也把自己的心情写了进去。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 200 L70 100 L140 200 Z' fill='#BDD9F2'/><path d='M120 200 L210 80 L300 200 Z' fill='#BDD9F2'/><path d='M260 200 L340 110 L400 200 Z' fill='#BDD9F2'/><path d='M0 220 H400 V300 H0 Z' fill='#FFFFFF'/><path d='M0 210 H400' stroke='#9E9C9A' stroke-width='3'/><path d='M0 250 H400' stroke='#9E9C9A' stroke-width='3'/><path d='M0 280 H400' stroke='#9E9C9A' stroke-width='3'/><path d='M140 236 h100 l-14 22 h-72 z' fill='#A9744F'/><circle cx='190' cy='216' r='12' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M174 210 q16 -16 32 0 z' fill='#3D3A36'/><path d='M170 222 q20 18 40 0 l-6 20 h-28 z' fill='#5E8C61'/><path d='M210 230 l30 -20' stroke='#8B5A3C' stroke-width='3'/><path d='M250 200 l-20 -20' stroke='#9E9C9A' stroke-width='2'/><path d='M290 160 l-14 -14 M310 140 l-12 -12' stroke='#FFFFFF' stroke-width='3' stroke-linecap='round'/><circle cx='60' cy='60' r='3' fill='#FFFFFF'/><circle cx='330' cy='50' r='4' fill='#FFFFFF'/><circle cx='260' cy='90' r='3' fill='#FFFFFF'/><circle cx='100' cy='140' r='3' fill='#FFFFFF'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《江雪》里的江上有什么？", "options": ["一只小船和一位钓鱼的老翁", "很多渔船", "一群孩子在玩雪", "一座桥"], "answer": 0, "explain": "孤舟蓑笠翁，独钓寒江雪，江上只有一只小船和老翁。" },
+      { "type": "fill", "question": "孤舟（　）笠翁，", "options": ["蓑", "梭", "缩", "索"], "answer": 0, "explain": "老翁披着蓑衣，戴着斗笠。" },
+      { "type": "next", "question": "孤舟蓑笠翁，", "options": ["独钓寒江雪。", "万径人踪灭。", "千山鸟飞绝，", "处处闻啼鸟。"], "answer": 0, "explain": "孤舟上的老翁，一个人在寒江雪里钓鱼。" }
+    ]
+  },
+  {
+    "id": "shu-hu-yin-xian-sheng-bi",
+    "title": "书湖阴先生壁",
+    "dynasty": "宋",
+    "author": "王安石",
+    "group": "shanshui",
+    "lines": ["茅檐长扫净无苔，", "花木成畦手自栽。", "一水护田将绿绕，", "两山排闼送青来。"],
+    "fixes": { "长": "cháng", "将": "jiāng" },
+    "explanation": "湖阴先生家的茅屋檐下常打扫，干净得没有青苔。花木一畦一畦，都是他亲手栽的。一条小溪护着田地，绕着绿色流；两座山像推开门一样，把青色送进屋来。",
+    "poetStory": "王安石晚年住在南京，常去朋友杨德逢家做客。杨德逢住在湖阴，喜欢打扫院子、种花种菜。王安石看见他家干净又漂亮，就题了这首诗在墙上。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 210 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M0 230 Q100 214 200 230 T400 224 V300 H0 Z' fill='#7CA982'/><rect x='60' y='130' width='130' height='80' rx='6' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M48 132 L125 90 L202 132 Z' fill='#A9744F'/><rect x='112' y='166' width='26' height='44' fill='#8B5A3C'/><path d='M0 260 Q100 244 200 260 T400 254 V300 H0 Z' fill='#6FA8DC'/><path d='M60 280 q10 -24 20 0 M80 286 q10 -22 20 0 M110 282 q10 -24 20 0 M140 288 q10 -22 20 0' stroke='#5E8C61' stroke-width='4' fill='none'/><circle cx='90' cy='276' r='6' fill='#E8604C'/><circle cx='130' cy='284' r='5' fill='#F5B841'/><circle cx='170' cy='278' r='6' fill='#F5B8B8'/><path d='M260 240 L310 180 L360 240 Z' fill='#5E8C61'/><path d='M300 240 L350 170 L400 240 Z' fill='#7CA982'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《书湖阴先生壁》写的是谁家？", "options": ["湖阴先生家干净的院子和山水", "一家热闹的客栈", "一座大寺庙", "海边的渔家"], "answer": 0, "explain": "诗题就是写在湖阴先生家的墙壁上。" },
+      { "type": "fill", "question": "一水护田将绿（　），", "options": ["绕", "饶", "烧", "晓"], "answer": 0, "explain": "小溪绕着田地流，像在护着它。" },
+      { "type": "next", "question": "一水护田将绿绕，", "options": ["两山排闼送青来。", "花木成畦手自栽。", "茅檐长扫净无苔，", "春来江水绿如蓝。"], "answer": 0, "explain": "溪水绕田，两座山像推门送青。" }
+    ]
+  },
+  {
+    "id": "san-qu-dao-zhong",
+    "title": "三衢道中",
+    "dynasty": "宋",
+    "author": "曾几",
+    "group": "shanshui",
+    "lines": ["梅子黄时日日晴，", "小溪泛尽却山行。", "绿阴不减来时路，", "添得黄鹂四五声。"],
+    "explanation": "梅子黄的时候，天天都是晴天。诗人坐小船到小溪尽头，又改走山路。山路上绿树成荫，和来时的路一样浓；还多听见了四五声黄鹂叫。",
+    "poetStory": "曾几在夏天走三衢道，先坐船，后走山路。梅子黄了，天气晴好，溪水绿树一路陪着他。他听见黄鹂叫，觉得山里比来时的路还有趣，就写下这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='56' r='24' fill='#F5B841'/><path d='M0 200 Q100 160 200 200 T400 190 V300 H0 Z' fill='#7CA982'/><path d='M0 230 Q100 210 200 230 T400 224 V300 H0 Z' fill='#C8E6A0'/><rect x='60' y='120' width='16' height='90' fill='#8B5A3C'/><circle cx='58' cy='112' r='16' fill='#F5B841'/><circle cx='82' cy='118' r='12' fill='#F09A4A'/><circle cx='100' cy='200' r='8' fill='#F5B841'/><path d='M100 210 v30' stroke='#8B5A3C' stroke-width='3'/><path d='M160 220 h70 l-10 16 h-50 z' fill='#A9744F'/><path d='M200 220 q10 -18 20 0' stroke='#8B5A3C' stroke-width='3' fill='none'/><path d='M240 240 Q280 200 320 240' stroke='#9E9C9A' stroke-width='10' fill='none'/><path d='M300 160 q10 -10 20 0 q-10 8 -20 0 z' fill='#F5B841'/><circle cx='310' cy='156' r='2' fill='#3D3A36'/><path d='M340 130 q10 -10 20 0 q-10 8 -20 0 z' fill='#F5B841'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《三衢道中》里，诗人先坐什么，后走什么？", "options": ["先坐小船，后走山路", "先骑马，后坐船", "先走路，后坐车", "先坐轿，后骑马"], "answer": 0, "explain": "小溪泛尽却山行，坐船到尽头再走山路。" },
+      { "type": "fill", "question": "绿阴不减来时（　），", "options": ["路", "露", "鹿", "禄"], "answer": 0, "explain": "山路上的绿阴和来时一样浓。" },
+      { "type": "next", "question": "梅子黄时日日晴，", "options": ["小溪泛尽却山行。", "绿阴不减来时路，", "添得黄鹂四五声。", "松下问童子。"], "answer": 0, "explain": "梅子黄时天晴，坐船到尽头就改走山路。" }
+    ]
+  },
+  {
+    "id": "si-shi-tian-yuan-za-xing-qi-san-shi-yi",
+    "title": "四时田园杂兴",
+    "dynasty": "宋",
+    "author": "范成大",
+    "group": "shanshui",
+    "lines": ["昼出耘田夜绩麻，", "村庄儿女各当家。", "童孙未解供耕织，", "也傍桑阴学种瓜。"],
+    "fixes": { "供": "gòng", "种": "zhòng" },
+    "explanation": "白天出去锄田，夜里在家搓麻线，村里的男男女女各忙各的活。小孙子还不会耕田织布，也在桑树阴下学着种瓜。一家人从早忙到晚，小孩子也跟着学。",
+    "poetStory": "范成大晚年住在乡下，天天看村里人干活。夏天的农忙时节，大人白天锄地、晚上搓麻，小孩子在旁边学种瓜。他觉得这画面很有意思，就写进《四时田园杂兴》里。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='320' cy='56' r='24' fill='#F5B841'/><path d='M0 200 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M0 230 Q100 214 200 230 T400 224 V300 H0 Z' fill='#7CA982'/><path d='M50 220 q20 -30 40 0 M90 224 q20 -28 40 0 M130 220 q20 -30 40 0 M170 224 q20 -28 40 0' stroke='#5E8C61' stroke-width='4' fill='none'/><circle cx='80' cy='190' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M66 204 L94 204 L100 240 L60 240 Z' fill='#6FA8DC'/><path d='M104 200 l20 -10' stroke='#F8D8B8' stroke-width='5' stroke-linecap='round'/><path d='M118 186 q10 -20 20 0' stroke='#8B5A3C' stroke-width='3' fill='none'/><circle cx='200' cy='190' r='10' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M186 204 L214 204 L220 240 L180 240 Z' fill='#A67AB5'/><path d='M240 210 q20 -40 40 0' stroke='#7CA982' stroke-width='6' fill='none'/><rect x='250' y='210' width='14' height='50' fill='#8B5A3C'/><circle cx='276' cy='230' r='8' fill='#F8D8B8' stroke='#3D3A36' stroke-width='2'/><path d='M268 240 L284 240 L288 266 L264 266 Z' fill='#F5B841'/><path d='M290 258 l10 6' stroke='#8B5A3C' stroke-width='3'/><circle cx='310' cy='266' r='5' fill='#E8604C'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《四时田园杂兴》（昼出耘田夜绩麻）写的是？", "options": ["村里人白天黑夜忙农活，小孩也学种瓜", "城里人逛街", "学生在考试", "渔民出海"], "answer": 0, "explain": "昼出耘田夜绩麻，村庄儿女各当家，写的是农忙。" },
+      { "type": "fill", "question": "也傍桑阴学种（　）。", "options": ["瓜", "花", "草", "豆"], "answer": 0, "explain": "童孙在桑树阴下学种瓜。" },
+      { "type": "next", "question": "童孙未解供耕织，", "options": ["也傍桑阴学种瓜。", "村庄儿女各当家。", "昼出耘田夜绩麻，", "小荷才露尖尖角。"], "answer": 0, "explain": "小孩不会耕织，就在桑阴下学种瓜。" }
+    ]
+  },
+  {
+    "id": "si-shi-tian-yuan-za-xing-qi-er-shi-wu",
+    "title": "四时田园杂兴",
+    "dynasty": "宋",
+    "author": "范成大",
+    "group": "shanshui",
+    "lines": ["梅子金黄杏子肥，", "麦花雪白菜花稀。", "日长篱落无人过，", "惟有蜻蜓蛱蝶飞。"],
+    "fixes": { "长": "cháng" },
+    "explanation": "梅子黄了，杏子长得又大又肥。麦花雪白，菜花却渐渐稀了。白天很长，篱笆边没有人走过，只有蜻蜓和蝴蝶飞来飞去。夏天午后，村子安安静静的。",
+    "poetStory": "范成大住在石湖乡下，夏天午后常到村边走走。梅子黄、杏子肥，麦花白、菜花稀，篱笆边一个人也没有，只有蜻蜓蝴蝶在飞。他把这安静的夏日写成了诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='320' cy='56' r='24' fill='#F5B841'/><path d='M0 200 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M0 230 Q100 214 200 230 T400 224 V300 H0 Z' fill='#7CA982'/><rect x='60' y='110' width='16' height='100' fill='#8B5A3C'/><circle cx='58' cy='104' r='16' fill='#F5B841'/><circle cx='82' cy='112' r='12' fill='#F09A4A'/><rect x='140' y='120' width='14' height='90' fill='#8B5A3C'/><circle cx='142' cy='114' r='13' fill='#F5B841'/><circle cx='164' cy='120' r='10' fill='#F5B841'/><path d='M220 180 q10 -30 20 0 M240 186 q10 -28 20 0 M260 180 q10 -30 20 0 M280 186 q10 -28 20 0 M300 180 q10 -30 20 0' stroke='#FFFFFF' stroke-width='5' fill='none'/><path d='M50 230 H350' stroke='#A9744F' stroke-width='8'/><path d='M70 230 v40 M110 230 v40 M150 230 v40 M190 230 v40 M230 230 v40 M270 230 v40 M310 230 v40' stroke='#8B5A3C' stroke-width='5'/><circle cx='200' cy='210' r='9' fill='#E8604C'/><path d='M200 201 v-14 M200 210 l-14 -8 M200 210 l14 -8' stroke='#3D3A36' stroke-width='3'/><circle cx='260' cy='250' r='7' fill='#F5B8B8'/><path d='M260 243 v-12 M260 250 l-12 -6 M260 250 l12 -6' stroke='#3D3A36' stroke-width='2.5'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《四时田园杂兴》（梅子金黄杏子肥）写的是哪个季节？", "options": ["初夏", "深秋", "寒冬", "早春"], "answer": 0, "explain": "梅子黄、杏子肥、麦花白，是初夏的景物。" },
+      { "type": "fill", "question": "惟有蜻蜓（　）蝶飞。", "options": ["蛱", "夹", "颊", "荚"], "answer": 0, "explain": "蛱蝶就是蝴蝶的一种。" },
+      { "type": "next", "question": "日长篱落无人过，", "options": ["惟有蜻蜓蛱蝶飞。", "麦花雪白菜花稀。", "梅子金黄杏子肥，", "早有蜻蜓立上头。"], "answer": 0, "explain": "白天长，篱边没人，只有蜻蜓蝴蝶飞。" }
+    ]
+  },
+  {
+    "id": "jue-ju-huang-li",
+    "title": "绝句",
+    "dynasty": "唐",
+    "author": "杜甫",
+    "group": "shanshui",
+    "lines": ["两个黄鹂鸣翠柳，", "一行白鹭上青天。", "窗含西岭千秋雪，", "门泊东吴万里船。"],
+    "fixes": { "行": "háng" },
+    "explanation": "两只黄鹂在翠绿的柳枝上叫，一行白鹭飞上蓝天。从窗口望出去，是西岭上千年不化的雪；门前停着从东吴来的万里船。四句诗像四幅小画，颜色特别鲜亮。",
+    "poetStory": "杜甫住在成都草堂，日子安稳。春天的一个晴天，他站在屋里往外看：柳树上有黄鹂，天上有白鹭，远处是雪山，门前停着远道来的船。他把看到的四样东西写成一首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='56' r='26' fill='#F5B841'/><rect x='25' y='30' width='180' height='170' fill='#BDD9F2' stroke='#3D3A36' stroke-width='4'/><path d='M115 30 V200 M25 115 H205' stroke='#3D3A36' stroke-width='4'/><path d='M80 200 Q80 140 120 120 Q160 140 160 200 Z' fill='#7CA982'/><rect x='112' y='150' width='16' height='50' fill='#A9744F'/><path d='M70 96 q10 -10 20 0 q-10 8 -20 0 z' fill='#F5B841'/><circle cx='88' cy='92' r='2' fill='#3D3A36'/><path d='M140 76 q10 -10 20 0 q-10 8 -20 0 z' fill='#F5B841'/><circle cx='158' cy='72' r='2' fill='#3D3A36'/><path d='M40 70 q10 -10 20 0 q-10 8 -20 0 z' fill='#F5B841'/><path d='M220 70 q14 -10 28 0 q-14 10 -28 0 z' fill='#FFFFFF' stroke='#3D3A36' stroke-width='2'/><path d='M260 54 q14 -10 28 0 q-14 10 -28 0 z' fill='#FFFFFF' stroke='#3D3A36' stroke-width='2'/><path d='M240 200 L300 120 L360 200 Z' fill='#7CA982'/><path d='M270 200 L330 100 L390 200 Z' fill='#5E8C61'/><path d='M0 220 H400 V300 H0 Z' fill='#6FA8DC'/><path d='M60 250 h90 l-12 18 h-66 z' fill='#A9744F'/><path d='M90 250 v-20 h30 v20' stroke='#8B5A3C' stroke-width='4' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《绝句》（两个黄鹂鸣翠柳）写了哪几样景物？", "options": ["黄鹂、白鹭、雪山、船", "桃花、鸭子、芦芽、河豚", "荷叶、荷花、蜻蜓、小池", "枫叶、白云、人家、车"], "answer": 0, "explain": "四句分别写黄鹂、白鹭、西岭雪和门前船。" },
+      { "type": "fill", "question": "两个黄鹂鸣翠（　），", "options": ["柳", "留", "流", "六"], "answer": 0, "explain": "黄鹂在翠绿的柳枝上叫。" },
+      { "type": "next", "question": "两个黄鹂鸣翠柳，", "options": ["一行白鹭上青天。", "窗含西岭千秋雪，", "门泊东吴万里船。", "春江水暖鸭先知。"], "answer": 0, "explain": "先写柳上黄鹂，再写天上白鹭。" }
+    ]
+  }
+]

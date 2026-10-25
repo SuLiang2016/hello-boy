@@ -151,27 +151,29 @@ async function onRestoreFile(ev) {
             <b style="font-size: 22px">{{ k.name }}</b>
             <div style="margin-left: auto; display: flex; gap: 8px; flex-wrap: wrap">
               <span class="chip" style="color: #5E8C61; font-size: 16px">本周新学 {{ k.week?.newLearned ?? 0 }}</span>
+              <span class="chip" style="color: #6FA8DC; font-size: 16px">古诗 {{ k.week?.newPoem ?? 0 }} 首 · 复习 {{ k.week?.poemReviews ?? 0 }} 次</span>
               <span class="chip" style="color: #4A7FB5; font-size: 16px">复习 {{ k.week?.reviews ?? 0 }} 次</span>
               <span class="chip" style="color: #C79213; font-size: 16px"><Icon name="crown" :size="16" />牢记 {{ k.rememberedCount ?? 0 }}</span>
             </div>
           </div>
           <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; color: var(--muted); font-size: 16px">
-            <span>学会 {{ k.learnedCount }} / 60</span>
+            <span>成语 {{ k.learnedCount }} / {{ content.idioms.length }}</span>
+            <span>古诗 {{ k.poemCount ?? 0 }} / {{ content.poems.length }}</span>
             <span style="color: #C79213"><Icon name="star" :size="15" />钱包 {{ k.totalStars }}</span>
             <span style="color: #E8604C"><Icon name="flame" :size="15" />连续 {{ k.streak }} 天</span>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin-bottom: 10px">
-            <div v-for="g in content.groups" :key="g.key" style="text-align: center">
+          <div v-for="board in ['idiom', 'poem']" :key="board" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 6px; margin-bottom: 8px">
+            <div v-for="g in content.groupsOf(board)" :key="g.key" style="text-align: center">
               <div :style="{ background: '#F2ECDC', borderRadius: 10, overflow: 'hidden', height: 12 }">
-                <div :style="{ width: ((k.groupCounts?.[g.key] || 0) / 10) * 100 + '%', height: '100%', background: g.color }"></div>
+                <div :style="{ width: ((k.groupCounts?.[g.key] || 0) / content.ofGroup(g.key).length) * 100 + '%', height: '100%', background: g.color }"></div>
               </div>
               <span style="font-size: 13px; color: var(--muted)">{{ g.name }} {{ k.groupCounts?.[g.key] || 0 }}</span>
             </div>
           </div>
 
           <div style="color: var(--muted); font-size: 16px">
-            最近学会：<b v-for="r in k.recent.slice(0, 5)" :key="r.idiomId" style="color: var(--ink); margin-right: 8px">{{ content.byId[r.idiomId]?.word || r.idiomId }}</b>
+            最近学会：<b v-for="r in k.recent.slice(0, 5)" :key="r.idiomId" style="color: var(--ink); margin-right: 16px">{{ content.titleOf(content.byId[r.idiomId]) || r.idiomId }}</b>
           </div>
         </div>
       </template>

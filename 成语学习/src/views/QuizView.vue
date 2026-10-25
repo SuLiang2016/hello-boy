@@ -1,5 +1,5 @@
 <script setup>
-import { computed, reactive, ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { api } from '../api.js'
 import { useSession, useContent, BADGES } from '../store.js'
@@ -9,7 +9,12 @@ const route = useRoute()
 const router = useRouter()
 const session = useSession()
 const content = useContent()
-const idiom = content.byId[route.params.id]
+
+const item = computed(() => content.byId[route.params.id])
+const board = computed(() => content.boardOfItem(item.value) || (route.meta.board === 'poem' ? 'poem' : 'idiom'))
+const isPoem = computed(() => board.value === 'poem')
+const learnName = computed(() => content.routeName('learn', board.value))
+const groupName = computed(() => content.routeName('group', board.value))
 
 // ---------- 出题（选项打乱） ----------
 function shuffle(arr) {
@@ -21,17 +26,17 @@ function shuffle(arr) {
   return a
 }
 
-const questions = idiom ? idiom.quiz.map((q) => {
+const questions = computed(() => item.value ? item.value.quiz.map((q) => {
   const correct = q.options[q.answer]
   const options = shuffle(q.options)
   return {
     type: q.type,
-    prompt: q.type === 'meaning' ? `「${idiom.word}」是什么意思？` : q.question,
+    prompt: q.question || content.meaningPrompt(item.value),
     options,
     answerIndex: options.indexOf(correct),
     explain: q.explain,
   }
-}) : []
+}) : [])
 
 // ---------- 答题状态 ----------
 const idx = ref(0)
@@ -39,7 +44,7 @@ const picked = ref(null) // 选中的选项下标
 const correctCount = ref(0)
 const finished = ref(false)
 
-const q = computed(() => questions[idx.value])
+const q = computed(() => questions.value[idx.value])
 const isRight = computed(() => picked.value === q.value?.answerIndex)
 
 function pick(i) {
@@ -54,7 +59,7 @@ function pick(i) {
 }
 
 function next() {
-  if (idx.value < questions.length - 1) {
+  if (idx.value < questions.value.length - 1) {
     idx.value++
     picked.value = null
   } else {
@@ -73,7 +78,7 @@ async function submit() {
   try {
     result.value = await api('/quiz-result', {
       method: 'POST',
-      body: { idiomId: idiom.id, correct: correctCount.value },
+      body: { idiomId: item.value.id, correct: correctCount.value },
     })
     await session.refreshProgress()
     if (result.value.passed && result.value.starsDelta > 0) fanfare()
@@ -125,12 +130,12 @@ const LETTERS = ['A', 'B', 'C', 'D']
 </script>
 
 <template>
-  <div class="page" style="max-width: 640px" v-if="idiom">
+  <div class="page" style="max-width: 640px" v-if="item">
     <!-- 答题中 -->
     <template v-if="!finished">
       <div class="topbar">
-        <div class="back" @click="router.push({ name: 'learn', params: { id: idiom.id } })"><Icon name="back" :size="26" /></div>
-        <b style="font-size: 22px; flex: 1">{{ idiom.word }}</b>
+        <div class="back" @click="router.push({ name: learnName, params: { id: item.id } })"><Icon name="back" :size="26" /></div>
+        <b style="font-size: 22px; flex: 1">{{ content.titleOf(item) }}</b>
         <span style="color: var(--muted)">第 {{ idx + 1 }} / {{ questions.length }} 题</span>
       </div>
 
@@ -180,7 +185,7 @@ const LETTERS = ['A', 'B', 'C', 'D']
           <div style="display: flex; justify-content: center; gap: 10px; margin: 10px 0 16px">
             <Icon v-for="n in result.starsDelta" :key="n" name="star" :size="64" class="burst" :style="{ color: '#F5B841', animationDelay: n * 0.18 + 's' }" />
           </div>
-          <h1>学会「{{ idiom.word }}」啦！</h1>
+          <h1>学会「{{ content.titleOf(item) }}」啦！</h1>
           <p style="font-size: 19px">答对 {{ correctCount }} / {{ questions.length }} 题，得到 {{ result.starsDelta }} 颗星星</p>
           <p v-if="result.streak > 1" style="color: #E8604C; font-weight: 700">
             <Icon name="flame" :size="20" /> 已经连续学习 {{ result.streak }} 天，真厉害！
@@ -190,14 +195,14 @@ const LETTERS = ['A', 'B', 'C', 'D']
         <template v-else>
           <div style="font-size: 52px">🌱</div>
           <h1>差一点点！</h1>
-          <p style="font-size: 19px">答对 {{ correctCount }} / {{ questions.length }} 题，再读一遍故事就来试，肯定行</p>
+          <p style="font-size: 19px">答对 {{ correctCount }} / {{ questions.length }} 题，再读一遍{{ isPoem ? '诗' : '故事' }}就来试，肯定行</p>
         </template>
 
         <div style="display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap; justify-content: center">
-          <button v-if="!result?.passed" class="btn blue" @click="router.push({ name: 'learn', params: { id: idiom.id } })">再读一遍故事</button>
+          <button v-if="!result?.passed" class="btn blue" @click="router.push({ name: learnName, params: { id: item.id } })">再读一遍{{ isPoem ? '诗' : '故事' }}</button>
           <button v-if="!result?.passed" class="btn ghost" @click="retry">直接再测</button>
           <button v-if="result?.passed && correctCount < questions.length" class="btn blue" @click="retry">冲两颗星</button>
-          <button v-if="result?.passed" class="btn ghost" @click="router.push({ name: 'group', params: { group: idiom.group } })">回篇章</button>
+          <button v-if="result?.passed" class="btn ghost" @click="router.push({ name: groupName, params: { group: item.group } })">回篇章</button>
         </div>
       </div>
     </template>

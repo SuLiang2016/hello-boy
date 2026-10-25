@@ -63,6 +63,15 @@ CREATE TABLE IF NOT EXISTS daily (
   PRIMARY KEY (kid_id, date)
 );
 
+CREATE TABLE IF NOT EXISTS daily_board (
+  kid_id INTEGER NOT NULL,
+  date TEXT NOT NULL,
+  board TEXT NOT NULL,           -- 板块：idiom | poem
+  new_learned INTEGER NOT NULL DEFAULT 0,
+  reviews INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (kid_id, date, board)
+);
+
 CREATE TABLE IF NOT EXISTS badges (
   kid_id INTEGER NOT NULL,
   badge_id TEXT NOT NULL,
@@ -109,6 +118,16 @@ function migrate() {
   // 三期：learned 表加板块维度，存量都是成语
   if (!cols('learned').includes('board')) {
     db.exec("ALTER TABLE learned ADD COLUMN board TEXT NOT NULL DEFAULT 'idiom'");
+  }
+
+  // 三期：按板块拆日统计；存量 daily 都是成语，回填一次
+  const hasBoardDaily = db.prepare('SELECT COUNT(*) AS n FROM daily_board').get().n > 0;
+  if (!hasBoardDaily) {
+    const rows = db.prepare('SELECT kid_id, date, new_learned, reviews FROM daily').all();
+    const ins = db.prepare(
+      "INSERT INTO daily_board (kid_id, date, board, new_learned, reviews) VALUES (?, ?, 'idiom', ?, ?)"
+    );
+    for (const r of rows) ins.run(r.kid_id, r.date, r.new_learned, r.reviews);
   }
 
   // 星星流水回填：只在没有流水记录时执行（全新或一期库）

@@ -1,0 +1,243 @@
+[
+  {
+    "id": "chun-xiao",
+    "title": "春晓",
+    "dynasty": "唐",
+    "author": "孟浩然",
+    "group": "siji",
+    "lines": ["春眠不觉晓，", "处处闻啼鸟。", "夜来风雨声，", "花落知多少。"],
+    "explanation": "春天睡得真香，一觉醒来天已经亮了。窗外到处是小鸟在叫，叽叽喳喳。想起昨夜刮风下雨，不知道院子里的花被打落了多少。诗人刚睡醒，又惦记着花，读起来轻轻的、软软的。",
+    "poetStory": "孟浩然住在乡下，喜欢在山水间散步。有个春天的早晨，他睡到太阳晒进屋子才醒，听见鸟叫，又想起夜里的风雨，就写下这首诗。他写诗不爱用难字，像跟人聊天一样。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><rect x='54' y='40' width='150' height='120' rx='10' fill='#BDD9F2' stroke='#3D3A36' stroke-width='3'/><path d='M129 40 V160 M54 100 H204' stroke='#3D3A36' stroke-width='3'/><circle cx='90' cy='72' r='16' fill='#F5B841'/><path d='M320 210 Q300 140 250 120 Q220 108 210 140 Q250 150 270 190 Z' fill='#7CA982'/><circle cx='244' cy='126' r='12' fill='#F5B8B8'/><circle cx='272' cy='146' r='10' fill='#F5B8B8'/><circle cx='296' cy='112' r='9' fill='#F5B8B8'/><ellipse cx='200' cy='268' rx='190' ry='30' fill='#C8E6A0'/><path d='M286 92 q8 -12 16 0 z' fill='#3D3A36'/><circle cx='306' cy='76' r='3' fill='#3D3A36'/><path d='M228 200 q7 -10 14 0 z' fill='#3D3A36'/><ellipse cx='150' cy='250' rx='8' ry='4' fill='#F5B8B8'/><ellipse cx='180' cy='270' rx='7' ry='3' fill='#F5B8B8'/><ellipse cx='340' cy='260' rx='8' ry='4' fill='#F5B8B8'/><ellipse cx='110' cy='280' rx='7' ry='3' fill='#F5B8B8'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《春晓》写的是什么时候的景象？", "options": ["春天睡醒后听见鸟叫、想起夜里的风雨", "夏天中午在树下乘凉", "秋天早上扫落叶", "冬天下雪时关窗睡觉"], "answer": 0, "explain": "诗里写春眠、啼鸟、风雨、落花，都是春天的早晨。" },
+      { "type": "fill", "question": "花落知多（　）。", "options": ["少", "小", "沙", "纱"], "answer": 0, "explain": "「多少」的「少」，问花落了多少。" },
+      { "type": "next", "question": "春眠不觉晓，", "options": ["处处闻啼鸟。", "夜来风雨声。", "花落知多少。", "柳绿映山青。"], "answer": 0, "explain": "睡得香，天亮了都不知道，接着听见处处鸟叫。" }
+    ]
+  },
+  {
+    "id": "yong-liu",
+    "title": "咏柳",
+    "dynasty": "唐",
+    "author": "贺知章",
+    "group": "siji",
+    "lines": ["碧玉妆成一树高，", "万条垂下绿丝绦。", "不知细叶谁裁出，", "二月春风似剪刀。"],
+    "explanation": "高高的柳树像用碧玉打扮过，千万条柳枝垂下来，像绿色的丝带。细细的柳叶是谁裁出来的呢？原来是二月的春风，它像一把灵巧的剪刀。",
+    "poetStory": "贺知章是唐朝的大诗人，年纪很大了才回到家乡。早春的一天，他在河边看见柳树刚发芽，枝条又细又软，风一吹轻轻摆，就写了这首诗。他把春风想成剪刀，很有意思。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='54' r='24' fill='#F5B841'/><ellipse cx='200' cy='270' rx='190' ry='30' fill='#C8E6A0'/><rect x='190' y='150' width='22' height='120' rx='8' fill='#8B5A3C'/><path d='M200 150 Q160 90 120 70 M200 150 Q190 80 180 50 M200 150 Q220 84 250 60 M200 150 Q250 100 300 90' stroke='#7CA982' stroke-width='7' fill='none' stroke-linecap='round'/><path d='M120 70 q-20 34 -6 60 M180 50 q-10 34 6 56 M250 60 q18 30 6 58 M300 90 q20 30 2 54' stroke='#5E8C61' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M120 70 q14 10 22 6 M180 50 q12 12 20 10 M250 60 q14 12 22 8 M300 90 q10 12 14 18' stroke='#C8E6A0' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M88 210 q26 -10 52 0 M88 230 q26 -10 52 0' stroke='#BDD9F2' stroke-width='5' fill='none' stroke-linecap='round'/><path d='M340 180 l18 -10 l-4 20 z' fill='#9E9C9A'/><circle cx='356' cy='178' r='5' fill='#9E9C9A'/><circle cx='352' cy='190' r='5' fill='#9E9C9A'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《咏柳》把春风比作什么？", "options": ["剪刀", "画笔", "小船", "扇子"], "answer": 0, "explain": "最后一句说春风像剪刀，裁出细细的柳叶。" },
+      { "type": "fill", "question": "二月春风似（　）刀。", "options": ["剪", "箭", "见", "件"], "answer": 0, "explain": "春风像剪刀，裁出柳叶。" },
+      { "type": "next", "question": "不知细叶谁裁出，", "options": ["二月春风似剪刀。", "万条垂下绿丝绦。", "碧玉妆成一树高，", "一夜花开满院香。"], "answer": 0, "explain": "先问谁裁出，再回答是二月的春风。" }
+    ]
+  },
+  {
+    "id": "chun-ye-xi-yu",
+    "title": "春夜喜雨",
+    "dynasty": "唐",
+    "author": "杜甫",
+    "group": "siji",
+    "lines": ["好雨知时节，", "当春乃发生。", "随风潜入夜，", "润物细无声。", "野径云俱黑，", "江船火独明。", "晓看红湿处，", "花重锦官城。"],
+    "explanation": "春天的好雨好像知道时节，一到春天就落下来。它跟着风悄悄钻进夜里，细细地滋润万物，一点声音也没有。田野的小路和云都黑黑的，江上的渔船亮着一盏灯。等天亮再看，被雨打湿的花红红的，成都城里的花都沉甸甸的。",
+    "poetStory": "杜甫在成都住过几年，自己种菜、养花。有一年春天，夜里下起了细雨，他听着雨声，想到田里的庄稼和院里的花都能喝饱水，心里高兴，就写了这首诗。题目里的「喜」，就是高兴。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#4A7FB5'/><ellipse cx='200' cy='270' rx='190' ry='30' fill='#3D3A36'/><rect x='80' y='150' width='120' height='90' rx='8' fill='#A9744F'/><path d='M70 152 L140 100 L210 152 Z' fill='#8B5A3C'/><rect x='120' y='190' width='26' height='50' fill='#F5B841'/><rect x='160' y='180' width='24' height='24' fill='#FFF7E6'/><path d='M250 230 h100 l-14 24 h-72 z' fill='#8B5A3C'/><rect x='292' y='196' width='14' height='34' fill='#F5B841'/><path d='M40 40 l-10 30 M90 20 l-10 30 M140 50 l-10 30 M190 30 l-10 30 M240 60 l-10 30 M290 30 l-10 30 M340 50 l-10 30 M60 100 l-10 30 M120 110 l-10 30 M200 110 l-10 30 M280 110 l-10 30 M350 100 l-10 30' stroke='#BDD9F2' stroke-width='4' stroke-linecap='round'/><circle cx='226' cy='250' r='7' fill='#E8604C'/><circle cx='246' cy='260' r='6' fill='#E8604C'/><path d='M230 268 q10 -24 22 0' stroke='#7CA982' stroke-width='4' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《春夜喜雨》里，诗人为什么高兴？", "options": ["春雨在夜里悄悄滋润万物", "雨太大把路淹了", "他买到了新船", "花都被雨打落了"], "answer": 0, "explain": "好雨知时节，润物细无声，诗人喜欢这场及时的春雨。" },
+      { "type": "fill", "question": "花（　）锦官城。", "options": ["重", "众", "种", "钟"], "answer": 0, "explain": "花喝饱了雨，沉甸甸的，这里读 zhòng。" },
+      { "type": "next", "question": "随风潜入夜，", "options": ["润物细无声。", "当春乃发生。", "好雨知时节，", "江船火独明。"], "answer": 0, "explain": "春雨跟着风在夜里来，悄悄滋润万物。" }
+    ]
+  },
+  {
+    "id": "jue-ju-chi-ri",
+    "title": "绝句",
+    "dynasty": "唐",
+    "author": "杜甫",
+    "group": "siji",
+    "lines": ["迟日江山丽，", "春风花草香。", "泥融飞燕子，", "沙暖睡鸳鸯。"],
+    "explanation": "春天的太阳照得久，江山格外美丽。春风吹过，花草送来阵阵香味。泥土化开了，燕子飞来飞去衔泥做窝；沙滩被晒得暖暖的，鸳鸯挨在一起睡觉。",
+    "poetStory": "杜甫住在成都草堂时，日子安稳下来。一个晴朗的春日，他在江边散步，看见燕子飞、鸳鸯睡，闻见花草香，心里轻松，就写下这首小诗。整首诗只有二十个字，却像一幅画。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='56' r='26' fill='#F5B841'/><path d='M0 190 Q80 130 160 180 T320 170 T400 190 V300 H0 Z' fill='#7CA982'/><ellipse cx='200' cy='264' rx='190' ry='30' fill='#BDD9F2'/><path d='M250 264 q30 -14 60 0' stroke='#6FA8DC' stroke-width='5' fill='none'/><path d='M120 96 q12 -10 24 0 q-6 12 -24 4 z' fill='#3D3A36'/><path d='M160 118 q12 -10 24 0 q-6 12 -24 4 z' fill='#3D3A36'/><ellipse cx='90' cy='232' rx='22' ry='14' fill='#A9744F'/><ellipse cx='120' cy='240' rx='18' ry='12' fill='#E8604C'/><ellipse cx='300' cy='240' rx='24' ry='16' fill='#F5B841'/><circle cx='288' cy='234' r='5' fill='#3D3A36'/><path d='M324 240 l14 -8 l0 16 z' fill='#F09A4A'/><circle cx='70' cy='262' r='6' fill='#F5B8B8'/><circle cx='350' cy='270' r='7' fill='#A67AB5'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《绝句》（迟日江山丽）描写的画面是？", "options": ["春天阳光下的江山、花草、燕子和鸳鸯", "冬天江面结冰，人们在滑冰", "秋天树叶落光，大雁南飞", "夏夜人们在院子里乘凉"], "answer": 0, "explain": "迟日、春风、燕子、鸳鸯，都是春天暖洋洋的景象。" },
+      { "type": "fill", "question": "沙暖睡（　）鸯。", "options": ["鸳", "鹅", "鸭", "鸡"], "answer": 0, "explain": "「鸳鸯」是一种成双成对的水鸟。" },
+      { "type": "next", "question": "泥融飞燕子，", "options": ["沙暖睡鸳鸯。", "春风花草香。", "迟日江山丽，", "水清见鱼游。"], "answer": 0, "explain": "泥土软了燕子飞，沙滩暖了鸳鸯睡。" }
+    ]
+  },
+  {
+    "id": "jiang-pan-du-bu-xun-hua",
+    "title": "江畔独步寻花",
+    "dynasty": "唐",
+    "author": "杜甫",
+    "group": "siji",
+    "lines": ["黄师塔前江水东，", "春光懒困倚微风。", "桃花一簇开无主，", "可爱深红爱浅红？"],
+    "explanation": "诗人独自在江边散步，黄师塔前的江水向东流。春天的阳光暖洋洋的，人有点犯困，靠着微风歇一歇。路边一丛桃花开得正好，没有主人管，深红浅红都好看，真不知道该爱哪一种。",
+    "poetStory": "杜甫住在成都时，常到江边走走。那天他一个人慢慢走，看见一丛没人管的桃花，红的深浅不一样，越看越喜欢，就写下这首诗。最后一句像在问自己，也像在问看诗的人。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='70' cy='58' r='22' fill='#F5B841'/><path d='M0 200 Q120 160 240 200 T400 190 V300 H0 Z' fill='#BDD9F2'/><path d='M0 240 Q100 210 200 240 T400 230 V300 H0 Z' fill='#6FA8DC'/><rect x='300' y='80' width='46' height='180' rx='6' fill='#A9744F'/><path d='M296 92 h54' stroke='#8B5A3C' stroke-width='6'/><path d='M300 120 h46 M300 150 h46' stroke='#8B5A3C' stroke-width='3'/><rect x='186' y='160' width='14' height='80' fill='#8B5A3C'/><path d='M170 170 q24 -40 48 0 M164 186 q30 -34 60 0' stroke='#7CA982' stroke-width='6' fill='none'/><circle cx='168' cy='162' r='10' fill='#F5B8B8'/><circle cx='198' cy='146' r='12' fill='#E8604C'/><circle cx='228' cy='164' r='9' fill='#F5B8B8'/><circle cx='214' cy='176' r='8' fill='#E8604C'/><circle cx='250' cy='236' r='14' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M238 250 L262 250 L268 292 L232 292 Z' fill='#A67AB5'/><path d='M276 250 L290 262' stroke='#F8D8B8' stroke-width='7' stroke-linecap='round'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《江畔独步寻花》写诗人看见了什么？", "options": ["江边一丛没人管的桃花开得正好", "一大片荷花铺满湖面", "满山枫叶红得像火", "雪地里一枝梅花"], "answer": 0, "explain": "诗里写黄师塔前、江水东流、桃花一簇。" },
+      { "type": "fill", "question": "桃花一（　）开无主，", "options": ["簇", "族", "促", "醋"], "answer": 0, "explain": "「一簇」就是聚在一起的一丛。" },
+      { "type": "next", "question": "桃花一簇开无主，", "options": ["可爱深红爱浅红？", "春光懒困倚微风。", "黄师塔前江水东，", "柳絮飞时花满城。"], "answer": 0, "explain": "桃花开了，诗人看着深浅不同的红，不知道更爱哪一种。" }
+    ]
+  },
+  {
+    "id": "zao-chun-cheng-shui-bu-zhang",
+    "title": "早春呈水部张十八员外",
+    "dynasty": "唐",
+    "author": "韩愈",
+    "group": "siji",
+    "lines": ["天街小雨润如酥，", "草色遥看近却无。", "最是一年春好处，", "绝胜烟柳满皇都。"],
+    "explanation": "京城的小雨细细的，像酥油一样润。远远看过去，地上有一层淡淡的草色，走近了却又看不清。一年里最好的春光就是这个时候，比满城烟柳的晚春还要好。",
+    "poetStory": "韩愈写这首诗时已经五十多岁。早春的一天，他约朋友张十八去看草，朋友没来，他就把看到的景色写成诗寄过去。小雨刚过，草芽刚冒头，他觉得这时候最珍贵。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 236 H400 V300 H0 Z' fill='#9E9C9A'/><circle cx='320' cy='60' r='24' fill='#F5B841'/><path d='M40 230 q10 -2 10 -12 M80 232 q10 -2 10 -12 M120 230 q10 -2 10 -12 M160 232 q10 -2 10 -12 M220 230 q10 -2 10 -12 M260 232 q10 -2 10 -12 M300 230 q10 -2 10 -12' stroke='#7CA982' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M50 210 q30 -16 60 0 M150 214 q30 -16 60 0 M250 210 q30 -16 60 0' stroke='#C8E6A0' stroke-width='6' fill='none'/><path d='M30 100 l-6 22 M90 80 l-6 22 M150 106 l-6 22 M210 84 l-6 22 M270 104 l-6 22 M330 82 l-6 22 M360 120 l-6 22' stroke='#BDD9F2' stroke-width='3' stroke-linecap='round'/><rect x='60' y='120' width='80' height='70' rx='6' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M52 122 L100 92 L148 122 Z' fill='#E8604C'/><rect x='86' y='152' width='22' height='38' fill='#A9744F'/><path d='M200 220 v-50' stroke='#A9744F' stroke-width='4'/><path d='M200 190 l-16 -16 M200 200 l16 -16' stroke='#A9744F' stroke-width='4'/><circle cx='184' cy='170' r='6' fill='#F5B8B8'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《早春呈水部张十八员外》最赞美的是？", "options": ["刚冒芽的早春草色", "满城浓绿的晚春", "夏天的荷花", "秋天的菊花"], "answer": 0, "explain": "诗人说早春是一年春好处，草色远看有、近看无。" },
+      { "type": "fill", "question": "草色遥看近却（　）。", "options": ["无", "五", "舞", "屋"], "answer": 0, "explain": "远看有一层草色，走近反而看不清。" },
+      { "type": "next", "question": "天街小雨润如酥，", "options": ["草色遥看近却无。", "最是一年春好处，", "绝胜烟柳满皇都。", "春风送暖入屠苏。"], "answer": 0, "explain": "小雨润湿街道，远远看见淡淡的草色。" }
+    ]
+  },
+  {
+    "id": "yi-jiang-nan",
+    "title": "忆江南",
+    "dynasty": "唐",
+    "author": "白居易",
+    "group": "siji",
+    "lines": ["江南好，", "风景旧曾谙。", "日出江花红胜火，", "春来江水绿如蓝。", "能不忆江南？"],
+    "explanation": "江南真好，那里的风景我从前就很熟悉。太阳出来时，江边的花红得像火；春天到了，江水绿得像蓝草染过。这样的江南，怎么能不想念呢？",
+    "poetStory": "白居易年轻时在江南做过官，走过杭州、苏州，很喜欢那里的山水。后来他回到北方，年纪大了，常常想起江南的春天，就写下这首词。开头一个「好」字，把心里的喜欢都说出来了。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='300' cy='70' r='30' fill='#E8604C'/><path d='M0 200 H400 V300 H0 Z' fill='#7CA982'/><path d='M0 220 Q100 204 200 220 T400 214 V300 H0 Z' fill='#5E8C61'/><path d='M40 240 q10 -10 20 0 q10 -10 20 0 M140 250 q10 -10 20 0 q10 -10 20 0 M260 246 q10 -10 20 0 q10 -10 20 0' stroke='#FFFFFF' stroke-width='3' fill='none'/><circle cx='90' cy='210' r='10' fill='#E8604C'/><circle cx='180' cy='216' r='8' fill='#E8604C'/><circle cx='250' cy='208' r='9' fill='#E8604C'/><circle cx='330' cy='214' r='7' fill='#E8604C'/><path d='M210 236 h70 l-10 18 h-50 z' fill='#A9744F'/><path d='M224 236 v-18 q0 -10 10 -10' stroke='#8B5A3C' stroke-width='3' fill='none'/><path d='M246 236 v-18 q0 -10 10 -10' stroke='#8B5A3C' stroke-width='3' fill='none'/><circle cx='120' cy='80' r='3' fill='#3D3A36'/><path d='M120 80 q10 -8 20 0 q-10 8 -20 0 z' fill='#3D3A36'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《忆江南》里，诗人最想念江南的什么？", "options": ["日出时红花胜火、春来江水碧绿", "江南的冬天很冷", "江南的山很高", "江南的街道很宽"], "answer": 0, "explain": "江花红胜火，江水绿如蓝，是诗人记得最清楚的江南春色。" },
+      { "type": "fill", "question": "春来江水绿如（　）。", "options": ["蓝", "篮", "兰", "栏"], "answer": 0, "explain": "「蓝」是一种能染出青绿色的草，江水绿得像它。" },
+      { "type": "next", "question": "日出江花红胜火，", "options": ["春来江水绿如蓝。", "风景旧曾谙。", "能不忆江南？", "月照青山夜未央。"], "answer": 0, "explain": "上句写江花红，下句写江水绿。" }
+    ]
+  },
+  {
+    "id": "jiang-nan-chun",
+    "title": "江南春",
+    "dynasty": "唐",
+    "author": "杜牧",
+    "group": "siji",
+    "lines": ["千里莺啼绿映红，", "水村山郭酒旗风。", "南朝四百八十寺，", "多少楼台烟雨中。"],
+    "explanation": "千里江南，黄莺在叫，绿树映着红花。水边的村庄、山边的城郭，酒旗在风里飘。南朝留下的几百座寺庙，如今有多少楼台笼在蒙蒙烟雨里。",
+    "poetStory": "杜牧坐船经过江南，正赶上春天。他看见两岸花红柳绿，又看见远处的寺庙在雨里若隐若现，想到这些寺庙是几百年前南朝留下的，就写下这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 160 Q60 110 120 160 T240 150 T360 160 T400 150 V300 H0 Z' fill='#C8E6A0'/><path d='M0 220 Q100 196 200 220 T400 212 V300 H0 Z' fill='#BDD9F2'/><path d='M0 250 Q100 230 200 250 T400 244 V300 H0 Z' fill='#6FA8DC'/><rect x='90' y='120' width='70' height='60' rx='6' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M82 122 L125 92 L168 122 Z' fill='#E8604C'/><rect x='114' y='150' width='18' height='30' fill='#A9744F'/><rect x='280' y='70' width='20' height='90' fill='#A9744F'/><path d='M270 80 L290 40 L310 80 Z' fill='#F09A4A'/><path d='M270 96 L290 60 L310 96 Z' fill='#F09A4A'/><path d='M262 106 h36' stroke='#F5B841' stroke-width='6'/><rect x='252' y='150' width='6' height='50' fill='#8B5A3C'/><path d='M258 154 h30 l-6 18 h-24 z' fill='#F5B841'/><circle cx='200' cy='130' r='6' fill='#E8604C'/><circle cx='220' cy='142' r='5' fill='#F5B8B8'/><path d='M40 60 l6 12 M60 50 l6 12 M80 62 l6 12' stroke='#A9744F' stroke-width='3' stroke-linecap='round'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《江南春》写的是哪里的春天？", "options": ["千里江南的水村山郭", "北方的大草原", "西域的沙漠", "海边的渔村"], "answer": 0, "explain": "诗的开头就是千里莺啼，写的是江南春色。" },
+      { "type": "fill", "question": "水村山郭酒旗（　）。", "options": ["风", "丰", "峰", "枫"], "answer": 0, "explain": "酒旗在风里飘，所以是「风」。" },
+      { "type": "next", "question": "千里莺啼绿映红，", "options": ["水村山郭酒旗风。", "南朝四百八十寺，", "多少楼台烟雨中。", "两岸猿声啼不住。"], "answer": 0, "explain": "先写千里莺啼，再写水村山郭和酒旗。" }
+    ]
+  },
+  {
+    "id": "chun-ri",
+    "title": "春日",
+    "dynasty": "宋",
+    "author": "朱熹",
+    "group": "siji",
+    "lines": ["胜日寻芳泗水滨，", "无边光景一时新。", "等闲识得东风面，", "万紫千红总是春。"],
+    "explanation": "天气晴朗的日子，诗人到泗水边寻找春天的花草。一眼望去，风光都换上了新样子。谁都能认出春风来了，因为到处万紫千红，都是春天的颜色。",
+    "poetStory": "朱熹是宋朝的读书人，喜欢在春天出门走走。泗水在山东，他写这首诗时并没有真的到那里，而是借泗水边的春景，写自己心里那个万物更新的春天。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='330' cy='56' r='26' fill='#F5B841'/><path d='M0 200 Q120 170 240 200 T400 190 V300 H0 Z' fill='#C8E6A0'/><path d='M0 240 Q100 220 200 240 T400 232 V300 H0 Z' fill='#7CA982'/><path d='M60 190 q10 -30 20 0 M100 200 q10 -26 20 0 M140 196 q10 -30 20 0 M260 196 q10 -28 20 0 M300 204 q10 -24 20 0 M340 194 q10 -30 20 0' stroke='#5E8C61' stroke-width='4' fill='none'/><circle cx='70' cy='184' r='7' fill='#A67AB5'/><circle cx='110' cy='196' r='6' fill='#E8604C'/><circle cx='150' cy='190' r='7' fill='#F5B841'/><circle cx='270' cy='190' r='6' fill='#F5B8B8'/><circle cx='310' cy='198' r='7' fill='#E8604C'/><circle cx='350' cy='188' r='6' fill='#A67AB5'/><path d='M180 220 L220 220 L230 270 L170 270 Z' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><circle cx='200' cy='204' r='14' fill='#F8D8B8' stroke='#3D3A36' stroke-width='3'/><path d='M186 210 q14 10 28 0' stroke='#3D3A36' stroke-width='3' fill='none'/><rect x='188' y='198' width='24' height='6' fill='#3D3A36'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《春日》最后一句「万紫千红总是春」说的是？", "options": ["到处花开，都是春天的样子", "花只有紫色和红色两种", "春天很快就过去了", "诗人不喜欢花"], "answer": 0, "explain": "万紫千红是各种颜色的花，它们一起说明春天来了。" },
+      { "type": "fill", "question": "万紫千（　）总是春。", "options": ["红", "虹", "洪", "鸿"], "answer": 0, "explain": "「万紫千红」是说花的颜色多。" },
+      { "type": "next", "question": "等闲识得东风面，", "options": ["万紫千红总是春。", "无边光景一时新。", "胜日寻芳泗水滨，", "一枝红杏出墙来。"], "answer": 0, "explain": "认出春风的脸，是因为到处万紫千红。" }
+    ]
+  },
+  {
+    "id": "hui-chong-chun-jiang-wan-jing",
+    "title": "惠崇春江晚景",
+    "dynasty": "宋",
+    "author": "苏轼",
+    "group": "siji",
+    "lines": ["竹外桃花三两枝，", "春江水暖鸭先知。", "蒌蒿满地芦芽短，", "正是河豚欲上时。"],
+    "explanation": "竹林外面，两三枝桃花开了。春天的江水暖不暖，鸭子最先知道。岸边蒌蒿长了一地，芦芽刚冒出短短的头。这个时候，河豚正要逆流而上。",
+    "poetStory": "苏轼的朋友惠崇画了一幅春江晚景，画里有竹子、桃花、鸭子和江水。苏轼看着画，觉得画里的春天都动起来了，就为这幅画题了这首诗。他连河豚什么时候游上来都想到了。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 220 Q100 200 200 220 T400 212 V300 H0 Z' fill='#6FA8DC'/><path d='M0 190 q10 -30 20 0 q10 -30 20 0 M40 194 q10 -34 20 0 q10 -34 20 0 M80 190 q10 -30 20 0 q10 -30 20 0' stroke='#7CA982' stroke-width='4' fill='none'/><rect x='20' y='40' width='12' height='160' fill='#5E8C61'/><rect x='60' y='60' width='10' height='140' fill='#7CA982'/><path d='M32 60 q30 -16 56 0 M30 100 q26 -14 50 0' stroke='#C8E6A0' stroke-width='5' fill='none'/><circle cx='250' cy='130' r='12' fill='#F5B8B8'/><circle cx='280' cy='110' r='10' fill='#E8604C'/><circle cx='308' cy='140' r='9' fill='#F5B8B8'/><path d='M240 150 q20 -30 40 0' stroke='#A9744F' stroke-width='5' fill='none'/><ellipse cx='230' cy='220' rx='22' ry='13' fill='#FFFFFF' stroke='#3D3A36' stroke-width='3'/><path d='M208 220 l-12 -8 l0 16 z' fill='#F5B841'/><circle cx='238' cy='216' r='3' fill='#3D3A36'/><ellipse cx='300' cy='250' rx='20' ry='12' fill='#F5B841'/><path d='M320 250 l12 -8 l0 16 z' fill='#F09A4A'/><circle cx='292' cy='246' r='3' fill='#3D3A36'/><path d='M40 250 q10 -16 20 0 M70 258 q10 -16 20 0 M100 250 q10 -16 20 0' stroke='#A9744F' stroke-width='3' fill='none'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《惠崇春江晚景》写的是？", "options": ["画里春江的桃花、鸭子和芦芽", "冬天江面结冰", "秋天竹林落叶", "夏天荷花开满池塘"], "answer": 0, "explain": "这是苏轼为惠崇的画题的诗，写的是画里的春江景色。" },
+      { "type": "fill", "question": "春江水暖鸭先（　）。", "options": ["知", "枝", "织", "蜘"], "answer": 0, "explain": "水暖了，鸭子最先知道。" },
+      { "type": "next", "question": "竹外桃花三两枝，", "options": ["春江水暖鸭先知。", "蒌蒿满地芦芽短，", "正是河豚欲上时。", "两个黄鹂鸣翠柳。"], "answer": 0, "explain": "先写竹外桃花，再写江里的鸭子。" }
+    ]
+  },
+  {
+    "id": "xiao-chi",
+    "title": "小池",
+    "dynasty": "宋",
+    "author": "杨万里",
+    "group": "siji",
+    "lines": ["泉眼无声惜细流，", "树阴照水爱晴柔。", "小荷才露尖尖角，", "早有蜻蜓立上头。"],
+    "explanation": "泉眼悄悄冒出细细的水流，好像舍不得流走。树阴倒映在水里，喜欢这样晴朗柔和的天。小荷叶才露出尖尖的角，就有一只蜻蜓立在上面了。",
+    "poetStory": "杨万里喜欢观察小景物。一个晴天，他走到小池边，看见泉水细细地流，荷叶刚冒尖，蜻蜓已经站上去了。他觉得这画面太可爱，就写下这首小诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='70' cy='54' r='24' fill='#F5B841'/><ellipse cx='200' cy='250' rx='190' ry='38' fill='#BDD9F2'/><path d='M0 250 Q80 220 160 250 T320 246 T400 250 V300 H0 Z' fill='#6FA8DC'/><rect x='300' y='60' width='20' height='140' fill='#A9744F'/><path d='M260 120 Q300 90 340 130 L340 180 Q300 160 260 190 Z' fill='#7CA982'/><path d='M60 260 q30 -20 60 0 M120 270 q30 -20 60 0' stroke='#7CA982' stroke-width='4' fill='none'/><path d='M190 190 q10 -30 20 0 q10 -30 20 0' fill='none' stroke='#5E8C61' stroke-width='6'/><path d='M200 250 q10 -60 20 0' stroke='#5E8C61' stroke-width='5' fill='none'/><circle cx='212' cy='198' r='9' fill='#7CA982'/><path d='M210 188 l-6 -14 M212 186 l0 -16 M216 188 l8 -14' stroke='#3D3A36' stroke-width='2.5' stroke-linecap='round'/><ellipse cx='212' cy='186' rx='6' ry='4' fill='#6FA8DC'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《小池》里，蜻蜓停在哪里？", "options": ["刚露出尖角的小荷叶上", "大树的枝头", "泉眼的石头上", "岸边的草叶上"], "answer": 0, "explain": "小荷才露尖尖角，早有蜻蜓立上头。" },
+      { "type": "fill", "question": "小荷才露尖尖（　），", "options": ["角", "脚", "觉", "饺"], "answer": 0, "explain": "荷叶刚冒出来，尖尖的像角。" },
+      { "type": "next", "question": "小荷才露尖尖角，", "options": ["早有蜻蜓立上头。", "树阴照水爱晴柔。", "泉眼无声惜细流，", "一行白鹭上青天。"], "answer": 0, "explain": "荷叶尖角刚露，蜻蜓已经立在上面。" }
+    ]
+  },
+  {
+    "id": "xiao-chu-jing-ci-si-song-lin-zi-fang",
+    "title": "晓出净慈寺送林子方",
+    "dynasty": "宋",
+    "author": "杨万里",
+    "group": "siji",
+    "lines": ["毕竟西湖六月中，", "风光不与四时同。", "接天莲叶无穷碧，", "映日荷花别样红。"],
+    "explanation": "到底是六月的西湖，风光和别的季节都不一样。荷叶一直铺到天边，绿得望不到头；荷花被太阳一照，红得特别鲜艳。",
+    "poetStory": "杨万里的朋友林子方要离开杭州，他一大早从净慈寺送朋友出来。六月的西湖满是荷叶荷花，他看见这景色，就写成诗送给朋友，让朋友记住西湖的夏天。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='320' cy='60' r='30' fill='#F5B841'/><path d='M0 210 Q100 190 200 210 T400 202 V300 H0 Z' fill='#6FA8DC'/><ellipse cx='80' cy='210' rx='50' ry='16' fill='#7CA982'/><ellipse cx='180' cy='202' rx='60' ry='18' fill='#5E8C61'/><ellipse cx='300' cy='210' rx='70' ry='20' fill='#7CA982'/><ellipse cx='130' cy='250' rx='46' ry='14' fill='#5E8C61'/><ellipse cx='240' cy='260' rx='56' ry='16' fill='#7CA982'/><ellipse cx='350' cy='250' rx='40' ry='12' fill='#5E8C61'/><circle cx='120' cy='190' r='12' fill='#E8604C'/><circle cx='210' cy='180' r='10' fill='#F5B8B8'/><circle cx='290' cy='188' r='13' fill='#E8604C'/><circle cx='360' cy='190' r='9' fill='#F5B8B8'/><path d='M40 80 l20 -14 l20 14 l-20 14 z' fill='#A9744F'/><rect x='54' y='94' width='12' height='40' fill='#A9744F'/><path d='M42 140 h36' stroke='#8B5A3C' stroke-width='5'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《晓出净慈寺送林子方》写的是西湖什么时候？", "options": ["六月荷花盛开的夏天", "三月桃花开的时候", "冬天下雪的时候", "秋天的枫叶"], "answer": 0, "explain": "诗里写六月、莲叶、荷花，是西湖的盛夏。" },
+      { "type": "fill", "question": "映日荷花别样（　）。", "options": ["红", "虹", "洪", "宏"], "answer": 0, "explain": "荷花被太阳映着，红得不一样。" },
+      { "type": "next", "question": "接天莲叶无穷碧，", "options": ["映日荷花别样红。", "风光不与四时同。", "毕竟西湖六月中，", "千山鸟飞绝。"], "answer": 0, "explain": "上句写荷叶的碧绿，下句写荷花的红。" }
+    ]
+  },
+  {
+    "id": "liu-yue-er-shi-qi-ri-wang-hu-lou",
+    "title": "六月二十七日望湖楼醉书",
+    "dynasty": "宋",
+    "author": "苏轼",
+    "group": "siji",
+    "lines": ["黑云翻墨未遮山，", "白雨跳珠乱入船。", "卷地风来忽吹散，", "望湖楼下水如天。"],
+    "explanation": "黑云像打翻的墨汁，还没把山遮住；白亮的雨点像珠子跳进船里。忽然一阵大风卷地而来，把云雨都吹散了。再看望湖楼下，水面平得像天空一样。",
+    "poetStory": "苏轼在杭州做官时，夏天到西湖边的望湖楼喝酒。那天忽然下起暴雨，又忽然被风吹散，他坐在楼上把这场变天看得清清楚楚，就写下这首诗。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 80 Q80 30 160 80 T320 70 T400 80 V300 H0 Z' fill='#4A7FB5'/><path d='M0 140 Q100 110 200 140 T400 132 V300 H0 Z' fill='#3D3A36'/><path d='M40 60 l-8 24 M90 40 l-8 24 M140 66 l-8 24 M190 44 l-8 24 M240 70 l-8 24 M290 48 l-8 24 M340 74 l-8 24 M370 40 l-8 24' stroke='#BDD9F2' stroke-width='4' stroke-linecap='round'/><path d='M0 250 Q100 224 200 250 T400 242 V300 H0 Z' fill='#6FA8DC'/><path d='M60 260 q30 -10 60 0 M160 270 q30 -10 60 0 M260 260 q30 -10 60 0' stroke='#FFFFFF' stroke-width='3' fill='none'/><path d='M250 210 h100 l-14 26 h-72 z' fill='#8B5A3C'/><rect x='292' y='180' width='12' height='30' fill='#F5B841'/><path d='M120 220 L120 160 L200 160 L200 220' fill='#A9744F'/><path d='M110 160 L160 120 L210 160 Z' fill='#8B5A3C'/><rect x='150' y='180' width='20' height='40' fill='#F5B841'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《六月二十七日望湖楼醉书》写的是什么天气？", "options": ["夏天忽然来又忽然走的暴雨", "冬天的大雪", "春天的细雨", "秋天的霜"], "answer": 0, "explain": "黑云、白雨、卷地风，是一场来得快、去得也快的夏日暴雨。" },
+      { "type": "fill", "question": "黑云翻墨未遮（　），", "options": ["山", "衫", "扇", "闪"], "answer": 0, "explain": "乌云还没把山遮住，雨就下来了。" },
+      { "type": "next", "question": "卷地风来忽吹散，", "options": ["望湖楼下水如天。", "白雨跳珠乱入船。", "黑云翻墨未遮山，", "映日荷花别样红。"], "answer": 0, "explain": "风把云雨吹散，湖面又平得像天空。" }
+    ]
+  },
+  {
+    "id": "yin-hu-shang-chu-qing-hou-yu",
+    "title": "饮湖上初晴后雨",
+    "dynasty": "宋",
+    "author": "苏轼",
+    "group": "siji",
+    "lines": ["水光潋滟晴方好，", "山色空蒙雨亦奇。", "欲把西湖比西子，", "淡妆浓抹总相宜。"],
+    "explanation": "晴天时，西湖的水光闪闪，正好看；下雨时，山色蒙蒙的，也很奇妙。要是把西湖比作美人西施，不管淡妆还是浓妆，都合适。",
+    "poetStory": "苏轼在西湖边喝酒，先晴后雨。他看着湖水和山色变来变去，觉得晴天雨天都好看，就想到古代美人西施，写下这首诗。后来人们常用西子来称西湖。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><circle cx='300' cy='60' r='26' fill='#F5B841'/><path d='M0 200 H400 V300 H0 Z' fill='#6FA8DC'/><path d='M0 200 Q60 150 120 200 T240 190 T360 200 T400 195 V300 H0 Z' fill='#7CA982'/><path d='M0 220 Q100 204 200 220 T400 212 V300 H0 Z' fill='#4A7FB5'/><path d='M40 100 l-6 20 M70 90 l-6 20 M100 104 l-6 20 M130 94 l-6 20' stroke='#BDD9F2' stroke-width='3' stroke-linecap='round'/><path d='M220 210 h90 l-12 20 h-66 z' fill='#A9744F'/><path d='M250 210 v-24 q0 -8 8 -8 h20 q8 0 8 8 v24' stroke='#8B5A3C' stroke-width='4' fill='none'/><circle cx='60' cy='210' r='8' fill='#F5B8B8'/><circle cx='120' cy='214' r='7' fill='#E8604C'/><circle cx='350' cy='218' r='8' fill='#F5B8B8'/><circle cx='390' cy='240' r='6' fill='#E8604C'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《饮湖上初晴后雨》把西湖比作谁？", "options": ["西施", "王昭君", "杨贵妃", "貂蝉"], "answer": 0, "explain": "欲把西湖比西子，西子就是西施。" },
+      { "type": "fill", "question": "淡妆浓抹总相（　）。", "options": ["宜", "移", "疑", "姨"], "answer": 0, "explain": "淡妆浓妆都合适，所以说总相宜。" },
+      { "type": "next", "question": "水光潋滟晴方好，", "options": ["山色空蒙雨亦奇。", "欲把西湖比西子，", "淡妆浓抹总相宜。", "春江水暖鸭先知。"], "answer": 0, "explain": "上句写晴天的水光，下句写雨天的山色。" }
+    ]
+  },
+  {
+    "id": "shan-xing",
+    "title": "山行",
+    "dynasty": "唐",
+    "author": "杜牧",
+    "group": "siji",
+    "lines": ["远上寒山石径斜，", "白云生处有人家。", "停车坐爱枫林晚，", "霜叶红于二月花。"],
+    "fixes": { "斜": "xiá" },
+    "explanation": "沿着弯弯的石头小路上山，远处白云升起的地方有几户人家。诗人停下车，是因为太喜欢傍晚的枫林。被霜打过的枫叶，比二月的花还要红。",
+    "poetStory": "杜牧坐车经过一座山，正是深秋。山路弯弯，白云深处有人家，路边的枫叶红得耀眼。他忍不住停下车看了很久，写下这首诗。最后一句把枫叶和春花比，很新鲜。",
+    "illustration": "<svg viewBox='0 0 400 300' xmlns='http://www.w3.org/2000/svg'><rect width='400' height='300' fill='#FFF7E6'/><path d='M0 220 L110 90 L210 220 Z' fill='#7CA982'/><path d='M120 220 L240 60 L360 220 Z' fill='#5E8C61'/><path d='M0 240 H400 V300 H0 Z' fill='#C8E6A0'/><path d='M20 240 Q60 180 120 160 Q160 200 180 240' stroke='#9E9C9A' stroke-width='10' fill='none'/><path d='M100 50 q20 -10 40 0 q-20 10 -40 0 z' fill='#FFFFFF'/><path d='M140 70 q20 -10 40 0 q-20 10 -40 0 z' fill='#FFFFFF'/><rect x='220' y='160' width='46' height='40' fill='#F8D8B8'/><path d='M214 160 L243 132 L272 160 Z' fill='#E8604C'/><rect x='236' y='178' width='14' height='22' fill='#A9744F'/><path d='M290 220 l30 -40 l30 40 z' fill='#E8604C'/><path d='M280 240 l30 -40 l30 40 z' fill='#F09A4A'/><path d='M310 220 l30 -40 l30 40 z' fill='#E8604C'/><rect x='40' y='200' width='56' height='30' rx='6' fill='#A9744F'/><circle cx='58' cy='232' r='10' fill='#3D3A36'/><circle cx='92' cy='232' r='10' fill='#3D3A36'/></svg>",
+    "quiz": [
+      { "type": "meaning", "question": "《山行》里，诗人为什么停车？", "options": ["太喜欢傍晚的枫林", "车坏了走不动", "天黑了要住宿", "要摘路边的果子"], "answer": 0, "explain": "停车坐爱枫林晚，是因为爱看枫林。" },
+      { "type": "fill", "question": "远上寒山石径（　），", "options": ["斜", "鞋", "协", "邪"], "answer": 0, "explain": "山路弯弯曲曲，向远处伸上去，这里读 xiá。" },
+      { "type": "next", "question": "停车坐爱枫林晚，", "options": ["霜叶红于二月花。", "白云生处有人家。", "远上寒山石径斜，", "映日荷花别样红。"], "answer": 0, "explain": "停下车看枫林，因为霜打的叶子比二月花还红。" }
+    ]
+  }
+]
