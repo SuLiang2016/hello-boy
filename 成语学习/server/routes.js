@@ -3,7 +3,11 @@ const express = require('express');
 const db = require('./db');
 const { newSalt, hashPin, verifyPin, createSession, requireKid, requireParent } = require('./auth');
 const { calcStreak, grantNewBadges, localDate } = require('./badges');
-const { boardOfGroups, boardGroupKeys, boardOfItem, groupIndex, unlockThreshold } = require('./content');
+const { boardGroupKeys, boardOfItem, groupIndex } = require('./content');
+const {
+  BOARDS, unlockThreshold, dailyCap, canLearnNew,
+  pickDueToday, earnedReviewStar,
+} = require('./board-rules');
 const { OUTFITS, wallet, addEvent, ownedOutfits, equippedOf } = require('./stars');
 const { DAILY_LENGTH, getDailyChain, getFreeChain, getChainById } = require('./chain');
 
@@ -89,7 +93,7 @@ router.get('/progress', requireKid, (req, res) => {
   res.json(buildProgress(req.kidId));
 });
 
-// 提交一次测验结果：3 题对 2 题及以上算学会（成语、古诗通用，板块按内容 id 判断）
+// 提交一次测验结果：3 题对 2 题及以上算学会（各板块通用，板块按内容 id 查注册表）
 router.post('/quiz-result', requireKid, (req, res) => {
   const body = req.body || {};
   const itemId = body.idiomId || body.id;
@@ -102,6 +106,23 @@ router.post('/quiz-result', requireKid, (req, res) => {
 
   const prev = db.prepare('SELECT * FROM learned WHERE kid_id = ? AND idiom_id = ?').get(req.kidId, itemId);
   const prevStars = prev ? prev.stars : 0;
+
+  // 每日新学上限：识字一天最多算学会 3 张，超出的当天不记为学会（也就不产生未来的复习到期）。
+  // 重测已经学会的内容不受限制——那是把 1 星提到 2 星，不是新学。
+  if (passed && prevStars === 0 && !canLearnNew(board, boardNewToday(req.kidId, today, board))) {
+    const after = buildProgress(req.kidId);
+    return res.json({
+      passed: true,
+      capped: true,
+      starsDelta: 0,
+      dailyCap: dailyCap(board),
+      totalStars: after.totalStars,
+      streak: after.streak,
+      todayDone: after.todayDone,
+      newBadges: [],
+    });
+  }
+
   db.prepare(`
     INSERT INTO learned (kid_id, idiom_id, board, stars, best_correct, attempts, learned_at, updated_at,
                          review_stage, next_review_date)
@@ -147,7 +168,7 @@ router.post('/quiz-result', requireKid, (req, res) => {
   });
 });
 
-// 复习一个到期内容（成语或古诗）：随机一题，答错不惩罚，做完即该轮完成
+// 复习一个到期内容（各板块通用）：随机一题，答错不惩罚，做完即该轮完成
 router.post('/review-result', requireKid, (req, res) => {
   const { idiomId } = req.body || {};
   const row = db.prepare('SELECT * FROM learned WHERE kid_id = ? AND idiom_id = ?').get(req.kidId, idiomId);
@@ -171,17 +192,19 @@ router.post('/review-result', requireKid, (req, res) => {
   db.prepare(`
     INSERT INTO daily_board (kid_id, date, board, reviews) VALUES (?, ?, ?, 1)
     ON CONFLICT(kid_id, date, board) DO UPDATE SET reviews = reviews + 1
-  `).run(req.kidId, today, row.board === 'poem' ? 'poem' : 'idiom');
+  `).run(req.kidId, today, row.board);
 
-  // 当天全部到期复习完成 -> 补 1 颗复习星（每天最多一次）
+  // 当天复习奖励星（每天最多一次）。两条路并列：到期不足上限就全做完，达到上限就做满上限即算完成。
+  // 不能只判「剩余为 0」——做完 20 条后队列会补进第 21 条，剩余永远不为 0，那颗星就再也拿不到。
   let bonusStar = false;
   const remain = db.prepare(`
     SELECT COUNT(*) AS n FROM learned
     WHERE kid_id = ? AND stars > 0 AND review_stage < 5
       AND next_review_date IS NOT NULL AND next_review_date <= ?
   `).get(req.kidId, today).n;
-  const day = db.prepare('SELECT review_star FROM daily WHERE kid_id = ? AND date = ?').get(req.kidId, today);
-  if (remain === 0 && (!day || day.review_star === 0)) {
+  const day = db.prepare('SELECT reviews, review_star FROM daily WHERE kid_id = ? AND date = ?').get(req.kidId, today);
+  const reviewsToday = day?.reviews || 0;
+  if ((!day || day.review_star === 0) && earnedReviewStar({ remaining: remain, reviewsToday })) {
     addEvent(req.kidId, 'review', 1, today);
     db.prepare('UPDATE daily SET review_star = 1 WHERE kid_id = ? AND date = ?').run(req.kidId, today);
     bonusStar = true;
@@ -337,23 +360,25 @@ router.get('/parent/overview', requireParent, (req, res) => {
       SELECT COALESCE(SUM(new_learned), 0) AS newLearned, COALESCE(SUM(reviews), 0) AS reviews
       FROM daily WHERE kid_id = ? AND date >= ?
     `).get(k.id, monday);
-    // 本周新学按板块拆分（三期起周报分列成语/古诗）
-    const weekPoem = db.prepare(`
-      SELECT COALESCE(SUM(new_learned), 0) AS newPoem, COALESCE(SUM(reviews), 0) AS poemReviews
-      FROM daily_board WHERE kid_id = ? AND board = 'poem' AND date >= ?
-    `).get(k.id, monday);
+    // 本周新学按板块拆分：给一个 byBoard 映射，加板块不用再改这里的字段名
+    const byBoard = {};
+    for (const b of BOARDS) {
+      byBoard[b.board] = db.prepare(`
+        SELECT COALESCE(SUM(new_learned), 0) AS newLearned, COALESCE(SUM(reviews), 0) AS reviews
+        FROM daily_board WHERE kid_id = ? AND board = ? AND date >= ?
+      `).get(k.id, b.board, monday);
+    }
     const weekChain = db.prepare(`
       SELECT COUNT(*) AS plays, COALESCE(MAX(length), 0) AS maxLength
       FROM chain_plays WHERE kid_id = ? AND date >= ?
     `).get(k.id, monday);
     return {
       id: k.id, name: k.name, avatar: k.avatar, equipped: equippedOf(k.id),
-      learnedCount: p.boardCounts.idiom, poemCount: p.boardCounts.poem,
-      totalStars: p.totalStars,
+      boardCounts: p.boardCounts, totalStars: p.totalStars,
       streak: p.streak, groupCounts: p.stats.groupCounts,
       rememberedCount: p.rememberedCount,
       week: {
-        ...week, newPoem: weekPoem.newPoem, poemReviews: weekPoem.poemReviews,
+        ...week, byBoard,
         chainPlays: weekChain.plays, chainMaxLength: weekChain.maxLength,
       },
       recent: recent.map((r) => ({ idiomId: r.idiom_id, learnedAt: r.learned_at })),
@@ -412,7 +437,7 @@ router.get('/parent/export', requireParent, (req, res) => {
     dump[t] = db.prepare(`SELECT * FROM ${t}`).all();
   }
   res.setHeader('Content-Disposition', `attachment; filename="chengyu-backup-${localDate()}.json"`);
-  res.json({ app: '成语学习乐园', version: 4, exportedAt: now(), data: dump });
+  res.json({ app: '成语学习乐园', version: 5, exportedAt: now(), data: dump });
 });
 
 // 恢复：上传同一格式的 JSON，清空后原样写回（保留当前家长会话）
@@ -496,6 +521,13 @@ function idiomLearnedCount(kidId) {
   ).get(kidId).n;
 }
 
+// 某个板块今天已经学了几条新的（每日新学上限用）
+function boardNewToday(kidId, date, board) {
+  return db.prepare(
+    'SELECT new_learned FROM daily_board WHERE kid_id = ? AND date = ? AND board = ?'
+  ).get(kidId, date, board)?.new_learned || 0;
+}
+
 function chainPlayStats(kidId, date) {
   return db.prepare(`
     SELECT COUNT(*) AS total,
@@ -523,16 +555,20 @@ function buildProgress(kidId) {
   const learned = {};
   const groupCounts = {};
   for (const g of Object.keys(idx)) groupCounts[g] = 0;
-  const boardCounts = { idiom: 0, poem: 0 };
+  const boardCounts = {};
+  for (const b of BOARDS) boardCounts[b.board] = 0;
   const today = localDate();
-  const due = [];
+  const dueRows = [];
   let rememberedCount = 0;
   for (const r of rows) {
     learned[r.idiom_id] = { stars: r.stars, stage: r.review_stage, board: r.board };
     if (r.review_stage >= 5) rememberedCount++;
-    else if (r.next_review_date && r.next_review_date <= today) due.push(r.idiom_id);
-    boardCounts[r.board === 'poem' ? 'poem' : 'idiom']++;
+    else if (r.next_review_date && r.next_review_date <= today) dueRows.push({ id: r.idiom_id, due: r.next_review_date, board: r.board });
+    boardCounts[r.board] = (boardCounts[r.board] || 0) + 1;
   }
+  // 今日复习队列：三个板块共用一条，到期最久的先做，超出上限的顺延到明天
+  const picked = pickDueToday(dueRows, today);
+  const due = picked.map((r) => r.id);
   for (const [g, ids] of Object.entries(idx)) {
     groupCounts[g] = ids.filter((id) => learned[id]).length;
   }
@@ -553,13 +589,23 @@ function buildProgress(kidId) {
     recent14.push({ date, newLearned: row?.new_learned || 0, reviews: row?.reviews || 0 });
   }
 
-  // 解锁：每个板块内推进——第一篇章直接开，学会上一篇章 80%（成语 8/10、古诗 12/15）解锁下一篇
+  // 解锁：每个板块内推进——第一篇章直接开，学会上一篇 80% 才开下一篇
   const unlocked = [];
-  for (const keys of [boards.idiom, boards.poem]) {
+  for (const b of BOARDS) {
+    const keys = boards[b.board] || [];
     for (let i = 0; i < keys.length; i++) {
       if (i === 0 || groupCounts[keys[i - 1]] >= unlockThreshold(groupTotals[keys[i - 1]])) unlocked.push(keys[i]);
       else break;
     }
+  }
+
+  // 每日新学上限的当日情况，供前端提示「今天学满了」
+  const caps = {};
+  for (const b of BOARDS) {
+    const cap = dailyCap(b.board);
+    if (cap === null) continue;
+    const learnedToday = boardNewToday(kidId, today, b.board);
+    caps[b.board] = { cap, learnedToday, reached: learnedToday >= cap, unit: b.unit };
   }
 
   return {
@@ -570,6 +616,8 @@ function buildProgress(kidId) {
     badges: badgeRows.map((b) => b.badge_id),
     unlocked,
     due,
+    dueDeferred: dueRows.length - due.length,
+    caps,
     rememberedCount,
     groupCounts,
     groupTotals,

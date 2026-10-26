@@ -12,8 +12,8 @@ const session = useSession()
 const content = useContent()
 
 const item = computed(() => content.byId[route.params.id])
-const board = computed(() => content.boardOfItem(item.value) || (route.meta.board === 'poem' ? 'poem' : 'idiom'))
-const isPoem = computed(() => board.value === 'poem')
+const board = computed(() => content.boardOfItem(item.value) || route.meta.board || 'idiom')
+const againLabel = computed(() => content.boardDef(board.value)?.again || '内容')
 const learnName = computed(() => content.routeName('learn', board.value))
 const groupName = computed(() => content.routeName('group', board.value))
 
@@ -154,6 +154,15 @@ const LETTERS = ['A', 'B', 'C', 'D']
           <button class="btn ghost" @click="retry">再试一次</button>
         </template>
 
+        <template v-else-if="result?.capped">
+          <div style="font-size: 52px">🌙</div>
+          <h1>今天学满啦！</h1>
+          <p style="font-size: 19px">
+            {{ content.nameOf(board) }}一天最多算学会 {{ result.dailyCap }} {{ content.unitOf(board) }}，你今天已经学满了。<br>
+            这一张还没记下，明天来接着学正好。
+          </p>
+        </template>
+
         <template v-else-if="result?.passed">
           <div style="display: flex; justify-content: center; gap: 10px; margin: 10px 0 16px">
             <Icon v-for="n in result.starsDelta" :key="n" name="star" :size="64" class="burst" :style="{ color: '#F5B841', animationDelay: n * 0.18 + 's' }" />
@@ -168,13 +177,13 @@ const LETTERS = ['A', 'B', 'C', 'D']
         <template v-else>
           <div style="font-size: 52px">🌱</div>
           <h1>差一点点！</h1>
-          <p style="font-size: 19px">答对 {{ correctCount }} / {{ questions.length }} 题，再读一遍{{ isPoem ? '诗' : '故事' }}就来试，肯定行</p>
+          <p style="font-size: 19px">答对 {{ correctCount }} / {{ questions.length }} 题，再读一遍{{ againLabel }}就来试，肯定行</p>
         </template>
 
         <div style="display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap; justify-content: center">
-          <button v-if="!result?.passed" class="btn blue" @click="router.push({ name: learnName, params: { id: item.id } })">再读一遍{{ isPoem ? '诗' : '故事' }}</button>
-          <button v-if="!result?.passed" class="btn ghost" @click="retry">直接再测</button>
-          <button v-if="result?.passed && correctCount < questions.length" class="btn blue" @click="retry">冲两颗星</button>
+          <button v-if="!result?.passed || result?.capped" class="btn blue" @click="router.push({ name: learnName, params: { id: item.id } })">再读一遍{{ againLabel }}</button>
+          <button v-if="!result?.passed && !result?.capped" class="btn ghost" @click="retry">直接再测</button>
+          <button v-if="result?.passed && !result?.capped && correctCount < questions.length" class="btn blue" @click="retry">冲两颗星</button>
           <button v-if="result?.passed" class="btn ghost" @click="router.push({ name: groupName, params: { group: item.group } })">回篇章</button>
         </div>
       </div>

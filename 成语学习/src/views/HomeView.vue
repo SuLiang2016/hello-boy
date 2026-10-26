@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { useSession, useContent } from '../store.js'
+import { useSession, useContent, BOARDS } from '../store.js'
 import Avatar from '../components/Avatar.vue'
 import Icon from '../components/Icon.vue'
 import Scene from '../components/Scene.vue'
@@ -20,30 +20,52 @@ const hello = computed(() => {
   return '晚上好'
 })
 
-const idiomTotal = content.idioms.length
-const poemTotal = content.poems.length
-const totalAll = idiomTotal + poemTotal
-const idiomLearned = computed(() => session.progress?.boardCounts?.idiom || 0)
-const poemLearned = computed(() => session.progress?.boardCounts?.poem || 0)
-const learnedTotal = computed(() => idiomLearned.value + poemLearned.value)
+// 首页卡片的外观是每个板块各自的，不进注册表
+const HOME_STYLE = {
+  idiom: { icon: '🏮', color: '#F5B841', bg: 'linear-gradient(180deg, #fff 0%, #FFF3D6 100%)', desc: '故事 · 星星 · 徽章' },
+  poem: { icon: '📜', color: '#6FA8DC', bg: 'linear-gradient(180deg, #fff 0%, #EAF3FB 100%)', desc: '读诗 · 听故事 · 答三题' },
+  shizi: { icon: '✏️', color: '#5E8C61', bg: 'linear-gradient(180deg, #fff 0%, #EAF6EC 100%)', desc: '长得像的字 · 一字多音' },
+}
+
+const liveBoards = computed(() => BOARDS.filter((b) => HOME_STYLE[b.board] && content.groupsOf(b.board).length > 0))
+const totalAll = computed(() => liveBoards.value.reduce((n, b) => n + content.totalOf(b.board), 0))
+const learnedTotal = computed(() =>
+  liveBoards.value.reduce((n, b) => n + (session.progress?.boardCounts?.[b.board] || 0), 0)
+)
 const dueCount = computed(() => session.progress?.due?.length || 0)
+const dueDeferred = computed(() => session.progress?.dueDeferred || 0)
 const dueCounts = computed(() => {
-  const counts = { idiom: 0, poem: 0 }
+  const counts = {}
+  for (const b of liveBoards.value) counts[b.board] = 0
   for (const id of session.progress?.due || []) {
     const board = content.boardOfItem(content.byId[id])
-    if (board) counts[board]++
+    if (board && counts[board] !== undefined) counts[board]++
   }
   return counts
 })
+// 「成语 3 个 · 古诗 2 首」，只有真的有到期的板块才列出来
+const dueBrief = computed(() =>
+  liveBoards.value
+    .filter((b) => (dueCounts.value[b.board] || 0) > 0)
+    .map((b) => `${b.name} ${dueCounts.value[b.board]} ${b.unit}`)
+    .join(' · ')
+)
+const shiziCap = computed(() => session.progress?.caps?.shizi || null)
+
 const equipped = computed(() => session.kid?.equipped || {})
 const sceneId = computed(() => equipped.value.scene || '')
 
-const boardCards = computed(() => [
-  { key: 'idiom', name: '成语', icon: '🏮', color: '#F5B841', bg: 'linear-gradient(180deg, #fff 0%, #FFF3D6 100%)', desc: '故事 · 星星 · 徽章', unit: '个', learned: idiomLearned.value, total: idiomTotal, route: 'groups' },
-  { key: 'poem', name: '古诗', icon: '📜', color: '#6FA8DC', bg: 'linear-gradient(180deg, #fff 0%, #EAF3FB 100%)', desc: '读诗 · 听故事 · 答三题', unit: '首', learned: poemLearned.value, total: poemTotal, route: 'poem-groups' },
-])
+const boardCards = computed(() => liveBoards.value.map((b) => ({
+  key: b.board,
+  name: b.name,
+  unit: b.unit,
+  route: b.routes.groups,
+  learned: session.progress?.boardCounts?.[b.board] || 0,
+  total: content.totalOf(b.board),
+  ...HOME_STYLE[b.board],
+})))
 
-// 「去学一个」：从两个板块已解锁的篇章里找第一个还没学会的
+// 「去学一个」：从各板块已解锁的篇章里找第一个还没学会的
 function nextOne() {
   const p = session.progress
   if (!p) return router.push({ name: 'groups' })
@@ -91,7 +113,7 @@ function openChain() {
         <Icon :name="session.progress?.todayDone ? 'check' : 'star'" :size="40" :style="{ color: session.progress?.todayDone ? '#5E8C61' : '#F5B841' }" />
         <div style="flex: 1">
           <b style="font-size: 21px">{{ session.progress?.todayDone ? '今天已经打过卡啦，真棒！' : '今日目标：学会 1 个新内容' }}</b>
-          <div style="color: var(--muted); font-size: 16px">{{ session.progress?.todayDone ? '复习旧内容也算天天学习哦' : '一个成语或一首古诗都算，读完答对题就能拿到星星' }}</div>
+          <div style="color: var(--muted); font-size: 16px">{{ session.progress?.todayDone ? '复习旧内容也算天天学习哦' : '一个成语、一首古诗或一组字都算，读完答对题就能拿到星星' }}</div>
         </div>
         <button v-if="dueCount === 0 && !session.progress?.todayDone" class="btn green" @click="nextOne">去学</button>
       </div>
@@ -101,7 +123,10 @@ function openChain() {
         <Icon name="book" :size="40" style="color: #4A7FB5" />
         <div style="flex: 1">
           <b style="font-size: 21px">今日复习：{{ dueCount }} 个内容到期啦</b>
-          <div style="color: var(--muted); font-size: 16px">成语 {{ dueCounts.idiom }} 个 · 古诗 {{ dueCounts.poem }} 首，每个答一题就行，全答完奖励 1 颗星星</div>
+          <div style="color: var(--muted); font-size: 16px">
+            {{ dueBrief }}，每个答一题就行，全答完奖励 1 颗星星
+            <template v-if="dueDeferred > 0">　还有 {{ dueDeferred }} 条今天排不下，明天先做它们</template>
+          </div>
         </div>
         <button class="btn blue" @click="router.push({ name: 'review' })">去复习</button>
       </div>
@@ -113,6 +138,11 @@ function openChain() {
           <p style="color: var(--muted); margin: 0 0 10px">{{ b.desc }}</p>
           <div class="bar"><div :style="{ width: percent(b.learned, b.total) + '%', background: b.color }"></div></div>
           <b style="font-size: 17px">{{ b.learned }} / {{ b.total }} {{ b.unit }}</b>
+          <div v-if="b.key === 'shizi' && shiziCap" class="cap-mini" :class="{ full: shiziCap.reached }">
+            <Icon name="check" :size="16" />
+            <span v-if="shiziCap.reached">今天 {{ shiziCap.cap }} {{ b.unit }}已学满，明天接着学</span>
+            <span v-else>今天已学 {{ shiziCap.learnedToday }} / {{ shiziCap.cap }} {{ b.unit }}</span>
+          </div>
           <div v-if="b.key === 'idiom'" class="chain-mini" @click.stop="openChain">
             <Icon name="link" :size="17" />
             <span v-if="!session.chainUnlocked">学会 1 个成语解锁接龙</span>
@@ -126,12 +156,6 @@ function openChain() {
           <div style="display: flex; justify-content: center"><Avatar :kind="session.kid?.avatar || 'panda'" :equipped="equipped" :size="46" /></div>
           <b>装扮间</b>
           <span style="font-size: 14px; color: var(--muted)">花星星打扮自己</span>
-        </div>
-
-        <div class="card board-card small-card locked-card">
-          <div style="display: flex; justify-content: center"><Icon name="lock" :size="30" /></div>
-          <b>识字</b>
-          <span style="font-size: 14px; color: var(--muted)">即将开放</span>
         </div>
       </div>
 
@@ -164,7 +188,6 @@ function openChain() {
   justify-content: center;
   gap: 6px;
 }
-.locked-card { opacity: 0.55; cursor: default; }
 .bar {
   background: #fff;
   border-radius: 999px;
@@ -187,6 +210,20 @@ function openChain() {
   font-size: 14px;
   font-weight: 700;
 }
+.cap-mini {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border-radius: 12px;
+  background: #EAF6EC;
+  color: #5E8C61;
+  font-size: 14px;
+  font-weight: 700;
+}
+.cap-mini.full { background: #F3EDF8; color: #A67AB5; }
 @media (max-width: 520px) {
   .board-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
   .board-card { padding: 16px 14px; }

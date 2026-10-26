@@ -4,14 +4,15 @@
 const fs = require('fs');
 const path = require('path');
 const { edgeKeys, pinyinParts } = require('../server/chain-utils');
+const { BOARDS, boardOf } = require('../server/board-rules');
 
 const SRC = path.join(__dirname, '..', '..', 'content');
 const OUT = path.join(__dirname, '..', 'src', 'assets', 'content.json');
 
 function merge(boardDir, groupsFile, groupField) {
-  const groups = JSON.parse(fs.readFileSync(path.join(SRC, groupsFile), 'utf8'));
+  const allGroups = JSON.parse(fs.readFileSync(path.join(SRC, groupsFile), 'utf8'));
   const items = [];
-  for (const g of groups) {
+  for (const g of allGroups) {
     const file = path.join(SRC, boardDir, `${g.key}.json`);
     if (!fs.existsSync(file)) {
       console.warn(`[警告] 缺少 ${boardDir}/${g.key}.json，先跳过（最后构建前必须补齐）`);
@@ -23,6 +24,10 @@ function merge(boardDir, groupsFile, groupField) {
     }
     console.log(`${g.name}: ${arr.length} 条`);
   }
+  // 内容还没产出的篇章不进清单，否则首页会出现一个空的篇章卡
+  const groups = allGroups.filter((g) => items.some((i) => i.group === g.key));
+  const pending = allGroups.length - groups.length;
+  if (pending > 0) console.log(`  （${boardDir} 有 ${pending} 个篇章还没产出内容，本次不展示）`);
   return { groups, items };
 }
 
@@ -58,20 +63,19 @@ function mergeChain(idioms) {
   return { words, chains };
 }
 
-const idiom = merge('idioms', 'groups.json', 'group');
-const poem = merge('poems', 'poem-groups.json', 'group');
-const chain = mergeChain(idiom.items);
+// 板块清单由 server/board-rules.js 的 BOARDS 驱动：加一个板块只改那张表
+const built = {};
+for (const b of BOARDS) {
+  const m = merge(b.dir, b.groupsFile, 'group');
+  built[b.groupsKey] = m.groups;
+  built[b.itemsKey] = m.items;
+  console.log(`  ${b.board}: ${m.items.length} 条`);
+}
+const chain = mergeChain(built[boardOf('idiom').itemsKey]);
 
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
-fs.writeFileSync(
-  OUT,
-  JSON.stringify({
-    groups: idiom.groups,
-    idioms: idiom.items,
-    poemGroups: poem.groups,
-    poems: poem.items,
-    chain,
-  }, null, 0),
-  'utf8'
+fs.writeFileSync(OUT, JSON.stringify({ ...built, chain }, null, 0), 'utf8');
+console.log(
+  `合计 成语 ${built[boardOf('idiom').itemsKey].length} + 古诗 ${built[boardOf('poem').itemsKey].length}` +
+  ` + 识字 ${built[boardOf('shizi').itemsKey].length} -> ${path.relative(process.cwd(), OUT)}`
 );
-console.log(`合计成语 ${idiom.items.length} 条 + 古诗 ${poem.items.length} 首 -> ${path.relative(process.cwd(), OUT)}`);

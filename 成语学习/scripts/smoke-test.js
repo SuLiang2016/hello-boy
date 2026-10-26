@@ -37,8 +37,10 @@ const j = (r) => r.json();
   const idA = content.idioms[0].id;
   const poem = content.poems[0];
   const poemGroup = content.poemGroups[0].key;
+  const shiziGroup = content.shiziGroups[0].key;
+  const shiziCards = content.shiziItems;
 
-  log('内容含 60 成语 + 75 古诗', content.idioms.length === 60 && content.poems.length === 75 && content.poemGroups.length === 5);
+  log('内容含 60 成语 + 75 古诗 + 25 识字卡', content.idioms.length === 60 && content.poems.length === 75 && content.poemGroups.length === 5 && shiziCards.length === 25);
 
   const me = await fetch(base + '/me', { headers: H }).then(j);
   let p = await fetch(base + '/progress', { headers: H }).then(j);
@@ -90,6 +92,60 @@ const j = (r) => r.json();
     const reviewDay = db2.prepare("SELECT reviews FROM daily_board WHERE kid_id = ? AND board = 'poem' AND date = ?").get(me.id, today);
     log('古诗复习计入板块日统计', reviewDay?.reviews === 1);
     db2.close();
+  }
+
+  // 识字板块：完整板块口径（计入学会/复习/星星/打卡）+ 每日新学上限 3 张
+  p = await fetch(base + '/progress', { headers: H }).then(j);
+  log('识字第一篇章解锁且不设锁', p.unlocked.includes(shiziGroup));
+
+  const beforeShizi = await fetch(base + '/progress', { headers: H }).then(j);
+  const szStarsBefore = beforeShizi.totalStars;
+  const qz = [];
+  for (let i = 0; i < 4; i++) {
+    qz.push(await fetch(base + '/quiz-result', {
+      method: 'POST', headers: H, body: JSON.stringify({ idiomId: shiziCards[i].id, correct: 3 }),
+    }).then(j));
+  }
+  log('识字前 3 张按顺序学会并给星', qz.slice(0, 3).every((x) => x.passed === true && x.capped !== true && x.starsDelta === 2));
+  log('第 4 张触发每日新学上限：不算学会、不给星', qz[3].passed === true && qz[3].capped === true && qz[3].starsDelta === 0 && qz[3].dailyCap === 3);
+
+  p = await fetch(base + '/progress', { headers: H }).then(j);
+  log('识字计入板块与进度，只记 3 张', p.boardCounts.shizi === 3 && !!p.learned[shiziCards[0].id] && !p.learned[shiziCards[3].id]);
+  log('识字星星进同一个钱包', p.totalStars === szStarsBefore + 6);
+  log('首页能读到今日识字上限情况', p.caps?.shizi?.cap === 3 && p.caps?.shizi?.learnedToday === 3 && p.caps?.shizi?.reached === true);
+
+  // 上限只管新学：已经学会的识字卡重测仍可提星，不该被拦
+  const reQuiz = await fetch(base + '/quiz-result', {
+    method: 'POST', headers: H, body: JSON.stringify({ idiomId: shiziCards[0].id, correct: 3 }),
+  }).then(j);
+  log('已学会的识字卡重测不受上限影响', reQuiz.passed === true && reQuiz.capped !== true);
+
+  // 识字不进接龙的解锁口径，也不该污染成语/古诗计数
+  p = await fetch(base + '/progress', { headers: H }).then(j);
+  log('识字不影响成语与古诗的计数', p.boardCounts.idiom === beforeShizi.boardCounts.idiom && p.boardCounts.poem === beforeShizi.boardCounts.poem);
+
+  if (process.env.CYLY_DATA_DIR) {
+    const { DatabaseSync } = require('node:sqlite');
+    const path = require('path');
+    const dbs = new DatabaseSync(path.join(process.env.CYLY_DATA_DIR, 'app.db'));
+    const d = new Date();
+    const pad = (n) => String(n).padStart(2, '0');
+    const today = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+    const srow = dbs.prepare('SELECT board, next_review_date FROM learned WHERE kid_id = ? AND idiom_id = ?').get(me.id, shiziCards[0].id);
+    log('识字首次学会写入 board=shizi 和复习日期', srow?.board === 'shizi' && !!srow.next_review_date);
+    const sday = dbs.prepare("SELECT new_learned FROM daily_board WHERE kid_id = ? AND board = 'shizi' AND date = ?").get(me.id, today);
+    log('识字新学计入板块日统计且被上限截在 3', sday?.new_learned === 3);
+    dbs.prepare('UPDATE learned SET next_review_date = ? WHERE kid_id = ? AND idiom_id = ?').run(today, me.id, shiziCards[0].id);
+    dbs.close();
+
+    const ps = await fetch(base + '/progress', { headers: H }).then(j);
+    log('到期的识字卡进入今日复习', ps.due.includes(shiziCards[0].id));
+    const rrs = await fetch(base + '/review-result', { method: 'POST', headers: H, body: JSON.stringify({ idiomId: shiziCards[0].id }) }).then(j);
+    log('识字复习完成，日统计记在 shizi 板块', rrs.stage === 1);
+    const dbt = new DatabaseSync(path.join(process.env.CYLY_DATA_DIR, 'app.db'));
+    const srev = dbt.prepare("SELECT reviews FROM daily_board WHERE kid_id = ? AND board = 'shizi' AND date = ?").get(me.id, today);
+    log('识字复习计入板块日统计（不再错记成成语）', srev?.reviews === 1);
+    dbt.close();
   }
 
   // 接龙：每日链、记录、徽章、不污染学习口径
@@ -166,11 +222,14 @@ const j = (r) => r.json();
   const ov = await fetch(base + '/parent/overview', { headers: PH }).then(j);
   log('家长总览可读', Array.isArray(ov) && ov.length > 0);
   const kidOv = ov.find((k) => k.id === me.id) || ov[0];
-  log('周报分列古诗', kidOv.poemCount >= 1 && kidOv.week.newPoem >= 1 && kidOv.week.poemReviews >= 1);
+  log('周报按板块给出成语/古诗/识字', kidOv.boardCounts?.poem >= 1 && kidOv.boardCounts?.shizi >= 1 &&
+    kidOv.week.byBoard.poem.newLearned >= 1 && kidOv.week.byBoard.shizi.newLearned >= 3);
   log('家长周报含接龙局数与最长链', kidOv.week.chainPlays >= 1 && kidOv.week.chainMaxLength >= 6);
 
   const exp = await fetch(base + '/parent/export', { headers: PH }).then(j);
-  log('备份版本 4 含接龙记录', exp.version === 4 && Array.isArray(exp.data.chain_plays) && exp.data.chain_plays.length >= 1);
+  log('备份版本 5 含接龙记录与识字进度', exp.version === 5 &&
+    Array.isArray(exp.data.chain_plays) && exp.data.chain_plays.length >= 1 &&
+    exp.data.learned.some((r) => r.board === 'shizi'));
 
   const res2 = await fetch(base + '/parent/overview', { headers: H });
   log('孩子 token 进家长接口被拒', res2.status === 401);

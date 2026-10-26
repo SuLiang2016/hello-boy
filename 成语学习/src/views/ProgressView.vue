@@ -1,7 +1,7 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import { api, setKidToken } from '../api.js'
-import { useSession, useContent, BADGES } from '../store.js'
+import { useSession, useContent, BOARDS, BADGES } from '../store.js'
 import Avatar from '../components/Avatar.vue'
 import Icon from '../components/Icon.vue'
 import TabBar from '../components/TabBar.vue'
@@ -22,11 +22,6 @@ async function logout() {
 const earned = (id) => session.progress?.badges?.includes(id)
 const weekday = (dateStr) => '日一二三四五六'[new Date(dateStr + 'T00:00:00').getDay()]
 const boardLearned = (board) => session.progress?.boardCounts?.[board] || 0
-
-const BOARDS = [
-  { key: 'idiom', label: '学会的成语' },
-  { key: 'poem', label: '学会的古诗' },
-]
 </script>
 
 <template>
@@ -97,9 +92,9 @@ const BOARDS = [
       </div>
     </div>
 
-    <div v-for="b in BOARDS" :key="b.key" class="card" style="margin-bottom: 20px" v-show="boardLearned(b.key) > 0">
-      <h2 style="font-size: 20px">{{ b.label }}</h2>
-      <template v-for="g in content.groupsOf(b.key)" :key="g.key">
+    <div v-for="b in BOARDS" :key="b.board" class="card" style="margin-bottom: 20px" v-show="boardLearned(b.board) > 0">
+      <h2 style="font-size: 20px">学会的{{ b.name }}（{{ boardLearned(b.board) }} {{ b.unit }}）</h2>
+      <template v-for="g in content.groupsOf(b.board)" :key="g.key">
         <div v-if="(session.progress?.groupCounts?.[g.key] || 0) > 0" style="margin-bottom: 12px">
           <b :style="{ color: g.color }">{{ g.name }}</b>
           <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px">

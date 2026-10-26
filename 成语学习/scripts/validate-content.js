@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const { polyphonic } = require('pinyin-pro');
 const { edgeKeys, pinyinParts, hasToneMark } = require('../server/chain-utils');
+const { BOARDS } = require('../server/board-rules');
 
 const SRC = path.join(__dirname, '..', '..', 'content');
 
@@ -190,6 +191,117 @@ for (const g of POEM_GROUPS) {
     checkSvg(tag, it.illustration || '');
   }
 }
+
+// ---------- 识字（五期） ----------
+
+const SHIZI = BOARDS.find((b) => b.board === 'shizi');
+const SHIZI_PER_GROUP = 25;
+// 三题题型按篇章分两套（DESIGN.md 五期）：多音字卡上只有一个字，「给词选字」无从选起
+const SHIZI_TYPES_BY_GROUP = { duoyin: ['sound', 'sound2', 'meaning'] };
+const SHIZI_TYPES_DEFAULT = ['fill', 'word', 'meaning'];
+const shiziGroupsMeta = JSON.parse(fs.readFileSync(path.join(SRC, SHIZI.groupsFile), 'utf8'));
+const shiziIds = new Set();
+let shiziPending = 0;
+
+for (const g of shiziGroupsMeta) {
+  const fp = path.join(SRC, SHIZI.dir, `${g.key}.json`);
+  if (!fs.existsSync(fp)) {
+    console.warn(`\n[识字·${g.name}] 篇章还没产出内容，跳过（上线前必须补齐）`);
+    shiziPending++;
+    continue;
+  }
+  let arr;
+  try { arr = JSON.parse(fs.readFileSync(fp, 'utf8')); } catch (e) { fail(`shizi/${g.key}.json 不是合法 JSON: ${e.message}`); continue; }
+
+  console.log(`\n[识字·${g.name}] ${arr.length} 张`);
+  if (!g.name || !g.motto) fail(`篇章 ${g.key} 缺 name 或 motto（name=术语、motto=孩子话）`);
+  if (g.color && !PALETTE.has(g.color.toUpperCase())) fail(`篇章 ${g.key} 的颜色 ${g.color} 不在调色板内`);
+  if (arr.length !== SHIZI_PER_GROUP) fail(`应有 ${SHIZI_PER_GROUP} 张，实际 ${arr.length} 张`);
+
+  const posSeen = [new Set(), new Set(), new Set()];
+
+  for (const it of arr) {
+    const tag = it.word || '(?)';
+    if (!/^zi-[a-z]+(-[a-z]+)?$/.test(it.id || '')) fail(`${tag} id 要形如 zi-ren / zi-ji-lv`);
+    if (shiziIds.has(it.id)) fail(`${tag} id 在本板块内重复`);
+    shiziIds.add(it.id);
+    if (idiomIds.has(it.id) || poemIds.has(it.id)) fail(`${tag} id 与成语或古诗重复`);
+    if (it.group !== g.key) fail(`${tag} group 应为 ${g.key}`);
+    if (it.illustration !== undefined) fail(`${tag} 识字卡片不该带 illustration`);
+    if (!it.tip || it.tip.length < 10 || it.tip.length > 90) fail(`${tag} 区分口诀要 10-90 字`);
+    checkBanned(tag, 'tip', it.tip);
+
+    const chars = it.chars || [];
+    if (chars.length < 2) { fail(`${tag} 字族至少 2 个字`); continue; }
+    const family = chars.map((c) => c.zi);
+    if (new Set(family).size !== family.length) fail(`${tag} 字族内有重复的字`);
+    if (Array.from((it.word || '').replace(/\s/g, '')).join('') !== family.join('')) fail(`${tag} word 与 chars 不一致`);
+    if (chars.map((c) => c.pinyin).join(' ') !== it.pinyin) fail(`${tag} pinyin 与 chars 不一致`);
+
+    for (const c of chars) {
+      const ct = `${tag}·${c.zi || '?'}`;
+      for (const f of ['zi', 'pinyin', 'radical', 'strokes', 'word', 'sentence']) {
+        if (c[f] === undefined || c[f] === '') fail(`${ct} 缺 ${f}`);
+      }
+      if (!isHan(c.zi)) fail(`${ct} 「zi」不是汉字`);
+      if (!hasToneMark(c.pinyin)) fail(`${ct} 拼音缺声调`);
+      if (!Number.isInteger(c.strokes) || c.strokes < 1 || c.strokes > 40) fail(`${ct} 笔画数 ${c.strokes} 异常`);
+      if (!String(c.word || '').includes(c.zi)) fail(`${ct} 组词「${c.word}」里没有这个字`);
+      if (!String(c.sentence || '').includes(c.zi)) fail(`${ct} 例句里没有这个字`);
+      checkBanned(ct, '组词例句', c.sentence);
+    }
+
+    const q = it.quiz || [];
+    const types = SHIZI_TYPES_BY_GROUP[g.key] || SHIZI_TYPES_DEFAULT;
+    if (q.length !== 3) { fail(`${tag} 测验应有 3 题`); continue; }
+    if (q.map((x) => x.type).join() !== types.join()) fail(`${tag} 三题类型顺序应为 ${types.join(' → ')}`);
+
+    q.forEach((qq, i) => {
+      const qt = `${tag} 第${i + 1}题`;
+      if (!qq.question) fail(`${qt} 缺 question`);
+      if (!qq.options || qq.options.length !== 4) fail(`${qt} 应 4 个选项`);
+      else if (new Set(qq.options).size !== 4) fail(`${qt} 选项有重复：${qq.options.join('/')}`);
+      if (!(qq.answer >= 0 && qq.answer <= 3)) fail(`${qt} 答案下标越界`);
+      if (!qq.explain) fail(`${qt} 缺 explain`);
+      checkBanned(qt, 'explain', qq.explain);
+      posSeen[i].add(qq.answer);
+    });
+
+    // 第 1 题 给词选字：正确项是族内单字，且题干必须由该字例句挖空得来（沿用古诗 fill 的严格口径）
+    // 多音字篇第 1 题是「给词选读音」，那套规则不适用，等 duoyin 内容交稿时再补读音校验
+    const a0 = q[0].options && q[0].options[q[0].answer];
+    if (types[0] === 'fill') {
+      if (q[0].question && !q[0].question.includes('（　）')) fail(`${tag} 给词选字题缺「（　）」`);
+      const owner = chars.find((c) => c.zi === a0);
+      if (!owner) {
+        fail(`${tag} 给词选字正确项「${a0}」不在字族里`);
+      } else {
+        const derived = owner.sentence.split(a0).join('（　）');
+        if (derived !== q[0].question) fail(`${tag} 给词选字题干与例句对不上：应为「${derived}」`);
+        const alsoHere = family.filter((z) => z !== a0 && owner.sentence.includes(z));
+        if (alsoHere.length) fail(`${tag} 例句里还混着同族字「${alsoHere.join('」「')}」，挖空会有第二个正确答案`);
+      }
+    }
+
+    // 第 2 题 选写对的词：正确项要含族内某个字
+    const a1 = q[1].options && q[1].options[q[1].answer];
+    if (types[1] === 'word' && a1 && !family.some((z) => a1.includes(z))) {
+      fail(`${tag} 选写对的词正确项「${a1}」不含字族里的字`);
+    }
+
+    // 第 3 题 辨字义/辨部件：正确项要么是族内单字，要么题干在问某个族字
+    const a2 = q[2].options && q[2].options[q[2].answer];
+    if (!family.includes(a2) && !family.some((z) => (q[2].question || '').includes(z))) {
+      fail(`${tag} 辨字义正确项「${a2}」既不是字族里的单字，题干也没在问这个字族的字`);
+    }
+  }
+
+  // 答案位置：运行时会打乱选项，所以只要求别全挤在同一格
+  posSeen.forEach((s, i) => {
+    if (s.size < 2) fail(`${g.key} 第${i + 1}题答案全落在同一个下标，出题偷懒`);
+  });
+}
+if (shiziPending) console.log(`\n（识字还有 ${shiziPending} 个篇章待产出）`);
 
 // ---------- 接龙（四期） ----------
 

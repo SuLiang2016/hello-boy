@@ -2,37 +2,66 @@ import { defineStore } from 'pinia'
 import { api, kidToken, setKidToken } from './api.js'
 import content from './assets/content.json'
 
+// 板块注册表：加一个板块只加一行（board / 内容键 / 量词 要和 server/board-rules.js 同步，
+// name、title、again、routes 是视图侧字段，服务端不需要）
+export const BOARDS = [
+  {
+    board: 'idiom', groupsKey: 'groups', itemsKey: 'idioms',
+    name: '成语', unit: '个', title: '成语篇章', again: '故事',
+    routes: { groups: 'groups', group: 'group', learn: 'learn', quiz: 'quiz' },
+  },
+  {
+    board: 'poem', groupsKey: 'poemGroups', itemsKey: 'poems',
+    name: '古诗', unit: '首', title: '古诗篇章', again: '诗',
+    routes: { groups: 'poem-groups', group: 'poem-group', learn: 'poem-learn', quiz: 'poem-quiz' },
+  },
+  {
+    board: 'shizi', groupsKey: 'shiziGroups', itemsKey: 'shiziItems',
+    name: '识字', unit: '张', title: '识字篇章', again: '这组字',
+    routes: { groups: 'shizi-groups', group: 'shizi-group', learn: 'shizi-learn', quiz: 'shizi-quiz' },
+  },
+]
+
 // 内容查找工具（内容是静态打包的）
 export function useContent() {
+  const boards = BOARDS.filter((b) => Array.isArray(content[b.itemsKey]))
+  const itemsOfBoard = Object.fromEntries(boards.map((b) => [b.board, content[b.itemsKey] || []]))
+  const groupsOfBoard = Object.fromEntries(boards.map((b) => [b.board, content[b.groupsKey] || []]))
   const groups = content.groups
-  const poemGroups = content.poemGroups || []
-  const idioms = content.idioms
-  const poems = content.poems || []
+  const poemGroups = groupsOfBoard.poem || []
+  const idioms = itemsOfBoard.idiom || []
+  const poems = itemsOfBoard.poem || []
+  const shiziGroups = groupsOfBoard.shizi || []
+  const shiziItems = itemsOfBoard.shizi || []
   const chainWords = content.chain?.words || []
-  const byId = Object.fromEntries([...idioms, ...poems].map((i) => [i.id, i]))
+  const byId = Object.fromEntries(boards.flatMap((b) => itemsOfBoard[b.board]).map((i) => [i.id, i]))
 
-  const groupsOf = (board) => (board === 'poem' ? poemGroups : groups)
-  const boardOfGroup = (key) => (poemGroups.some((g) => g.key === key) ? 'poem' : 'idiom')
-  const boardOfItem = (item) => (item ? boardOfGroup(item.group) : null)
+  // groupKey -> 所属板块定义，一次建好，后面全是查表
+  const ownerOfGroup = {}
+  for (const b of boards) for (const g of groupsOfBoard[b.board]) ownerOfGroup[g.key] = b
+
+  const boardDef = (board) => boards.find((b) => b.board === board) || null
+  const groupsOf = (board) => groupsOfBoard[board] || []
   const ofGroup = (key) => {
-    const list = boardOfGroup(key) === 'poem' ? poems : idioms
-    return list.filter((i) => i.group === key)
+    const b = ownerOfGroup[key]
+    return b ? itemsOfBoard[b.board].filter((i) => i.group === key) : []
   }
-  const groupOf = (key) => [...groups, ...poemGroups].find((g) => g.key === key)
+  const boardOfGroup = (key) => ownerOfGroup[key]?.board || null
+  const boardOfItem = (item) => (item ? boardOfGroup(item.group) : null)
+  const groupOf = (key) => boards.flatMap((b) => groupsOfBoard[b.board]).find((g) => g.key === key) || null
+  const unitOf = (board) => boardDef(board)?.unit || '个'
+  const nameOf = (board) => boardDef(board)?.name || '内容'
+  const totalOf = (board) => groupsOf(board).reduce((n, g) => n + ofGroup(g.key).length, 0)
   const titleOf = (item) => item?.word || item?.title || ''
   const metaOf = (item) => (item?.word ? item.pinyin : `${item?.dynasty || ''} · ${item?.author || ''}`)
   const meaningPrompt = (item) => (item?.lines ? `《${item.title}》这首诗讲了什么？` : `「${item?.word}」是什么意思？`)
-
-  const routeNames = {
-    idiom: { groups: 'groups', group: 'group', learn: 'learn', quiz: 'quiz' },
-    poem: { groups: 'poem-groups', group: 'poem-group', learn: 'poem-learn', quiz: 'poem-quiz' },
-  }
-  const routeName = (kind, board) => routeNames[board === 'poem' ? 'poem' : 'idiom'][kind]
+  const routeName = (kind, board) => boardDef(board)?.routes?.[kind] || 'groups'
 
   return {
-    groups, poemGroups, idioms, poems, byId,
+    groups, poemGroups, idioms, poems, shiziGroups, shiziItems, byId,
     chainWords,
     groupsOf, boardOfGroup, boardOfItem, ofGroup, groupOf,
+    boardDef, unitOf, nameOf, totalOf, groupsOfBoard,
     titleOf, metaOf, meaningPrompt, routeName,
   }
 }
@@ -59,6 +88,14 @@ export const BADGES = [
   { id: 'group-huaren', name: '情谊大师', hint: '学完「思念与送别」', color: '#A67AB5' },
   { id: 'group-yongwu', name: '明理大师', hint: '学完「咏物明理」', color: '#F09A4A' },
   { id: 'group-jiaguo', name: '家国大师', hint: '学完「家国与童年」', color: '#E8604C' },
+  // 五期：识字板块 7 枚（与服务端 badges.js 同步）
+  { id: 'shizi-10', name: '识字小书生', hint: '学会 10 组字', color: '#5E8C61' },
+  { id: 'shizi-30', name: '识字小达人', hint: '学会 30 组字', color: '#5E8C61' },
+  { id: 'shizi-100', name: '识字大王', hint: '学会全部 100 组字', color: '#5E8C61' },
+  { id: 'group-xingjin', name: '形近大师', hint: '学完「形近字」', color: '#4A7FB5' },
+  { id: 'group-duoyin', name: '多音大师', hint: '学完「多音字」', color: '#F5B841' },
+  { id: 'group-tongyin', name: '同音大师', hint: '学完「同音字」', color: '#5E8C61' },
+  { id: 'group-yicuo', name: '易错大师', hint: '学完「易错字」', color: '#A67AB5' },
   { id: 'chain-10', name: '接龙高手', hint: '完成 10 局接龙', color: '#A67AB5' },
 ]
 

@@ -3,7 +3,7 @@
 import { onMounted, reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { api, parentToken, setParentToken } from '../api.js'
-import { useContent, AVATARS } from '../store.js'
+import { useContent, BOARDS, AVATARS } from '../store.js'
 import Avatar from '../components/Avatar.vue'
 import Icon from '../components/Icon.vue'
 
@@ -151,8 +151,12 @@ async function onRestoreFile(ev) {
             <b style="font-size: 22px">{{ k.name }}</b>
             <div style="margin-left: auto; display: flex; gap: 8px; flex-wrap: wrap">
               <span class="chip" style="color: #5E8C61; font-size: 16px">本周新学 {{ k.week?.newLearned ?? 0 }}</span>
-              <span class="chip" style="color: #6FA8DC; font-size: 16px">古诗 {{ k.week?.newPoem ?? 0 }} 首 · 复习 {{ k.week?.poemReviews ?? 0 }} 次</span>
               <span class="chip" style="color: #4A7FB5; font-size: 16px">复习 {{ k.week?.reviews ?? 0 }} 次</span>
+              <template v-for="b in BOARDS" :key="b.board">
+                <span v-if="(k.week?.byBoard?.[b.board]?.newLearned ?? 0) > 0" class="chip" style="color: #6FA8DC; font-size: 16px">
+                  {{ b.name }} {{ k.week.byBoard[b.board].newLearned }} {{ b.unit }}
+                </span>
+              </template>
               <span class="chip" style="color: #A67AB5; font-size: 16px">
                 <Icon name="link" :size="16" />接龙 {{ k.week?.chainPlays ?? 0 }} 局 · 最长 {{ k.week?.chainMaxLength ?? 0 }}
               </span>
@@ -160,14 +164,15 @@ async function onRestoreFile(ev) {
             </div>
           </div>
           <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; color: var(--muted); font-size: 16px">
-            <span>成语 {{ k.learnedCount }} / {{ content.idioms.length }}</span>
-            <span>古诗 {{ k.poemCount ?? 0 }} / {{ content.poems.length }}</span>
+            <template v-for="b in BOARDS" :key="b.board">
+              <span v-if="content.totalOf(b.board) > 0">{{ b.name }} {{ k.boardCounts?.[b.board] ?? 0 }} / {{ content.totalOf(b.board) }} {{ b.unit }}</span>
+            </template>
             <span style="color: #C79213"><Icon name="star" :size="15" />钱包 {{ k.totalStars }}</span>
             <span style="color: #E8604C"><Icon name="flame" :size="15" />连续 {{ k.streak }} 天</span>
           </div>
 
-          <div v-for="board in ['idiom', 'poem']" :key="board" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 6px; margin-bottom: 8px">
-            <div v-for="g in content.groupsOf(board)" :key="g.key" style="text-align: center">
+          <div v-for="b in BOARDS" :key="b.board" v-show="content.groupsOf(b.board).length > 0" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 6px; margin-bottom: 8px">
+            <div v-for="g in content.groupsOf(b.board)" :key="g.key" style="text-align: center">
               <div :style="{ background: '#F2ECDC', borderRadius: 10, overflow: 'hidden', height: 12 }">
                 <div :style="{ width: ((k.groupCounts?.[g.key] || 0) / content.ofGroup(g.key).length) * 100 + '%', height: '100%', background: g.color }"></div>
               </div>

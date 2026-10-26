@@ -10,8 +10,9 @@ const router = useRouter()
 const session = useSession()
 const content = useContent()
 
-const board = computed(() => (route.meta.board === 'poem' ? 'poem' : 'idiom'))
+const board = computed(() => route.meta.board || 'idiom')
 const isPoem = computed(() => board.value === 'poem')
+const isShizi = computed(() => board.value === 'shizi')
 const group = computed(() => content.groupOf(route.params.group))
 const items = computed(() => content.ofGroup(route.params.group))
 const backName = computed(() => content.routeName('groups', board.value))
@@ -35,13 +36,18 @@ const learnName = computed(() => content.routeName('learn', board.value))
         @click="router.push({ name: learnName, params: { id: it.id } })"
         style="display: flex; align-items: center; gap: 14px; padding: 14px 12px; border-bottom: 2px solid rgba(61,58,54,0.06); cursor: pointer"
       >
-        <div :style="{ background: '#FFF3D6', borderRadius: 14, width: 84, height: 62, display: 'flex', alignItems: 'center', justifyContent: 'center', flex: 'none', overflow: 'hidden' }">
-          <span class="thumb-illo" v-html="it.illustration"></span>
+        <div :style="{ background: '#FFF3D6', borderRadius: 14, minWidth: 84, height: 62, padding: '0 10px', display: 'flex', alignItems: 'center', justifyContent: 'center', flex: 'none', overflow: 'hidden' }">
+          <span v-if="it.illustration" class="thumb-illo" v-html="it.illustration"></span>
+          <!-- 识字卡没有插图，缩略位直接给字形 -->
+          <b v-else :style="{ fontSize: 25, fontWeight: 800, color: group.color, letterSpacing: '3px' }">
+            {{ it.chars.map((c) => c.zi).join('') }}
+          </b>
         </div>
         <div style="flex: 1; min-width: 0">
           <b style="font-size: 22px">{{ content.titleOf(it) }}</b>
           <div style="color: var(--muted); font-size: 15px">{{ content.metaOf(it) }}</div>
           <div v-if="isPoem" style="color: var(--muted); font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{ it.lines?.[0] }}{{ it.lines?.[1] }}</div>
+          <div v-else-if="isShizi" style="color: var(--muted); font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{ it.tip }}</div>
         </div>
         <div style="display: flex; gap: 2px; flex: none; align-items: center">
           <Icon v-if="session.isRemembered(it.id)" name="crown" :size="20" style="color: #C79213" />

@@ -24,6 +24,14 @@ const BADGES = [
   { id: 'group-huaren', name: '情谊大师', hint: '学完「思念与送别」篇章', kind: 'group', group: 'huaren' },
   { id: 'group-yongwu', name: '明理大师', hint: '学完「咏物明理」篇章', kind: 'group', group: 'yongwu' },
   { id: 'group-jiaguo', name: '家国大师', hint: '学完「家国与童年」篇章', kind: 'group', group: 'jiaguo' },
+  // 五期：识字板块 7 枚（3 里程碑 + 4 篇章，沿用成语/古诗的命名模式）
+  { id: 'shizi-10', name: '识字小书生', hint: '学会 10 组字', kind: 'learn', board: 'shizi', threshold: 10 },
+  { id: 'shizi-30', name: '识字小达人', hint: '学会 30 组字', kind: 'learn', board: 'shizi', threshold: 30 },
+  { id: 'shizi-100', name: '识字大王', hint: '学会全部 100 组字', kind: 'learn', board: 'shizi', threshold: 100 },
+  { id: 'group-xingjin', name: '形近大师', hint: '学完「形近字」篇章', kind: 'group', group: 'xingjin' },
+  { id: 'group-duoyin', name: '多音大师', hint: '学完「多音字」篇章', kind: 'group', group: 'duoyin' },
+  { id: 'group-tongyin', name: '同音大师', hint: '学完「同音字」篇章', kind: 'group', group: 'tongyin' },
+  { id: 'group-yicuo', name: '易错大师', hint: '学完「易错字」篇章', kind: 'group', group: 'yicuo' },
   // 四期：接龙
   { id: 'chain-10', name: '接龙高手', hint: '完成 10 局接龙', kind: 'chain', threshold: 10 },
 ];

@@ -10,11 +10,13 @@ const router = useRouter()
 const session = useSession()
 const content = useContent()
 
-const board = computed(() => (route.meta.board === 'poem' ? 'poem' : 'idiom'))
+const board = computed(() => route.meta.board || 'idiom')
 const groups = computed(() => content.groupsOf(board.value))
-const isPoem = computed(() => board.value === 'poem')
+const isChainHost = computed(() => board.value === 'idiom')
+const unit = computed(() => content.unitOf(board.value))
+const pageTitle = computed(() => content.boardDef(board.value)?.title || '篇章')
 
-// 上一篇学完 80% 解锁下一篇（成语 8/10、古诗 12/15）
+// 上一篇学完 80% 解锁下一篇（成语 8/10、古诗 12/15、识字 20/25）
 function needFor(g) {
   const i = groups.value.findIndex((x) => x.key === g.key)
   if (i <= 0) return 0
@@ -31,14 +33,14 @@ function openChain() {
   <div class="page">
     <div class="topbar">
       <div class="back" @click="router.push({ name: 'home' })"><Icon name="back" :size="26" /></div>
-      <h1 style="margin: 0">{{ isPoem ? '古诗篇章' : '成语篇章' }}</h1>
+      <h1 style="margin: 0">{{ pageTitle }}</h1>
       <span class="chip" style="margin-left: auto; color: #C79213">
         <Icon name="star" :size="20" />{{ session.progress?.totalStars ?? 0 }}
       </span>
     </div>
 
     <div
-      v-if="!isPoem"
+      v-if="isChainHost"
       class="card chain-entry"
       :class="{ locked: !session.chainUnlocked }"
       @click="openChain"
@@ -86,13 +88,13 @@ function openChain() {
           ></span>
         </div>
         <div style="margin-top: 10px; font-size: 16px; color: var(--muted)">
-          {{ session.progress?.groupCounts?.[g.key] ?? 0 }} / {{ session.progress?.groupTotals?.[g.key] ?? content.ofGroup(g.key).length }} {{ isPoem ? '首' : '个' }}
+          {{ session.progress?.groupCounts?.[g.key] ?? 0 }} / {{ session.progress?.groupTotals?.[g.key] ?? content.ofGroup(g.key).length }} {{ unit }}
         </div>
 
         <div v-if="!session.groupUnlocked(g.key)" :style="{ position: 'absolute', inset: 0, background: '#FFF7E6', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 4 }">
           <span style="font-weight: 800; font-size: 19px; color: var(--muted)">{{ g.name }}</span>
           <Icon name="lock" :size="30" />
-          <span style="font-weight: 700">学完上一篇的 {{ needFor(g) }} {{ isPoem ? '首' : '个' }}就开啦</span>
+          <span style="font-weight: 700">学完上一篇的 {{ needFor(g) }} {{ unit }}就开啦</span>
         </div>
       </div>
     </div>
