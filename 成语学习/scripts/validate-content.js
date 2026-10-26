@@ -1,9 +1,10 @@
 // 内容质量校验：结构、禁词、题目正确性、SVG 规则（成语 + 古诗三期 + 接龙四期）
 const fs = require('fs');
 const path = require('path');
-const { polyphonic } = require('pinyin-pro');
+const { polyphonic, pinyin } = require('pinyin-pro');
 const { edgeKeys, pinyinParts, hasToneMark } = require('../server/chain-utils');
 const { BOARDS } = require('../server/board-rules');
+const { typesOfGroup, checkDuoyinCard, duoyinReadingHints } = require('../server/shizi-rules');
 
 const SRC = path.join(__dirname, '..', '..', 'content');
 
@@ -23,6 +24,24 @@ const fail = (msg) => { errors++; console.error('  ✗ ' + msg); };
 // 去掉标点（上下句题用无标点的句子）
 const stripPunct = (s) => String(s || '').replace(/[，。？！；：、」「'\s]/g, '');
 const isHan = (ch) => /\p{Script=Han}/u.test(ch);
+
+// polyphonic 返回的是 ['cháng zhǎng'] 这种「一个字符串装全部读音」的形状，拆开才好比对
+const polyphonicReadings = (ch) => {
+  try {
+    const r = polyphonic(ch);
+    return (Array.isArray(r) ? r.join(' ') : String(r || '')).split(/\s+/).filter(Boolean);
+  } catch { return []; }
+};
+
+// 整句转拼音后按下标取那个字的读音。实测下标与字符一一对齐（标点原样占位）。
+// ⚠️ 只对实词可靠：「小树长得很快」它给 cháng/dé、「慢慢地走」给 dì，
+// 所以这个函数只用来给人提示分歧，绝不当判分依据（见 server/shizi-rules.js 的 duoyinReadingHints）。
+const readingInContext = (sentence, zi) => {
+  const chars = Array.from(String(sentence || ''));
+  const i = chars.indexOf(zi);
+  if (i < 0) return '';
+  try { return pinyin(String(sentence), { type: 'array' })[i] || ''; } catch { return ''; }
+};
 
 function checkSvg(tag, svg) {
   if (!/^<svg\s+viewBox=['"]0 0 400 300['"]/.test(svg)) fail(`${tag} SVG 根元素不符合规范`);
@@ -196,9 +215,6 @@ for (const g of POEM_GROUPS) {
 
 const SHIZI = BOARDS.find((b) => b.board === 'shizi');
 const SHIZI_PER_GROUP = 25;
-// 三题题型按篇章分两套（DESIGN.md 五期）：多音字卡上只有一个字，「给词选字」无从选起
-const SHIZI_TYPES_BY_GROUP = { duoyin: ['sound', 'sound2', 'meaning'] };
-const SHIZI_TYPES_DEFAULT = ['fill', 'word', 'meaning'];
 const shiziGroupsMeta = JSON.parse(fs.readFileSync(path.join(SRC, SHIZI.groupsFile), 'utf8'));
 const shiziIds = new Set();
 let shiziPending = 0;
@@ -219,6 +235,10 @@ for (const g of shiziGroupsMeta) {
   if (arr.length !== SHIZI_PER_GROUP) fail(`应有 ${SHIZI_PER_GROUP} 张，实际 ${arr.length} 张`);
 
   const posSeen = [new Set(), new Set(), new Set()];
+  // 多音字篇的字族是「一个字 + 它的多个读音」，chars 一条一个读音：
+  // 「族内字不重复」「word 是全体成员并列」「拼音必须带调」这三条对它都不成立（轻声 de 没有声调）
+  const isDuoyin = typesOfGroup(g.key)[0] === 'sound';
+  const readingHints = [];
 
   for (const it of arr) {
     const tag = it.word || '(?)';
@@ -232,11 +252,13 @@ for (const g of shiziGroupsMeta) {
     checkBanned(tag, 'tip', it.tip);
 
     const chars = it.chars || [];
-    if (chars.length < 2) { fail(`${tag} 字族至少 2 个字`); continue; }
+    if (chars.length < 2) { fail(`${tag} ${isDuoyin ? '至少要教 2 个读音' : '字族至少 2 个字'}`); continue; }
     const family = chars.map((c) => c.zi);
-    if (new Set(family).size !== family.length) fail(`${tag} 字族内有重复的字`);
-    if (Array.from((it.word || '').replace(/\s/g, '')).join('') !== family.join('')) fail(`${tag} word 与 chars 不一致`);
     if (chars.map((c) => c.pinyin).join(' ') !== it.pinyin) fail(`${tag} pinyin 与 chars 不一致`);
+    if (!isDuoyin) {
+      if (new Set(family).size !== family.length) fail(`${tag} 字族内有重复的字`);
+      if (Array.from((it.word || '').replace(/\s/g, '')).join('') !== family.join('')) fail(`${tag} word 与 chars 不一致`);
+    }
 
     for (const c of chars) {
       const ct = `${tag}·${c.zi || '?'}`;
@@ -244,7 +266,11 @@ for (const g of shiziGroupsMeta) {
         if (c[f] === undefined || c[f] === '') fail(`${ct} 缺 ${f}`);
       }
       if (!isHan(c.zi)) fail(`${ct} 「zi」不是汉字`);
-      if (!hasToneMark(c.pinyin)) fail(`${ct} 拼音缺声调`);
+      // 多音字的读音以 pinyin-pro 的多音列表为准（下面那条规则），轻声本来就没有声调
+      if (!isDuoyin && !hasToneMark(c.pinyin)) fail(`${ct} 拼音缺声调`);
+      if (isDuoyin && !polyphonicReadings(c.zi).includes(c.pinyin)) {
+        fail(`${ct} 读音 ${c.pinyin} 不在 pinyin-pro 的多音列表里（${polyphonicReadings(c.zi).join(' / ')}）`);
+      }
       if (!Number.isInteger(c.strokes) || c.strokes < 1 || c.strokes > 40) fail(`${ct} 笔画数 ${c.strokes} 异常`);
       if (!String(c.word || '').includes(c.zi)) fail(`${ct} 组词「${c.word}」里没有这个字`);
       if (!String(c.sentence || '').includes(c.zi)) fail(`${ct} 例句里没有这个字`);
@@ -252,7 +278,7 @@ for (const g of shiziGroupsMeta) {
     }
 
     const q = it.quiz || [];
-    const types = SHIZI_TYPES_BY_GROUP[g.key] || SHIZI_TYPES_DEFAULT;
+    const types = typesOfGroup(g.key);
     if (q.length !== 3) { fail(`${tag} 测验应有 3 题`); continue; }
     if (q.map((x) => x.type).join() !== types.join()) fail(`${tag} 三题类型顺序应为 ${types.join(' → ')}`);
 
@@ -267,8 +293,13 @@ for (const g of shiziGroupsMeta) {
       posSeen[i].add(qq.answer);
     });
 
+    if (isDuoyin) {
+      for (const e of checkDuoyinCard(it, { readingsOf: polyphonicReadings })) fail(`${tag} ${e}`);
+      readingHints.push(...duoyinReadingHints(it, readingInContext));
+      continue;
+    }
+
     // 第 1 题 给词选字：正确项是族内单字，且题干必须由该字例句挖空得来（沿用古诗 fill 的严格口径）
-    // 多音字篇第 1 题是「给词选读音」，那套规则不适用，等 duoyin 内容交稿时再补读音校验
     const a0 = q[0].options && q[0].options[q[0].answer];
     if (types[0] === 'fill') {
       if (q[0].question && !q[0].question.includes('（　）')) fail(`${tag} 给词选字题缺「（　）」`);
@@ -300,6 +331,11 @@ for (const g of shiziGroupsMeta) {
   posSeen.forEach((s, i) => {
     if (s.size < 2) fail(`${g.key} 第${i + 1}题答案全落在同一个下标，出题偷懒`);
   });
+
+  if (readingHints.length) {
+    console.log(`  ⚠ pinyin-pro 整句定音与卡上读音不一致 ${readingHints.length} 处（不算错，人工过一眼句子是不是真有歧义）：`);
+    for (const h of readingHints) console.log(`    ${h.zi} ${h.where}「${h.text}」卡上 ${h.declared} / 机器 ${h.machine}`);
+  }
 }
 if (shiziPending) console.log(`\n（识字还有 ${shiziPending} 个篇章待产出）`);
 
@@ -384,12 +420,6 @@ else {
   catch (e) { fail(`stable-edges.json 不是合法 JSON: ${e.message}`); }
 }
 if (!Array.isArray(stableEdges)) { fail('stable-edges.json 应为数组'); stableEdges = []; }
-const polyphonicReadings = (ch) => {
-  try {
-    const r = polyphonic(ch);
-    return (Array.isArray(r) ? r.join(' ') : String(r || '')).split(/\s+/).filter(Boolean);
-  } catch { return []; }
-};
 const stableMap = new Map();
 for (const e of stableEdges) {
   if (!e || typeof e.word !== 'string') { fail('stable-edges 条目缺 word'); continue; }

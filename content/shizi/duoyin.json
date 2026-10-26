@@ -1,0 +1,327 @@
+[
+  {
+    "id": "zi-chang", "group": "duoyin", "word": "长", "pinyin": "cháng zhǎng",
+    "chars": [
+      { "zi": "长", "pinyin": "cháng", "radical": "长", "strokes": 4, "word": "长江", "sentence": "唯见长江天际流。" },
+      { "zi": "长", "pinyin": "zhǎng", "radical": "长", "strokes": 4, "word": "长大", "sentence": "我长大想当老师，站在讲台上教书。" }
+    ],
+    "tip": "说的是从这头到那头距离大，读 cháng；说的是生长、变大，读 zhǎng。",
+    "quiz": [
+      { "type": "sound", "question": "「长江」的「长」读什么？", "options": ["cháng", "zhǎng", "cáng", "chǎng"], "answer": 0, "explain": "长江是从这头到那头很远，读 cháng。" },
+      { "type": "sound2", "question": "小树春天发芽，一天天长高了，这里的「长」读什么？", "options": ["zhàng", "zhǎng", "cháng", "cáng"], "answer": 1, "explain": "长高是往上长，是生长，读 zhǎng。" },
+      { "type": "meaning", "question": "哪个词里的「长」说的是「从这头到那头距离大」？", "options": ["长高", "生长", "长江", "长大"], "answer": 2, "explain": "长江又长又宽，这里的「长」说的是距离大。" }
+    ]
+  },
+  {
+    "id": "zi-hao", "group": "duoyin", "word": "好", "pinyin": "hǎo hào",
+    "chars": [
+      { "zi": "好", "pinyin": "hǎo", "radical": "女", "strokes": 6, "word": "好雨", "sentence": "好雨知时节。" },
+      { "zi": "好", "pinyin": "hào", "radical": "女", "strokes": 6, "word": "爱好", "sentence": "爸爸最大的爱好是钓鱼。" }
+    ],
+    "tip": "说的是不错、让人喜欢，读 hǎo；说的是心里喜欢、着迷，读 hào。",
+    "quiz": [
+      { "type": "sound", "question": "「爱好」的「好」读什么？", "options": ["hāo", "hào", "hǎo", "háo"], "answer": 1, "explain": "爱好是你迷着一件事，读 hào。" },
+      { "type": "sound2", "question": "好雨知时节，这里的「好」读什么？", "options": ["háo", "hāo", "hǎo", "hào"], "answer": 2, "explain": "好雨说的是这场雨下得合时、真好，读 hǎo。" },
+      { "type": "meaning", "question": "哪个词里的「好」是「心里着迷、非常喜欢」？", "options": ["好人", "好看", "好用", "爱好"], "answer": 3, "explain": "爱好就是你迷着做的那件事，读 hào。" }
+    ]
+  },
+  {
+    "id": "zi-shao", "group": "duoyin", "word": "少", "pinyin": "shǎo shào",
+    "chars": [
+      { "zi": "少", "pinyin": "shǎo", "radical": "小", "strokes": 4, "word": "多少", "sentence": "遍插茱萸少一人。" },
+      { "zi": "少", "pinyin": "shào", "radical": "小", "strokes": 4, "word": "少年", "sentence": "少小离家老大回。" }
+    ],
+    "tip": "说的是数量不大，读 shǎo；说的是年纪小，读 shào。",
+    "quiz": [
+      { "type": "sound", "question": "「少年」的「少」读什么？", "options": ["shāo", "sào", "shào", "shǎo"], "answer": 2, "explain": "少年说的是年纪小，读 shào。" },
+      { "type": "sound2", "question": "少小离家老大回，这里的「少」读什么？", "options": ["shāo", "sào", "shǎo", "shào"], "answer": 3, "explain": "这句里的「少」说的是年纪还小的时候，读 shào。" },
+      { "type": "meaning", "question": "哪个词里的「少」说的是「年纪小」？", "options": ["少年", "多少", "缺少", "减少"], "answer": 0, "explain": "少年就是年纪小的人，读 shào。" }
+    ]
+  },
+  {
+    "id": "zi-zhong", "group": "duoyin", "word": "重", "pinyin": "zhòng chóng",
+    "chars": [
+      { "zi": "重", "pinyin": "zhòng", "radical": "里", "strokes": 9, "word": "重量", "sentence": "这块石头重量不轻，两个人才抬得动。" },
+      { "zi": "重", "pinyin": "chóng", "radical": "里", "strokes": 9, "word": "万重", "sentence": "轻舟已过万重山。" }
+    ],
+    "tip": "说的是分量足、压力大，读 zhòng；说的是一层又一层、再来一次，读 chóng。",
+    "quiz": [
+      { "type": "sound", "question": "「重量」的「重」读什么？", "options": ["chóng", "zhōng", "zhǒng", "zhòng"], "answer": 3, "explain": "重量说的是东西有多沉，读 zhòng。" },
+      { "type": "sound2", "question": "轻舟已过万重山，这里的「重」读什么？", "options": ["chóng", "zhòng", "zhōng", "zhǒng"], "answer": 0, "explain": "万重山是一层又一层山，读 chóng。" },
+      { "type": "meaning", "question": "哪个词里的「重」是「一层又一层」？", "options": ["重新", "万重", "重量", "很重"], "answer": 1, "explain": "万重就是一重又一重，读 chóng。" }
+    ]
+  },
+  {
+    "id": "zi-hai", "group": "duoyin", "word": "还", "pinyin": "hái huán",
+    "chars": [
+      { "zi": "还", "pinyin": "hái", "radical": "辶", "strokes": 7, "word": "还有", "sentence": "书包里还有半块饼。" },
+      { "zi": "还", "pinyin": "huán", "radical": "辶", "strokes": 7, "word": "归还", "sentence": "借了别人的东西要按时归还。" }
+    ],
+    "tip": "说的是仍旧、依然有，读 hái；说的是把东西送回去，读 huán。",
+    "quiz": [
+      { "type": "sound", "question": "「归还」的「还」读什么？", "options": ["huán", "hái", "hāi", "huàn"], "answer": 0, "explain": "归还是把东西还回去，读 huán。" },
+      { "type": "sound2", "question": "千里江陵一日还，这里的「还」读什么？", "options": ["hái", "huán", "hàn", "huàn"], "answer": 1, "explain": "一日还说的是当天就回到江陵，是回来、回去，读 huán。" },
+      { "type": "meaning", "question": "哪个词里的「还」是「把东西送回去」？", "options": ["还要", "还好", "归还", "还有"], "answer": 2, "explain": "归还就是送回去，读 huán。" }
+    ]
+  },
+  {
+    "id": "zi-du", "group": "duoyin", "word": "都", "pinyin": "dōu dū",
+    "chars": [
+      { "zi": "都", "pinyin": "dōu", "radical": "阝", "strokes": 10, "word": "都是", "sentence": "这一整页都是没学过的新字。" },
+      { "zi": "都", "pinyin": "dū", "radical": "阝", "strokes": 10, "word": "皇都", "sentence": "绝胜烟柳满皇都。" }
+    ],
+    "tip": "说的是全、全部，读 dōu；说的是大城市、皇上住的地方，读 dū。",
+    "quiz": [
+      { "type": "sound", "question": "「皇都」的「都」读什么？", "options": ["dú", "dū", "dōu", "dòu"], "answer": 1, "explain": "皇都是皇帝住的那座大城，读 dū。" },
+      { "type": "sound2", "question": "绝胜烟柳满皇都，这里的「都」读什么？", "options": ["dú", "dōu", "dū", "dòu"], "answer": 2, "explain": "皇都是地名，一座大城，读 dū。" },
+      { "type": "meaning", "question": "哪个词里的「都」指的是皇上住的那座大城？", "options": ["都是", "全都", "都有", "皇都"], "answer": 3, "explain": "皇都是京城，读 dū；其他三个都是「全」的意思。" }
+    ]
+  },
+  {
+    "id": "zi-mei", "group": "duoyin", "word": "没", "pinyin": "méi mò",
+    "chars": [
+      { "zi": "没", "pinyin": "méi", "radical": "氵", "strokes": 7, "word": "没有", "sentence": "池子里没有水，鱼跳不出来。" },
+      { "zi": "没", "pinyin": "mò", "radical": "氵", "strokes": 7, "word": "出没", "sentence": "君看一叶舟，出没风波里。" }
+    ],
+    "tip": "说的是无、没有，读 méi；说的是钻进水里、藏起来看不见，读 mò。",
+    "quiz": [
+      { "type": "sound", "question": "「出没」的「没」读什么？", "options": ["mēi", "mó", "mò", "méi"], "answer": 2, "explain": "出没是一会儿露出来一会儿隐进去，读 mò。" },
+      { "type": "sound2", "question": "君看一叶舟，出没风波里。这里的「没」读什么？", "options": ["mēi", "mó", "méi", "mò"], "answer": 3, "explain": "小船在风浪里忽隐忽现，是被浪盖住了，读 mò。" },
+      { "type": "meaning", "question": "哪个词里的「没」是「隐在水面下、看不见」？", "options": ["出没", "没有", "没事", "没来"], "answer": 0, "explain": "出没说的是忽隐忽现，读 mò。" }
+    ]
+  },
+  {
+    "id": "zi-zhi", "group": "duoyin", "word": "只", "pinyin": "zhī zhǐ",
+    "chars": [
+      { "zi": "只", "pinyin": "zhī", "radical": "口", "strokes": 5, "word": "一只", "sentence": "一只白鹅浮在水面上。" },
+      { "zi": "只", "pinyin": "zhǐ", "radical": "口", "strokes": 5, "word": "只有", "sentence": "只在此山中。" }
+    ],
+    "tip": "数东西时读 zhī；说的是单单、此外没有，读 zhǐ。",
+    "quiz": [
+      { "type": "sound", "question": "「只有」的「只」读什么？", "options": ["zhī", "zǐ", "zhì", "zhǐ"], "answer": 3, "explain": "只有说的是单单这一样，读 zhǐ。" },
+      { "type": "sound2", "question": "只在此山中，这里的「只」读什么？", "options": ["zhǐ", "zī", "zhì", "zhī"], "answer": 0, "explain": "这句说的是他仅仅在这一座山里，别处找不到，读 zhǐ。" },
+      { "type": "meaning", "question": "哪个词里的「只」是数东西用的量词？", "options": ["只好", "一只", "只有", "只管"], "answer": 1, "explain": "一只、两只，数动物时用「只」，读 zhī。" }
+    ]
+  },
+  {
+    "id": "zi-jue", "group": "duoyin", "word": "觉", "pinyin": "jué jiào",
+    "chars": [
+      { "zi": "觉", "pinyin": "jué", "radical": "见", "strokes": 9, "word": "觉得", "sentence": "我觉得这道题有点难。" },
+      { "zi": "觉", "pinyin": "jiào", "radical": "见", "strokes": 9, "word": "睡觉", "sentence": "天黑了，小猫要睡觉了。" }
+    ],
+    "tip": "说的是感觉到、明白，读 jué；说的是睡，读 jiào。",
+    "quiz": [
+      { "type": "sound", "question": "「睡觉」的「觉」读什么？", "options": ["jiào", "jué", "jiáo", "jào"], "answer": 0, "explain": "睡觉是闭上眼睡一觉，读 jiào。" },
+      { "type": "sound2", "question": "春眠不觉晓，这里的「觉」读什么？", "options": ["zháo", "jué", "jiào", "jiáo"], "answer": 1, "explain": "不觉晓是睡得太香、没察觉天亮了，读 jué。" },
+      { "type": "meaning", "question": "哪个词里的「觉」是「睡」的意思？", "options": ["发觉", "自觉", "睡觉", "觉得"], "answer": 2, "explain": "睡觉就是睡下，读 jiào。" }
+    ]
+  },
+  {
+    "id": "zi-geng", "group": "duoyin", "word": "更", "pinyin": "gèng gēng",
+    "chars": [
+      { "zi": "更", "pinyin": "gèng", "radical": "曰", "strokes": 7, "word": "更好", "sentence": "少吃零食，身体会更好。" },
+      { "zi": "更", "pinyin": "gēng", "radical": "曰", "strokes": 7, "word": "更改", "sentence": "计划有变，日程需要更改。" }
+    ],
+    "tip": "说的是越发、比原来更甚，读 gèng；说的是改动、也指夜里的时段，读 gēng。",
+    "quiz": [
+      { "type": "sound", "question": "「更改」的「更」读什么？", "options": ["gēn", "gēng", "gèng", "gěng"], "answer": 1, "explain": "更改是把原来的改动掉，读 gēng。" },
+      { "type": "sound2", "question": "更上一层楼，这里的「更」读什么？", "options": ["gěng", "gēn", "gèng", "gēng"], "answer": 2, "explain": "更上一楼是再往上、越发往上，读 gèng。" },
+      { "type": "meaning", "question": "哪个词里的「更」是「改动、变了」？", "options": ["更好", "更多", "更长", "更改"], "answer": 3, "explain": "更改就是改动，读 gēng。" }
+    ]
+  },
+  {
+    "id": "zi-ying", "group": "duoyin", "word": "应", "pinyin": "yīng yìng",
+    "chars": [
+      { "zi": "应", "pinyin": "yīng", "radical": "广", "strokes": 7, "word": "应该", "sentence": "你自己应该早点回家。" },
+      { "zi": "应", "pinyin": "yìng", "radical": "广", "strokes": 7, "word": "答应", "sentence": "妈妈答应周末带我去看海。" }
+    ],
+    "tip": "说的是应当、该，读 yīng；说的是回答、答应、顶住，读 yìng。",
+    "quiz": [
+      { "type": "sound", "question": "「应该」的「应」读什么？", "options": ["yíng", "yǐng", "yīng", "yìng"], "answer": 2, "explain": "应该是说该这么做，读 yīng。" },
+      { "type": "sound2", "question": "怕得鱼惊不应人，这里的「应」读什么？", "options": ["yīng", "yíng", "yǐng", "yìng"], "answer": 3, "explain": "不应人是没人回答、不理睬，读 yìng。" },
+      { "type": "meaning", "question": "哪个词里的「应」是「回答、理睬」？", "options": ["答应", "应该", "应当", "应有尽有"], "answer": 0, "explain": "答应是应下别人的话，读 yìng。" }
+    ]
+  },
+  {
+    "id": "zi-jin", "group": "duoyin", "word": "尽", "pinyin": "jìn jǐn",
+    "chars": [
+      { "zi": "尽", "pinyin": "jìn", "radical": "尸", "strokes": 6, "word": "用尽", "sentence": "桶里的水已经用尽了。" },
+      { "zi": "尽", "pinyin": "jǐn", "radical": "尸", "strokes": 6, "word": "尽管", "sentence": "尽管路上很滑，他走得很稳。" }
+    ],
+    "tip": "说的是完、没有了，读 jìn；说的是只管、先顾着，读 jǐn。",
+    "quiz": [
+      { "type": "sound", "question": "「尽管」的「尽」读什么？", "options": ["jìn", "jīn", "jīng", "jǐn"], "answer": 3, "explain": "尽管是只管、先顾着前头的，读 jǐn。" },
+      { "type": "sound2", "question": "劝君更尽一杯酒，这里的「尽」读什么？", "options": ["jìn", "jǐn", "jīn", "jǐng"], "answer": 0, "explain": "更尽一杯是把这一杯喝完，读 jìn。" },
+      { "type": "meaning", "question": "哪个词里的「尽」是「没有了、用完」？", "options": ["尽力", "用尽", "尽管", "尽快"], "answer": 1, "explain": "用尽是用完了，读 jìn。" }
+    ]
+  },
+  {
+    "id": "zi-chu", "group": "duoyin", "word": "处", "pinyin": "chù chǔ",
+    "chars": [
+      { "zi": "处", "pinyin": "chù", "radical": "夂", "strokes": 5, "word": "住处", "sentence": "遥知兄弟登高处。" },
+      { "zi": "处", "pinyin": "chǔ", "radical": "夂", "strokes": 5, "word": "处理", "sentence": "这件事他自己就能处理好。" }
+    ],
+    "tip": "说的是地方，读 chù；说的是安排、交往、过日子，读 chǔ。",
+    "quiz": [
+      { "type": "sound", "question": "「处理」的「处」读什么？", "options": ["chǔ", "chù", "cù", "chú"], "answer": 0, "explain": "处理是把事情安排妥当，读 chǔ。" },
+      { "type": "sound2", "question": "遥知兄弟登高处，这里的「处」读什么？", "options": ["chú", "chù", "chǔ", "cù"], "answer": 1, "explain": "登高处说的是登高那个地方，读 chù。" },
+      { "type": "meaning", "question": "哪个词里的「处」是「地方」？", "options": ["相处", "处事", "住处", "处理"], "answer": 2, "explain": "住处是住的那个地方，读 chù。" }
+    ]
+  },
+  {
+    "id": "zi-luo", "group": "duoyin", "word": "落", "pinyin": "luò là",
+    "chars": [
+      { "zi": "落", "pinyin": "luò", "radical": "艹", "strokes": 12, "word": "落下", "sentence": "一滴水从屋檐落下。" },
+      { "zi": "落", "pinyin": "là", "radical": "艹", "strokes": 12, "word": "丢三落四", "sentence": "做事别丢三落四，出门前先点一遍。" }
+    ],
+    "tip": "说的是从高处往下掉，读 luò；说的是漏掉、忘了，读 là。",
+    "quiz": [
+      { "type": "sound", "question": "「丢三落四」的「落」读什么？", "options": ["lào", "là", "luò", "lā"], "answer": 1, "explain": "丢三落四说的是老是忘东西，读 là。" },
+      { "type": "sound2", "question": "疑是银河落九天，这里的「落」读什么？", "options": ["lā", "lào", "luò", "là"], "answer": 2, "explain": "瀑布是从很高的天上掉下来，读 luò。" },
+      { "type": "meaning", "question": "哪个词里的「落」是「漏掉、忘了」？", "options": ["落下", "落叶", "落山", "丢三落四"], "answer": 3, "explain": "丢三落四就是老是落下东西，读 là。" }
+    ]
+  },
+  {
+    "id": "zi-kong", "group": "duoyin", "word": "空", "pinyin": "kōng kòng",
+    "chars": [
+      { "zi": "空", "pinyin": "kōng", "radical": "穴", "strokes": 8, "word": "天空", "sentence": "天空蓝得像洗过一样。" },
+      { "zi": "空", "pinyin": "kòng", "radical": "穴", "strokes": 8, "word": "空地", "sentence": "屋后有一块空地，可以种瓜。" }
+    ],
+    "tip": "说的是天上、什么也没有，读 kōng；说的是腾出来、闲着，读 kòng。",
+    "quiz": [
+      { "type": "sound", "question": "「空地」的「空」读什么？", "options": ["kóng", "dòng", "kòng", "kōng"], "answer": 2, "explain": "空地是空出来的一块地，读 kòng。" },
+      { "type": "sound2", "question": "死去元知万事空，这里的「空」读什么？", "options": ["kòng", "kóng", "lòng", "kōng"], "answer": 3, "explain": "万事空是什么都没有了，读 kōng。" },
+      { "type": "meaning", "question": "哪个词里的「空」是「闲着、腾出来给人用」？", "options": ["空地", "天空", "空气", "空间"], "answer": 0, "explain": "空地是腾出来的一块地，读 kòng。" }
+    ]
+  },
+  {
+    "id": "zi-xing", "group": "duoyin", "word": "行", "pinyin": "xíng háng",
+    "chars": [
+      { "zi": "行", "pinyin": "xíng", "radical": "行", "strokes": 6, "word": "行走", "sentence": "山林里要安静行走，别惊了鸟。" },
+      { "zi": "行", "pinyin": "háng", "radical": "行", "strokes": 6, "word": "银行", "sentence": "妈妈去银行取钱。" }
+    ],
+    "tip": "说的是走，读 xíng；说的是排、列、做买卖的铺子，读 háng。",
+    "quiz": [
+      { "type": "sound", "question": "「银行」的「行」读什么？", "options": ["xíng", "xìng", "hàng", "háng"], "answer": 3, "explain": "银行是做买卖存钱的铺子，读 háng。" },
+      { "type": "sound2", "question": "李白乘舟将欲行，这里的「行」读什么？", "options": ["xíng", "háng", "hàng", "xìng"], "answer": 0, "explain": "将欲行是正要出发上路，是走，读 xíng。" },
+      { "type": "meaning", "question": "哪个词里的「行」是「走」？", "options": ["行列", "行走", "银行", "行业"], "answer": 1, "explain": "行走在路上走，读 xíng。" }
+    ]
+  },
+  {
+    "id": "zi-chao", "group": "duoyin", "word": "朝", "pinyin": "cháo zhāo",
+    "chars": [
+      { "zi": "朝", "pinyin": "cháo", "radical": "月", "strokes": 12, "word": "朝代", "sentence": "唐朝的诗人写了很多好诗。" },
+      { "zi": "朝", "pinyin": "zhāo", "radical": "月", "strokes": 12, "word": "朝雨", "sentence": "渭城朝雨浥轻尘。" }
+    ],
+    "tip": "说的是朝廷、时代，读 cháo；说的是早晨，读 zhāo。",
+    "quiz": [
+      { "type": "sound", "question": "「朝雨」的「朝」读什么？", "options": ["zhāo", "cháo", "zhào", "cáo"], "answer": 0, "explain": "朝雨是早上下的那场雨，读 zhāo。" },
+      { "type": "sound2", "question": "朝辞白帝彩云间，这里的「朝」读什么？", "options": ["cháo", "zhāo", "zhào", "cāo"], "answer": 1, "explain": "朝辞是早上告别白帝城，读 zhāo。" },
+      { "type": "meaning", "question": "哪个词里的「朝」是「早晨」？", "options": ["朝廷", "朝南", "朝雨", "朝代"], "answer": 2, "explain": "朝雨是早晨的雨，读 zhāo。" }
+    ]
+  },
+  {
+    "id": "zi-xiang", "group": "duoyin", "word": "相", "pinyin": "xiāng xiàng",
+    "chars": [
+      { "zi": "相", "pinyin": "xiāng", "radical": "目", "strokes": 9, "word": "互相", "sentence": "鹬蚌相争，谁也不让谁。" },
+      { "zi": "相", "pinyin": "xiàng", "radical": "目", "strokes": 9, "word": "照相", "sentence": "放假时我去照相。" }
+    ],
+    "tip": "说的是彼此、你来我往，读 xiāng；说的是样子、拍下来的影像，读 xiàng。",
+    "quiz": [
+      { "type": "sound", "question": "「照相」的「相」读什么？", "options": ["shàng", "xiàng", "xiāng", "xiáng"], "answer": 1, "explain": "照相是把样子拍下来，读 xiàng。" },
+      { "type": "sound2", "question": "鹬蚌相争，渔翁得利。这里的「相」读什么？", "options": ["xiáng", "shàng", "xiāng", "xiàng"], "answer": 2, "explain": "相争是你跟我来、我来跟你，读 xiāng。" },
+      { "type": "meaning", "question": "哪个词里的「相」是「样子、拍下来的影像」？", "options": ["互相", "相信", "相同", "照相"], "answer": 3, "explain": "照相留下的是人的样子，读 xiàng。" }
+    ]
+  },
+  {
+    "id": "zi-qu", "group": "duoyin", "word": "曲", "pinyin": "qū qǔ",
+    "chars": [
+      { "zi": "曲", "pinyin": "qū", "radical": "曰", "strokes": 6, "word": "弯曲", "sentence": "曲项向天歌。" },
+      { "zi": "曲", "pinyin": "qǔ", "radical": "曰", "strokes": 6, "word": "歌曲", "sentence": "这首歌曲真好听。" }
+    ],
+    "tip": "说的是不直，读 qū；说的是能唱的歌、诗的一种体裁，读 qǔ。",
+    "quiz": [
+      { "type": "sound", "question": "「歌曲」的「曲」读什么？", "options": ["qù", "chù", "qǔ", "qū"], "answer": 2, "explain": "歌曲是能唱出来的，读 qǔ。" },
+      { "type": "sound2", "question": "《塞下曲》这个诗题里的「曲」读什么？", "options": ["qù", "chù", "qū", "qǔ"], "answer": 3, "explain": "《塞下曲》是一种能吟唱的体裁，读 qǔ。" },
+      { "type": "meaning", "question": "哪个词里的「曲」是「不直」？", "options": ["弯曲", "歌曲", "曲线", "曲柄"], "answer": 0, "explain": "弯曲就是不走直线，读 qū。" }
+    ]
+  },
+  {
+    "id": "zi-tan", "group": "duoyin", "word": "弹", "pinyin": "tán dàn",
+    "chars": [
+      { "zi": "弹", "pinyin": "tán", "radical": "弓", "strokes": 11, "word": "弹琴", "sentence": "对牛弹琴，白费力。" },
+      { "zi": "弹", "pinyin": "dàn", "radical": "弓", "strokes": 11, "word": "子弹", "sentence": "枪里的子弹不能拿来玩。" }
+    ],
+    "tip": "说的是用手拨、用手指按，读 tán；说的是被射出去的那一颗，读 dàn。",
+    "quiz": [
+      { "type": "sound", "question": "「子弹」的「弹」读什么？", "options": ["tán", "dān", "tān", "dàn"], "answer": 3, "explain": "子弹是射出去的那一颗，读 dàn。" },
+      { "type": "sound2", "question": "对牛弹琴，这里的「弹」读什么？", "options": ["tán", "dàn", "tān", "dàng"], "answer": 0, "explain": "弹琴是用手指拨琴弦，读 tán。" },
+      { "type": "meaning", "question": "哪个词里的「弹」是「被射出去的那一颗东西」？", "options": ["弹力", "子弹", "弹琴", "弹簧"], "answer": 1, "explain": "子弹是枪里射出去的，读 dàn。" }
+    ]
+  },
+  {
+    "id": "zi-she", "group": "duoyin", "word": "舍", "pinyin": "shě shè",
+    "chars": [
+      { "zi": "舍", "pinyin": "shě", "radical": "舌", "strokes": 8, "word": "舍得", "sentence": "我舍不得把伞借给别人。" },
+      { "zi": "舍", "pinyin": "shè", "radical": "舌", "strokes": 8, "word": "客舍", "sentence": "客舍青青柳色新。" }
+    ],
+    "tip": "说的是放下、放弃，读 shě；说的是房子、住的地方，读 shè。",
+    "quiz": [
+      { "type": "sound", "question": "「客舍」的「舍」读什么？", "options": ["shè", "shě", "shé", "shē"], "answer": 0, "explain": "客舍是出门在外住的小房子，读 shè。" },
+      { "type": "sound2", "question": "客舍青青柳色新，这里的「舍」读什么？", "options": ["shě", "shè", "shē", "shéi"], "answer": 1, "explain": "客舍是旅店、房子，读 shè。" },
+      { "type": "meaning", "question": "哪个词里的「舍」是「房屋、住的地方」？", "options": ["舍弃", "舍不得", "客舍", "舍得"], "answer": 2, "explain": "客舍是一座房子，读 shè。" }
+    ]
+  },
+  {
+    "id": "zi-cang", "group": "duoyin", "word": "藏", "pinyin": "cáng zàng",
+    "chars": [
+      { "zi": "藏", "pinyin": "cáng", "radical": "艹", "strokes": 17, "word": "躲藏", "sentence": "不解藏踪迹，浮萍一道开。" },
+      { "zi": "藏", "pinyin": "zàng", "radical": "艹", "strokes": 17, "word": "西藏", "sentence": "西藏的天蓝得发亮。" }
+    ],
+    "tip": "说的是收起来、不让看见，读 cáng；用在西藏、宝藏这一类词里读 zàng。",
+    "quiz": [
+      { "type": "sound", "question": "「西藏」的「藏」读什么？", "options": ["cāng", "zàng", "cáng", "zhàng"], "answer": 1, "explain": "西藏是个地名，读 zàng。" },
+      { "type": "sound2", "question": "不解藏踪迹，这里的「藏」读什么？", "options": ["cāng", "zhàng", "cáng", "zàng"], "answer": 2, "explain": "藏踪迹是把痕迹遮起来、不让人看出来，读 cáng。" },
+      { "type": "meaning", "question": "哪个词里的「藏」是「收起来、别让人发现」？", "options": ["西藏", "藏族", "宝藏", "躲藏"], "answer": 3, "explain": "躲藏是把自己藏起来，读 cáng。" }
+    ]
+  },
+  {
+    "id": "zi-shu", "group": "duoyin", "word": "数", "pinyin": "shù shǔ",
+    "chars": [
+      { "zi": "数", "pinyin": "shù", "radical": "攵", "strokes": 13, "word": "数字", "sentence": "这页纸上写着十个数字。" },
+      { "zi": "数", "pinyin": "shǔ", "radical": "攵", "strokes": 13, "word": "数一数", "sentence": "我来数一数有几个苹果。" }
+    ],
+    "tip": "说的是数目、数字，读 shù；说的是一一个一个地点，读 shǔ。",
+    "quiz": [
+      { "type": "sound", "question": "「数一数」的「数」读什么？", "options": ["shú", "sù", "shǔ", "shù"], "answer": 2, "explain": "数一生二是数着数，读 shǔ。" },
+      { "type": "sound2", "question": "钟山只隔数重山，这里的「数」读什么？", "options": ["shǔ", "sù", "shú", "shù"], "answer": 3, "explain": "数重山是几层山，说的是数目，读 shù。" },
+      { "type": "meaning", "question": "哪个词里的「数」是「一个一个地点」？", "options": ["数一数", "数字", "数学", "次数"], "answer": 0, "explain": "数一数是数着点，读 shǔ。" }
+    ]
+  },
+  {
+    "id": "zi-di", "group": "duoyin", "word": "地", "pinyin": "dì de",
+    "chars": [
+      { "zi": "地", "pinyin": "dì", "radical": "土", "strokes": 6, "word": "土地", "sentence": "疑是地上霜。" },
+      { "zi": "地", "pinyin": "de", "radical": "土", "strokes": 6, "word": "慢慢地", "sentence": "田里的黄牛慢慢地走。" }
+    ],
+    "tip": "说的是大地、泥土，读 dì；跟在动词后面说「怎么做的」，读轻声 de。",
+    "quiz": [
+      { "type": "sound", "question": "「土地」的「地」读什么？", "options": ["de", "dī", "dí", "dì"], "answer": 3, "explain": "土地是脚下这片泥土，读 dì。" },
+      { "type": "sound2", "question": "田里的黄牛慢慢地走，这里的「地」读什么？", "options": ["de", "dì", "dī", "dǐ"], "answer": 0, "explain": "慢慢地是说怎么走，跟在动词后面读轻声 de。" },
+      { "type": "meaning", "question": "哪个词里的「地」要读轻声？", "options": ["地上", "慢慢地", "土地", "地方"], "answer": 1, "explain": "慢慢地跟在动词后面，读轻声 de。" }
+    ]
+  },
+  {
+    "id": "zi-de", "group": "duoyin", "word": "得", "pinyin": "dé de",
+    "chars": [
+      { "zi": "得", "pinyin": "dé", "radical": "彳", "strokes": 11, "word": "得到", "sentence": "谁言寸草心，报得三春晖。" },
+      { "zi": "得", "pinyin": "de", "radical": "彳", "strokes": 11, "word": "跑得快", "sentence": "他跑得很快。" }
+    ],
+    "tip": "说的是拿到、能够，读 dé；跟在动词后面说做得怎么样，读轻声 de。",
+    "quiz": [
+      { "type": "sound", "question": "「得到」的「得」读什么？", "options": ["dé", "de", "děi", "dè"], "answer": 0, "explain": "得到是拿到了，读 dé。" },
+      { "type": "sound2", "question": "他跑得很快，这里的「得」读什么？", "options": ["dèi", "de", "dé", "děi"], "answer": 1, "explain": "跑得很快是说跑的结果，跟在动词后面读轻声 de。" },
+      { "type": "meaning", "question": "哪个词里的「得」是「拿到、获得」？", "options": ["显得", "得力", "得到", "跑得快"], "answer": 2, "explain": "得到是拿到了东西，读 dé。" }
+    ]
+  }
+]

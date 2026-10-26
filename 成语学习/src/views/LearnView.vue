@@ -30,8 +30,22 @@ const rubyAll = ref(
     ? (rubyStored === null ? !isShizi.value : rubyStored === '1')
     : !!session.kid?.pinyinAll
 )
-// 点字出的拼音要和卡片上声明的读音一致——多音字尤其不能让 pinyin-pro 现场猜
-const ziFixes = computed(() => Object.fromEntries((item.value?.chars || []).map((c) => [c.zi, c.pinyin])))
+// 点字出的拼音要和卡片上声明的读音一致——多音字尤其不能让 pinyin-pro 现场猜。
+// 多音字卡上同一个字会出现多次、读音各不相同，卡片级的表会互相覆盖，所以按例句逐条钉。
+const fixesFor = (c) => ({
+  ...Object.fromEntries((item.value?.chars || []).map((x) => [x.zi, x.pinyin])),
+  [c.zi]: c.pinyin,
+})
+// 田字格按字归并：多音字卡的 chars 是一条一个读音，直接铺会把同一个字画成两格、看着像渲染 bug。
+// 一格只练一个字形，读音并列在格子下面，具体到词怎么读交给「用一用」。
+const ziCells = computed(() => {
+  const byZi = new Map()
+  for (const c of item.value?.chars || []) {
+    if (!byZi.has(c.zi)) byZi.set(c.zi, { zi: c.zi, pinyins: [], radical: c.radical, strokes: c.strokes })
+    byZi.get(c.zi).pinyins.push(c.pinyin)
+  }
+  return [...byZi.values()]
+})
 async function toggleRuby() {
   rubyAll.value = !rubyAll.value
   if (isShizi.value || isPoem.value) {
@@ -69,13 +83,13 @@ const capped = computed(() => {
     <template v-if="isShizi">
       <div class="card pop-in" style="margin-top: 16px">
         <div class="zi-row">
-          <div v-for="c in item.chars" :key="c.zi" class="zi-cell">
+          <div v-for="g in ziCells" :key="g.zi" class="zi-cell">
             <div class="tian" :style="{ borderColor: group?.color || '#E8DFC8' }">
               <span class="tian-h"></span><span class="tian-v"></span>
-              <b class="tian-zi">{{ c.zi }}</b>
+              <b class="tian-zi">{{ g.zi }}</b>
             </div>
-            <div class="zi-pinyin">{{ c.pinyin }}</div>
-            <div class="zi-meta">部首 {{ c.radical }} · {{ c.strokes }} 画</div>
+            <div class="zi-pinyin">{{ g.pinyins.join(' / ') }}</div>
+            <div class="zi-meta">部首 {{ g.radical }} · {{ g.strokes }} 画</div>
           </div>
         </div>
         <div style="display: flex; align-items: center; gap: 10px; margin-top: 6px">
@@ -93,9 +107,9 @@ const capped = computed(() => {
       <div class="card" style="margin-top: 16px">
         <h2 style="margin: 0 0 10px">✏️ 用一用</h2>
         <p style="margin: 0 0 8px; color: var(--muted); font-size: 15px" v-if="!rubyAll">遇到不认识的字，点一下它就有拼音</p>
-        <div v-for="c in item.chars" :key="c.zi" class="zi-usage">
+        <div v-for="c in item.chars" :key="c.zi + c.pinyin" class="zi-usage">
           <div class="zi-word"><b>{{ c.word }}</b><span style="color: var(--muted); font-size: 15px; margin-left: 8px">{{ c.pinyin }}</span></div>
-          <PinyinText :text="c.sentence" :ruby="rubyAll" :fixes="ziFixes" />
+          <PinyinText :text="c.sentence" :ruby="rubyAll" :fixes="fixesFor(c)" />
         </div>
       </div>
     </template>

@@ -38,9 +38,9 @@ const learnName = computed(() => content.routeName('learn', board.value))
       >
         <div :style="{ background: '#FFF3D6', borderRadius: 14, minWidth: 84, height: 62, padding: '0 10px', display: 'flex', alignItems: 'center', justifyContent: 'center', flex: 'none', overflow: 'hidden' }">
           <span v-if="it.illustration" class="thumb-illo" v-html="it.illustration"></span>
-          <!-- 识字卡没有插图，缩略位直接给字形 -->
+          <!-- 识字卡没有插图，缩略位直接给字形；多音字卡chars是同字多读音，去重才不会出现「长长」 -->
           <b v-else :style="{ fontSize: 25, fontWeight: 800, color: group.color, letterSpacing: '3px' }">
-            {{ it.chars.map((c) => c.zi).join('') }}
+            {{ [...new Set(it.chars.map((c) => c.zi))].join('') }}
           </b>
         </div>
         <div style="flex: 1; min-width: 0">

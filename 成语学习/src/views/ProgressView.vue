@@ -22,6 +22,8 @@ async function logout() {
 const earned = (id) => session.progress?.badges?.includes(id)
 const weekday = (dateStr) => '日一二三四五六'[new Date(dateStr + 'T00:00:00').getDay()]
 const boardLearned = (board) => session.progress?.boardCounts?.[board] || 0
+// 图标跟首页的板块身份保持一致（🏮 成语 / 📜 古诗 / ✏️ 识字），孩子在同一排里认同一个符号
+const BOARD_STATS = { idiom: ['🏮', '#F5B841'], poem: ['📜', '#6FA8DC'], shizi: ['✏️', '#5E8C61'] }
 </script>
 
 <template>
@@ -35,21 +37,16 @@ const boardLearned = (board) => session.progress?.boardCounts?.[board] || 0
       <button class="btn ghost" style="margin-left: auto; min-height: 46px; font-size: 16px; box-shadow: none" @click="router.push({ name: 'dressup' })">装扮间</button>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 14px; margin-bottom: 20px">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(118px, 1fr)); gap: 14px; margin-bottom: 20px">
       <div class="card" style="text-align: center; padding: 16px 8px">
         <Icon name="star" :size="30" style="color: #F5B841" />
         <div style="font-size: 28px; font-weight: 800">{{ session.progress?.totalStars ?? 0 }}</div>
         <div style="color: var(--muted); font-size: 14px">星星钱包</div>
       </div>
-      <div class="card" style="text-align: center; padding: 16px 8px">
-        <Icon name="check" :size="30" style="color: #F5B841" />
-        <div style="font-size: 28px; font-weight: 800">{{ boardLearned('idiom') }}</div>
-        <div style="color: var(--muted); font-size: 14px">学会的成语</div>
-      </div>
-      <div class="card" style="text-align: center; padding: 16px 8px">
-        <Icon name="book" :size="30" style="color: #6FA8DC" />
-        <div style="font-size: 28px; font-weight: 800">{{ boardLearned('poem') }}</div>
-        <div style="color: var(--muted); font-size: 14px">学会的古诗</div>
+      <div v-for="b in BOARDS" :key="b.board" class="card" style="text-align: center; padding: 16px 8px">
+        <div style="font-size: 28px; line-height: 30px">{{ BOARD_STATS[b.board]?.[0] || '📚' }}</div>
+        <div style="font-size: 28px; font-weight: 800">{{ boardLearned(b.board) }}</div>
+        <div style="color: var(--muted); font-size: 14px">学会的{{ b.name }}</div>
       </div>
       <div class="card" style="text-align: center; padding: 16px 8px">
         <Icon name="flame" :size="30" style="color: #E8604C" />

@@ -40,7 +40,12 @@ const j = (r) => r.json();
   const shiziGroup = content.shiziGroups[0].key;
   const shiziCards = content.shiziItems;
 
-  log('内容含 60 成语 + 75 古诗 + 25 识字卡', content.idioms.length === 60 && content.poems.length === 75 && content.poemGroups.length === 5 && shiziCards.length === 25);
+  // 识字按篇章生产，总数会随交稿变化：写成死数字的话每交一篇都要来改一次断言
+  const shiziPerGroup = {};
+  for (const c of shiziCards) shiziPerGroup[c.group] = (shiziPerGroup[c.group] || 0) + 1;
+  const shiziOk = Object.values(shiziPerGroup).every((n) => n === 25) && Object.keys(shiziPerGroup).length === content.shiziGroups.length;
+  log(`内容含 60 成语 + 75 古诗 + 识字每篇 25 张（已产出 ${content.shiziGroups.length} 篇）`,
+    content.idioms.length === 60 && content.poems.length === 75 && content.poemGroups.length === 5 && shiziOk);
 
   const me = await fetch(base + '/me', { headers: H }).then(j);
   let p = await fetch(base + '/progress', { headers: H }).then(j);
