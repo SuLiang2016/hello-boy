@@ -83,7 +83,7 @@ const backupMsg = ref('')
 const restoreInput = ref(null)
 function downloadBackup() {
   backupMsg.value = ''
-  const url = '/api/parent/export'
+  const url = `${import.meta.env.BASE_URL}api/parent/export`
   fetch(url, { headers: { Authorization: 'Bearer ' + parentToken() } })
     .then((r) => {
       if (!r.ok) throw new Error('导出失败')

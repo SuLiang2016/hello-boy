@@ -41,6 +41,38 @@ npm run dev                # 前端开发模式（5173，代理 API 到 4173）
 npm run smoke              # API 冒烟测试（需要一个运行中的服务）
 ```
 
+## 云端部署（腾讯云轻量应用服务器）
+
+线上地址：<http://139.199.231.204/hello-boy/>（根路径 `/` 会 302 跳到该地址）
+
+| 项 | 位置 |
+|----|------|
+| 服务器 | 广州地域 `lhins-rz6zpyi7`，Ubuntu 24.04，2C2G，公网 IP 139.199.231.204 |
+| 代码 | `/opt/hello-boy`（dist + server + src/assets/content.json + node_modules，运行用户 ubuntu） |
+| 数据 | `/opt/hello-boy/data/app.db`（SQLite，WAL；改数据只动这个目录） |
+| 进程 | systemd `hello-boy.service`，监听 `127.0.0.1:4173`，开机自启 |
+| 入口 | nginx `sites-available/hello-boy`，`/hello-boy/` 剥前缀转发到 4173 |
+| 运行环境 | Node 22.22.2，装在 `/opt/node22`（`/usr/local/bin/node` 软链） |
+| 日志 | `journalctl -u hello-boy -f`；`/var/log/nginx/access.log` |
+
+部署在子路径，构建时必须带前缀（`vite.config.js` 读 `APP_BASE`，路由与 API 走 `import.meta.env.BASE_URL`）：
+
+```bash
+APP_BASE=/hello-boy/ npm run build      # Git Bash 里需加 MSYS_NO_PATHCONV=1，否则路径被转换
+```
+
+日常更新流程（**`src/assets/content.json` 必须一起传**，服务端运行时读它，漏了所有读内容的接口都会 500）：
+
+```bash
+# 本机构建后打包上传
+tar czf /tmp/hello-boy-app.tar.gz -C 成语学习 dist server src/assets/content.json package.json package-lock.json
+scp /tmp/hello-boy-app.tar.gz ubuntu@139.199.231.204:/tmp/
+# 服务器上替换并重启（data/ 不受影响）
+ssh ubuntu@139.199.231.204 'sudo tar xzf /tmp/hello-boy-app.tar.gz -C /opt/hello-boy && sudo systemctl restart hello-boy'
+```
+
+服务器原有 `delivery-assistant`（Java，8321，nginx `/govern-copilot/`）已按要求停用并取消开机自启，文件仍在 `/opt/delivery-assistant` 与 `/etc/systemd/system/delivery-assistant.service`；如需恢复：`sudo systemctl enable --now delivery-assistant` 并把 `sites-enabled` 里的旧站恢复（两者都用 `listen 80 default_server`，不能同时启用）。
+
 ## 目录
 
 ```

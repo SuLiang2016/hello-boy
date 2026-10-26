@@ -1,0 +1,6 @@
+[
+  { "key": "xingjin", "name": "形近字", "motto": "长得像的字", "color": "#4A7FB5" },
+  { "key": "duoyin", "name": "多音字", "motto": "一字多音", "color": "#F5B841" },
+  { "key": "tongyin", "name": "同音字", "motto": "同音不同字", "color": "#5E8C61" },
+  { "key": "yicuo", "name": "易错字", "motto": "容易写错的字", "color": "#A67AB5" }
+]

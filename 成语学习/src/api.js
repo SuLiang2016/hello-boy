@@ -12,7 +12,7 @@ export async function api(path, { method = 'GET', body, token, parent = false } 
   if (body !== undefined) headers['Content-Type'] = 'application/json'
   const t = token ?? (parent ? parentToken() : kidToken())
   if (t) headers['Authorization'] = `Bearer ${t}`
-  const res = await fetch(`/api${path}`, {
+  const res = await fetch(`${import.meta.env.BASE_URL}api${path}`, {
     method,
     headers,
     body: body !== undefined ? JSON.stringify(body) : undefined,

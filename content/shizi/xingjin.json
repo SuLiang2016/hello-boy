@@ -1,0 +1,416 @@
+[
+  {
+    "id": "zi-ren",
+    "group": "xingjin",
+    "word": "人 入 八",
+    "pinyin": "rén rù bā",
+    "chars": [
+      { "zi": "人", "pinyin": "rén", "radical": "人", "strokes": 2, "word": "大人", "sentence": "门口站着一个大人。" },
+      { "zi": "入", "pinyin": "rù", "radical": "入", "strokes": 2, "word": "进入", "sentence": "我们排好队进入教室。" },
+      { "zi": "八", "pinyin": "bā", "radical": "八", "strokes": 2, "word": "八个", "sentence": "盘子里放了八个苹果。" }
+    ],
+    "tip": "人是一撇一捺手拉手，入是撇短捺长头碰头，八是两笔分开、中间空一块。",
+    "quiz": [
+      { "type": "fill", "question": "我们排好队（　）教室。", "options": ["入", "人", "八", "又"], "answer": 0, "explain": "进教室要用「入」，撇短捺长头碰头；「人」是站着的那个人。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["八入个", "八个人", "人个八", "入个儿"], "answer": 1, "explain": "数字是「八」，两笔分开；那个人是「人」。" },
+      { "type": "meaning", "question": "哪个字表示「从外面进到里面」？", "options": ["八", "大", "入", "人"], "answer": 2, "explain": "「入」就是进去，「人」说的是一个人。" }
+    ]
+  },
+  {
+    "id": "zi-ri",
+    "group": "xingjin",
+    "word": "日 曰 目",
+    "pinyin": "rì yuē mù",
+    "chars": [
+      { "zi": "日", "pinyin": "rì", "radical": "日", "strokes": 4, "word": "日出", "sentence": "清晨的日出把山染红了。" },
+      { "zi": "曰", "pinyin": "yuē", "radical": "曰", "strokes": 4, "word": "子曰", "sentence": "古书里「子曰」就是孔子在说话。" },
+      { "zi": "目", "pinyin": "mù", "radical": "目", "strokes": 5, "word": "目光", "sentence": "他的目光一直望着远处的山。" }
+    ],
+    "tip": "日字瘦瘦的，曰字扁扁的，目字站着、里面还有两横。",
+    "quiz": [
+      { "type": "fill", "question": "古书里「子（　）」就是孔子在说话。", "options": ["目", "曰", "日", "口"], "answer": 1, "explain": "古人说「曰」就是说，扁扁的那个是「曰」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["日光", "曰光", "目光", "口光"], "answer": 2, "explain": "眼睛看东西，用的是「目光」。" },
+      { "type": "meaning", "question": "哪个字本来就是「眼睛」的意思？", "options": ["目", "日", "曰", "田"], "answer": 0, "explain": "「目」就是眼睛，所以带目字旁的字都跟眼睛有关。" }
+    ]
+  },
+  {
+    "id": "zi-niu",
+    "group": "xingjin",
+    "word": "牛 午",
+    "pinyin": "niú wǔ",
+    "chars": [
+      { "zi": "牛", "pinyin": "niú", "radical": "牛", "strokes": 4, "word": "黄牛", "sentence": "田里的黄牛慢慢地走。" },
+      { "zi": "午", "pinyin": "wǔ", "radical": "十", "strokes": 4, "word": "中午", "sentence": "中午我们吃面条。" }
+    ],
+    "tip": "牛的一竖伸出头顶，午的一竖不出头。",
+    "quiz": [
+      { "type": "fill", "question": "中（　）我们吃面条。", "options": ["牛", "干", "午", "年"], "answer": 2, "explain": "「午」的一竖不出头，出头就成了「牛」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["黄牛", "黄午", "王牛", "黄干"], "answer": 0, "explain": "田里那头是黄牛，「牛」的一竖出头。" },
+      { "type": "meaning", "question": "哪个字说的是「十二点前后那段时间」？", "options": ["牛", "午", "半", "早"], "answer": 1, "explain": "中午的「午」，一竖不出头。" }
+    ]
+  },
+  {
+    "id": "zi-niao",
+    "group": "xingjin",
+    "word": "鸟 乌",
+    "pinyin": "niǎo wū",
+    "chars": [
+      { "zi": "鸟", "pinyin": "niǎo", "radical": "鸟", "strokes": 5, "word": "小鸟", "sentence": "树枝上停着一只小鸟。" },
+      { "zi": "乌", "pinyin": "wū", "radical": "丿", "strokes": 4, "word": "乌鸦", "sentence": "屋顶上落了一只乌鸦。" }
+    ],
+    "tip": "鸟字里有一点，那是它的眼睛；乌鸦浑身黑，眼睛也黑得看不见，所以「乌」少了那一点。",
+    "quiz": [
+      { "type": "fill", "question": "屋顶上落了一只（　）鸦。", "options": ["乌", "鸟", "马", "岛"], "answer": 0, "explain": "乌鸦黑得连眼睛都看不见，所以「乌」没有那一点。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["小乌", "鸟鸦", "小鸟", "鸟雅"], "answer": 2, "explain": "会飞的那只是小鸟，「鸟」字里有一点眼睛。" },
+      { "type": "meaning", "question": "哪个字表示「黑得什么都看不清」？", "options": ["鸟", "乌", "黑", "马"], "answer": 1, "explain": "「乌」就是黑，乌鸦、乌云都用它。" }
+    ]
+  },
+  {
+    "id": "zi-tian",
+    "group": "xingjin",
+    "word": "天 夫 无",
+    "pinyin": "tiān fū wú",
+    "chars": [
+      { "zi": "天", "pinyin": "tiān", "radical": "大", "strokes": 4, "word": "天空", "sentence": "天上的云慢慢地飘。" },
+      { "zi": "夫", "pinyin": "fū", "radical": "大", "strokes": 4, "word": "农夫", "sentence": "农夫在田里锄地。" },
+      { "zi": "无", "pinyin": "wú", "radical": "无", "strokes": 4, "word": "无边", "sentence": "大海一望无边。" }
+    ],
+    "tip": "天字头顶是一横，夫字头顶露出一撇，无字底下像个「儿」。",
+    "quiz": [
+      { "type": "fill", "question": "守株待兔里，那个农（　）天天等着兔子撞树桩。", "options": ["天", "夫", "无", "大"], "answer": 1, "explain": "种田的人是农夫，「夫」头顶露出一撇。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["天空", "夫空", "大空", "无空"], "answer": 0, "explain": "头顶上的是天空，「天」字头顶是一横。" },
+      { "type": "meaning", "question": "哪个字表示「没有」？", "options": ["天", "夫", "无", "大"], "answer": 2, "explain": "「无」就是没有，一望无边就是看不到头。" }
+    ]
+  },
+  {
+    "id": "zi-wang",
+    "group": "xingjin",
+    "word": "王 玉 主",
+    "pinyin": "wáng yù zhǔ",
+    "chars": [
+      { "zi": "王", "pinyin": "wáng", "radical": "王", "strokes": 4, "word": "国王", "sentence": "国王住在王宫里。" },
+      { "zi": "玉", "pinyin": "yù", "radical": "玉", "strokes": 5, "word": "玉米", "sentence": "奶奶家种了很多玉米。" },
+      { "zi": "主", "pinyin": "zhǔ", "radical": "丶", "strokes": 5, "word": "主人", "sentence": "小狗认得自己的主人。" }
+    ],
+    "tip": "王字三横一竖；玉字腰上多一点，那点就是身上的玉；主字头顶一点，像灯芯上的火苗。",
+    "quiz": [
+      { "type": "fill", "question": "奶奶家种了很多（　）米。", "options": ["王", "主", "玉", "生"], "answer": 2, "explain": "玉米的「玉」，腰上那一点不能丢。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["主玉", "主人", "王人", "主入"], "answer": 1, "explain": "小狗认得的是主人，「主」头顶有一点。" },
+      { "type": "meaning", "question": "哪个字表示「当家的那个人」？", "options": ["主", "王", "玉", "土"], "answer": 0, "explain": "「主」就是当头儿的，主人、公主都用它。" }
+    ]
+  },
+  {
+    "id": "zi-bai",
+    "group": "xingjin",
+    "word": "白 自 百",
+    "pinyin": "bái zì bǎi",
+    "chars": [
+      { "zi": "白", "pinyin": "bái", "radical": "白", "strokes": 5, "word": "白云", "sentence": "天上的白云像棉花糖。" },
+      { "zi": "自", "pinyin": "zì", "radical": "自", "strokes": 6, "word": "自己", "sentence": "我自己整理书包。" },
+      { "zi": "百", "pinyin": "bǎi", "radical": "白", "strokes": 6, "word": "一百", "sentence": "我数到一百颗星星。" }
+    ],
+    "tip": "白字里面一横，自字里面两横（那本来是个鼻子），百字在白的头顶加一横。",
+    "quiz": [
+      { "type": "fill", "question": "我数到一（　）颗星星。", "options": ["百", "白", "自", "日"], "answer": 0, "explain": "一百的「百」，是「白」头顶加一横。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["己自", "自己", "白己", "自百"], "answer": 1, "explain": "自己做事的「自」，里面有两横。" },
+      { "type": "meaning", "question": "哪个字表示「本人、不靠别人」？", "options": ["白", "百", "自", "日"], "answer": 2, "explain": "「自」就是本人，自己、自然都用它。" }
+    ]
+  },
+  {
+    "id": "zi-dao",
+    "group": "xingjin",
+    "word": "刀 力 刃",
+    "pinyin": "dāo lì rèn",
+    "chars": [
+      { "zi": "刀", "pinyin": "dāo", "radical": "刀", "strokes": 2, "word": "小刀", "sentence": "爸爸用小刀削苹果。" },
+      { "zi": "力", "pinyin": "lì", "radical": "力", "strokes": 2, "word": "力气", "sentence": "他力气很大，能搬起一箱书。" },
+      { "zi": "刃", "pinyin": "rèn", "radical": "刀", "strokes": 3, "word": "刀刃", "sentence": "刀刃很锋利，别用手碰。" }
+    ],
+    "tip": "刀是一笔横折钩加一撇；力字多一撇，像胳膊在使劲；刃字在刀口上点一点，指的就是那条边。",
+    "quiz": [
+      { "type": "fill", "question": "他（　）气很大，能搬起一箱书。", "options": ["刀", "力", "刃", "万"], "answer": 1, "explain": "使劲要用「力」，比「刀」多一撇。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["刀力", "力刃", "刀刃", "刃刀"], "answer": 2, "explain": "刀最锋利的那条边叫刀刃，那一点就是指刀口。" },
+      { "type": "meaning", "question": "哪个字指的是「刀最锋利的那一条边」？", "options": ["刃", "刀", "力", "分"], "answer": 0, "explain": "「刃」在刀口上点了一点，专门指那条边。" }
+    ]
+  },
+  {
+    "id": "zi-mu",
+    "group": "xingjin",
+    "word": "木 本 术",
+    "pinyin": "mù běn shù",
+    "chars": [
+      { "zi": "木", "pinyin": "mù", "radical": "木", "strokes": 4, "word": "木头", "sentence": "这张桌子是木头做的。" },
+      { "zi": "本", "pinyin": "běn", "radical": "木", "strokes": 5, "word": "书本", "sentence": "我把书本放进书包。" },
+      { "zi": "术", "pinyin": "shù", "radical": "木", "strokes": 5, "word": "魔术", "sentence": "台上的人在变魔术。" }
+    ],
+    "tip": "木是一棵树；本在树底下加一横，指的是树根，所以「本」是最要紧的那个；术比木多一点。",
+    "quiz": [
+      { "type": "fill", "question": "台上的人在变魔（　）。", "options": ["木", "本", "术", "末"], "answer": 2, "explain": "魔术的「术」，是「木」字多了一点。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["书本", "书木", "书术", "本本"], "answer": 0, "explain": "一本书的「本」，底下那一横是树根。" },
+      { "type": "meaning", "question": "「本」字底下那一横，指的是树的哪个部分？", "options": ["树枝", "树根", "树叶", "树干"], "answer": 1, "explain": "树根是树最要紧的地方，所以「本」是根本的意思。" }
+    ]
+  },
+  {
+    "id": "zi-er",
+    "group": "xingjin",
+    "word": "儿 几 凡",
+    "pinyin": "ér jǐ fán",
+    "chars": [
+      { "zi": "儿", "pinyin": "ér", "radical": "儿", "strokes": 2, "word": "儿童", "sentence": "儿童节是六月一日。" },
+      { "zi": "几", "pinyin": "jǐ", "radical": "几", "strokes": 2, "word": "几个", "sentence": "桌上有几个苹果？" },
+      { "zi": "凡", "pinyin": "fán", "radical": "几", "strokes": 3, "word": "平凡", "sentence": "他是个平凡的人，却做了不平凡的事。" }
+    ],
+    "tip": "儿字两笔，一撇一竖弯钩；几字有弯钩，像一张小桌子；凡字在几里加一点。",
+    "quiz": [
+      { "type": "fill", "question": "桌上有（　）个苹果？", "options": ["几", "儿", "凡", "九"], "answer": 0, "explain": "问数量用「几」，像一张小桌子。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["儿个", "凡童", "儿童", "儿重"], "answer": 2, "explain": "小孩是儿童，「儿」字两笔。" },
+      { "type": "meaning", "question": "哪个字表示「平平常常、没什么特别」？", "options": ["儿", "凡", "几", "丸"], "answer": 1, "explain": "平凡的「凡」，是「几」字里加了一点。" }
+    ]
+  },
+  {
+    "id": "zi-wei",
+    "group": "xingjin",
+    "word": "未 末",
+    "pinyin": "wèi mò",
+    "chars": [
+      { "zi": "未", "pinyin": "wèi", "radical": "木", "strokes": 5, "word": "未来", "sentence": "未来的世界会是什么样？" },
+      { "zi": "末", "pinyin": "mò", "radical": "木", "strokes": 5, "word": "末尾", "sentence": "故事的末尾，农夫的田全荒了。" }
+    ],
+    "tip": "未是上短下长——树还没长开；末是上长下短——最长那一横是树梢，所以「末」是最后。",
+    "quiz": [
+      { "type": "fill", "question": "故事的（　）尾，农夫的田全荒了。", "options": ["未", "末", "木", "本"], "answer": 1, "explain": "最后的地方是末尾，「末」上面那一横最长，是树梢。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["未来", "末来", "未耒", "末耒"], "answer": 0, "explain": "还没到的日子是未来，「未」上短下长。" },
+      { "type": "meaning", "question": "哪个字表示「最后、结尾」？", "options": ["未", "木", "末", "本"], "answer": 2, "explain": "「末」上面一横最长，指的是树梢，也就是最后。" }
+    ]
+  },
+  {
+    "id": "zi-ji",
+    "group": "xingjin",
+    "word": "己 已 巳",
+    "pinyin": "jǐ yǐ sì",
+    "chars": [
+      { "zi": "己", "pinyin": "jǐ", "radical": "己", "strokes": 3, "word": "自己", "sentence": "莫愁前路无知己——好朋友最懂你。" },
+      { "zi": "已", "pinyin": "yǐ", "radical": "己", "strokes": 3, "word": "已经", "sentence": "天已经黑了，快回家吧。" },
+      { "zi": "巳", "pinyin": "sì", "radical": "己", "strokes": 3, "word": "巳蛇", "sentence": "十二生肖里巳排第六，巳蛇就是蛇。" }
+    ],
+    "tip": "己字开着口，说的是自己；已字封了一半，事情做了一半；巳字全封住，一点口都不开。",
+    "quiz": [
+      { "type": "fill", "question": "天（　）经黑了，快回家吧。", "options": ["己", "巳", "已", "巴"], "answer": 2, "explain": "已经的「已」封了一半口，全封住的是「巳」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["已己", "自己", "已巳", "自巳"], "answer": 1, "explain": "自己的「己」是完全开着口的。" },
+      { "type": "meaning", "question": "哪个字是完全封住口的？", "options": ["巳", "已", "己", "巴"], "answer": 0, "explain": "「巳」一点口都不开，「已」半开，「己」全开。" }
+    ]
+  },
+  {
+    "id": "zi-mi",
+    "group": "xingjin",
+    "word": "蜜 密",
+    "pinyin": "mì mì",
+    "chars": [
+      { "zi": "蜜", "pinyin": "mì", "radical": "宀", "strokes": 14, "word": "蜂蜜", "sentence": "采得百花成蜜后——蜜蜂酿的蜜真甜。" },
+      { "zi": "密", "pinyin": "mì", "radical": "宀", "strokes": 11, "word": "秘密", "sentence": "这是我和好朋友之间的秘密。" }
+    ],
+    "tip": "蜜底下是虫，蜂蜜是小虫子（蜜蜂）酿的；密底下是山，秘密像藏进山里，谁也不知道。",
+    "quiz": [
+      { "type": "fill", "question": "临行（　）密缝，意恐迟迟归。", "options": ["密", "蜜", "宓", "必"], "answer": 0, "explain": "针脚又细又多，是「密」，底下是山。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["蜂密", "蜂蜜", "密蜂", "密蜜"], "answer": 1, "explain": "蜜蜂酿的是蜂蜜，虫字底的那个才是「蜜」。" },
+      { "type": "meaning", "question": "哪个字说的是「不让人知道的事」？", "options": ["蜜", "虫", "密", "甜"], "answer": 2, "explain": "秘密的「密」，底下是山，藏得住。" }
+    ]
+  },
+  {
+    "id": "zi-lan",
+    "group": "xingjin",
+    "word": "篮 蓝",
+    "pinyin": "lán lán",
+    "chars": [
+      { "zi": "篮", "pinyin": "lán", "radical": "竹", "strokes": 16, "word": "竹篮", "sentence": "竹篮打水，水全漏光了。" },
+      { "zi": "蓝", "pinyin": "lán", "radical": "艹", "strokes": 13, "word": "蓝天", "sentence": "春来江水绿如蓝。" }
+    ],
+    "tip": "篮子是竹条编的，所以顶上是竹字头；蓝是一种草，能染出蓝色，所以顶上是草字头。",
+    "quiz": [
+      { "type": "fill", "question": "春来江水绿如（　）。", "options": ["篮", "蓝", "兰", "监"], "answer": 1, "explain": "江水绿得像蓝草染过，草字头的「蓝」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["竹蓝", "蓝子", "竹篮", "篮天"], "answer": 2, "explain": "竹条编的是竹篮，竹字头。" },
+      { "type": "meaning", "question": "哪个字的东西是用竹条编的？", "options": ["篮", "蓝", "兰", "监"], "answer": 0, "explain": "「篮」是竹字头，竹条编的才是篮子。" }
+    ]
+  },
+  {
+    "id": "zi-gu",
+    "group": "xingjin",
+    "word": "孤 狐",
+    "pinyin": "gū hú",
+    "chars": [
+      { "zi": "孤", "pinyin": "gū", "radical": "子", "strokes": 8, "word": "孤单", "sentence": "平明送客楚山孤——一座山孤零零地立着。" },
+      { "zi": "狐", "pinyin": "hú", "radical": "犭", "strokes": 8, "word": "狐狸", "sentence": "狐狸借着老虎的威风吓唬别的动物。" }
+    ],
+    "tip": "孤是子字旁，一个小孩没人陪就是孤单；狐是反犬旁，狐狸是山里的野兽。",
+    "quiz": [
+      { "type": "fill", "question": "（　）狸借着老虎的威风吓唬别的动物。", "options": ["孤", "瓜", "狐", "弧"], "answer": 2, "explain": "狐狸是野兽，反犬旁。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["孤单", "狐单", "孤狸", "瓜单"], "answer": 0, "explain": "一个人没人陪是孤单，子字旁。" },
+      { "type": "meaning", "question": "哪个字表示「一个人、没有伴」？", "options": ["狐", "孤", "瓜", "子"], "answer": 1, "explain": "「孤」就是没人陪，孤零零的。" }
+    ]
+  },
+  {
+    "id": "zi-mian",
+    "group": "xingjin",
+    "word": "眠 眼",
+    "pinyin": "mián yǎn",
+    "chars": [
+      { "zi": "眠", "pinyin": "mián", "radical": "目", "strokes": 10, "word": "春眠", "sentence": "春眠不觉晓，睡得真香。" },
+      { "zi": "眼", "pinyin": "yǎn", "radical": "目", "strokes": 11, "word": "眼睛", "sentence": "他揉了揉眼睛，天已经亮了。" }
+    ],
+    "tip": "眠和眼都是目字旁，都跟眼睛有关：闭上眼睡就是眠，睁开看东西就是眼。",
+    "quiz": [
+      { "type": "fill", "question": "春（　）不觉晓，处处闻啼鸟。", "options": ["眠", "眼", "民", "免"], "answer": 0, "explain": "春天睡得太香，天亮都不知道，是「眠」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["眼眠", "眠睛", "眼睛", "眼晴"], "answer": 2, "explain": "眼睛两个字都是目字旁。" },
+      { "type": "meaning", "question": "哪个字表示「闭上眼睡觉」？", "options": ["眼", "眠", "民", "梦"], "answer": 1, "explain": "「眠」就是睡，春眠不觉晓。" }
+    ]
+  },
+  {
+    "id": "zi-yu",
+    "group": "xingjin",
+    "word": "渔 鱼",
+    "pinyin": "yú yú",
+    "chars": [
+      { "zi": "渔", "pinyin": "yú", "radical": "氵", "strokes": 11, "word": "渔夫", "sentence": "江上往来人，但爱鲈鱼美——江边的渔夫天天下水打鱼。" },
+      { "zi": "鱼", "pinyin": "yú", "radical": "鱼", "strokes": 8, "word": "小鱼", "sentence": "池塘里的小鱼游来游去。" }
+    ],
+    "tip": "鱼是水里那条鱼，字本身就画着一条鱼；渔是三点水加个鱼，说的是「打鱼」这件事。",
+    "quiz": [
+      { "type": "fill", "question": "池塘里的（　）游来游去。", "options": ["渔", "鱼", "虾", "水"], "answer": 1, "explain": "水里游的那条是「鱼」，打鱼才是「渔」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["渔夫", "鱼夫", "渔鱼夫", "夫渔"], "answer": 0, "explain": "打鱼的人是渔夫，三点水那个「渔」。" },
+      { "type": "meaning", "question": "哪个字表示「打鱼」这件事？", "options": ["鱼", "水", "渔", "网"], "answer": 2, "explain": "「渔」是打鱼这件事，「鱼」是那条鱼。" }
+    ]
+  },
+  {
+    "id": "zi-shuai",
+    "group": "xingjin",
+    "word": "衰 哀",
+    "pinyin": "shuāi āi",
+    "chars": [
+      { "zi": "衰", "pinyin": "shuāi", "radical": "衣", "strokes": 10, "word": "衰老", "sentence": "乡音无改鬓毛衰——口音没变，头发已经白了。" },
+      { "zi": "哀", "pinyin": "āi", "radical": "口", "strokes": 9, "word": "悲哀", "sentence": "万马齐喑究可哀——龚自珍心里很难过。" }
+    ],
+    "tip": "哀中间是个「口」，难过的时候嘴里会叹气；衰中间是一横，衣服穿旧了、人老了，就慢慢往下走。",
+    "quiz": [
+      { "type": "fill", "question": "乡音无改鬓毛（　）。", "options": ["哀", "衣", "衰", "一"], "answer": 2, "explain": "头发白了、稀了，是「衰」，中间是一横。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["哀老", "衰老", "衷老", "哀衣"], "answer": 1, "explain": "人老了是衰老，「衰」中间一横。" },
+      { "type": "meaning", "question": "哪个字表示「心里难过」？", "options": ["哀", "衰", "衣", "衷"], "answer": 0, "explain": "「哀」中间是口，难过要叹气。" }
+    ]
+  },
+  {
+    "id": "zi-mo",
+    "group": "xingjin",
+    "word": "磨 摩",
+    "pinyin": "mó mó",
+    "chars": [
+      { "zi": "磨", "pinyin": "mó", "radical": "石", "strokes": 16, "word": "磨针", "sentence": "铁杵磨针——老婆婆把铁棒磨成了绣花针。" },
+      { "zi": "摩", "pinyin": "mó", "radical": "手", "strokes": 15, "word": "摩天", "sentence": "五千仞岳上摩天——山高得快要碰到天。" }
+    ],
+    "tip": "磨底下是石头，磨东西得用石头；摩底下是手，用手碰一碰、擦一擦就是摩。",
+    "quiz": [
+      { "type": "fill", "question": "铁杵（　）针，只要功夫深。", "options": ["磨", "摩", "麻", "石"], "answer": 0, "explain": "用石头把铁棒磨细，底下是石。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["磨天", "摩天", "摩石", "磨摩"], "answer": 1, "explain": "山高碰到天是摩天，底下是手。" },
+      { "type": "meaning", "question": "哪个字底下是「手」？", "options": ["磨", "石", "摩", "麻"], "answer": 2, "explain": "「摩」底下是手，用手去碰、去擦。" }
+    ]
+  },
+  {
+    "id": "zi-bi",
+    "group": "xingjin",
+    "word": "壁 璧",
+    "pinyin": "bì bì",
+    "chars": [
+      { "zi": "壁", "pinyin": "bì", "radical": "土", "strokes": 16, "word": "墙壁", "sentence": "凿壁偷光——他在墙上凿了个小洞借光读书。" },
+      { "zi": "璧", "pinyin": "bì", "radical": "玉", "strokes": 18, "word": "和氏璧", "sentence": "完璧归赵——那块玉完好无损地回到了赵国。" }
+    ],
+    "tip": "壁底下是土，墙壁是土垒起来的；璧底下是玉，说的是一块圆圆的玉。",
+    "quiz": [
+      { "type": "fill", "question": "完（　）归赵，那块玉一点没坏。", "options": ["壁", "璧", "辟", "土"], "answer": 1, "explain": "说的是玉，底下是玉字底。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["璧墙", "壁玉", "墙壁", "玉壁"], "answer": 2, "explain": "墙是土垒的，土字底的「壁」。" },
+      { "type": "meaning", "question": "哪个字指的是一块玉？", "options": ["璧", "壁", "辟", "土"], "answer": 0, "explain": "「璧」底下是玉，和氏璧就是一块宝玉。" }
+    ]
+  },
+  {
+    "id": "zi-tong",
+    "group": "xingjin",
+    "word": "曈 童",
+    "pinyin": "tóng tóng",
+    "chars": [
+      { "zi": "曈", "pinyin": "tóng", "radical": "日", "strokes": 16, "word": "曈曈", "sentence": "千门万户曈曈日——太阳刚出来，亮堂堂的。" },
+      { "zi": "童", "pinyin": "tóng", "radical": "立", "strokes": 12, "word": "儿童", "sentence": "儿童相见不相识，笑问客从何处来。" }
+    ],
+    "tip": "曈是日字旁，说的是太阳刚出来那种亮光；童是「立」加「里」，指还没长大的孩子。",
+    "quiz": [
+      { "type": "fill", "question": "千门万户（　）曈日。", "options": ["童", "同", "曈", "重"], "answer": 2, "explain": "太阳亮堂堂，日字旁的「曈」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["儿童", "儿曈", "同儿", "儿同"], "answer": 0, "explain": "小孩是儿童，「童」上面是立。" },
+      { "type": "meaning", "question": "哪个字跟太阳有关？", "options": ["童", "曈", "同", "重"], "answer": 1, "explain": "日字旁的「曈」，说的是太阳初升的光。" }
+    ]
+  },
+  {
+    "id": "zi-ji-lv",
+    "group": "xingjin",
+    "word": "屐 履",
+    "pinyin": "jī lǚ",
+    "chars": [
+      { "zi": "屐", "pinyin": "jī", "radical": "尸", "strokes": 10, "word": "木屐", "sentence": "应怜屐齿印苍苔——木底鞋在青苔上留下一排印子。" },
+      { "zi": "履", "pinyin": "lǚ", "radical": "尸", "strokes": 15, "word": "买履", "sentence": "郑人买履——他宁可相信量好的尺寸，也不信自己的脚。" }
+    ],
+    "tip": "屐和履都是鞋，上面都是「尸」字头：屐是木头底的鞋，履是古人穿的鞋。",
+    "quiz": [
+      { "type": "fill", "question": "应怜（　）齿印苍苔。", "options": ["屐", "履", "尸", "展"], "answer": 0, "explain": "木底鞋底下有齿，踩在青苔上留下印子。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["郑人买屐", "买履郑人", "郑人买履", "郑人买屡"], "answer": 2, "explain": "那个郑国人买的是鞋，「履」就是鞋。" },
+      { "type": "meaning", "question": "哪个字说的是「木头底的鞋」？", "options": ["履", "屐", "尸", "木"], "answer": 1, "explain": "「屐」是木底鞋，底下踩出齿印。" }
+    ]
+  },
+  {
+    "id": "zi-feng",
+    "group": "xingjin",
+    "word": "峰 锋 蜂",
+    "pinyin": "fēng fēng fēng",
+    "chars": [
+      { "zi": "峰", "pinyin": "fēng", "radical": "山", "strokes": 10, "word": "山峰", "sentence": "远处的山峰上飘着白云。" },
+      { "zi": "锋", "pinyin": "fēng", "radical": "钅", "strokes": 12, "word": "锋利", "sentence": "这把剪刀很锋利，小心别划到手。" },
+      { "zi": "蜂", "pinyin": "fēng", "radical": "虫", "strokes": 14, "word": "蜜蜂", "sentence": "采得百花成蜜后——蜜蜂最辛苦。" }
+    ],
+    "tip": "三个字都读 fēng，全靠偏旁认：山字旁是山峰，金字旁是刀锋，虫字旁是蜜蜂。",
+    "quiz": [
+      { "type": "fill", "question": "远处的山（　）上飘着白云。", "options": ["锋", "峰", "蜂", "风"], "answer": 1, "explain": "山的尖顶是山峰，山字旁。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["蜜蜂", "蜜峰", "蜜锋", "密蜂"], "answer": 0, "explain": "蜜蜂是虫子，虫字旁；蜜底下也是虫。" },
+      { "type": "meaning", "question": "哪个字说的是「刀最快的那一头」？", "options": ["峰", "蜂", "锋", "风"], "answer": 2, "explain": "金字旁的「锋」，刀刃是金属打的。" }
+    ]
+  },
+  {
+    "id": "zi-zhu",
+    "group": "xingjin",
+    "word": "株 珠 蛛",
+    "pinyin": "zhū zhū zhū",
+    "chars": [
+      { "zi": "株", "pinyin": "zhū", "radical": "木", "strokes": 10, "word": "守株待兔", "sentence": "守株待兔——他守着树桩天天等兔子。" },
+      { "zi": "珠", "pinyin": "zhū", "radical": "王", "strokes": 10, "word": "珍珠", "sentence": "买椟还珠——他留下了盒子，把珍珠还了回去。" },
+      { "zi": "蛛", "pinyin": "zhū", "radical": "虫", "strokes": 12, "word": "蜘蛛", "sentence": "墙角结了一张蜘蛛网。" }
+    ],
+    "tip": "三个字都读 zhū，右边都是「朱」：木字旁是树桩，王字旁是珍珠，虫字旁是蜘蛛。",
+    "quiz": [
+      { "type": "fill", "question": "守（　）待兔，他天天等着兔子撞上来。", "options": ["珠", "蛛", "株", "朱"], "answer": 2, "explain": "树桩是木头，木字旁的「株」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["珍蛛", "珍珠", "珍株", "真珠"], "answer": 1, "explain": "珍珠是宝贝，王字旁（玉）的「珠」。" },
+      { "type": "meaning", "question": "哪个字说的是「露出地面的树桩」？", "options": ["株", "珠", "蛛", "朱"], "answer": 0, "explain": "「株」是木字旁，就是那个树桩。" }
+    ]
+  },
+  {
+    "id": "zi-qing",
+    "group": "xingjin",
+    "word": "晴 睛 情 清 请",
+    "pinyin": "qíng jīng qíng qīng qǐng",
+    "chars": [
+      { "zi": "晴", "pinyin": "qíng", "radical": "日", "strokes": 12, "word": "晴天", "sentence": "水光潋滟晴方好——晴天的西湖真好看。" },
+      { "zi": "睛", "pinyin": "jīng", "radical": "目", "strokes": 13, "word": "眼睛", "sentence": "画龙点睛——点上眼睛，龙就活了。" },
+      { "zi": "情", "pinyin": "qíng", "radical": "忄", "strokes": 11, "word": "心情", "sentence": "汪伦送我情——朋友的情意比潭水还深。" },
+      { "zi": "清", "pinyin": "qīng", "radical": "氵", "strokes": 11, "word": "清水", "sentence": "小溪里的水很清，能看见底下的石头。" },
+      { "zi": "请", "pinyin": "qǐng", "radical": "讠", "strokes": 10, "word": "请问", "sentence": "请问，图书馆怎么走？" }
+    ],
+    "tip": "五个字都藏着一个「青」，偏旁换了意思就换了：出太阳是晴，眼睛是睛，心里是情，水是清，开口说话是请。",
+    "quiz": [
+      { "type": "fill", "question": "画龙点（　），点上眼睛龙就活了。", "options": ["睛", "晴", "情", "清"], "answer": 0, "explain": "眼睛要用目字旁的「睛」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["心晴", "心情", "心清", "心请"], "answer": 1, "explain": "心情在心里，竖心旁的「情」。" },
+      { "type": "meaning", "question": "哪个字跟「开口说话」有关？", "options": ["晴", "清", "请", "情"], "answer": 2, "explain": "言字旁的「请」，开口说话才用得上。" }
+    ]
+  }
+]

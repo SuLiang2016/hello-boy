@@ -3,7 +3,7 @@ import { useSession } from './store.js'
 import { kidToken } from './api.js'
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'home', component: () => import('./views/HomeView.vue') },
     { path: '/setup', name: 'setup', component: () => import('./views/SetupView.vue') },

@@ -2,14 +2,16 @@
 const fs = require('fs');
 const path = require('path');
 
-const CONTENT_PATH = path.join(__dirname, '..', 'src', 'assets', 'content.json');
+// 内容清单路径：默认构建产物 src/assets/content.json，部署时可用 CYLY_CONTENT_PATH 指定
+const CONTENT_PATH =
+  process.env.CYLY_CONTENT_PATH || path.join(__dirname, '..', 'src', 'assets', 'content.json');
 
 let cache = null;
 
 function loadContent() {
   if (cache) return cache;
   if (!fs.existsSync(CONTENT_PATH)) {
-    throw new Error('内容文件不存在：请先运行 npm run build:content（或 npm run build）');
+    throw new Error(`内容文件不存在：${CONTENT_PATH}（请先运行 npm run build:content，或部署时一并上传该文件）`);
   }
   cache = JSON.parse(fs.readFileSync(CONTENT_PATH, 'utf8'));
   return cache;

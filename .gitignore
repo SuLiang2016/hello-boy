@@ -4,3 +4,4 @@ data/
 *.log
 .DS_Store
 server/config.json
+.workbuddy/
