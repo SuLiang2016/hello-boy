@@ -65,11 +65,29 @@ APP_BASE=/hello-boy/ npm run build      # Git Bash 里需加 MSYS_NO_PATHCONV=1�
 
 ```bash
 # 本机构建后打包上传
-tar czf /tmp/hello-boy-app.tar.gz -C 成语学习 dist server src/assets/content.json package.json package-lock.json
+tar czf /tmp/hello-boy-app.tar.gz -C 成语学习 dist server src/assets/content.json scripts/backup-db.js package.json package-lock.json
 scp /tmp/hello-boy-app.tar.gz ubuntu@139.199.231.204:/tmp/
 # 服务器上替换并重启（data/ 不受影响）
 ssh ubuntu@139.199.231.204 'sudo tar xzf /tmp/hello-boy-app.tar.gz -C /opt/hello-boy && sudo systemctl restart hello-boy'
 ```
+
+### 部署前先备份数据、部署后对一把
+
+`data/app.db` 是孩子全部进度（账号、星星、复习排期、接龙局数），丢了不可重建。部署包**不含 `data/`**，解压本身不会覆盖它；但改表结构或改写入逻辑的版本，仍要留快照再上线：
+
+```bash
+# 在服务器上跑（服务运行中也安全：VACUUM INTO 读的是逻辑内容，WAL 里已提交的也一起落盘）
+scp 成语学习/scripts/backup-db.js ubuntu@139.199.231.204:/tmp/
+ssh ubuntu@139.199.231.204 'node --experimental-sqlite /tmp/backup-db.js 20261026-2030'
+```
+
+快照写到 `data/backup/pre-deploy-<tag>.db`，同时打印十张表的行数。**部署完再用 `--check` 打一次当前库的行数，和快照那组数字一致才算过**——基准是本次快照打出来的数字，不是写死的常量：
+
+```bash
+ssh ubuntu@139.199.231.204 'node --experimental-sqlite /tmp/backup-db.js --check'
+```
+
+别直接 `cp app.db`——WAL 常态几百 KB，拷出来会少数据。回滚：`sudo systemctl stop hello-boy`，把快照拷回 `data/app.db` 并删掉同目录的 `-wal`/`-shm`，再启动。
 
 服务器原有 `delivery-assistant`（Java，8321，nginx `/govern-copilot/`）已按要求停用并取消开机自启，文件仍在 `/opt/delivery-assistant` 与 `/etc/systemd/system/delivery-assistant.service`；如需恢复：`sudo systemctl enable --now delivery-assistant` 并把 `sites-enabled` 里的旧站恢复（两者都用 `listen 80 default_server`，不能同时启用）。
 

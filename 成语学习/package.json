@@ -10,6 +10,8 @@
     "start": "node server/index.js",
     "dev": "vite",
     "smoke": "node scripts/smoke-test.js",
+    "backup:db": "node --experimental-sqlite scripts/backup-db.js",
+    "check:db": "node --experimental-sqlite scripts/backup-db.js --check",
     "test": "npm run build:content && node --test tests/chain.test.mjs tests/shizi.test.mjs"
   },
   "dependencies": {
