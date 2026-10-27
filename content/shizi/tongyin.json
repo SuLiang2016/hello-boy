@@ -1,0 +1,403 @@
+[
+  {
+    "id": "zi-ming",
+    "group": "tongyin",
+    "word": "明 鸣",
+    "pinyin": "míng míng",
+    "chars": [
+      { "zi": "明", "pinyin": "míng", "radical": "日", "strokes": 8, "word": "明月", "sentence": "床前明月光，疑是地上霜。" },
+      { "zi": "鸣", "pinyin": "míng", "radical": "鸟", "strokes": 8, "word": "鸟鸣", "sentence": "两个黄鹂鸣翠柳，一行白鹭上青天。" }
+    ],
+    "tip": "都读 míng。日字旁的「明」是亮堂、看得清；口字旁的「鸣」是张开嘴出声，鸟叫、蝉叫都叫鸣。",
+    "quiz": [
+      { "type": "fill", "question": "两个黄鹂（　）翠柳，一行白鹭上青天。", "options": ["鸣", "明", "名", "命"], "answer": 0, "explain": "黄鹂在柳树上叫，张嘴出声的是口字旁的「鸣」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["一鸣惊人", "一明惊人", "一名惊人", "一鸣经人"], "answer": 0, "explain": "「一鸣惊人」是叫一声就让人吃惊，所以用口字旁的鸣。" },
+      { "type": "meaning", "question": "哪个字说的是「亮堂、看得清楚」？", "options": ["明", "鸣", "名", "命"], "answer": 0, "explain": "日字旁的「明」，太阳和月亮都亮，所以是明亮。" }
+    ]
+  },
+  {
+    "id": "zi-zhong-zhong",
+    "group": "tongyin",
+    "word": "中 钟",
+    "pinyin": "zhōng zhōng",
+    "chars": [
+      { "zi": "中", "pinyin": "zhōng", "radical": "丨", "strokes": 4, "word": "盘中", "sentence": "谁知盘中餐，粒粒皆辛苦。" },
+      { "zi": "钟", "pinyin": "zhōng", "radical": "钅", "strokes": 9, "word": "钟声", "sentence": "姑苏城外寒山寺，夜半钟声到客船。" }
+    ],
+    "tip": "都读 zhōng。金字旁的「钟」是铜打的，敲得响、挂墙上也走；「中」是不偏不倚的那个位置。",
+    "quiz": [
+      { "type": "fill", "question": "姑苏城外寒山寺，夜半（　）声到客船。", "options": ["钟", "中", "种", "忠"], "answer": 0, "explain": "半夜敲响的是钟，金字旁，声音才能传到船上。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["钟声", "中声", "钟生", "忠声"], "answer": 0, "explain": "「夜半钟声到客船」，敲出来的响动是钟声。" },
+      { "type": "meaning", "question": "哪个字说的是「正中间、不偏」？", "options": ["钟", "种", "忠", "中"], "answer": 3, "explain": "百发百中说的就是每次都射中正中间，用「中」。" }
+    ]
+  },
+  {
+    "id": "zi-yang",
+    "group": "tongyin",
+    "word": "阳 杨",
+    "pinyin": "yáng yáng",
+    "chars": [
+      { "zi": "阳", "pinyin": "yáng", "radical": "阝", "strokes": 6, "word": "阳光", "sentence": "劝君更尽一杯酒，西出阳关无故人。" },
+      { "zi": "杨", "pinyin": "yáng", "radical": "木", "strokes": 7, "word": "杨树", "sentence": "羌笛何须怨杨柳，春风不度玉门关。" }
+    ],
+    "tip": "都读 yáng。左耳旁的「阳」跟太阳有关，阳光、阳关；木字旁的「杨」是树，「杨柳」两个字都带木。",
+    "quiz": [
+      { "type": "fill", "question": "羌笛何须怨（　）柳，春风不度玉门关。", "options": ["阳", "扬", "汤", "杨"], "answer": 3, "explain": "羌笛怨的是岸边的杨树柳树，木字旁的「杨」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["白扬树", "白杨树", "阳树", "白杨术"], "answer": 1, "explain": "白杨是一种树，要用木字旁的「杨」。" },
+      { "type": "meaning", "question": "哪个字说的是「太阳、亮堂温暖」？", "options": ["阳", "杨", "扬", "羊"], "answer": 0, "explain": "太阳、阳光都用「阳」；木字旁的「杨」是树。" }
+    ]
+  },
+  {
+    "id": "zi-tian-tian",
+    "group": "tongyin",
+    "word": "田 填",
+    "pinyin": "tián tián",
+    "chars": [
+      { "zi": "田", "pinyin": "tián", "radical": "田", "strokes": 5, "word": "插田", "sentence": "乡村四月闲人少，才了蚕桑又插田。" },
+      { "zi": "填", "pinyin": "tián", "radical": "土", "strokes": 13, "word": "填平", "sentence": "小小的精卫衔来石子，要把大海填平。" }
+    ],
+    "tip": "都读 tián。「田」方方正正，字就像一块块田地；「填」是土字旁，拿土、拿石子把坑洞补平才叫填。",
+    "quiz": [
+      { "type": "fill", "question": "小小的精卫衔来石子，要把大海（　）平。", "options": ["填", "田", "添", "天"], "answer": 0, "explain": "精卫要拿石子把海补平，用土补平是「填」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["水填", "田水", "水田", "填田"], "answer": 2, "explain": "插秧的那块方地是水田，「田」字四四方方。" },
+      { "type": "meaning", "question": "哪个字说的是「拿东西把坑洞补上」？", "options": ["田", "填", "天", "添"], "answer": 1, "explain": "土字旁的「填」是补坑；三点水的「添」是往里加水。" }
+    ]
+  },
+  {
+    "id": "zi-tao",
+    "group": "tongyin",
+    "word": "桃 逃",
+    "pinyin": "táo táo",
+    "chars": [
+      { "zi": "桃", "pinyin": "táo", "radical": "木", "strokes": 10, "word": "桃花", "sentence": "竹外桃花三两枝，春江水暖鸭先知。" },
+      { "zi": "逃", "pinyin": "táo", "radical": "辶", "strokes": 9, "word": "逃跑", "sentence": "月黑雁飞高，单于夜遁逃。" }
+    ],
+    "tip": "都读 táo。木字旁的「桃」是树、是果子；走之底的「逃」是跑走——带走之底的字都在动。",
+    "quiz": [
+      { "type": "fill", "question": "月黑雁飞高，单于夜遁（　）。", "options": ["桃", "逃", "跳", "道"], "answer": 1, "explain": "单于趁天黑跑走了，走之底的「逃」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["桃树", "逃树", "跳树", "兆树"], "answer": 0, "explain": "结桃子的那棵树是桃树，木字旁。" },
+      { "type": "meaning", "question": "哪个字说的是「赶紧跑掉、抓不住」？", "options": ["桃", "跳", "逃", "淘"], "answer": 2, "explain": "跑掉是「逃」；「跳」是足字旁，用脚往上蹦。" }
+    ]
+  },
+  {
+    "id": "zi-jian",
+    "group": "tongyin",
+    "word": "剑 箭",
+    "pinyin": "jiàn jiàn",
+    "chars": [
+      { "zi": "剑", "pinyin": "jiàn", "radical": "刂", "strokes": 9, "word": "宝剑", "sentence": "那个人的剑掉进了江里，他却在船边刻记号。" },
+      { "zi": "箭", "pinyin": "jiàn", "radical": "竹", "strokes": 15, "word": "支箭", "sentence": "大雾里，诸葛亮用草船借来十万支箭。" }
+    ],
+    "tip": "都读 jiàn。立刀旁的「剑」是手里拿的兵器，刀剑都带立刀；竹字头的「箭」是竹杆做的，从弓上射出去。",
+    "quiz": [
+      { "type": "fill", "question": "大雾里，诸葛亮用草船借来十万支（　）。", "options": ["剑", "力", "箭", "前"], "answer": 2, "explain": "箭杆是竹子做的，所以「箭」顶上是竹字头。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["弓箭", "弓剑", "工箭", "公箭"], "answer": 0, "explain": "搭在弓上射出去的是弓箭，竹字头的「箭」。" },
+      { "type": "meaning", "question": "哪个字说的是「拿在手里的那种兵器」？", "options": ["箭", "件", "健", "剑"], "answer": 3, "explain": "佩在腰上的兵器是「剑」，立刀旁。" }
+    ]
+  },
+  {
+    "id": "zi-chu-chu",
+    "group": "tongyin",
+    "word": "出 初",
+    "pinyin": "chū chū",
+    "chars": [
+      { "zi": "出", "pinyin": "chū", "radical": "凵", "strokes": 5, "word": "出来", "sentence": "春色满园关不住，一枝红杏出墙来。" },
+      { "zi": "初", "pinyin": "chū", "radical": "刀", "strokes": 7, "word": "初晴", "sentence": "苏轼有一首诗叫《饮湖上初晴后雨》。" }
+    ],
+    "tip": "都读 chū。「出」像两只脚一前一后走过山坳，是出去；「初」右边一把刀，裁衣服先下第一刀，就是刚开始。",
+    "quiz": [
+      { "type": "fill", "question": "苏轼有一首诗叫《饮湖上（　）晴后雨》。", "options": ["出", "除", "楚", "初"], "answer": 3, "explain": "先晴后雨，那个「初」就是刚、头一个。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["初发", "出发", "出泼", "都发"], "answer": 1, "explain": "动身要走是出发，两只脚走出去的那个「出」。" },
+      { "type": "meaning", "question": "哪个字说的是「第一个、刚刚」？", "options": ["初", "出", "除", "楚"], "answer": 0, "explain": "初夏就是刚进夏天，衣字旁加一刀的那个「初」。" }
+    ]
+  },
+  {
+    "id": "zi-yuan",
+    "group": "tongyin",
+    "word": "园 圆",
+    "pinyin": "yuán yuán",
+    "chars": [
+      { "zi": "园", "pinyin": "yuán", "radical": "囗", "strokes": 7, "word": "满园", "sentence": "春色满园关不住，一枝红杏出墙来。" },
+      { "zi": "圆", "pinyin": "yuán", "radical": "囗", "strokes": 10, "word": "真圆", "sentence": "十五的月亮真圆，像一个盘子。" }
+    ],
+    "tip": "都读 yuán，外面都是大方框。框里是「元」的是公园、花园，围墙圈起来的一块地；框里是「员」的是圆，说的是形状。",
+    "quiz": [
+      { "type": "fill", "question": "十五的月亮真（　），像一个盘子。", "options": ["园", "元", "员", "圆"], "answer": 3, "explain": "说的是月亮那个形状，框里是「员」的「圆」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["公圆", "公园", "园公", "公原"], "answer": 1, "explain": "给大家逛的那块地是公园，围墙圈起来、框里是「元」。" },
+      { "type": "meaning", "question": "哪个字说的是「像盘子、像月亮那样」？", "options": ["圆", "园", "员", "元"], "answer": 0, "explain": "圆盘子、圆月亮，用的是框里带「员」的那个字。" }
+    ]
+  },
+  {
+    "id": "zi-yuan-yuan",
+    "group": "tongyin",
+    "word": "元 原",
+    "pinyin": "yuán yuán",
+    "chars": [
+      { "zi": "元", "pinyin": "yuán", "radical": "二", "strokes": 4, "word": "元日", "sentence": "王安石写过《元日》，写的是过大年的那天。" },
+      { "zi": "原", "pinyin": "yuán", "radical": "厂", "strokes": 10, "word": "草原", "sentence": "离离原上草，一岁一枯荣。" }
+    ],
+    "tip": "都读 yuán。「元」是最先、第一，元旦是一年的头一天；「原」是厂字头，说的是本来、原先，「原上草」就是原野上的草。",
+    "quiz": [
+      { "type": "fill", "question": "离离（　）上草，一岁一枯荣。", "options": ["原", "元", "源", "愿"], "answer": 0, "explain": "原野上长的草，厂字头的「原」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["元日", "原日", "元目", "元曰"], "answer": 0, "explain": "《元日》就是过大年那天，「元」是第一。" },
+      { "type": "meaning", "question": "哪个字说的是「一开始、第一」？", "options": ["原", "元", "员", "园"], "answer": 1, "explain": "元旦、元年都用「元」，它就是一年的头一个。" }
+    ]
+  },
+  {
+    "id": "zi-zhou",
+    "group": "tongyin",
+    "word": "舟 州",
+    "pinyin": "zhōu zhōu",
+    "chars": [
+      { "zi": "舟", "pinyin": "zhōu", "radical": "舟", "strokes": 6, "word": "孤舟", "sentence": "孤舟蓑笠翁，独钓寒江雪。" },
+      { "zi": "州", "pinyin": "zhōu", "radical": "川", "strokes": 6, "word": "九州", "sentence": "死去元知万事空，但悲不见九州同。" }
+    ],
+    "tip": "都读 zhōu。「舟」字本身就像一条小船，中间是船身；「州」说的是地方，广州、扬州、九州都用它。",
+    "quiz": [
+      { "type": "fill", "question": "孤（　）蓑笠翁，独钓寒江雪。", "options": ["州", "舟", "周", "丹"], "answer": 1, "explain": "江上那条小船是孤舟，「舟」字像一条船。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["州轻", "轻州", "清舟", "轻舟"], "answer": 3, "explain": "「轻舟已过万重山」，那条飞快的小船是轻舟。" },
+      { "type": "meaning", "question": "哪个字用在「广州、杭州」这些地名里？", "options": ["舟", "周", "州", "洲"], "answer": 2, "explain": "地名都用「州」——广州、杭州、扬州。" }
+    ]
+  },
+  {
+    "id": "zi-xiang-xiang",
+    "group": "tongyin",
+    "word": "香 乡",
+    "pinyin": "xiāng xiāng",
+    "chars": [
+      { "zi": "香", "pinyin": "xiāng", "radical": "香", "strokes": 9, "word": "花草香", "sentence": "迟日江山丽，春风花草香。" },
+      { "zi": "乡", "pinyin": "xiāng", "radical": "乙", "strokes": 3, "word": "乡音", "sentence": "少小离家老大回，乡音无改鬓毛衰。" }
+    ],
+    "tip": "都读 xiāng。「香」上面是禾、下面是日，庄稼晒着太阳就香；「乡」只有三笔，说的是老家、故乡。",
+    "quiz": [
+      { "type": "fill", "question": "迟日江山丽，春风花草（　）。", "options": ["乡", "相", "香", "箱"], "answer": 2, "explain": "春风里花草的味道好闻，禾加日的那个「香」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["故乡", "故香", "固乡", "想乡"], "answer": 0, "explain": "「低头思故乡」，老家是故乡。" },
+      { "type": "meaning", "question": "哪个字说的是「爸爸小时候长大的地方」？", "options": ["香", "相", "箱", "乡"], "answer": 3, "explain": "老家就是家乡、故乡，那个字只有三笔。" }
+    ]
+  },
+  {
+    "id": "zi-jia",
+    "group": "tongyin",
+    "word": "家 佳",
+    "pinyin": "jiā jiā",
+    "chars": [
+      { "zi": "家", "pinyin": "jiā", "radical": "宀", "strokes": 10, "word": "酒家", "sentence": "借问酒家何处有，牧童遥指杏花村。" },
+      { "zi": "佳", "pinyin": "jiā", "radical": "亻", "strokes": 8, "word": "佳节", "sentence": "每逢佳节倍思亲。" }
+    ],
+    "tip": "都读 jiā。宝盖头的「家」是有房子、屋里有人；单人旁的「佳」说的是好，佳节就是好节日。",
+    "quiz": [
+      { "type": "fill", "question": "每逢（　）节倍思亲。", "options": ["家", "加", "嘉", "佳"], "answer": 3, "explain": "好的节日是佳节，单人旁的「佳」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["全佳福", "全家福", "全家幅", "全加福"], "answer": 1, "explain": "把一家人都照进去的是全家福，宝盖头的「家」。" },
+      { "type": "meaning", "question": "哪个字说的是「好、美」？", "options": ["家", "加", "佳", "街"], "answer": 2, "explain": "「佳」就是好，佳节、佳作都取这个意思。" }
+    ]
+  },
+  {
+    "id": "zi-jing",
+    "group": "tongyin",
+    "word": "井 景",
+    "pinyin": "jǐng jǐng",
+    "chars": [
+      { "zi": "井", "pinyin": "jǐng", "radical": "二", "strokes": 4, "word": "水井", "sentence": "井底之蛙坐在井里，看到的天只有一个圆。" },
+      { "zi": "景", "pinyin": "jǐng", "radical": "日", "strokes": 12, "word": "风景", "sentence": "江南好，风景旧曾谙。" }
+    ],
+    "tip": "都读 jǐng。「井」字像井口搭起来的木架，是打水的地方；「景」是日字头，太阳照出来的样子才叫风景。",
+    "quiz": [
+      { "type": "fill", "question": "江南好，风（　）旧曾谙。", "options": ["景", "井", "警", "京"], "answer": 0, "explain": "江南好看的是风景，日字头的「景」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["景水", "井永", "井水", "井谁"], "answer": 2, "explain": "从水井里打上来的水是井水。" },
+      { "type": "meaning", "question": "哪个字说的是「抬头看见的好看样子」？", "options": ["井", "警", "京", "景"], "answer": 3, "explain": "「景」上面是个日，有太阳照才有风景。" }
+    ]
+  },
+  {
+    "id": "zi-guang",
+    "group": "tongyin",
+    "word": "光 广",
+    "pinyin": "guāng guǎng",
+    "chars": [
+      { "zi": "光", "pinyin": "guāng", "radical": "儿", "strokes": 6, "word": "月光", "sentence": "床前明月光，疑是地上霜。" },
+      { "zi": "广", "pinyin": "guǎng", "radical": "广", "strokes": 3, "word": "广陵", "sentence": "李白要去广陵，那是现在的扬州。" }
+    ],
+    "tip": "读音像但声调不同：光是 guāng（一声），说的是亮；广是 guǎng（三声），说的是大、宽，广场就是好大一片。",
+    "quiz": [
+      { "type": "fill", "question": "床前明月（　），疑是地上霜。", "options": ["广", "光", "黄", "晃"], "answer": 1, "explain": "床前亮亮的是月光，「光」说的就是亮。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["厂场", "光场", "场广", "广场"], "answer": 3, "explain": "好大的一片地方是广场，那个「广」读三声。" },
+      { "type": "meaning", "question": "哪个字说的是「又大又宽」？", "options": ["光", "亮", "广", "扩"], "answer": 2, "explain": "广阔、广场的「广」说的是大、宽；「光」说的是亮。" }
+    ]
+  },
+  {
+    "id": "zi-shi",
+    "group": "tongyin",
+    "word": "石 十 时",
+    "pinyin": "shí shí shí",
+    "chars": [
+      { "zi": "石", "pinyin": "shí", "radical": "石", "strokes": 5, "word": "石头", "sentence": "远上寒山石径斜，白云生处有人家。" },
+      { "zi": "十", "pinyin": "shí", "radical": "十", "strokes": 2, "word": "十个", "sentence": "南朝四百八十寺，多少楼台烟雨中。" },
+      { "zi": "时", "pinyin": "shí", "radical": "日", "strokes": 7, "word": "时节", "sentence": "好雨知时节，当春乃发生。" }
+    ],
+    "tip": "都读 shí。「石」是山上硬硬的一块；「十」一横一竖，是数字；「时」是日字旁，说的是日子、季节。",
+    "quiz": [
+      { "type": "fill", "question": "好雨知（　）节，当春乃发生。", "options": ["十", "石", "时", "寸"], "answer": 2, "explain": "好雨知道季节，日字旁的「时」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["十面埋伏", "时面埋伏", "石面埋伏", "十面理伏"], "answer": 0, "explain": "「十面埋伏」是十个方向都埋好了人，那个「十」是数字。" },
+      { "type": "meaning", "question": "哪个字说的是「山上捡到的一块硬东西」？", "options": ["十", "时", "氏", "石"], "answer": 3, "explain": "「石」就是石头，水滴石穿滴的就是它。" }
+    ]
+  },
+  {
+    "id": "zi-li",
+    "group": "tongyin",
+    "word": "里 李",
+    "pinyin": "lǐ lǐ",
+    "chars": [
+      { "zi": "里", "pinyin": "lǐ", "radical": "里", "strokes": 7, "word": "千里", "sentence": "欲穷千里目，更上一层楼。" },
+      { "zi": "李", "pinyin": "lǐ", "radical": "木", "strokes": 7, "word": "李白", "sentence": "李白乘舟将欲行，忽闻岸上踏歌声。" }
+    ],
+    "tip": "都读 lǐ。「里」是「田」下面加一横，说的是里面、一里路；「李」上面是木、下面是子，是一种树，也是姓。",
+    "quiz": [
+      { "type": "fill", "question": "（　）白乘舟将欲行，忽闻岸上踏歌声。", "options": ["里", "礼", "理", "李"], "answer": 3, "explain": "写诗的是李白，木字头、子字底的那个「李」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["千李", "里千", "千里", "李里"], "answer": 2, "explain": "「千里江陵一日还」，一里一里连起来是千里。" },
+      { "type": "meaning", "question": "哪个字是一个姓？", "options": ["李", "里", "礼", "树"], "answer": 0, "explain": "李白、老李的姓，都是木字头的「李」。" }
+    ]
+  },
+  {
+    "id": "zi-xin",
+    "group": "tongyin",
+    "word": "心 新",
+    "pinyin": "xīn xīn",
+    "chars": [
+      { "zi": "心", "pinyin": "xīn", "radical": "心", "strokes": 4, "word": "冰心", "sentence": "洛阳亲友如相问，一片冰心在玉壶。" },
+      { "zi": "新", "pinyin": "xīn", "radical": "斤", "strokes": 13, "word": "新年", "sentence": "总把新桃换旧符。" }
+    ],
+    "tip": "都读 xīn。「心」字像一颗心，想的事都在心里；「新」的反义词是旧，新年、全新都用它。",
+    "quiz": [
+      { "type": "fill", "question": "洛阳亲友如相问，一片冰（　）在玉壶。", "options": ["心", "新", "辛", "深"], "answer": 0, "explain": "像冰一样亮的那颗心，是「心」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["心鲜", "新先", "新鲜", "新洗"], "answer": 2, "explain": "刚摘下来的瓜很新鲜，「新」跟旧正好相反。" },
+      { "type": "meaning", "question": "哪个字说的是「不旧、刚来的」？", "options": ["心", "新", "辛", "欣"], "answer": 1, "explain": "新年、全新都用斤字旁的「新」。" }
+    ]
+  },
+  {
+    "id": "zi-he",
+    "group": "tongyin",
+    "word": "禾 和",
+    "pinyin": "hé hé",
+    "chars": [
+      { "zi": "禾", "pinyin": "hé", "radical": "禾", "strokes": 5, "word": "锄禾", "sentence": "锄禾日当午，太阳晒得农民一身汗。" },
+      { "zi": "和", "pinyin": "hé", "radical": "口", "strokes": 8, "word": "相和", "sentence": "湖光秋月两相和，潭面无风镜未磨。" }
+    ],
+    "tip": "都读 hé。「禾」是地里的禾苗，上面一撇像垂下来的穗子；「和」是口字旁，客客气气说话——和好、和平。",
+    "quiz": [
+      { "type": "fill", "question": "湖光秋月两相（　），潭面无风镜未磨。", "options": ["禾", "和", "何", "合"], "answer": 1, "explain": "湖光和秋月融在一起，口字旁的「和」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["禾平", "和苹", "喝平", "和平"], "answer": 3, "explain": "不吵架、不打仗就是和平。" },
+      { "type": "meaning", "question": "哪个字说的是「地里长的庄稼苗」？", "options": ["和", "河", "禾", "何"], "answer": 2, "explain": "「禾」是禾苗，《悯农》写的就是锄它的人。" }
+    ]
+  },
+  {
+    "id": "zi-sheng",
+    "group": "tongyin",
+    "word": "生 声",
+    "pinyin": "shēng shēng",
+    "chars": [
+      { "zi": "生", "pinyin": "shēng", "radical": "生", "strokes": 5, "word": "生长", "sentence": "野火烧不尽，春风吹又生。" },
+      { "zi": "声", "pinyin": "shēng", "radical": "士", "strokes": 7, "word": "无声", "sentence": "泉眼无声惜细流，树阴照水爱晴柔。" }
+    ],
+    "tip": "都读 shēng。「生」是庄稼从土里长出来，活着、长大都靠它；「声」说的是耳朵听见的响动——声音、掌声。",
+    "quiz": [
+      { "type": "fill", "question": "泉眼无（　）惜细流，树阴照水爱晴柔。", "options": ["生", "升", "声", "性"], "answer": 2, "explain": "听不见响动就是无声，那个字跟耳朵听的有关。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["音生", "声音", "生音", "声阴"], "answer": 1, "explain": "耳朵能听见的一切都是声音。" },
+      { "type": "meaning", "question": "哪个字说的是「活着、从土里长出来」？", "options": ["声", "升", "性", "生"], "answer": 3, "explain": "「春风吹又生」，草又活过来，是「生」。" }
+    ]
+  },
+  {
+    "id": "zi-lin",
+    "group": "tongyin",
+    "word": "林 临",
+    "pinyin": "lín lín",
+    "chars": [
+      { "zi": "林", "pinyin": "lín", "radical": "木", "strokes": 8, "word": "深林", "sentence": "返景入深林，复照青苔上。" },
+      { "zi": "临", "pinyin": "lín", "radical": "丨", "strokes": 9, "word": "临行", "sentence": "临行密密缝，意恐迟迟归。" }
+    ],
+    "tip": "都读 lín。两棵树并排就是「林」，树林里树最多；「临」是来到跟前，临行就是快要出门的那一刻。",
+    "quiz": [
+      { "type": "fill", "question": "（　）行密密缝，意恐迟迟归。", "options": ["林", "邻", "淋", "临"], "answer": 3, "explain": "儿子快要出门时妈妈在缝衣裳，「临」是眼看就要。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["森邻", "林森", "森林", "身林"], "answer": 2, "explain": "树多得数不清叫森林，两个「木」并排的那个字。" },
+      { "type": "meaning", "question": "哪个字说的是「树挤在一起的地方」？", "options": ["临", "林", "琳", "淋"], "answer": 1, "explain": "双木成林，树林、林子都是它。" }
+    ]
+  },
+  {
+    "id": "zi-dao-dao",
+    "group": "tongyin",
+    "word": "到 道",
+    "pinyin": "dào dào",
+    "chars": [
+      { "zi": "到", "pinyin": "dào", "radical": "刂", "strokes": 8, "word": "同到", "sentence": "如今直上银河去，同到牵牛织女家。" },
+      { "zi": "道", "pinyin": "dào", "radical": "辶", "strokes": 12, "word": "古道", "sentence": "远芳侵古道，晴翠接荒城。" }
+    ],
+    "tip": "都读 dào。「到」是立刀旁，说的是人来了、事成了——到了、迟到；「道」是走之底，本义就是路——道路、知道。",
+    "quiz": [
+      { "type": "fill", "question": "远芳侵古（　），晴翠接荒城。", "options": ["道", "到", "倒", "刀"], "answer": 0, "explain": "原野上那条老路是古道，走之底的「道」。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["知到", "倒道", "到路", "知道"], "answer": 3, "explain": "心里明白了叫知道，用走之底那个「道」。" },
+      { "type": "meaning", "question": "哪个字说的是「走路的那一条」？", "options": ["到", "倒", "道", "悼"], "answer": 2, "explain": "道路、街道都是走之底的「道」，它本来就是指路。" }
+    ]
+  },
+  {
+    "id": "zi-yi",
+    "group": "tongyin",
+    "word": "衣 一",
+    "pinyin": "yī yī",
+    "chars": [
+      { "zi": "衣", "pinyin": "yī", "radical": "衣", "strokes": 6, "word": "身上衣", "sentence": "慈母手中线，游子身上衣。" },
+      { "zi": "一", "pinyin": "yī", "radical": "一", "strokes": 1, "word": "一个", "sentence": "碧玉妆成一树高，万条垂下绿丝绦。" }
+    ],
+    "tip": "都读 yī。「一」就一横，是最小的数字；「衣」说的是身上穿的，字底下那两笔像飘起来的衣角。",
+    "quiz": [
+      { "type": "fill", "question": "慈母手中线，游子身上（　）。", "options": ["一", "衣", "二", "才"], "answer": 1, "explain": "妈妈缝在孩子身上的是衣裳，「衣」字。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["弟一", "衣一", "十衣", "第一"], "answer": 3, "explain": "跑在最前面是第一，那一横就是数字「一」。" },
+      { "type": "meaning", "question": "哪个字说的是「身上穿的东西」？", "options": ["一", "二", "表", "衣"], "answer": 3, "explain": "上衣、衣服都是「衣」，这个字自己就画着一件衣裳。" }
+    ]
+  },
+  {
+    "id": "zi-zai",
+    "group": "tongyin",
+    "word": "在 再",
+    "pinyin": "zài zài",
+    "chars": [
+      { "zi": "在", "pinyin": "zài", "radical": "土", "strokes": 6, "word": "独在", "sentence": "独在异乡为异客，每逢佳节倍思亲。" },
+      { "zi": "再", "pinyin": "zài", "radical": "冂", "strokes": 6, "word": "再见", "sentence": "妈妈说明年再去看海。" }
+    ],
+    "tip": "都读 zài。「在」说的是人在这儿、这个时候——在家、现在；「再」说的是又一次——再见、再来一遍。",
+    "quiz": [
+      { "type": "fill", "question": "妈妈说明年（　）去看海。", "options": ["在", "载", "再", "才"], "answer": 2, "explain": "又一次去看海，那个「再」是下一回。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["载见", "再见", "在见", "再间"], "answer": 1, "explain": "下回还见面，所以是再见——「再」是又一次。" },
+      { "type": "meaning", "question": "哪个字说的是「又一次、下一回」？", "options": ["再", "在", "来", "才"], "answer": 0, "explain": "再看一遍就是下一回再看，用「再」。" }
+    ]
+  },
+  {
+    "id": "zi-zuo",
+    "group": "tongyin",
+    "word": "做 作",
+    "pinyin": "zuò zuò",
+    "chars": [
+      { "zi": "做", "pinyin": "zuò", "radical": "亻", "strokes": 11, "word": "做饭", "sentence": "我在家里帮妈妈做饭。" },
+      { "zi": "作", "pinyin": "zuò", "radical": "亻", "strokes": 7, "word": "当作", "sentence": "生当作人杰，死亦为鬼雄。" }
+    ],
+    "tip": "都读 zuò，都有单人旁。「做」后面接一件具体的事：做饭、做手工；「作」多藏在词里：作业、作品、工作。",
+    "quiz": [
+      { "type": "fill", "question": "生当（　）人杰，死亦为鬼雄。", "options": ["做", "坐", "昨", "作"], "answer": 3, "explain": "「生当作人杰」说的是活着就要当人里最出息的，那个「作」是当、成为。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["做业", "作业", "做做", "业作"], "answer": 1, "explain": "上学要写的功课叫作业，单人旁加「乍」的那个字。" },
+      { "type": "meaning", "question": "哪个字后面要接一件具体的事，比如饭、手工？", "options": ["作", "昨", "做", "坐"], "answer": 2, "explain": "做饭、做事用「做」；「作」一般藏在词里。" }
+    ]
+  },
+  {
+    "id": "zi-shi-shi",
+    "group": "tongyin",
+    "word": "事 是",
+    "pinyin": "shì shì",
+    "chars": [
+      { "zi": "事", "pinyin": "shì", "radical": "亅", "strokes": 8, "word": "万事", "sentence": "死去元知万事空，但悲不见九州同。" },
+      { "zi": "是", "pinyin": "shì", "radical": "日", "strokes": 9, "word": "疑是", "sentence": "床前明月光，疑是地上霜。" }
+    ],
+    "tip": "都读 shì。「事」说的是要去做、已经发生的那一件——事情、做事；「是」用来回答对不对——是不是、就是。",
+    "quiz": [
+      { "type": "fill", "question": "床前明月光，疑（　）地上霜。", "options": ["事", "是", "式", "市"], "answer": 1, "explain": "李白怀疑那是地上的霜，「是」表示确实对。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["市晴", "事请", "事情", "事晴"], "answer": 2, "explain": "每天碰到的那一件叫事情，「事」字一钩到底。" },
+      { "type": "meaning", "question": "哪个字说的是「要去做、已经发生的那一件」？", "options": ["是", "事", "市", "式"], "answer": 1, "explain": "做事、事情都是「事」，说的是实实在在那一件。" }
+    ]
+  }
+]

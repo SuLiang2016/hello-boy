@@ -73,7 +73,7 @@
     "chars": [
       { "zi": "天", "pinyin": "tiān", "radical": "大", "strokes": 4, "word": "天空", "sentence": "天上的云慢慢地飘。" },
       { "zi": "夫", "pinyin": "fū", "radical": "大", "strokes": 4, "word": "农夫", "sentence": "农夫在田里锄地。" },
-      { "zi": "无", "pinyin": "wú", "radical": "无", "strokes": 4, "word": "无边", "sentence": "大海一望无边。" }
+      { "zi": "无", "pinyin": "wú", "radical": "一", "strokes": 4, "word": "无边", "sentence": "大海一望无边。" }
     ],
     "tip": "天字头顶是一横，夫字头顶露出一撇，无字底下像个「儿」。",
     "quiz": [
@@ -191,7 +191,7 @@
     "chars": [
       { "zi": "己", "pinyin": "jǐ", "radical": "己", "strokes": 3, "word": "自己", "sentence": "莫愁前路无知己——好朋友最懂你。" },
       { "zi": "已", "pinyin": "yǐ", "radical": "己", "strokes": 3, "word": "已经", "sentence": "天已经黑了，快回家吧。" },
-      { "zi": "巳", "pinyin": "sì", "radical": "己", "strokes": 3, "word": "巳蛇", "sentence": "十二生肖里巳排第六，巳蛇就是蛇。" }
+      { "zi": "巳", "pinyin": "sì", "radical": "巳", "strokes": 3, "word": "巳蛇", "sentence": "十二生肖里巳排第六，巳蛇就是蛇。" }
     ],
     "tip": "己字开着口，说的是自己；已字封了一半，事情做了一半；巳字全封住，一点口都不开。",
     "quiz": [
@@ -206,7 +206,7 @@
     "word": "蜜 密",
     "pinyin": "mì mì",
     "chars": [
-      { "zi": "蜜", "pinyin": "mì", "radical": "宀", "strokes": 14, "word": "蜂蜜", "sentence": "采得百花成蜜后，为谁辛苦为谁甜？" },
+      { "zi": "蜜", "pinyin": "mì", "radical": "虫", "strokes": 14, "word": "蜂蜜", "sentence": "采得百花成蜜后，为谁辛苦为谁甜？" },
       { "zi": "密", "pinyin": "mì", "radical": "宀", "strokes": 11, "word": "秘密", "sentence": "这是我和好朋友之间的秘密。" }
     ],
     "tip": "蜜底下是虫，蜂蜜是小虫子（蜜蜂）酿的；密底下是山，秘密像藏进山里，谁也不知道。",
@@ -323,7 +323,7 @@
     ],
     "tip": "壁底下是土，墙壁是土垒起来的；璧底下是玉，说的是一块圆圆的玉。",
     "quiz": [
-      { "type": "fill", "question": "完（　）归赵，那块玉一点没坏。", "options": ["壁", "璧", "辟", "土"], "answer": 1, "explain": "说的是玉，底下是玉字底。" },
+      { "type": "fill", "question": "完（　）归赵，那块玉一点没坏。", "options": ["壁", "璧", "辟", "土"], "answer": 1, "explain": "说的是那块玉，所以用玉字底的「璧」。" },
       { "type": "word", "question": "下面哪个词写对了？", "options": ["璧墙", "壁玉", "墙壁", "玉壁"], "answer": 2, "explain": "墙是土垒的，土字底的「壁」。" },
       { "type": "meaning", "question": "哪个字指的是一块玉？", "options": ["璧", "壁", "辟", "土"], "answer": 0, "explain": "「璧」底下是玉，和氏璧就是一块宝玉。" }
     ]
@@ -355,7 +355,7 @@
     ],
     "tip": "屐和履都是鞋，上面都是「尸」字头：屐是木头底的鞋，履是古人穿的鞋。",
     "quiz": [
-      { "type": "fill", "question": "应怜（　）齿印苍苔。", "options": ["屐", "履", "尸", "展"], "answer": 0, "explain": "木底鞋底下有齿，踩在青苔上留下印子。" },
+      { "type": "fill", "question": "应怜（　）齿印苍苔。", "options": ["屐", "履", "尸", "展"], "answer": 0, "explain": "木底鞋是「屐」，底下有齿，踩在青苔上留下印子。" },
       { "type": "word", "question": "下面哪个词写对了？", "options": ["郑人买屐", "买履郑人", "郑人买履", "郑人买屡"], "answer": 2, "explain": "那个郑国人买的是鞋，「履」就是鞋。" },
       { "type": "meaning", "question": "哪个字说的是「木头底的鞋」？", "options": ["履", "屐", "尸", "木"], "answer": 1, "explain": "「屐」是木底鞋，底下踩出齿印。" }
     ]
@@ -368,7 +368,7 @@
     "chars": [
       { "zi": "峰", "pinyin": "fēng", "radical": "山", "strokes": 10, "word": "山峰", "sentence": "远处的山峰上飘着白云。" },
       { "zi": "锋", "pinyin": "fēng", "radical": "钅", "strokes": 12, "word": "锋利", "sentence": "这把剪刀很锋利，小心别划到手。" },
-      { "zi": "蜂", "pinyin": "fēng", "radical": "虫", "strokes": 14, "word": "蜜蜂", "sentence": "采得百花成蜜后——蜜蜂最辛苦。" }
+      { "zi": "蜂", "pinyin": "fēng", "radical": "虫", "strokes": 13, "word": "蜜蜂", "sentence": "采得百花成蜜后——蜜蜂最辛苦。" }
     ],
     "tip": "三个字都读 fēng，全靠偏旁认：山字旁是山峰，金字旁是刀锋，虫字旁是蜜蜂。",
     "quiz": [
@@ -408,7 +408,7 @@
     ],
     "tip": "五个字都藏着一个「青」，偏旁换了意思就换了：出太阳是晴，眼睛是睛，心里是情，水是清，开口说话是请。",
     "quiz": [
-      { "type": "fill", "question": "水光潋滟（　）方好。", "options": ["睛", "晴", "情", "清"], "answer": 1, "explain": "眼睛要用目字旁的「睛」。" },
+      { "type": "fill", "question": "水光潋滟（　）方好。", "options": ["睛", "晴", "情", "清"], "answer": 1, "explain": "这句写的是出太阳那天的湖面，日字旁的「晴」。" },
       { "type": "word", "question": "下面哪个词写对了？", "options": ["心晴", "心情", "心清", "心请"], "answer": 1, "explain": "心情在心里，竖心旁的「情」。" },
       { "type": "meaning", "question": "哪个字跟「开口说话」有关？", "options": ["晴", "清", "请", "情"], "answer": 2, "explain": "言字旁的「请」，开口说话才用得上。" }
     ]
