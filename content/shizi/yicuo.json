@@ -1,0 +1,406 @@
+[
+  {
+    "id": "zi-wan",
+    "group": "yicuo",
+    "word": "晚 兔 免",
+    "pinyin": "wǎn tù miǎn",
+    "chars": [
+      { "zi": "晚", "pinyin": "wǎn", "radical": "日", "strokes": 11, "word": "早晚", "sentence": "春潮带雨晚来急，野渡无人舟自横。" },
+      { "zi": "兔", "pinyin": "tù", "radical": "刀", "strokes": 8, "word": "兔子", "sentence": "守株待兔讲的就是坐在树桩边白等的那个人。" },
+      { "zi": "免", "pinyin": "miǎn", "radical": "刀", "strokes": 7, "word": "免费", "sentence": "走路慢一点，才能避免在冰上摔倒。" }
+    ],
+    "tip": "「兔」底下那一点像它短短的尾巴，去掉那一点就成了「免」。天黑得迟是「晚」，右边跟「免」一样不带点。",
+    "quiz": [
+      { "type": "fill", "question": "春潮带雨（　）来急，野渡无人舟自横。", "options": ["晚", "兔", "免", "宛"], "answer": 0, "explain": "傍黑天才来的雨是晚来急，日字旁，右边没有那一点。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["守株待兔", "守株待免", "守朱待兔", "守株带免"], "answer": 0, "explain": "守着树桩等兔子，那一点是兔子的短尾巴，不能丢。" },
+      { "type": "meaning", "question": "哪个字说的是「没有、除掉」，像免费、难免？", "options": ["晚", "兔", "免", "勉"], "answer": 2, "explain": "免费就是不收费，「免」比「兔」少了底下那一点。" }
+    ]
+  },
+  {
+    "id": "zi-zhen",
+    "group": "yicuo",
+    "word": "真 直",
+    "pinyin": "zhēn zhí",
+    "chars": [
+      { "zi": "真", "pinyin": "zhēn", "radical": "目", "strokes": 10, "word": "真的", "sentence": "不识庐山真面目，只缘身在此山中。" },
+      { "zi": "直", "pinyin": "zhí", "radical": "目", "strokes": 8, "word": "笔直", "sentence": "飞流直下三千尺，疑是银河落九天。" }
+    ],
+    "tip": "「真」和「直」中间都藏着三横，少写一横就错了。真说的是不假，直说的是不拐弯。",
+    "quiz": [
+      { "type": "fill", "question": "不识庐山（　）面目，只缘身在此山中。", "options": ["真", "直", "具", "填"], "answer": 0, "explain": "庐山本来的样子是真的样子，中间三横一横都不能少。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["笔直", "笔真", "必直", "比直"], "answer": 0, "explain": "一条线不拐弯是笔直，「直」里头也是三横。" },
+      { "type": "meaning", "question": "哪个字中间是三横，说的是不拐弯？", "options": ["真", "直", "具", "贞"], "answer": 1, "explain": "直是三横底下再托一横，说的是不弯；真是真假的真。" }
+    ]
+  },
+  {
+    "id": "zi-zhi-di",
+    "group": "yicuo",
+    "word": "纸 低",
+    "pinyin": "zhǐ dī",
+    "chars": [
+      { "zi": "纸", "pinyin": "zhǐ", "radical": "纟", "strokes": 7, "word": "白纸", "sentence": "儿童散学归来早，忙趁东风放纸鸢。" },
+      { "zi": "低", "pinyin": "dī", "radical": "亻", "strokes": 7, "word": "高低", "sentence": "横看成岭侧成峰，远近高低各不同。" }
+    ],
+    "tip": "「纸」右边是「氏」，不带底下那一点；「低」右边是「氐」，氏底下多那一点。",
+    "quiz": [
+      { "type": "fill", "question": "儿童散学归来早，忙趁东风放（　）鸢。", "options": ["纸", "低", "氏", "氐"], "answer": 0, "explain": "风筝是纸糊的，绞丝旁的纸，右边是氏，不带那一点。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["白纸", "白氏", "纸低", "百纸"], "answer": 0, "explain": "写字用的白纸是绞丝旁的纸，右边别多加一点。" },
+      { "type": "meaning", "question": "哪个字说的是「不高、在下面」，像低头、高低？", "options": ["纸", "低", "底", "的"], "answer": 1, "explain": "单人旁的低说的是在下面，右边那个字底下带一点。" }
+    ]
+  },
+  {
+    "id": "zi-bu",
+    "group": "yicuo",
+    "word": "补 扑",
+    "pinyin": "bǔ pū",
+    "chars": [
+      { "zi": "补", "pinyin": "bǔ", "radical": "衤", "strokes": 7, "word": "补充", "sentence": "羊跑丢了才想起修羊圈，亡羊补牢还不算晚。" },
+      { "zi": "扑", "pinyin": "pū", "radical": "扌", "strokes": 5, "word": "扑住", "sentence": "小猫一下扑住滚到脚边的毛线球。" }
+    ],
+    "tip": "「补」是衣字旁，衣服破了要补，补衣、补牢都是它；「扑」是提手旁，说的是伸手扑住东西。",
+    "quiz": [
+      { "type": "fill", "question": "羊跑丢了才想起修羊圈，亡羊（　）牢还不算晚。", "options": ["补", "扑", "卜", "布"], "answer": 0, "explain": "把破了的羊圈修好是补，衣字旁——衣服破了也是补。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["亡羊补牢", "亡羊扑牢", "忙羊补牢", "亡羊补劳"], "answer": 0, "explain": "羊丢了再修补羊圈就是亡羊补牢，衣字旁的补。" },
+      { "type": "meaning", "question": "哪个字说的是「伸手一下按住」？", "options": ["补", "扑", "捕", "匍"], "answer": 1, "explain": "提手旁的扑是伸手过去按；衣字旁的补说的是修补。" }
+    ]
+  },
+  {
+    "id": "zi-nuan",
+    "group": "yicuo",
+    "word": "暖 爱",
+    "pinyin": "nuǎn ài",
+    "chars": [
+      { "zi": "暖", "pinyin": "nuǎn", "radical": "日", "strokes": 13, "word": "温暖", "sentence": "竹外桃花三两枝，春江水暖鸭先知。" },
+      { "zi": "爱", "pinyin": "ài", "radical": "爫", "strokes": 10, "word": "可爱", "sentence": "泉眼无声惜细流，树阴照水爱晴柔。" }
+    ],
+    "tip": "「暖」左边是日，右边是「爰」，不是「爱」——太阳照着才暖；「爱」中间有一横，说的是心里喜欢。",
+    "quiz": [
+      { "type": "fill", "question": "竹外桃花三两枝，春江水（　）鸭先知。", "options": ["暖", "爱", "缓", "援"], "answer": 0, "explain": "江水不冷了是暖，日字旁，右边那一截不是爱。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["可爱", "可暖", "受爱", "暖爱"], "answer": 0, "explain": "心里喜欢就叫可爱，爱字中间还有一横。" },
+      { "type": "meaning", "question": "哪个字说的是「太阳照着，不冷」？", "options": ["爱", "暖", "缓", "援"], "answer": 1, "explain": "日字旁的暖是温暖；爱说的是心里喜欢。" }
+    ]
+  },
+  {
+    "id": "zi-you",
+    "group": "yicuo",
+    "word": "游 放",
+    "pinyin": "yóu fàng",
+    "chars": [
+      { "zi": "游", "pinyin": "yóu", "radical": "氵", "strokes": 12, "word": "游人", "sentence": "暖风熏得游人醉，直把杭州作汴州。" },
+      { "zi": "放", "pinyin": "fàng", "radical": "攵", "strokes": 8, "word": "放假", "sentence": "儿童散学归来早，忙趁东风放纸鸢。" }
+    ],
+    "tip": "「游」带三点水，在水里、在路上走动才叫游；「放」右边是反文旁，说的是撒手、松开。两个字中间都藏着「方」。",
+    "quiz": [
+      { "type": "fill", "question": "暖风熏得（　）人醉，直把杭州作汴州。", "options": ["游", "放", "泳", "油"], "answer": 0, "explain": "出来玩的人是游人，三点水的游，右边不是放。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["游泳", "游永", "泳游", "油泳"], "answer": 0, "explain": "在水里走动是游泳，三点水加游；永自己就念 yǒng。" },
+      { "type": "meaning", "question": "哪个字说的是「把手里的东西撒出去」？", "options": ["游", "放", "政", "攻"], "answer": 1, "explain": "放手、放书都用放，右边是反文旁。" }
+    ]
+  },
+  {
+    "id": "zi-di-di",
+    "group": "yicuo",
+    "word": "帝 弟",
+    "pinyin": "dì dì",
+    "chars": [
+      { "zi": "帝", "pinyin": "dì", "radical": "巾", "strokes": 9, "word": "皇帝", "sentence": "朝辞白帝彩云间，千里江陵一日还。" },
+      { "zi": "弟", "pinyin": "dì", "radical": "弓", "strokes": 7, "word": "兄弟", "sentence": "遥知兄弟登高处，遍插茱萸少一人。" }
+    ],
+    "tip": "「帝」头上一点一横，说的是皇帝；「弟」上面像绳子缠着弓，说的是兄弟。两个字的头长得完全不同。",
+    "quiz": [
+      { "type": "fill", "question": "朝辞白（　）彩云间，千里江陵一日还。", "options": ["弟", "帝", "第", "戴"], "answer": 1, "explain": "白帝城名字里有帝，一点一横盖住头，说的是皇帝。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["兄弟", "兄第", "弟二", "兄地"], "answer": 0, "explain": "哥哥弟弟合称兄弟，上面缠着弓的那个字。" },
+      { "type": "meaning", "question": "哪个字说的是「以前坐天下的那个人」？", "options": ["弟", "第", "帝", "蒂"], "answer": 2, "explain": "皇帝、白帝城都用帝；弟说的是兄弟。" }
+    ]
+  },
+  {
+    "id": "zi-huang",
+    "group": "yicuo",
+    "word": "荒 慌",
+    "pinyin": "huāng huāng",
+    "chars": [
+      { "zi": "荒", "pinyin": "huāng", "radical": "艹", "strokes": 9, "word": "荒地", "sentence": "远芳侵古道，晴翠接荒城。" },
+      { "zi": "慌", "pinyin": "huāng", "radical": "忄", "strokes": 12, "word": "慌张", "sentence": "一个人在家，一有响动他心里就发慌。" }
+    ],
+    "tip": "草字头的是「荒」，说的是野草丛生、没人管；加上竖心旁成了「慌」，说的是心里害怕。",
+    "quiz": [
+      { "type": "fill", "question": "远芳侵古道，晴翠接（　）城。", "options": ["荒", "慌", "忙", "肓"], "answer": 0, "explain": "没人住的城是荒城，草字头；竖心旁那个是心里慌。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["不荒不忙", "不慌不忙", "心荒意乱", "慌忙衣乱"], "answer": 1, "explain": "心里不怕才不慌，用的是竖心旁的慌。" },
+      { "type": "meaning", "question": "哪个字说的是「长满野草、很少有人管」？", "options": ["慌", "荒", "肓", "芒"], "answer": 1, "explain": "荒地、荒城是草字头的荒；心里害怕才是慌。" }
+    ]
+  },
+  {
+    "id": "zi-xin-xing",
+    "group": "yicuo",
+    "word": "辛 幸",
+    "pinyin": "xīn xìng",
+    "chars": [
+      { "zi": "辛", "pinyin": "xīn", "radical": "辛", "strokes": 7, "word": "辛苦", "sentence": "谁知盘中餐，粒粒皆辛苦。" },
+      { "zi": "幸", "pinyin": "xìng", "radical": "干", "strokes": 8, "word": "幸运", "sentence": "差点迟到，刚坐下铃声就响了，真幸运。" }
+    ],
+    "tip": "「辛」头上一点一横，说的是辛苦、辣；「幸」头上是一个「土」，说的是好运、幸福。头上别写反。",
+    "quiz": [
+      { "type": "fill", "question": "谁知盘中餐，粒粒皆（　）苦。", "options": ["幸", "辛", "新", "悻"], "answer": 1, "explain": "种地流汗是辛苦，辛头上一点一横；幸头上是一个土。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["辛福", "幸幅", "幸福", "幅幸"], "answer": 2, "explain": "好日子叫幸福，头上顶着那个土的字。" },
+      { "type": "meaning", "question": "哪个字说的是「辣、劳累」，像辛苦、艰辛？", "options": ["幸", "辛", "新", "悻"], "answer": 1, "explain": "辛苦、艰辛都用辛，它头上是一点一横。" }
+    ]
+  },
+  {
+    "id": "zi-mao",
+    "group": "yicuo",
+    "word": "茅 矛",
+    "pinyin": "máo máo",
+    "chars": [
+      { "zi": "茅", "pinyin": "máo", "radical": "艹", "strokes": 8, "word": "茅屋", "sentence": "茅檐长扫净无苔，花木成畦手自栽。" },
+      { "zi": "矛", "pinyin": "máo", "radical": "矛", "strokes": 5, "word": "矛盾", "sentence": "他刚说这周末绝不看电视，转身就打开动画片——自相矛盾。" }
+    ],
+    "tip": "草字头的是「茅」，说的是草屋——三顾茅庐；去掉草字头是「矛」，古代扎人的兵器——自相矛盾。",
+    "quiz": [
+      { "type": "fill", "question": "（　）檐长扫净无苔，花木成畦手自栽。", "options": ["矛", "忙", "茅", "芒"], "answer": 2, "explain": "草盖的屋檐是茅檐，带着草字头。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["自相茅盾", "字相矛盾", "矛遁", "自相矛盾"], "answer": 3, "explain": "前后说的话打架是自相矛盾，用的是兵器那个矛。" },
+      { "type": "meaning", "question": "哪个字说的是「古代那种扎人的长兵器」？", "options": ["矛", "茅", "予", "柔"], "answer": 0, "explain": "矛是兵器；草字头的茅说的是草屋。" }
+    ]
+  },
+  {
+    "id": "zi-yi-ning",
+    "group": "yicuo",
+    "word": "疑 凝",
+    "pinyin": "yí níng",
+    "chars": [
+      { "zi": "疑", "pinyin": "yí", "radical": "疋", "strokes": 14, "word": "怀疑", "sentence": "床前明月光，疑是地上霜。" },
+      { "zi": "凝", "pinyin": "níng", "radical": "冫", "strokes": 16, "word": "凝结", "sentence": "冬天夜里太冷，水缸里的水都凝成了冰。" }
+    ],
+    "tip": "「疑」是心里不明白、拿不准；它旁边加两点水就成了「凝」，说的是水凉得结住——凝结、凝固。",
+    "quiz": [
+      { "type": "fill", "question": "床前明月光，（　）是地上霜。", "options": ["凝", "疑", "颖", "抑"], "answer": 1, "explain": "李白拿不准，怀疑那是地上的霜，用的是疑。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["半信半凝", "半信半疑", "伴信半疑", "半心半凝"], "answer": 1, "explain": "不太相信叫半信半疑，用的是心里不明白那个疑。" },
+      { "type": "meaning", "question": "哪个字说的是「水凉得结住了」，像凝结、凝固？", "options": ["疑", "拟", "拧", "凝"], "answer": 3, "explain": "两点水的凝是水凉了结住；疑说的是拿不准。" }
+    ]
+  },
+  {
+    "id": "zi-cui",
+    "group": "yicuo",
+    "word": "翠 碎 醉",
+    "pinyin": "cuì suì zuì",
+    "chars": [
+      { "zi": "翠", "pinyin": "cuì", "radical": "羽", "strokes": 14, "word": "翠绿", "sentence": "两个黄鹂鸣翠柳，一行白鹭上青天。" },
+      { "zi": "碎", "pinyin": "suì", "radical": "石", "strokes": 13, "word": "粉碎", "sentence": "粉骨碎身浑不怕，要留清白在人间。" },
+      { "zi": "醉", "pinyin": "zuì", "radical": "酉", "strokes": 15, "word": "喝醉", "sentence": "醉卧沙场君莫笑，古来征战几人回？" }
+    ],
+    "tip": "三个字里都藏着一个「卒」。羽字头的是翠，青绿色；石字旁的是碎，成了小块；酉字旁的是醉，喝多了酒。",
+    "quiz": [
+      { "type": "fill", "question": "两个黄鹂鸣（　）柳，一行白鹭上青天。", "options": ["碎", "醉", "卒", "翠"], "answer": 3, "explain": "绿得发亮的柳是翠柳，头上是羽字头。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["翠录", "碎绿", "翠绿", "卒绿"], "answer": 2, "explain": "那种青绿色是翠绿，羽字头底下藏一个卒。" },
+      { "type": "meaning", "question": "哪个字说的是「喝多了酒，走路摇摇晃晃」？", "options": ["翠", "碎", "醉", "罪"], "answer": 2, "explain": "酉字旁的是醉，酉本来就是指酒的那个字。" }
+    ]
+  },
+  {
+    "id": "zi-yan",
+    "group": "yicuo",
+    "word": "燕 雁",
+    "pinyin": "yàn yàn",
+    "chars": [
+      { "zi": "燕", "pinyin": "yàn", "radical": "灬", "strokes": 16, "word": "燕子", "sentence": "泥融飞燕子，沙暖睡鸳鸯。" },
+      { "zi": "雁", "pinyin": "yàn", "radical": "隹", "strokes": 12, "word": "大雁", "sentence": "千里黄云白日曛，北风吹雁雪纷纷。" }
+    ],
+    "tip": "两个都是会飞的鸟。「燕」底下是四点，春天来做窝；「雁」里面藏着一个「人」，秋天排成人字往南飞。",
+    "quiz": [
+      { "type": "fill", "question": "泥融飞（　）子，沙暖睡鸳鸯。", "options": ["雁", "燕", "厂", "蒸"], "answer": 1, "explain": "在屋檐下做窝的是燕子，底下点着四点。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["雁子", "燕籽", "宴子", "燕子"], "answer": 3, "explain": "春天飞回来做窝的是燕子，底下那四点是它的尾巴和爪子。" },
+      { "type": "meaning", "question": "哪个字说的是「秋天排成人字往南飞的那群大鸟」？", "options": ["雁", "燕", "厂", "颜"], "answer": 0, "explain": "雁是候鸟，里面藏着一个「人」，飞起来排成人字。" }
+    ]
+  },
+  {
+    "id": "zi-liu",
+    "group": "yicuo",
+    "word": "柳 留 迎",
+    "pinyin": "liǔ liú yíng",
+    "chars": [
+      { "zi": "柳", "pinyin": "liǔ", "radical": "木", "strokes": 9, "word": "柳树", "sentence": "渭城朝雨浥轻尘，客舍青青柳色新。" },
+      { "zi": "留", "pinyin": "liú", "radical": "田", "strokes": 10, "word": "留下", "sentence": "不要人夸好颜色，只留清气满乾坤。" },
+      { "zi": "迎", "pinyin": "yíng", "radical": "辶", "strokes": 7, "word": "迎接", "sentence": "腊月二十九，我们到村口去迎接外婆。" }
+    ],
+    "tip": "「柳」右边是卯，是一种树；「留」上面也是卯的变形，说的是不走；「迎」里面是「卬」不是卯，是走过去接人。",
+    "quiz": [
+      { "type": "fill", "question": "渭城朝雨浥轻尘，客舍青青（　）色新。", "options": ["迎", "留", "柳", "对"], "answer": 2, "explain": "旅舍边上的树是新绿的柳，木字旁，右边是卯。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["柳接", "迎接", "留接", "迎却"], "answer": 1, "explain": "走过去接人是迎接，走之底里面那个不是卯。" },
+      { "type": "meaning", "question": "哪个字说的是「不走、留下来」？", "options": ["柳", "迎", "流", "留"], "answer": 3, "explain": "留下、留住的留，上面是卯的变形，底下是田。" }
+    ]
+  },
+  {
+    "id": "zi-chi",
+    "group": "yicuo",
+    "word": "齿 龄",
+    "pinyin": "chǐ líng",
+    "chars": [
+      { "zi": "齿", "pinyin": "chǐ", "radical": "齿", "strokes": 8, "word": "牙齿", "sentence": "应怜屐齿印苍苔，小扣柴扉久不开。" },
+      { "zi": "龄", "pinyin": "líng", "radical": "齿", "strokes": 13, "word": "年龄", "sentence": "爷爷今年七十岁，年龄比我们学校还大。" }
+    ],
+    "tip": "两个字的左边都是「齿」。齿是牙齿的本字；齿旁边加个「令」就是龄，说的是岁数——年龄、高龄。",
+    "quiz": [
+      { "type": "fill", "question": "应怜屐（　）印苍苔，小扣柴扉久不开。", "options": ["龄", "岁", "止", "齿"], "answer": 3, "explain": "木屐底下咬住青苔的是屐齿，上头是个止的样子。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["年令", "齿年", "年龄", "邻年"], "answer": 2, "explain": "几岁就是年龄，左边写着齿，右边是一个令。" },
+      { "type": "meaning", "question": "哪个字说的是「吃东西用来咬碎的那一排」？", "options": ["齿", "龄", "芽", "止"], "answer": 0, "explain": "牙齿就是齿自己；加个令变成龄，讲的是岁数。" }
+    ]
+  },
+  {
+    "id": "zi-shuang",
+    "group": "yicuo",
+    "word": "霜 霞",
+    "pinyin": "shuāng xiá",
+    "chars": [
+      { "zi": "霜", "pinyin": "shuāng", "radical": "雨", "strokes": 17, "word": "白霜", "sentence": "月落乌啼霜满天，江枫渔火对愁眠。" },
+      { "zi": "霞", "pinyin": "xiá", "radical": "雨", "strokes": 17, "word": "朝霞", "sentence": "太阳落山的时候，天边烧起一片红霞。" }
+    ],
+    "tip": "两个都是雨字头，雨字头要写得扁扁的。霜是冷天草上的白冰粒；霞说的是早晚天边那一片红。",
+    "quiz": [
+      { "type": "fill", "question": "月落乌啼（　）满天，江枫渔火对愁眠。", "options": ["霞", "雾", "霜", "露"], "answer": 2, "explain": "秋夜天上落下的白冰粒是霜，雨字头底下写一个相。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["朝虾", "潮霞", "月虾", "朝霞"], "answer": 3, "explain": "早上天边那一片红是朝霞，雨字头底下是「叚」。" },
+      { "type": "meaning", "question": "哪个字说的是「冷天草叶上那层白白的小冰粒」？", "options": ["霜", "霞", "雾", "雪"], "answer": 0, "explain": "白冰粒是霜，雨字头底下写着相；霞说的是天边发红。" }
+    ]
+  },
+  {
+    "id": "zi-qing-ting",
+    "group": "yicuo",
+    "word": "蜻 蜓",
+    "pinyin": "qīng tíng",
+    "chars": [
+      { "zi": "蜻", "pinyin": "qīng", "radical": "虫", "strokes": 14, "word": "蜻蜓", "sentence": "小荷才露尖尖角，早有蜻蜓立上头。" },
+      { "zi": "蜓", "pinyin": "tíng", "radical": "虫", "strokes": 12, "word": "蜻蜓", "sentence": "写好「蜓」要记住：右边是「廷」，不是「延」。" }
+    ],
+    "tip": "「蜻蜓」两个字都是虫字旁：蜻的右边是青，蜓的右边是廷。合在一起才说那种停在小荷叶上的飞虫。",
+    "quiz": [
+      { "type": "fill", "question": "写好「（　）」要记住：右边是「廷」，不是「延」。", "options": ["蜻", "蝴", "蝶", "蜓"], "answer": 3, "explain": "虫字旁右边加「廷」才是蜻蜓的蜓，写成「延」就错了。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["蜻蜒", "蜻蜓", "蜓蜻", "蜻廷"], "answer": 1, "explain": "那种飞虫是蜻蜓，第二个字右边写廷，不写延。" },
+      { "type": "meaning", "question": "哪个字是虫字旁、右边一个「青」？", "options": ["蜻", "蜓", "青", "虫"], "answer": 0, "explain": "虫加青是蜻蜓的蜻；三点水加青是清水的清。" }
+    ]
+  },
+  {
+    "id": "zi-suo",
+    "group": "yicuo",
+    "word": "蓑 笠",
+    "pinyin": "suō lì",
+    "chars": [
+      { "zi": "蓑", "pinyin": "suō", "radical": "艹", "strokes": 13, "word": "蓑衣", "sentence": "渔翁披着一件蓑衣，在斜风细雨里钓鱼。" },
+      { "zi": "笠", "pinyin": "lì", "radical": "竹", "strokes": 11, "word": "斗笠", "sentence": "青箬笠，绿蓑衣，斜风细雨不须归。" }
+    ],
+    "tip": "「蓑」草字头，草编的雨衣；「笠」竹字头，竹编的帽子。上面是什么偏旁，就是拿什么编的。",
+    "quiz": [
+      { "type": "fill", "question": "渔翁披着一件（　）衣，在斜风细雨里钓鱼。", "options": ["笠", "蓑", "衰", "梭"], "answer": 1, "explain": "挡雨那件草衣裳是蓑衣，草字头底下写一个衰。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["衰衣", "梭衣", "蓑衣", "草梭"], "answer": 2, "explain": "渔翁穿的那件草雨衣是蓑衣，草字头。" },
+      { "type": "meaning", "question": "哪个字说的是「竹条编的那顶帽子」？", "options": ["蓑", "衰", "笠", "簌"], "answer": 2, "explain": "斗笠是竹字头的笠，上面六笔是竹字头。" }
+    ]
+  },
+  {
+    "id": "zi-yan-xian",
+    "group": "yicuo",
+    "word": "砚 现",
+    "pinyin": "yàn xiàn",
+    "chars": [
+      { "zi": "砚", "pinyin": "yàn", "radical": "石", "strokes": 9, "word": "砚台", "sentence": "我家洗砚池头树，朵朵花开淡墨痕。" },
+      { "zi": "现", "pinyin": "xiàn", "radical": "见", "strokes": 8, "word": "现在", "sentence": "读完这一页，我发现插图里藏着一只小猫。" }
+    ],
+    "tip": "石字旁的是「砚」，研墨那块石头；王字旁的是「现」，说的是现在、出现。右边都念「见」。",
+    "quiz": [
+      { "type": "fill", "question": "我家洗（　）池头树，朵朵花开淡墨痕。", "options": ["现", "沉", "砚", "祝"], "answer": 2, "explain": "洗毛笔那口池子旁边是砚，石字旁——石头做的砚台。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["砚抬", "现台", "视台", "砚台"], "answer": 3, "explain": "研墨用的那块石头是砚台，石字旁加一个见。" },
+      { "type": "meaning", "question": "哪个字说的是「此刻、眼前」，像现在、发现？", "options": ["砚", "视", "沉", "现"], "answer": 3, "explain": "现在、发现都用王字旁的现；石字旁的砚是研墨的石头。" }
+    ]
+  },
+  {
+    "id": "zi-fen",
+    "group": "yicuo",
+    "word": "焚 烧 浇",
+    "pinyin": "fén shāo jiāo",
+    "chars": [
+      { "zi": "焚", "pinyin": "fén", "radical": "火", "strokes": 12, "word": "焚烧", "sentence": "千锤万凿出深山，烈火焚烧若等闲。" },
+      { "zi": "烧", "pinyin": "shāo", "radical": "火", "strokes": 10, "word": "烧火", "sentence": "野火烧不尽，春风吹又生。" },
+      { "zi": "浇", "pinyin": "jiāo", "radical": "氵", "strokes": 9, "word": "浇水", "sentence": "妹妹丢了伞正难过，你又笑她，这是火上浇油。" }
+    ],
+    "tip": "火烧林子是「焚」；火字旁的是「烧」；三点水的是「浇」——水往下浇。烧和浇右边一样，全凭偏旁分开。",
+    "quiz": [
+      { "type": "fill", "question": "野火（　）不尽，春风吹又生。", "options": ["焚", "烧", "浇", "绕"], "answer": 1, "explain": "火去烧草是烧，火字旁；上面两片木、底下一把火的是焚。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["火上浇水", "火上浇油", "火上骄油", "火尚浇油"], "answer": 1, "explain": "火上添油是火上浇油，三点水的浇是往上倒。" },
+      { "type": "meaning", "question": "哪个字上面是「林」、底下是「火」，说的是点火烧光？", "options": ["烧", "浇", "焚", "楚"], "answer": 2, "explain": "林下一把火就是焚，焚烧、焚书都用它。" }
+    ]
+  },
+  {
+    "id": "zi-chui",
+    "group": "yicuo",
+    "word": "锤 凿",
+    "pinyin": "chuí záo",
+    "chars": [
+      { "zi": "锤", "pinyin": "chuí", "radical": "钅", "strokes": 13, "word": "铁锤", "sentence": "工人举起铁锤，一下一下把钉子砸进木头。" },
+      { "zi": "凿", "pinyin": "záo", "radical": "凵", "strokes": 12, "word": "凿子", "sentence": "匡衡凿壁偷光，在墙上挖个洞借邻居的灯光读书。" }
+    ],
+    "tip": "金字旁的「锤」是手里的大铁家伙；「凿」底下是个「凵」，说的是挖洞的工具，也说挖出来的坑。",
+    "quiz": [
+      { "type": "fill", "question": "工人举起铁（　），一下一下把钉子砸进木头。", "options": ["凿", "垂", "睡", "锤"], "answer": 3, "explain": "砸钉子那个铁家伙是铁锤，金字旁，右边念 chuí。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["凿壁愉光", "锤壁偷光", "凿壁偷光", "凿壁关光"], "answer": 2, "explain": "匡衡在墙上挖洞借光，那个动作是凿。" },
+      { "type": "meaning", "question": "哪个字说的是「在墙上挖出一个小洞」？", "options": ["锤", "垂", "凿", "追"], "answer": 2, "explain": "凿子用来挖洞，凿壁偷光挖的就是洞。" }
+    ]
+  },
+  {
+    "id": "zi-yu-gan",
+    "group": "yicuo",
+    "word": "竽 竿",
+    "pinyin": "yú gān",
+    "chars": [
+      { "zi": "竽", "pinyin": "yú", "radical": "竹", "strokes": 9, "word": "吹竽", "sentence": "南郭先生不会吹竽，也混在乐队里装样子。" },
+      { "zi": "竿", "pinyin": "gān", "radical": "竹", "strokes": 9, "word": "竹竿", "sentence": "过江千尺浪，入竹万竿斜。" }
+    ],
+    "tip": "两个都是竹字头。竽底下是个「于」，是古代吹的乐器；竿底下是个「干」，说的是竹竿、钓竿。",
+    "quiz": [
+      { "type": "fill", "question": "南郭先生不会吹（　），也混在乐队里装样子。", "options": ["竿", "竽", "干", "肝"], "answer": 1, "explain": "南郭先生混在乐队里吹的是竽，竹字头底下写于。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["滥竿充数", "烂竽充数", "滥竽充束", "滥竽充数"], "answer": 3, "explain": "不会吹竽混在队伍里，那个乐器底下是于。" },
+      { "type": "meaning", "question": "哪个字说的是「一根竹子那样的长杆」，像竹竿、钓竿？", "options": ["竽", "杆", "干", "竿"], "answer": 3, "explain": "竹竿、钓竿是竿，竹字头底下写一个干。" }
+    ]
+  },
+  {
+    "id": "zi-gui",
+    "group": "yicuo",
+    "word": "鳜 鲤",
+    "pinyin": "guì lǐ",
+    "chars": [
+      { "zi": "鳜", "pinyin": "guì", "radical": "鱼", "strokes": 20, "word": "鳜鱼", "sentence": "西塞山前白鹭飞，桃花流水鳜鱼肥。" },
+      { "zi": "鲤", "pinyin": "lǐ", "radical": "鱼", "strokes": 15, "word": "鲤鱼", "sentence": "池塘里的鲤鱼摆摆尾巴，钻到荷叶底下去了。" }
+    ],
+    "tip": "两个都是鱼字旁。鲤右边是个「里」，最常见；鳜右边是「厥」，笔画最多，说的是那种大口吃小鱼的花鱼。",
+    "quiz": [
+      { "type": "fill", "question": "西塞山前白鹭飞，桃花流水（　）鱼肥。", "options": ["鲤", "鱼", "鳜", "厥"], "answer": 2, "explain": "《渔歌子》里那种肥鱼是鳜鱼，鱼字旁，右边笔画最多。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["里鱼", "鲤鱼", "鲤渔", "桃鱼"], "answer": 1, "explain": "红尾巴那种是鲤鱼，鱼字旁加一个里。" },
+      { "type": "meaning", "question": "哪个字说的是「嘴巴大、身上有花纹、吃小鱼的那种鱼」？", "options": ["鲤", "里", "厥", "鳜"], "answer": 3, "explain": "那种鱼是鳜鱼，右边写着厥，笔画最多。" }
+    ]
+  },
+  {
+    "id": "zi-du-du",
+    "group": "yicuo",
+    "word": "椟 读",
+    "pinyin": "dú dú",
+    "chars": [
+      { "zi": "椟", "pinyin": "dú", "radical": "木", "strokes": 12, "word": "买椟还珠", "sentence": "他只看上那个好看的盒子，把盒里的珠子还回去，真是买椟还珠。" },
+      { "zi": "读", "pinyin": "dú", "radical": "讠", "strokes": 10, "word": "读书", "sentence": "每天吃过晚饭，我们一家人围着桌子读书。" }
+    ],
+    "tip": "木字旁的「椟」是装珠子的小木盒，买椟还珠说的就是它；言字旁的「读」是开口念书——读书、朗读。",
+    "quiz": [
+      { "type": "fill", "question": "他只看上那个好看的盒子，把盒里的珠子还回去，真是买（　）还珠。", "options": ["读", "卖", "赎", "椟"], "answer": 3, "explain": "那个木盒子是椟，木字旁——买椟还珠买的正是盒子。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["买读还珠", "卖椟还珠", "买椟还珠", "买椟换猪"], "answer": 2, "explain": "挑中盒子把珠子退回去，那个盒子是木字旁的椟。" },
+      { "type": "meaning", "question": "哪个字说的是「开口念书、看文字」？", "options": ["读", "椟", "赎", "渎"], "answer": 0, "explain": "言字旁的读是念书；木字旁的椟只是一个小盒子。" }
+    ]
+  },
+  {
+    "id": "zi-yuan-zhe",
+    "group": "yicuo",
+    "word": "辕 辙",
+    "pinyin": "yuán zhé",
+    "chars": [
+      { "zi": "辕", "pinyin": "yuán", "radical": "车", "strokes": 14, "word": "车辕", "sentence": "车前面那根直木叫辕，两匹马分在它的两边拉车。" },
+      { "zi": "辙", "pinyin": "zhé", "radical": "车", "strokes": 16, "word": "车辙", "sentence": "他心里要去南边的大湖，车轮却一路往北——南辕北辙。" }
+    ],
+    "tip": "都是车字旁。辕是车前面那根直木，马在两边拉；辙是车轮压出来的印子——南辕北辙说的就是它。",
+    "quiz": [
+      { "type": "fill", "question": "车前面那根直木叫（　），两匹马分在它的两边拉车。", "options": ["辙", "袁", "辕", "远"], "answer": 2, "explain": "车前面那根直木是车辕，车字旁，右边念 yuán。" },
+      { "type": "word", "question": "下面哪个词写对了？", "options": ["南辕北折", "南元北辙", "南远北辙", "南辕北辙"], "answer": 3, "explain": "想去南边却往北赶车，两个字都带车字旁。" },
+      { "type": "meaning", "question": "哪个字说的是「车轮在地上压出来的那两道印子」？", "options": ["辕", "袁", "辙", "滴"], "answer": 2, "explain": "轮子压出来的印子是辙；拉车那根直木才是辕。" }
+    ]
+  }
+]
