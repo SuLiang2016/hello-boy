@@ -1,4 +1,4 @@
-// 星星流水账 + 装扮目录（服务端唯一事实源，前端 store 有一份同步目录）
+// 星星流水账 + 装扮目录（服务端唯一事实源，前端副本在 src/catalog.mjs，由 tests/registry.test.mjs 对照）
 const db = require('./db');
 
 // 槽位：hat / glasses / scarf / head（蝴蝶结）/ scene（场景件，三期）

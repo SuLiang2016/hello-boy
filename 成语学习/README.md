@@ -34,6 +34,9 @@
 ```bash
 npm install
 npm run validate:content   # 校验 ../content 下的内容质量
+npm test                   # 接龙/识字规则 + 前后端注册表一致性
+npm run audit:glyphs       # 识字卡部首·笔画·拼音机器核对，需先装内容生产用的临时依赖：
+                           #   npm i --no-save cnchar cnchar-radical hanzi-writer-data
 npm run build:content      # 合并内容 -> src/assets/content.json
 npm run build              # 构建前端 -> dist
 npm start                  # 启动服务（默认 4173，改端口：server/config.json {"port": 5000}）

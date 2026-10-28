@@ -1,5 +1,5 @@
 // 板块注册表 + 五期新机制的纯规则。
-// 新增一个板块只改 BOARDS 一处；前端 src/store.js 里有对应的副本，改动要同步（同 OUTFITS 的约定）。
+// 新增一个板块只改 BOARDS 一处；前端副本在 src/catalog.mjs，tests/registry.test.mjs 钉住两边一致（同 OUTFITS 的约定）。
 const BOARDS = [
   { board: 'idiom', dir: 'idioms', groupsFile: 'groups.json', groupsKey: 'groups', itemsKey: 'idioms', unit: '个', title: '成语篇章' },
   { board: 'poem', dir: 'poems', groupsFile: 'poem-groups.json', groupsKey: 'poemGroups', itemsKey: 'poems', unit: '首', title: '古诗篇章' },

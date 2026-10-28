@@ -1,7 +1,8 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import { api, setKidToken } from '../api.js'
-import { useSession, useContent, BOARDS, BADGES } from '../store.js'
+import { useSession, useContent, BADGES } from '../store.js'
+import { BOARDS } from '../catalog.mjs'
 import Avatar from '../components/Avatar.vue'
 import Icon from '../components/Icon.vue'
 import TabBar from '../components/TabBar.vue'

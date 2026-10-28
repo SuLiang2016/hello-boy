@@ -180,7 +180,7 @@
 - `chars`：字族里每个字一条，顺序与 `word` 一致。`sentence` 和 `word` 里都必须真的出现这个字。
 - **没有 `illustration`**——识字卡片不配插图，这是全站唯一一种不带插图的卡片。
 - `tip`（区分口诀）：一句话说清这组字怎么分。口语、有画面，不说教。优先用偏旁讲（「山字旁是山峰」），其次用字形讲（「己不封口，已半封口，巳全封口」）。
-- `radical` / `strokes`：部首与笔画数。⚠️ 目前靠人工填，chinese-xinhua 数据接入后必须机器核对。
+- `radical` / `strokes`：部首与笔画数，人工填完后用 `npm run audit:glyphs` 机器核对（见本节末「交稿要求」）。
 
 ### 多音字篇的字段差异
 
@@ -240,5 +240,6 @@
 - JSON 数组，25 条，顺序与选字清单一致，UTF-8。
 - 先 `node -e "JSON.parse(require('fs').readFileSync('文件路径','utf8')); console.log('ok')"` 自检能否解析。
 - 再核三件事：每个字的 `pinyin` 用 pinyin-pro 能对上（多音字要确认声明的读音在它的多音列表里）；`sentence` 里引用的诗句/成语确实存在于 `content/poems/` 或 `content/idioms/`；选项无重复。
+- 部首与笔画交给机器：`npm run audit:glyphs` 一次核对四篇所有卡片的 strokes / radical / 拼音（cnchar + hanzi-writer-data 双源对笔画，部首取 cnchar 新华口径，拼音以 pinyin-pro 为准），有分歧就非零退出。这三个包不是项目依赖，先 `npm i --no-save cnchar cnchar-radical hanzi-writer-data` 装一次。
 - 多音字篇还要看一眼 `npm run validate:content` 打出的「pinyin-pro 整句定音不一致」提示。那不算错（pinyin-pro 对「长得」「慢慢地」这类虚词本来就判不准，所以它不当判分依据），但机器都读错的句子孩子多半也判不准，要么换句子、要么确认句子真没歧义。
 - 默读一遍 `tip` 和例句，拗口的改到顺。

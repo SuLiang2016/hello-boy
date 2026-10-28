@@ -6,13 +6,14 @@
   "scripts": {
     "build:content": "node scripts/build-content.js",
     "validate:content": "node scripts/validate-content.js",
+    "audit:glyphs": "node scripts/audit-glyphs.js",
     "build": "npm run build:content && vite build",
     "start": "node server/index.js",
     "dev": "vite",
     "smoke": "node scripts/smoke-test.js",
     "backup:db": "node --experimental-sqlite scripts/backup-db.js",
     "check:db": "node --experimental-sqlite scripts/backup-db.js --check",
-    "test": "npm run build:content && node --test tests/chain.test.mjs tests/shizi.test.mjs"
+    "test": "npm run build:content && node --test tests/chain.test.mjs tests/shizi.test.mjs tests/registry.test.mjs"
   },
   "dependencies": {
     "express": "^4.21.2",

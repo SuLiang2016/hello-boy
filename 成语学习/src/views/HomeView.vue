@@ -1,7 +1,8 @@
 <script setup>
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { useSession, useContent, BOARDS } from '../store.js'
+import { useSession, useContent } from '../store.js'
+import { BOARDS } from '../catalog.mjs'
 import Avatar from '../components/Avatar.vue'
 import Icon from '../components/Icon.vue'
 import Scene from '../components/Scene.vue'

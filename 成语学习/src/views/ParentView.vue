@@ -3,7 +3,8 @@
 import { onMounted, reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { api, parentToken, setParentToken } from '../api.js'
-import { useContent, BOARDS, AVATARS } from '../store.js'
+import { useContent, AVATARS } from '../store.js'
+import { BOARDS } from '../catalog.mjs'
 import Avatar from '../components/Avatar.vue'
 import Icon from '../components/Icon.vue'
 
