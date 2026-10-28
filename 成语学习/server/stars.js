@@ -14,12 +14,17 @@ const OUTFITS = [
   { id: 'magic-hat', slot: 'hat', name: '魔法帽', price: 10 },
   { id: 'dr-hat', slot: 'hat', name: '博士帽', price: 12 },
   { id: 'crown', slot: 'hat', name: '金皇冠', price: 15 },
+  // 五期高价件：消化识字灌进来的星星（目录总价 216★ → 396★），竹斗笠与识字卡的「笠」互相强化
+  { id: 'bamboo-hat', slot: 'hat', name: '竹斗笠', price: 40 },
   // 三期场景件：换首页「学习乐园」的背景画面，一次生效一件
   { id: 'scene-starry', slot: 'scene', name: '星空', price: 12 },
   { id: 'scene-meadow', slot: 'scene', name: '草地', price: 12 },
   { id: 'scene-undersea', slot: 'scene', name: '海底', price: 15 },
   { id: 'scene-forest', slot: 'scene', name: '森林', price: 15 },
   { id: 'scene-castle', slot: 'scene', name: '彩虹城堡', price: 50 },
+  // 五期场景件：画面取自孩子刚学过的诗，识字卡和首页互相强化
+  { id: 'scene-pond', slot: 'scene', name: '小池', price: 60 },
+  { id: 'scene-fishing', slot: 'scene', name: '渔歌子', price: 80 },
 ];
 
 function wallet(kidId) {

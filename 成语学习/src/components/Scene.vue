@@ -129,6 +129,83 @@ defineProps({
       <circle cx="710" cy="1080" r="8" fill="#FFFFFF"/>
     </template>
 
+    <template v-else-if="scene === 'scene-pond'">
+      <rect width="800" height="1200" fill="#BDD9F2"/>
+      <circle cx="660" cy="150" r="66" fill="#F5B841"/>
+      <ellipse cx="180" cy="200" rx="96" ry="34" fill="#FFFFFF"/>
+      <ellipse cx="290" cy="180" rx="66" ry="26" fill="#FFFFFF"/>
+      <path d="M0 520 Q200 460 400 512 T800 500 V1200 H0 Z" fill="#6FA8DC"/>
+      <path d="M0 860 Q220 800 460 852 T800 840 V1200 H0 Z" fill="#4A7FB5"/>
+      <path d="M60 600 q60 -18 120 0" fill="none" stroke="#FFFFFF" stroke-width="6" opacity="0.7"/>
+      <path d="M600 580 q60 -18 120 0" fill="none" stroke="#FFFFFF" stroke-width="6" opacity="0.55"/>
+      <path d="M120 940 q80 -22 160 0" fill="none" stroke="#BDD9F2" stroke-width="7" opacity="0.6"/>
+      <ellipse cx="210" cy="700" rx="164" ry="62" fill="#5E8C61"/>
+      <ellipse cx="210" cy="688" rx="124" ry="42" fill="#7CA982"/>
+      <path d="M210 688 L92 710 M210 688 L328 710 M210 688 L160 738 M210 688 L262 736" stroke="#5E8C61" stroke-width="5" fill="none"/>
+      <path d="M470 660 q-6 -110 34 -170" fill="none" stroke="#5E8C61" stroke-width="10" stroke-linecap="round"/>
+      <path d="M504 490 q46 -30 34 34 q-40 26 -34 -34 z" fill="#C8E6A0" stroke="#5E8C61" stroke-width="4"/>
+      <path d="M510 474 L532 420 L540 478 Z" fill="#C8E6A0" stroke="#5E8C61" stroke-width="4" stroke-linejoin="round"/>
+      <ellipse cx="536" cy="384" rx="7" ry="30" fill="#E8604C" transform="rotate(24 536 384)"/>
+      <circle cx="548" cy="360" r="9" fill="#E8604C"/>
+      <circle cx="551" cy="357" r="2.6" fill="#3D3A36"/>
+      <ellipse cx="510" cy="368" rx="40" ry="13" fill="#FFFFFF" opacity="0.75" transform="rotate(-22 510 368)"/>
+      <ellipse cx="564" cy="396" rx="36" ry="12" fill="#FFFFFF" opacity="0.7" transform="rotate(16 564 396)"/>
+      <path d="M532 414 q10 26 -6 44" fill="none" stroke="#E8604C" stroke-width="4" stroke-linecap="round"/>
+      <ellipse cx="640" cy="1040" rx="176" ry="68" fill="#5E8C61"/>
+      <ellipse cx="640" cy="1026" rx="134" ry="46" fill="#7CA982"/>
+      <circle cx="120" cy="790" r="9" fill="#F5B8B8"/>
+      <circle cx="330" cy="820" r="7" fill="#F5B8B8"/>
+      <circle cx="620" cy="760" r="8" fill="#FFFFFF"/>
+      <circle cx="700" cy="820" r="6" fill="#F5B8B8"/>
+    </template>
+
+    <template v-else-if="scene === 'scene-fishing'">
+      <rect width="800" height="1200" fill="#BDD9F2"/>
+      <g stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.75">
+        <path d="M120 120 l-26 96"/><path d="M240 60 l-26 96"/><path d="M360 140 l-26 96"/>
+        <path d="M480 70 l-26 96"/><path d="M600 150 l-26 96"/><path d="M720 80 l-26 96"/>
+        <path d="M180 300 l-26 96"/><path d="M420 340 l-26 96"/><path d="M660 320 l-26 96"/>
+        <path d="M80 480 l-26 96"/><path d="M300 520 l-26 96"/><path d="M540 500 l-26 96"/><path d="M760 520 l-26 96"/>
+      </g>
+      <path d="M60 300 q80 -34 160 0" fill="none" stroke="#FFFFFF" stroke-width="7" opacity="0.6"/>
+      <path d="M500 240 q90 -36 180 0" fill="none" stroke="#FFFFFF" stroke-width="7" opacity="0.55"/>
+      <path d="M0 560 Q160 380 340 540 T800 500 V760 H0 Z" fill="#7CA982"/>
+      <path d="M420 620 Q600 420 800 600 V780 H420 Z" fill="#5E8C61"/>
+      <g fill="none" stroke-linecap="round">
+        <path d="M250 250 q22 -18 44 0 q22 -18 44 0" stroke="#3D3A36" stroke-width="11"/>
+        <path d="M250 250 q22 -18 44 0 q22 -18 44 0" stroke="#FFFFFF" stroke-width="6"/>
+        <path d="M356 196 q17 -14 34 0 q17 -14 34 0" stroke="#3D3A36" stroke-width="9"/>
+        <path d="M356 196 q17 -14 34 0 q17 -14 34 0" stroke="#FFFFFF" stroke-width="5"/>
+        <path d="M152 330 q15 -12 30 0 q15 -12 30 0" stroke="#3D3A36" stroke-width="8"/>
+        <path d="M152 330 q15 -12 30 0 q15 -12 30 0" stroke="#FFFFFF" stroke-width="4.5"/>
+      </g>
+      <path d="M0 60 q120 60 200 160" fill="none" stroke="#A9744F" stroke-width="12" stroke-linecap="round"/>
+      <path d="M96 116 q60 20 90 66" fill="none" stroke="#A9744F" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="60" cy="76" r="17" fill="#F5B8B8"/><circle cx="96" cy="116" r="20" fill="#F5B8B8"/>
+      <circle cx="140" cy="140" r="15" fill="#F5B8B8"/><circle cx="130" cy="100" r="12" fill="#FFFFFF"/>
+      <circle cx="170" cy="168" r="17" fill="#F5B8B8"/><circle cx="186" cy="184" r="11" fill="#FFFFFF"/>
+      <path d="M0 620 Q200 570 400 616 T800 600 V1200 H0 Z" fill="#6FA8DC"/>
+      <path d="M0 880 Q220 830 460 876 T800 860 V1200 H0 Z" fill="#4A7FB5"/>
+      <path d="M80 700 q70 -18 140 0" fill="none" stroke="#FFFFFF" stroke-width="6" opacity="0.6"/>
+      <path d="M540 690 q70 -18 140 0" fill="none" stroke="#FFFFFF" stroke-width="6" opacity="0.55"/>
+      <path d="M120 1010 q80 -20 160 0" fill="none" stroke="#BDD9F2" stroke-width="7" opacity="0.6"/>
+      <path d="M240 800 Q400 870 560 800 L520 850 Q400 902 280 850 Z" fill="#A9744F" stroke="#3D3A36" stroke-width="5" stroke-linejoin="round"/>
+      <rect x="196" y="816" width="386" height="16" rx="8" fill="#8B5A3C" stroke="#3D3A36" stroke-width="4"/>
+      <path d="M360 796 q-8 -60 22 -78 q26 -16 44 8 l14 70 z" fill="#5E8C61" stroke="#3D3A36" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M352 796 q34 -22 76 0 l-6 22 q-32 14 -64 0 z" fill="#7CA982" stroke="#3D3A36" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="392" cy="700" r="22" fill="#F8D8B8" stroke="#3D3A36" stroke-width="5"/>
+      <path d="M356 690 Q392 656 428 690 Z" fill="#4A7FB5" stroke="#3D3A36" stroke-width="5" stroke-linejoin="round"/>
+      <ellipse cx="392" cy="692" rx="46" ry="10" fill="#4A7FB5" stroke="#3D3A36" stroke-width="5"/>
+      <path d="M424 710 q40 26 34 86" fill="none" stroke="#3D3A36" stroke-width="3"/>
+      <path d="M452 796 l14 20 l-20 6 z" fill="#F09A4A" stroke="#3D3A36" stroke-width="3" stroke-linejoin="round"/>
+      <ellipse cx="470" cy="1000" rx="62" ry="26" fill="#F09A4A" stroke="#3D3A36" stroke-width="5"/>
+      <path d="M532 1000 L576 972 L576 1028 Z" fill="#E8604C" stroke="#3D3A36" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M452 980 q10 20 0 40 M480 978 q10 22 0 44" fill="none" stroke="#A9744F" stroke-width="5"/>
+      <circle cx="436" cy="992" r="5" fill="#3D3A36"/>
+      <circle cx="200" cy="1140" r="9" fill="#F5B8B8"/>
+      <circle cx="640" cy="1150" r="8" fill="#FFFFFF"/>
+    </template>
+
     <rect width="800" height="1200" fill="#FFF7E6" opacity="0.45"/>
   </svg>
 </template>

@@ -35,9 +35,12 @@ export const OUTFITS = [
   { id: 'magic-hat', slot: 'hat', name: '魔法帽', price: 10 },
   { id: 'dr-hat', slot: 'hat', name: '博士帽', price: 12 },
   { id: 'crown', slot: 'hat', name: '金皇冠', price: 15 },
+  { id: 'bamboo-hat', slot: 'hat', name: '竹斗笠', price: 40 },
   { id: 'scene-starry', slot: 'scene', name: '星空', price: 12 },
   { id: 'scene-meadow', slot: 'scene', name: '草地', price: 12 },
   { id: 'scene-undersea', slot: 'scene', name: '海底', price: 15 },
   { id: 'scene-forest', slot: 'scene', name: '森林', price: 15 },
   { id: 'scene-castle', slot: 'scene', name: '彩虹城堡', price: 50 },
+  { id: 'scene-pond', slot: 'scene', name: '小池', price: 60 },
+  { id: 'scene-fishing', slot: 'scene', name: '渔歌子', price: 80 },
 ]
